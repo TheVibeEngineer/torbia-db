@@ -487,9 +487,8 @@ if (_dev) window.addEventListener('DOMContentLoaded', () => {
   </div>
   <div class="tab-bar">
     <button class="tab-btn active" onclick="switchTab('bestiary')">Bestiary</button>
-    <button class="tab-btn" onclick="switchTab('forge')">Forge</button>
+    <button class="tab-btn" onclick="switchTab('forge')">Armory</button>
     <button class="tab-btn" onclick="switchTab('elements')">Elements</button>
-    <button class="tab-btn" onclick="switchTab('dps')">DPS Calc</button>
     <button class="tab-btn" onclick="switchTab('build')">Build Planner</button>
     <button class="tab-btn" onclick="switchTab('npcs')">NPCs</button>
   </div>
@@ -518,11 +517,12 @@ if (_dev) window.addEventListener('DOMContentLoaded', () => {
   <div class="tab-content" id="tab-forge">
     <div class="forge-container">
       <div style="display:flex;flex-direction:column;height:100%;overflow:hidden;">
-        <div class="forge-tabs" id="forgeTabs" style="flex-shrink:0;"></div>
+        <div id="armoryTabs" style="flex-shrink:0;display:flex;gap:2px;padding:6px 8px;border-bottom:1px solid #333;background:#1a1a2e;"></div>
+        <div class="forge-tabs" id="forgeTabs" style="flex-shrink:0;display:none;"></div>
         <div class="recipe-list" id="recipeList" style="flex:1;overflow-y:auto;"></div>
       </div>
       <div class="forge-detail" id="forgeDetail" style="overflow-y:auto;">
-        <div class="detail-empty">Select a recipe to view details</div>
+        <div class="detail-empty">Select an item to view details</div>
       </div>
     </div>
   </div>
@@ -534,81 +534,6 @@ if (_dev) window.addEventListener('DOMContentLoaded', () => {
       <p style="text-align:center;color:#aaa;margin-bottom:16px;font-size:13px">Attack Element (rows) vs Defender Element (columns). <span style="color:#8f8">2.0x = Super Effective</span>, <span style="color:#f88">0.0x = Immune</span></p>
       <div style="overflow-x:auto">
         <table id="elementTable" style="border-collapse:collapse;font-size:14px;text-align:center"></table>
-      </div>
-    </div>
-  </div>
-
-  <div class="tab-content" id="tab-dps">
-    <div class="dps-layout">
-      <div class="dps-inputs">
-        <div class="dps-section">
-          <h3>Character Stats</h3>
-          <div id="dpsStatSliders"></div>
-          <div class="dps-stat-row" style="margin-top:6px;border-top:1px solid #333;padding-top:6px">
-            <label>Base Lv</label>
-            <input type="range" min="1" max="99" value="1" id="dpsBaseLevel"
-                   oninput="this.nextElementSibling.textContent=this.value;localStorage.setItem('dps_BaseLevel',this.value);updateDPS()">
-            <span class="dps-val">1</span>
-          </div>
-        </div>
-        <div class="dps-section">
-          <h3>Weapon</h3>
-          <select class="dps-select" id="dpsWeaponSelect" onchange="onWeaponSelect()" style="width:100%;margin-bottom:6px">
-            <option value="">None (bare hands)</option>
-          </select>
-          <div class="dps-weapon-grid" id="dpsWeaponDetails">
-            <label>Refine</label>
-            <div class="dps-stat-row" style="margin:0">
-              <input type="range" min="0" max="10" value="0" id="dpsRefine"
-                     oninput="this.nextElementSibling.textContent='+'+this.value;onWeaponSelect()" style="flex:1;accent-color:#fc0">
-              <span class="dps-val" style="color:#fc0">+0</span>
-            </div>
-          </div>
-          <div id="dpsWeaponInfo" style="font-size:11px;color:#aaa;margin-top:4px"></div>
-        </div>
-        <div class="dps-section">
-          <h3>Skill Level</h3>
-          <select class="dps-select" id="dpsSkillLevel" onchange="updateDPS()">
-            <option value="max">Max Level</option>
-            <option value="1">Level 1</option>
-            <option value="2">Level 2</option>
-            <option value="3">Level 3</option>
-            <option value="4">Level 4</option>
-            <option value="5">Level 5</option>
-          </select>
-        </div>
-        <div class="dps-section">
-          <h3>Target Monster</h3>
-          <div id="dpsMobSelectedDisplay" style="display:none"></div>
-          <input type="text" class="dps-mob-search" id="dpsMobSearch" placeholder="Search monsters..." oninput="filterMobList(this.value)">
-          <div class="dps-mob-list" id="dpsMobList"></div>
-          <div id="dpsMobStats" style="font-size:11px;color:#aaa;margin-top:4px"></div>
-        </div>
-        <div class="dps-section">
-          <h3>Player Defense</h3>
-          <div class="dps-weapon-grid">
-            <label>Hard DEF</label>
-            <input class="dps-input" type="number" id="dpsPlayerDef" value="0" min="0" max="999" onchange="updateDPS()">
-            <label>Hard MDEF</label>
-            <input class="dps-input" type="number" id="dpsPlayerMDef" value="0" min="0" max="999" onchange="updateDPS()">
-          </div>
-          <div style="font-size:10px;color:#666;margin-top:4px">Soft DEF = VIT, Soft MDEF = INT (from stats above)</div>
-        </div>
-        <div class="dps-section">
-          <h3>Computed Stats</h3>
-          <div class="dps-computed" id="dpsComputed"></div>
-        </div>
-      </div>
-      <div class="dps-results">
-        <details class="dps-formulas" id="dpsFormulas">
-          <summary>Damage Formulas</summary>
-        </details>
-        <div id="dpsIncoming" style="display:none;background:#252538;border-radius:6px;padding:12px;margin-bottom:12px;font-size:12px"></div>
-        <div class="dps-count" id="dpsCount"></div>
-        <table class="dps-table">
-          <thead id="dpsTableHead"></thead>
-          <tbody id="dpsTableBody"></tbody>
-        </table>
       </div>
     </div>
   </div>
@@ -1283,7 +1208,6 @@ function switchTab(tabName) {
   history.replaceState(null, '', '#' + tabName);
   if (tabName === 'forge' && !forgeInitialized) initForge();
   if (tabName === 'elements') renderElementTable();
-  if (tabName === 'dps') initDPS();
   if (tabName === 'build') initBuildPlanner();
   if (tabName === 'npcs') initNPCs();
 }
@@ -1291,27 +1215,160 @@ function switchTab(tabName) {
 let forgeInitialized = false;
 let selectedForgeCategory = 'Weapons';
 let selectedRecipeIndex = -1;
+let selectedArmoryTab = 'Weapons';
+let armoryEquipData = null;
+let selectedArmoryItemGuid = null;
 
-function initForge() {
+const ARMORY_TABS = ['Weapons', 'Armor', 'Souls', 'Recipes'];
+
+async function initForge() {
   forgeInitialized = true;
-  if (!data?.recipes || data.recipes.length === 0) return;
 
-  // Gear crafting (defensive gear) is disabled in the playtest — hide the Gear tab.
-  // To restore: remove the .filter() call below so all categories are shown.
-  const categories = [...new Set(data.recipes.map(r => r.category))].filter(c => c !== 'Gear');
-  const tabsEl = document.getElementById('forgeTabs');
-  tabsEl.innerHTML = categories.map(c =>
-    `<button class="forge-tab ${c === selectedForgeCategory ? 'active' : ''}" onclick="selectForgeCategory('${c}')">${c}</button>`
+  // Render top-level armory tabs
+  const armoryTabsEl = document.getElementById('armoryTabs');
+  armoryTabsEl.innerHTML = ARMORY_TABS.map(t =>
+    `<button class="forge-tab ${t === selectedArmoryTab ? 'active' : ''}" onclick="selectArmoryTab('${t}')" style="font-size:13px">${t}</button>`
   ).join('');
 
-  renderRecipeList();
+  // Load equipment data for Weapons/Armor/Souls tabs
+  if (!armoryEquipData) {
+    try {
+      const resp = await fetch('equipment.json', _nocache);
+      armoryEquipData = await resp.json();
+    } catch(e) { console.error('Failed to load equipment.json for Armory', e); }
+  }
+
+  selectArmoryTab(selectedArmoryTab);
+}
+
+function selectArmoryTab(tab) {
+  selectedArmoryTab = tab;
+  document.querySelectorAll('#armoryTabs .forge-tab').forEach(b =>
+    b.classList.toggle('active', b.textContent === tab)
+  );
+
+  const forgeTabs = document.getElementById('forgeTabs');
+  if (tab === 'Recipes') {
+    forgeTabs.style.display = '';
+    // Init recipe sub-tabs if not done yet
+    if (data?.recipes && data.recipes.length > 0) {
+      const categories = [...new Set(data.recipes.map(r => r.category))].filter(c => c !== 'Gear');
+      forgeTabs.innerHTML = categories.map(c =>
+        `<button class="forge-tab ${c === selectedForgeCategory ? 'active' : ''}" onclick="selectForgeCategory('${c}')">${c}</button>`
+      ).join('');
+    }
+    selectedRecipeIndex = -1;
+    renderRecipeList();
+  } else {
+    forgeTabs.style.display = 'none';
+    selectedArmoryItemGuid = null;
+    renderArmoryEquipList();
+  }
 }
 
 function selectForgeCategory(cat) {
   selectedForgeCategory = cat;
-  document.querySelectorAll('.forge-tab').forEach(t => t.classList.toggle('active', t.textContent === cat));
+  document.querySelectorAll('#forgeTabs .forge-tab').forEach(t => t.classList.toggle('active', t.textContent === cat));
   selectedRecipeIndex = -1;
   renderRecipeList();
+}
+
+function renderArmoryEquipList() {
+  if (!armoryEquipData) return;
+  const list = document.getElementById('recipeList');
+  const detail = document.getElementById('forgeDetail');
+
+  let items = [];
+  if (selectedArmoryTab === 'Weapons') {
+    items = [...armoryEquipData.weapons].sort((a, b) => {
+      const ao = WEAPON_TYPE_ORDER[a.weaponType?.replace(/\s/g,'') ] ?? 99;
+      const bo = WEAPON_TYPE_ORDER[b.weaponType?.replace(/\s/g,'') ] ?? 99;
+      if (ao !== bo) return ao - bo;
+      const al = a.damage || a.magicDamage || 0;
+      const bl = b.damage || b.magicDamage || 0;
+      return al - bl;
+    });
+  } else if (selectedArmoryTab === 'Armor') {
+    const ARMOR_ORDER = ['Head','HeadMid','HeadLower','Back','Chest','Feet','Accessory'];
+    items = [...armoryEquipData.armor].sort((a, b) => {
+      const ao = ARMOR_ORDER.indexOf(a.armorType) ?? 99;
+      const bo = ARMOR_ORDER.indexOf(b.armorType) ?? 99;
+      if (ao !== bo) return ao - bo;
+      return (a.defense || 0) - (b.defense || 0);
+    });
+  } else if (selectedArmoryTab === 'Souls') {
+    items = [...armoryEquipData.souls].sort((a, b) => a.name.localeCompare(b.name));
+  }
+
+  list.innerHTML = items.map(item => {
+    const isSoul = item.damage === undefined && item.defense === undefined && item.armorType === undefined;
+    let typeLabel = '';
+    if (item.weaponType) typeLabel = item.weaponType.replace(/([A-Z])/g, ' $1').trim();
+    else if (item.armorType) typeLabel = item.armorType.replace(/([A-Z])/g, ' $1').trim();
+    else typeLabel = 'Soul Gem';
+
+    let statLabel = '';
+    if (item.damage != null && item.weaponType !== 'Shield') statLabel = item.magicDamage > 0 ? `MAtK ${item.magicDamage}` : `ATK ${item.damage}`;
+    else if (item.defense != null) statLabel = `DEF ${item.defense}`;
+
+    const icon = item.iconFile || '';
+    const selected = item.guid === selectedArmoryItemGuid;
+    return `<div class="recipe-row ${selected ? 'selected' : ''}" onclick="selectArmoryItem('${item.guid}')">
+      <div class="recipe-icon"><img src="${icon}" onerror="this.style.display='none'"></div>
+      <div>
+        <div class="recipe-name">${item.name}</div>
+        <div class="recipe-type">${typeLabel}</div>
+      </div>
+      ${statLabel ? `<div style="font-size:11px;color:#6cf;margin-left:auto;white-space:nowrap">${statLabel}</div>` : ''}
+    </div>`;
+  }).join('');
+
+  detail.innerHTML = '<div class="detail-empty">Select an item to view details</div>';
+  if (items.length > 0) selectArmoryItem(items[0].guid);
+}
+
+function selectArmoryItem(guid) {
+  selectedArmoryItemGuid = guid;
+  document.querySelectorAll('#recipeList .recipe-row').forEach(el => {
+    el.classList.toggle('selected', el.querySelector('.recipe-name')?.textContent === (
+      armoryEquipData?.weapons.find(w => w.guid === guid)?.name ||
+      armoryEquipData?.armor.find(a => a.guid === guid)?.name ||
+      armoryEquipData?.souls.find(s => s.guid === guid)?.name || ''
+    ));
+  });
+
+  const item = armoryEquipData?.weapons.find(w => w.guid === guid)
+            || armoryEquipData?.armor.find(a => a.guid === guid)
+            || armoryEquipData?.souls.find(s => s.guid === guid);
+  if (!item) return;
+
+  const detail = document.getElementById('forgeDetail');
+  const icon = item.iconFile || '';
+
+  let statsHtml = '';
+  if (item.damage != null) statsHtml += `<div>Attack: <b style="color:#6cf">${item.damage}</b></div>`;
+  if (item.magicDamage) statsHtml += `<div>Magic Attack: <b style="color:#6cf">${item.magicDamage}</b></div>`;
+  if (item.defense != null && item.defense > 0) statsHtml += `<div>Defense: <b style="color:#6cf">${item.defense}</b></div>`;
+  if (item.weaponType) statsHtml += `<div>Type: ${item.weaponType.replace(/([A-Z])/g, ' $1').trim()}</div>`;
+  if (item.armorType) statsHtml += `<div>Slot: ${item.armorType.replace(/([A-Z])/g, ' $1').trim()}</div>`;
+  if (item.weaponLevel) statsHtml += `<div>Weapon Level: ${item.weaponLevel}</div>`;
+  if (item.element) statsHtml += `<div>Element: <span class="element-badge elem-${item.element}">${item.element}</span></div>`;
+  if (item.soulSlots) statsHtml += `<div>Soul Slots: ${item.soulSlots}</div>`;
+  if (item.weight) statsHtml += `<div>Weight: ${item.weight}</div>`;
+  if (item.bonuses && item.bonuses.length > 0) {
+    const bonusLines = item.bonuses.map(b => b.text || (b.stat ? `+${b.amount || b.percent+'%'} ${b.stat}` : '')).filter(Boolean);
+    if (bonusLines.length > 0) statsHtml += `<div style="color:#8f8;margin-top:6px">${bonusLines.join('<br>')}</div>`;
+  }
+
+  detail.innerHTML = `
+    <div style="text-align:center;margin-bottom:16px">
+      <div style="width:80px;height:80px;margin:0 auto 8px;background:#111122;border:2px solid #555;border-radius:8px;display:flex;align-items:center;justify-content:center">
+        <img src="${icon}" style="max-width:90%;max-height:90%;object-fit:contain" onerror="this.style.display='none'">
+      </div>
+      <h2 style="font-size:18px">${item.name}</h2>
+      ${item.description ? `<div style="color:#aaa;font-size:12px;font-style:italic;margin:4px 0">${item.description}</div>` : ''}
+    </div>
+    <div style="font-size:13px;line-height:1.8">${statsHtml}</div>`;
 }
 
 const WEAPON_TYPE_ORDER = {
@@ -1653,596 +1710,6 @@ function searchSkills(query) {
   if (firstMatch) firstMatch.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'center' });
 }
 
-// ─── DPS Calculator ──────────────────────────────────────────────────
-let dpsInitialized = false;
-const DPS_STATS = ['STR','AGI','VIT','INT','DEX','LUCK'];
-
-function initDPS() {
-  if (dpsInitialized) return;
-  dpsInitialized = true;
-  if (!skillData) {
-    fetch('skills.json', _nocache).then(r => r.json()).then(d => {
-      skillData = d;
-      d.skills.forEach(s => skillMap[s.guid] = s);
-      buildDPSUI();
-    });
-  } else {
-    buildDPSUI();
-  }
-}
-
-let dpsMonsters = null;
-
-function buildDPSUI() {
-  // Stat sliders
-  const container = document.getElementById('dpsStatSliders');
-  container.innerHTML = DPS_STATS.map(stat => {
-    const saved = localStorage.getItem('dps_' + stat) || '1';
-    return `<div class="dps-stat-row">
-      <label>${stat}</label>
-      <input type="range" min="1" max="150" value="${saved}"
-             oninput="this.nextElementSibling.textContent=this.value;updateDPS()"
-             id="dps_${stat}">
-      <span class="dps-val">${saved}</span>
-    </div>`;
-  }).join('');
-
-  // Restore base level slider
-  const savedBL = localStorage.getItem('dps_BaseLevel');
-  if (savedBL) {
-    const blEl = document.getElementById('dpsBaseLevel');
-    blEl.value = savedBL;
-    blEl.nextElementSibling.textContent = savedBL;
-  }
-
-  // Populate weapon + monster dropdowns from bestiary data
-  function onBestiaryLoaded(d) {
-    dpsMonsters = d.monsters;
-    populateMobDropdown();
-    dpsWeapons = d.items.filter(i => i.weaponType && i.weaponType !== 'Shield');
-    populateWeaponDropdown();
-  }
-  if (data && data.monsters) {
-    onBestiaryLoaded(data);
-  } else {
-    fetch('bestiary.json', _nocache).then(r => r.json()).then(onBestiaryLoaded);
-  }
-
-  // Formula explanations
-  document.getElementById('dpsFormulas').innerHTML = `
-    <summary>Damage Formulas</summary>
-    <div style="margin-top:10px;display:grid;grid-template-columns:1fr 1fr;gap:10px">
-      <div><div style="color:#fa8;margin-bottom:2px">ATK (Melee)</div>
-        <code>floor(STR + trunc((STR/10)&sup2;) + DEX/5 + LUCK/5 + wpnDmg&times;(1+STR/200) + 1)</code>
-        <div style="color:#666;font-size:10px">+1 is baseATK from PlayerConfiguration</div></div>
-      <div><div style="color:#fa8;margin-bottom:2px">ATK (Bow)</div>
-        <code>floor(DEX + trunc((DEX/10)&sup2;) + STR/5 + LUCK/5 + wpnDmg&times;(1+DEX/200) + 1)</code></div>
-      <div><div style="color:#c8f;margin-bottom:2px">MATK</div>
-        <code>floor(INT + (INT/6)&sup2; + weaponMATK + 13)</code>
-        <div style="color:#666;font-size:10px">+13 is baseMATK from PlayerConfiguration</div></div>
-      <div><div style="color:#8cf;margin-bottom:2px">Cast Time</div>
-        <code>max(baseCast &times; (1 &minus; DEX/150), 100ms)</code>
-        <div style="color:#888;font-size:10px">If useCastTimePerLevel: baseCast &times; skillLevel</div></div>
-      <div><div style="color:#8f8;margin-bottom:2px">Skill Damage (avg)</div>
-        <code>ATK_or_MATK &times; multiplier% &times; hits</code>
-        <div style="color:#888;font-size:10px">Phys: &plusmn;10% variance, Magic: &plusmn;5% variance</div></div>
-      <div><div style="color:#8f8;margin-bottom:2px">DPS</div>
-        <code>damage / (castTime + afterCastDelay)</code>
-        <div style="color:#888;font-size:10px">0 cast + 0 delay = instant (shown as &infin;)</div></div>
-      <div><div style="color:#fc0;margin-bottom:2px">Hit Chance (physical only)</div>
-        <code>80 + attacker.HIT &minus; target.FLEE</code>
-        <div style="color:#888;font-size:10px">HIT = BaseLv + DEX &nbsp;|&nbsp; FLEE = BaseLv + AGI</div>
-        <div style="color:#888;font-size:10px">vs Monsters: unclamped (can exceed 100%)</div>
-        <div style="color:#888;font-size:10px">vs Players: clamped to 5%&ndash;95%</div>
-        <div style="color:#888;font-size:10px">Crits always hit. Magic never misses.</div></div>
-      <div style="grid-column:span 2;border-top:1px solid #333;padding-top:8px;color:#888">
-        <b style="color:#aaa">Defense reduction:</b> <code>hardDef / (hardDef + 100)</code> capped at 90%.
-        SoftDef (VIT for phys, INT for magic) subtracted <b>per hit</b>.
-        Select a target monster to see effective damage after defense + element.
-      </div>
-    </div>`;
-
-  // Clear cached rows (column count may have changed)
-  dpsRowMap = {};
-  document.getElementById('dpsTableBody').innerHTML = '';
-
-  // Table header
-  document.getElementById('dpsTableHead').innerHTML = `<tr>
-    <th onclick="sortDPSTable('name')">Skill</th>
-    <th onclick="sortDPSTable('archetype')">Class</th>
-    <th onclick="sortDPSTable('type')">Type</th>
-    <th onclick="sortDPSTable('multiplier')">Mult</th>
-    <th onclick="sortDPSTable('hits')">Hits</th>
-    <th onclick="sortDPSTable('element')">Elem</th>
-    <th onclick="sortDPSTable('castTime')">Cast</th>
-    <th onclick="sortDPSTable('delay')">Delay</th>
-    <th onclick="sortDPSTable('raw')">Raw</th>
-    <th onclick="sortDPSTable('hitPct')">Hit%</th>
-    <th onclick="sortDPSTable('damage')">Eff. Dmg</th>
-    <th onclick="sortDPSTable('dps')" class="sorted-desc">DPS</th>
-  </tr>`;
-
-  updateDPS();
-}
-
-let selectedMobGuid = '';
-
-function populateMobDropdown() {
-  renderMobList('');
-}
-
-function renderMobList(filter) {
-  const list = document.getElementById('dpsMobList');
-  const sorted = [...dpsMonsters].sort((a, b) => a.level - b.level);
-  const filtered = filter
-    ? sorted.filter(m => m.name.toLowerCase().includes(filter.toLowerCase()))
-    : sorted;
-
-  list.innerHTML = '';
-  // "None" option
-  const noneRow = document.createElement('div');
-  noneRow.className = 'dps-mob-row' + (!selectedMobGuid ? ' selected' : '');
-  noneRow.innerHTML = `<div class="mob-info"><div class="mob-name" style="color:#666;font-style:italic">No target (raw damage)</div></div>`;
-  noneRow.onclick = () => selectMob('');
-  list.appendChild(noneRow);
-
-  filtered.forEach(m => {
-    const row = document.createElement('div');
-    row.className = 'dps-mob-row' + (m.guid === selectedMobGuid ? ' selected' : '');
-    row.innerHTML = `
-      <img src="${m.iconFile || ''}" onerror="this.style.display='none'">
-      <div class="mob-info">
-        <div class="mob-name">${m.name}</div>
-        <div class="mob-meta">Lv${m.level} <span class="element-badge elem-${m.element}" style="font-size:9px;padding:0 4px">${m.element}</span> HP:${m.hp.toLocaleString()} DEF:${m.def} FLEE:${(m.level||0)+(m.agi||0)+(m.flee||0)}</div>
-      </div>`;
-    row.onclick = () => selectMob(m.guid);
-    list.appendChild(row);
-  });
-}
-
-function selectMob(guid) {
-  selectedMobGuid = guid;
-  const display = document.getElementById('dpsMobSelectedDisplay');
-  const search = document.getElementById('dpsMobSearch');
-
-  if (guid) {
-    const m = dpsMonsters.find(m => m.guid === guid);
-    if (m) {
-      display.style.display = '';
-      display.innerHTML = `<div class="dps-mob-selected">
-        <img src="${m.iconFile || ''}" onerror="this.style.display='none'">
-        <div>
-          <div class="mob-name">${m.name}</div>
-          <div style="font-size:10px;color:#aaa">Lv${m.level} <span class="element-badge elem-${m.element}" style="font-size:9px;padding:0 4px">${m.element}</span></div>
-        </div>
-        <button class="mob-clear" onclick="selectMob('')" title="Clear target">&times;</button>
-      </div>`;
-    }
-  } else {
-    display.style.display = 'none';
-  }
-
-  // Update selected highlight in list
-  document.querySelectorAll('#dpsMobList .dps-mob-row').forEach(row => row.classList.remove('selected'));
-  // Find and highlight the selected one
-  const rows = document.querySelectorAll('#dpsMobList .dps-mob-row');
-  if (!guid) { rows[0]?.classList.add('selected'); }
-  else {
-    rows.forEach(row => {
-      if (row.querySelector('.mob-name')?.textContent === dpsMonsters.find(m => m.guid === guid)?.name) {
-        row.classList.add('selected');
-      }
-    });
-  }
-
-  search.value = '';
-  renderMobList('');
-  updateDPS();
-}
-
-function filterMobList(query) {
-  renderMobList(query);
-}
-
-let dpsWeapons = [];
-const WEAPON_TYPE_LABELS = {
-  OneHandedAxe:'1H Axe',TwoHandedAxe:'2H Axe',OneHandedSword:'1H Sword',TwoHandedSword:'2H Sword',
-  OneHandedMace:'1H Mace',TwoHandedMace:'2H Mace',OneHandedStaff:'1H Staff',TwoHandedStaff:'2H Staff',
-  Bow:'Bow',Dagger:'Dagger',OneHandedSpear:'1H Spear',TwoHandedSpear:'2H Spear',Barehands:'Barehands'
-};
-// Refinement bonus per refine level, indexed by weaponLevel (from RefineConfig.cs)
-const REFINE_ATK  = { 1: 2, 2: 3, 3: 5, 4: 7 };
-const REFINE_MATK = { 1: 3, 2: 4, 3: 7, 4: 10 };
-
-function populateWeaponDropdown() {
-  const sel = document.getElementById('dpsWeaponSelect');
-  // Group by type
-  const byType = {};
-  dpsWeapons.forEach(w => {
-    const t = w.weaponType;
-    if (!byType[t]) byType[t] = [];
-    byType[t].push(w);
-  });
-  // Sort types, then weapons by damage within each type
-  const typeOrder = Object.keys(WEAPON_TYPE_LABELS);
-  typeOrder.forEach(type => {
-    const weapons = byType[type];
-    if (!weapons) return;
-    weapons.sort((a, b) => (b.damage + b.magicDamage) - (a.damage + a.magicDamage));
-    const group = document.createElement('optgroup');
-    group.label = WEAPON_TYPE_LABELS[type] || type;
-    weapons.forEach(w => {
-      const opt = document.createElement('option');
-      opt.value = w.guid;
-      const stat = w.magicDamage ? `${w.magicDamage} MATK` : `${w.damage} ATK`;
-      opt.textContent = `${w.name} (${stat}, Lv${w.weaponLevel})`;
-      group.appendChild(opt);
-    });
-    sel.appendChild(group);
-  });
-}
-
-function getSelectedWeapon() {
-  const guid = document.getElementById('dpsWeaponSelect').value;
-  if (!guid) return null;
-  return dpsWeapons.find(w => w.guid === guid) || null;
-}
-
-function onWeaponSelect() {
-  const w = getSelectedWeapon();
-  const info = document.getElementById('dpsWeaponInfo');
-  const refineSlider = document.getElementById('dpsRefine');
-  if (w) {
-    const refLv = parseInt(refineSlider.value) || 0;
-    const atkBonus = (REFINE_ATK[w.weaponLevel] || 0) * refLv;
-    const matkBonus = (REFINE_MATK[w.weaponLevel] || 0) * refLv;
-    const finalAtk = w.damage + (w.damage > 0 ? atkBonus : 0);
-    const finalMatk = w.magicDamage + (w.magicDamage > 0 ? matkBonus : 0);
-    let html = `<div style="display:grid;grid-template-columns:1fr 1fr;gap:2px 8px">`;
-    html += `<span>Type: <b>${WEAPON_TYPE_LABELS[w.weaponType] || w.weaponType}</b></span>`;
-    html += `<span>Wpn Lv: <b>${w.weaponLevel}</b></span>`;
-    if (w.damage > 0) html += `<span>ATK: <b style="color:#fa8">${w.damage}</b>${atkBonus > 0 ? ` <span style="color:#fc0">+${atkBonus}</span> = <b style="color:#fa8">${finalAtk}</b>` : ''}</span>`;
-    if (w.magicDamage > 0) html += `<span>MATK: <b style="color:#c8f">${w.magicDamage}</b>${matkBonus > 0 ? ` <span style="color:#fc0">+${matkBonus}</span> = <b style="color:#c8f">${finalMatk}</b>` : ''}</span>`;
-    html += `<span>Elem: <span class="element-badge elem-${w.element || 'Neutral'}" style="font-size:10px;padding:1px 4px">${w.element || 'Neutral'}</span></span>`;
-    if (w.soulSlots) html += `<span>Slots: ${w.soulSlots}</span>`;
-    html += `</div>`;
-    info.innerHTML = html;
-  } else {
-    info.innerHTML = '';
-  }
-  updateDPS();
-}
-
-function parseSkillDamage(skill, levelIndex) {
-  if (!skill.tooltips || !skill.tooltips.length) return null;
-  const idx = Math.min(levelIndex, skill.tooltips.length - 1);
-  const tt = skill.tooltips[idx];
-  if (!tt) return null;
-  const dm = tt.match(/Deals (ATK|MATK) (\d+)% (physical|magical) damage/);
-  if (!dm) return null;
-  const hm = tt.match(/(\d+) hits?\b/);
-  const em = tt.match(/Element: (\w+)/);
-  // Weapon weight scaling: "+10% damage per 50 weapon weight"
-  const wm = tt.match(/\+(\d+)% damage per (\d+) weapon weight/);
-  return {
-    damageType: dm[1],
-    multiplier: parseInt(dm[2]) / 100,
-    hits: hm ? parseInt(hm[1]) : 1,
-    element: em ? em[1] : 'Neutral',
-    weightPctPer: wm ? parseInt(wm[1]) : 0,
-    weightPer: wm ? parseInt(wm[2]) : 0
-  };
-}
-
-function getDefReduction(hardDef) {
-  return Math.min(Math.max(hardDef, 0) / (Math.max(hardDef, 0) + 100), 0.9);
-}
-
-function calcDPSForSkill(skill, atk, matk, dex, levelIndex, mob, weaponElem, wWeight, physHitPct) {
-  const d = parseSkillDamage(skill, levelIndex);
-  if (!d) return null;
-  const base = d.damageType === 'MATK' ? matk : atk;
-  // Weapon weight scaling: "+X% damage per Y weapon weight"
-  const weightMult = d.weightPctPer > 0 ? 1 + (Math.floor((wWeight || 0) / d.weightPer) * d.weightPctPer / 100) : 1;
-  // Tooltip % is TOTAL damage, hits split it (each hit = multiplier/hits)
-  const rawTotal = Math.floor(base * d.multiplier * weightMult);
-
-  // Cast time (ms)
-  let baseCastMs = skill.castTimeMs || 0;
-  if (skill.useCastTimePerLevel) baseCastMs *= (levelIndex + 1);
-  const reduction = Math.min(Math.max(dex / 150, 0), 1);
-  const castMs = baseCastMs > 0 ? Math.max(baseCastMs * (1 - reduction), 100) : 0;
-  const delayMs = (skill.afterCastDelay || 0) * 1000;
-  const cycleMs = castMs + delayMs;
-
-  // Effective damage (with mob defense + element)
-  let effTotal = rawTotal, elemMult = 1;
-  const isPhys = d.damageType === 'ATK';
-  // Hit chance: physical skills use passed hit%, magic always 100%
-  const hitPct = isPhys ? Math.min(Math.max(physHitPct ?? 100, 0), 100) / 100 : 1;
-  if (mob) {
-    // Resolve skill element ("Weapon" → use player's weapon element)
-    const atkElem = d.element === 'Weapon' ? (weaponElem || 'Neutral') : d.element;
-    elemMult = ELEM_TABLE[atkElem]?.[mob.element] ?? 1;
-    // Defense per hit: soft defense subtracted per hit
-    const hardDef = isPhys ? (mob.def || 0) : (mob.mdef || 0);
-    const softDef = isPhys ? (mob.vit || 0) : (mob.int || 0);
-    const defRed = getDefReduction(hardDef);
-    const perHitRaw = base * (d.multiplier / d.hits);
-    const perHitAfterDef = perHitRaw * (1 - defRed) - softDef;
-    effTotal = Math.floor(d.hits * Math.max(1, perHitAfterDef) * elemMult);
-  }
-
-  // Apply hit chance to effective damage and DPS
-  const effAfterHit = Math.floor(effTotal * hitPct);
-  const dps = cycleMs > 0 ? effAfterHit / (cycleMs / 1000) : Infinity;
-  return { ...d, rawTotal, effTotal: effAfterHit, effBeforeMiss: effTotal, elemMult, castMs, delayMs, cycleMs,
-           dps: isFinite(dps) ? Math.floor(dps) : Infinity, levelShown: levelIndex + 1, hitPct };
-}
-
-let dpsSortCol = 'dps', dpsSortDir = 'desc', dpsResults = [];
-
-function updateDPS() {
-  const stats = {};
-  DPS_STATS.forEach(s => {
-    const el = document.getElementById('dps_' + s);
-    stats[s] = el ? parseInt(el.value) : 1;
-    localStorage.setItem('dps_' + s, stats[s]);
-  });
-
-  // Weapon stats from selected weapon + refinement
-  const weapon = getSelectedWeapon();
-  const refLv = parseInt(document.getElementById('dpsRefine')?.value) || 0;
-  let wDmg = 0, wMATK = 0, wType = 'any', wElem = 'Neutral';
-  if (weapon) {
-    const atkRefBonus = weapon.damage > 0 ? (REFINE_ATK[weapon.weaponLevel] || 0) * refLv : 0;
-    const matkRefBonus = weapon.magicDamage > 0 ? (REFINE_MATK[weapon.weaponLevel] || 0) * refLv : 0;
-    wDmg = weapon.damage + atkRefBonus;
-    wMATK = weapon.magicDamage + matkRefBonus;
-    wType = weapon.weaponType;
-    wElem = weapon.element || 'Neutral';
-  }
-  const isBow = wType === 'Bow';
-
-  // ATK/MATK — (int)Math.Pow matches C# truncation. baseATK/baseMATK from PlayerConfiguration.
-  const BASE_ATK = 1, BASE_MATK = 13; // from SecondaryBaseStats (confirmed on live server)
-  const atk = isBow
-    ? Math.floor(stats.DEX + Math.trunc(Math.pow(stats.DEX/10, 2)) + stats.STR/5 + stats.LUCK/5 + wDmg * (1 + stats.DEX/200) + BASE_ATK)
-    : Math.floor(stats.STR + Math.trunc(Math.pow(stats.STR/10, 2)) + stats.DEX/5 + stats.LUCK/5 + wDmg * (1 + stats.STR/200) + BASE_ATK);
-  const matk = Math.floor(stats.INT + Math.pow(stats.INT/6, 2) + wMATK + BASE_MATK);
-  const castRed = Math.min(stats.DEX / 150, 1) * 100;
-  const baseLevel = parseInt(document.getElementById('dpsBaseLevel')?.value) || 1;
-  const playerHIT = baseLevel + stats.DEX;
-  const playerFLEE = baseLevel + stats.AGI;
-
-  // Target monster
-  const mob = selectedMobGuid && dpsMonsters ? dpsMonsters.find(m => m.guid === selectedMobGuid) : null;
-
-  // Hit chance vs target (physical only — magic never misses)
-  let hitChance = 100;
-  let mobEffFLEE = 0;
-  let mobEffHIT = 0;
-  let mobHitOnPlayer = 100;
-  if (mob) {
-    mobEffFLEE = (mob.level || 0) + (mob.agi || 0) + (mob.flee || 0);
-    mobEffHIT = (mob.level || 0) + (mob.dex || 0) + (mob.hit || 0);
-    hitChance = 80 + playerHIT - mobEffFLEE;  // unclamped vs monsters
-    mobHitOnPlayer = Math.min(Math.max(80 + mobEffHIT - playerFLEE, 5), 95); // clamped vs players
-  }
-
-  // Player defense (for incoming damage)
-  const playerHardDef = parseInt(document.getElementById('dpsPlayerDef').value) || 0;
-  const playerHardMDef = parseInt(document.getElementById('dpsPlayerMDef').value) || 0;
-
-  const hitColor = hitChance >= 100 ? '#8f8' : hitChance >= 80 ? '#fc0' : '#f88';
-  const mobHitColor = mobHitOnPlayer >= 80 ? '#f88' : mobHitOnPlayer >= 50 ? '#fc0' : '#8f8';
-  document.getElementById('dpsComputed').innerHTML = `
-    <div class="stat-row"><span class="stat-label">ATK</span><span class="stat-value" style="color:#fa8">${atk}</span></div>
-    <div class="stat-row"><span class="stat-label">MATK</span><span class="stat-value" style="color:#c8f">${matk}</span></div>
-    <div class="stat-row"><span class="stat-label">Cast Red.</span><span class="stat-value" style="color:#8cf">${castRed.toFixed(1)}%</span></div>
-    <div class="stat-row"><span class="stat-label">Wpn ATK</span><span class="stat-value">${wDmg}${refLv > 0 && weapon ? ' <span style="color:#fc0">+' + refLv + '</span>' : ''}</span></div>
-    <div class="stat-row"><span class="stat-label">HIT</span><span class="stat-value">${playerHIT} <span style="color:#666;font-size:10px">Lv${baseLevel}+${stats.DEX}DEX</span></span></div>
-    <div class="stat-row"><span class="stat-label">FLEE</span><span class="stat-value">${playerFLEE} <span style="color:#666;font-size:10px">Lv${baseLevel}+${stats.AGI}AGI</span></span></div>
-    ${mob ? `<div class="stat-row"><span class="stat-label">Hit%</span><span class="stat-value" style="color:${hitColor}">${Math.min(hitChance, 100)}%${hitChance > 100 ? ' <span style="color:#666;font-size:10px">('+hitChance+' raw)</span>' : ''}</span></div>` : ''}`;
-
-  // Show mob stats
-  const mobStatsEl = document.getElementById('dpsMobStats');
-  if (mob) {
-    const defRed = getDefReduction(mob.def);
-    const mdefRed = getDefReduction(mob.mdef);
-    mobStatsEl.innerHTML = `
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:2px 8px">
-        <span>HP: <b style="color:#f88">${mob.hp.toLocaleString()}</b></span>
-        <span>Lv: <b>${mob.level}</b></span>
-        <span>DEF: <b>${mob.def}</b> <span style="color:#666">(${(defRed*100).toFixed(0)}% red)</span></span>
-        <span>MDEF: <b>${mob.mdef}</b> <span style="color:#666">(${(mdefRed*100).toFixed(0)}% red)</span></span>
-        <span>VIT: <b>${mob.vit}</b> <span style="color:#666">(soft DEF)</span></span>
-        <span>INT: <b>${mob.int}</b> <span style="color:#666">(soft MDEF)</span></span>
-        <span>Elem: <span class="element-badge elem-${mob.element}" style="font-size:10px;padding:1px 4px">${mob.element}</span></span>
-        <span>ATK: <b style="color:#fa8">${mob.atk}</b></span>
-        <span>FLEE: <b>${mobEffFLEE}</b> <span style="color:#666">(${mob.agi||0}AGI+${mob.flee||0})</span></span>
-        <span>HIT: <b>${mobEffHIT}</b> <span style="color:#666">(${mob.dex||0}DEX+${mob.hit||0})</span></span>
-      </div>
-      <div style="margin-top:4px;padding:4px 6px;background:#1a2a1a;border-radius:4px;border:1px solid #333">
-        <span style="color:${hitColor}">You hit mob: <b>${Math.min(hitChance, 100)}%</b></span>
-        <span style="color:#666;font-size:10px">(80 + ${playerHIT} HIT − ${mobEffFLEE} FLEE = ${hitChance})</span>
-        <span style="margin-left:12px;color:${mobHitColor}">Mob hits you: <b>${mobHitOnPlayer}%</b></span>
-        <span style="color:#666;font-size:10px">(80 + ${mobEffHIT} − ${playerFLEE}, clamped 5-95)</span>
-      </div>`;
-  } else {
-    mobStatsEl.innerHTML = '';
-  }
-
-  // Compute skill results FIRST (needed for kill time calc)
-  const levelSel = document.getElementById('dpsSkillLevel').value;
-  dpsResults = [];
-  if (skillData?.skills) {
-    skillData.skills.forEach(s => {
-      if (s.isPassive) return;
-      if (wType !== 'any' && s.requiredWeapons && s.requiredWeapons.length > 0) {
-        if (!s.requiredWeapons.includes(wType)) return;
-      }
-      const maxLv = s.maxLevel || 1;
-      const lvIdx = levelSel === 'max' ? maxLv - 1 : Math.min(parseInt(levelSel) - 1, maxLv - 1);
-      const r = calcDPSForSkill(s, atk, matk, stats.DEX, lvIdx, mob, wElem, weapon?.weight || 0, hitChance);
-      if (r) dpsResults.push({ skill: s, ...r });
-    });
-  }
-
-  // Incoming damage from mob
-  const incomingEl = document.getElementById('dpsIncoming');
-  if (mob) {
-    const mobElemMult = ELEM_TABLE[mob.weaponElement || 'Neutral']?.['Neutral'] ?? 1;
-    const pDefRed = getDefReduction(playerHardDef);
-    const pMDefRed = getDefReduction(playerHardMDef);
-    const mobPhysDmg = Math.max(1, Math.floor((mob.atk * (1 - pDefRed) - stats.VIT) * mobElemMult));
-    const mobMagDmg = mob.matk > 0 ? Math.max(1, Math.floor((mob.matk * (1 - pMDefRed) - stats.INT) * mobElemMult)) : 0;
-    const mobAtkPerSec = mob.attackDelay > 0 ? (1 / mob.attackDelay) : 0;
-    const mobHitFrac = Math.min(Math.max(mobHitOnPlayer, 0), 100) / 100;
-    const mobPhysDPS = Math.floor(mobPhysDmg * mobAtkPerSec * mobHitFrac);
-    const playerHP = Math.floor((250 + 50 * 5) * (1 + stats.VIT * 0.01));
-    const ttk = mobPhysDPS > 0 ? (playerHP / mobPhysDPS).toFixed(1) : '∞';
-    const bestDPS = dpsResults.length > 0 ? Math.max(...dpsResults.map(r => isFinite(r.dps) ? r.dps : 0)) : 0;
-    const ttkMob = bestDPS > 0 ? (mob.hp / bestDPS).toFixed(1) : '∞';
-
-    incomingEl.style.display = '';
-    incomingEl.innerHTML = `
-      <div style="display:flex;gap:24px;flex-wrap:wrap;align-items:start">
-        <div>
-          <div style="color:#f88;font-weight:bold;margin-bottom:4px">Incoming Damage (${mob.name} → You)</div>
-          <div>Auto-attack: <b style="color:#f88">${mobPhysDmg}</b> per hit
-            <span style="color:#666">(${mob.attackDelay}s delay → ${mobAtkPerSec.toFixed(2)}/s)</span></div>
-          <div>Phys DPS: <b style="color:#f88">${mobPhysDPS}</b>
-            <span style="color:#666">| DEF red: ${(pDefRed*100).toFixed(0)}% + ${stats.VIT} VIT | Mob hit%: ${mobHitOnPlayer}%</span></div>
-          ${mobMagDmg > 0 ? `<div>Magic hit: <b style="color:#c8f">${mobMagDmg}</b>
-            <span style="color:#666">| MDEF red: ${(pMDefRed*100).toFixed(0)}% + ${stats.INT} INT (always hits)</span></div>` : ''}
-          <div>Mob element: <span class="element-badge elem-${mob.weaponElement||'Neutral'}" style="font-size:10px;padding:1px 4px">${mob.weaponElement||'Neutral'}</span>
-            → Neutral player: <b>${mobElemMult}x</b></div>
-        </div>
-        <div>
-          <div style="color:#8f8;font-weight:bold;margin-bottom:4px">Kill Times</div>
-          <div>You kill ${mob.name}: <b style="color:#8f8">${ttkMob}s</b>
-            <span style="color:#666">(${mob.hp.toLocaleString()} HP, best ${bestDPS.toLocaleString()} DPS)</span></div>
-          <div>Mob kills you: <b style="color:#f88">${ttk}s</b>
-            <span style="color:#666">(~${playerHP.toLocaleString()} HP, ${mobHitOnPlayer}% hit rate)</span></div>
-        </div>
-      </div>`;
-  } else {
-    incomingEl.style.display = 'none';
-  }
-
-  document.getElementById('dpsCount').textContent = mob
-    ? `${dpsResults.length} skills vs ${mob.name}`
-    : `${dpsResults.length} damaging skills (raw — no target)`;
-  sortAndRenderDPS();
-}
-
-function sortDPSTable(col) {
-  if (dpsSortCol === col) dpsSortDir = dpsSortDir === 'desc' ? 'asc' : 'desc';
-  else { dpsSortCol = col; dpsSortDir = 'name archetype element type'.includes(col) ? 'asc' : 'desc'; }
-  document.querySelectorAll('#dpsTableHead th').forEach(th => th.classList.remove('sorted-asc', 'sorted-desc'));
-  const cols = ['name','archetype','type','multiplier','hits','element','castTime','delay','raw','hitPct','damage','dps'];
-  const i = cols.indexOf(col);
-  if (i >= 0) document.querySelectorAll('#dpsTableHead th')[i].classList.add('sorted-' + dpsSortDir);
-  sortAndRenderDPS();
-}
-
-let dpsRowMap = {}; // guid -> { tr, lvSpan }
-
-function sortAndRenderDPS() {
-  const sorted = [...dpsResults].sort((a, b) => {
-    let va, vb;
-    switch (dpsSortCol) {
-      case 'name': va = a.skill.name; vb = b.skill.name; break;
-      case 'archetype': va = a.skill.archetype; vb = b.skill.archetype; break;
-      case 'type': va = a.damageType; vb = b.damageType; break;
-      case 'multiplier': va = a.multiplier; vb = b.multiplier; break;
-      case 'hits': va = a.hits; vb = b.hits; break;
-      case 'element': va = a.element; vb = b.element; break;
-      case 'castTime': va = a.castMs; vb = b.castMs; break;
-      case 'delay': va = a.delayMs; vb = b.delayMs; break;
-      case 'raw': va = a.rawTotal; vb = b.rawTotal; break;
-      case 'hitPct': va = a.hitPct; vb = b.hitPct; break;
-      case 'damage': va = a.effTotal; vb = b.effTotal; break;
-      default: va = a.dps; vb = b.dps;
-    }
-    if (typeof va === 'string') return dpsSortDir === 'asc' ? va.localeCompare(vb) : vb.localeCompare(va);
-    if (va === Infinity && vb === Infinity) return 0;
-    if (va === Infinity) return dpsSortDir === 'asc' ? 1 : -1;
-    if (vb === Infinity) return dpsSortDir === 'asc' ? -1 : 1;
-    return dpsSortDir === 'asc' ? va - vb : vb - va;
-  });
-
-  const archC = {Berserk:'#f44',Ranger:'#4a4',Mage:'#48f',Priest:'#ff8',Rogue:'#a4f',Blacksmith:'#fa4',Hunter:'#4a4'};
-  const fmtTime = ms => ms === 0 ? '—' : ms >= 1000 ? (ms/1000).toFixed(1)+'s' : Math.round(ms)+'ms';
-  const tbody = document.getElementById('dpsTableBody');
-  const activeGuids = new Set();
-
-  sorted.forEach(r => {
-    const guid = r.skill.guid;
-    activeGuids.add(guid);
-    let row = dpsRowMap[guid];
-
-    if (!row) {
-      // Create row once — icon never re-created
-      const tr = document.createElement('tr');
-      for (let i = 0; i < 12; i++) tr.appendChild(document.createElement('td'));
-      const s = r.skill;
-      const img = document.createElement('img');
-      img.className = 'skill-icon-sm';
-      img.src = s.iconFile || '';
-      img.onerror = function() { this.style.display = 'none'; };
-      tr.cells[0].appendChild(img);
-      tr.cells[0].appendChild(document.createTextNode(s.name + ' '));
-      const lvSpan = document.createElement('span');
-      lvSpan.style.cssText = 'color:#555;font-size:10px';
-      tr.cells[0].appendChild(lvSpan);
-      tr.cells[1].style.color = archC[s.archetype] || '#aaa';
-      tr.cells[1].textContent = s.archetype;
-      tr.cells[2].style.color = r.damageType === 'MATK' ? '#c8f' : '#fa8';
-      tr.cells[2].textContent = r.damageType;
-      tr.cells[8].style.cssText = 'color:#aaa';
-      tr.cells[9].style.cssText = 'font-size:11px';
-      tr.cells[10].style.cssText = 'color:#fff;font-weight:bold';
-      tr.cells[11].style.cssText = 'color:#8f8;font-weight:bold';
-      row = { tr, lvSpan, lastElem: '' };
-      dpsRowMap[guid] = row;
-    }
-
-    // Update only dynamic values
-    row.lvSpan.textContent = 'Lv' + r.levelShown;
-    row.tr.cells[3].textContent = Math.round(r.multiplier * 100) + '%';
-    row.tr.cells[4].textContent = r.hits > 1 ? r.hits : '';
-    // Element badge (only rebuild if changed)
-    const elemKey = r.element + (r.elemMult !== 1 ? r.elemMult : '');
-    if (row.lastElem !== elemKey) {
-      const multColor = r.elemMult > 1 ? '#8f8' : r.elemMult < 1 ? '#f88' : '';
-      const multStr = r.elemMult !== 1 ? ` <b style="color:${multColor}">${r.elemMult}x</b>` : '';
-      row.tr.cells[5].innerHTML = `<span class="element-badge elem-${r.element}" style="font-size:10px;padding:1px 5px">${r.element}</span>${multStr}`;
-      row.lastElem = elemKey;
-    }
-    row.tr.cells[6].textContent = fmtTime(r.castMs);
-    row.tr.cells[7].textContent = fmtTime(r.delayMs);
-    row.tr.cells[8].textContent = r.rawTotal.toLocaleString();
-    // Hit% column
-    const hp = Math.round(r.hitPct * 100);
-    row.tr.cells[9].textContent = r.damageType === 'MATK' ? '—' : hp + '%';
-    row.tr.cells[9].style.color = r.damageType === 'MATK' ? '#666' : (hp >= 100 ? '#8f8' : hp >= 80 ? '#fc0' : '#f88');
-    row.tr.cells[10].textContent = r.effTotal.toLocaleString();
-    row.tr.cells[11].textContent = r.dps === Infinity ? 'instant' : r.dps.toLocaleString();
-    row.tr.cells[11].style.color = r.dps === Infinity ? '#ff8' : '#8f8';
-    // appendChild moves existing nodes — reorders without recreating
-    tbody.appendChild(row.tr);
-  });
-
-  // Remove rows no longer in results
-  for (const guid in dpsRowMap) {
-    if (!activeGuids.has(guid)) {
-      dpsRowMap[guid].tr.remove();
-      delete dpsRowMap[guid];
-    }
-  }
-}
 
 // ─── Build Planner ──────────────────────────────────────────────────
 let bpInitialized = false;
@@ -2495,28 +1962,64 @@ function bpFilterPicker(query) {
 
 function bpRenderPickerItems(items) {
   const list = document.getElementById('bpPickerList');
-  list.innerHTML = items.map(item => {
+  if (!items.length) { list.innerHTML = '<div style="padding:12px;color:#888;text-align:center">No items found</div>'; return; }
+
+  // Group by weaponType or armorType
+  const groups = new Map();
+  for (const item of items) {
     const isWeapon = item.damage !== undefined;
-    let stats = '';
-    if (isWeapon) {
-      const shield = item.weaponType === 'Shield';
-      if (shield) stats = `DEF ${item.defense}`;
-      else stats = item.magicDamage > 0 ? `MATK ${item.magicDamage}` : `ATK ${item.damage}`;
-      stats += ` Lv${item.weaponLevel}`;
-    } else {
-      stats = `DEF ${item.defense}`;
+    let groupKey = isWeapon ? (item.weaponType || 'Other') : (item.armorType || 'Other');
+    if (!groups.has(groupKey)) groups.set(groupKey, []);
+    groups.get(groupKey).push(item);
+  }
+
+  // Sort items within each group by primary stat ascending
+  for (const [, groupItems] of groups) {
+    groupItems.sort((a, b) => {
+      const isWeaponA = a.damage !== undefined;
+      const av = isWeaponA ? (a.magicDamage > 0 ? a.magicDamage : (a.damage || 0)) : (a.defense || 0);
+      const isWeaponB = b.damage !== undefined;
+      const bv = isWeaponB ? (b.magicDamage > 0 ? b.magicDamage : (b.damage || 0)) : (b.defense || 0);
+      return av - bv;
+    });
+  }
+
+  // Sort groups by weapon type order or armor slot order
+  const ARMOR_SLOT_ORDER = ['Head','HeadMid','HeadLower','Back','Chest','Feet','Accessory','Other'];
+  const sortedGroups = [...groups.entries()].sort(([a], [b]) => {
+    const ao = WEAPON_TYPE_ORDER[a.replace(/\s/g,'')] ?? (ARMOR_SLOT_ORDER.indexOf(a) >= 0 ? ARMOR_SLOT_ORDER.indexOf(a) + 100 : 99);
+    const bo = WEAPON_TYPE_ORDER[b.replace(/\s/g,'')] ?? (ARMOR_SLOT_ORDER.indexOf(b) >= 0 ? ARMOR_SLOT_ORDER.indexOf(b) + 100 : 99);
+    return ao - bo;
+  });
+
+  let html = '';
+  for (const [groupKey, groupItems] of sortedGroups) {
+    const label = groupKey.replace(/([A-Z])/g, ' $1').trim();
+    if (sortedGroups.length > 1) html += `<div style="padding:4px 8px;font-size:10px;color:#888;background:#1a1a2e;border-bottom:1px solid #333;text-transform:uppercase;letter-spacing:0.5px">${label}</div>`;
+    for (const item of groupItems) {
+      const isWeapon = item.damage !== undefined;
+      let stats = '';
+      if (isWeapon) {
+        const shield = item.weaponType === 'Shield';
+        if (shield) stats = `DEF ${item.defense}`;
+        else stats = item.magicDamage > 0 ? `MAtK ${item.magicDamage}` : `ATK ${item.damage}`;
+        if (item.weaponLevel) stats += ` Lv${item.weaponLevel}`;
+      } else {
+        stats = `DEF ${item.defense}`;
+      }
+      if (item.soulSlots) stats += ` [${item.soulSlots}]`;
+      const bonusText = item.bonuses ? item.bonuses.map(b => b.text || '').filter(Boolean).join(', ') : '';
+      html += `<div class="bp-picker-item" onclick="bpSelectItem('${item.guid}')">
+        <img src="${item.iconFile || ''}" onerror="this.style.display='none'">
+        <div>
+          <div style="color:#e0d8c8">${item.name}</div>
+          ${bonusText ? `<div style="color:#8f8;font-size:10px">${bonusText}</div>` : ''}
+        </div>
+        <span class="item-stats">${stats}</span>
+      </div>`;
     }
-    if (item.soulSlots) stats += ` [${item.soulSlots}]`;
-    const bonusText = item.bonuses ? item.bonuses.map(b => b.text || '').filter(Boolean).join(', ') : '';
-    return `<div class="bp-picker-item" onclick="bpSelectItem('${item.guid}')">
-      <img src="${item.iconFile || ''}" onerror="this.style.display='none'">
-      <div>
-        <div style="color:#e0d8c8">${item.name}</div>
-        ${bonusText ? `<div style="color:#8f8;font-size:10px">${bonusText}</div>` : ''}
-      </div>
-      <span class="item-stats">${stats}</span>
-    </div>`;
-  }).join('');
+  }
+  list.innerHTML = html;
 }
 
 function bpSelectItem(guid) {
@@ -4331,15 +3834,16 @@ function renderNpcCard(npc) {
 // init first, then restore tab (URL hash > localStorage)
 init().then(() => {
   const hashTab = location.hash.replace('#', '');
-  const validTabs = ['bestiary','forge','skills','elements','dps','build','npcs'];
+  const validTabs = ['bestiary','forge','elements','build','npcs'];
+  const saved = localStorage.getItem('activeTab') || 'bestiary';
   const tab = (hashTab && validTabs.includes(hashTab)) ? hashTab
-            : localStorage.getItem('activeTab') || 'bestiary';
+            : (validTabs.includes(saved) ? saved : 'bestiary');
   switchTab(tab);
 });
 // Handle browser back/forward with hash changes
 window.addEventListener('hashchange', () => {
   const hashTab = location.hash.replace('#', '');
-  const validTabs = ['bestiary','forge','skills','elements','dps','build','npcs'];
+  const validTabs = ['bestiary','forge','elements','build','npcs'];
   if (hashTab && validTabs.includes(hashTab)) switchTab(hashTab);
 });
 </script>
