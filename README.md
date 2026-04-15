@@ -103,7 +103,7 @@ The architecture is documented in `CHANGELOG.md` and inline comments in `index.h
 
 ## Credits
 
-- **Zark** - Creator of Torebia
+- **Zark** — Creator of Torebia
 - **RTX** — original database tool through v4.2
 - **Rogane** — Help with formulas, database entries, and values
 
