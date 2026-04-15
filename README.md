@@ -101,6 +101,14 @@ The architecture is documented in `CHANGELOG.md` and inline comments in `index.h
 
 ---
 
+## Credits
+
+- **Zark** - Creator of Torebia
+- **RTX** — original database tool through v4.2
+- **Rogane** — Help with formulas, database entries, and values
+
+---
+
 ## Data
 
 Game data files (`*.json`) and image assets (`items/`, `monsters/`, `equipment/`, `skills/`) are extracted from the game and are the property of their respective owners. They are **not** covered by the MIT licence and are included here for informational/community purposes only.
