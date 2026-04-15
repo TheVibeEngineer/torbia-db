@@ -2,7 +2,7 @@
 
 A browser-based game database and build planner. Browse monsters, weapons, armour, skills, and plan your character build — all client-side, no server required beyond a simple static file host.
 
-![Game Database](https://img.shields.io/badge/version-4.5-green) ![License](https://img.shields.io/badge/license-MIT-blue)
+![Game Database](https://img.shields.io/badge/version-4.5.1-green) ![License](https://img.shields.io/badge/license-MIT-blue)
 
 ---
 

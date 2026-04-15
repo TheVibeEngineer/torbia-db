@@ -1,5 +1,18 @@
 # Game Database Changelog
 
+## v4.5.1 (2026-04-15)
+
+### Global Search (Ctrl+K)
+- Press Ctrl+K (or Cmd+K on Mac) to open full-text search across all data
+- Results grouped by category: Monsters, Equipment, Skills, NPCs
+- Clicking a result navigates directly to the right tab and item — equipment jumps to the correct Armory sub-tab, skill nodes pulse green to highlight location
+- Keyboard navigation: arrow keys to move, Enter to select, Escape to close
+- Search data pre-loaded silently on page init so results are instant
+- Search button in header as a visible entry point alongside the Ctrl+K shortcut
+
+### Header
+- Client version indicator added (right side, under What's New): "Up to date with Client 0.3.101"
+
 ## v4.5 (2026-04-15)
 
 ### Armory — Renamed from Forge
