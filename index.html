@@ -1218,7 +1218,7 @@ function showChangelog() {
 }
 
 function switchTab(tabName) {
-  document.querySelectorAll('.tab-btn').forEach(b => b.classList.toggle('active', b.textContent.toLowerCase().includes(tabName)));
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.toggle('active', b.getAttribute('onclick')?.includes(`'${tabName}'`)));
   document.querySelectorAll('.tab-content').forEach(t => t.classList.toggle('active', t.id === 'tab-' + tabName));
   localStorage.setItem('activeTab', tabName);
   // Update URL hash without scrolling
