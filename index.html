@@ -78,6 +78,21 @@ if (_dev) window.addEventListener('DOMContentLoaded', () => {
   .forge-tab { padding: 4px 12px; background: #2a2a3e; border: 1px solid #444; border-radius: 4px;
                cursor: pointer; font-size: 12px; color: #aaa; }
   .forge-tab.active { color: #8f8; border-color: #8f8; }
+  .armory-section-header { padding: 6px 10px 4px; font-size: 11px; font-weight: bold; color: #888;
+                            text-transform: uppercase; letter-spacing: .06em; border-top: 1px solid #2a2a3e;
+                            background: #111; margin-top: 4px; }
+  .armory-section-header:first-child { margin-top: 0; border-top: none; }
+  .src-filter-btn { padding: 2px 9px; background: #1a1a2e; border: 1px solid #444; border-radius: 10px;
+                    cursor: pointer; font-size: 11px; color: #777; transition: all .15s; }
+  .src-filter-btn.active { color: #fff; }
+  .src-filter-btn.active.sf-craft { border-color: #fc0; color: #fc0; background: #2a2400; }
+  .src-filter-btn.active.sf-shop  { border-color: #6cf; color: #6cf; background: #00192a; }
+  .src-filter-btn.active.sf-drop  { border-color: #f84; color: #f84; background: #2a1000; }
+  .src-badge { display:inline-block; padding:1px 5px; border-radius:8px; font-size:10px;
+               font-weight:bold; margin-left:3px; line-height:1.6; }
+  .src-badge-craft { background:#2a2400; color:#fc0; border:1px solid #fc0; }
+  .src-badge-shop  { background:#00192a; color:#6cf; border:1px solid #6cf; }
+  .src-badge-drop  { background:#2a1000; color:#f84; border:1px solid #f84; }
   .recipe-list { width: auto; overflow-y: auto; padding: 0 10px 10px; border-right: 2px solid #333;
                  flex-shrink: 0; min-width: 350px; min-height: 0; }
   .recipe-row { display: flex; align-items: center; gap: 8px; padding: 8px 10px; cursor: pointer;
@@ -518,6 +533,9 @@ if (_dev) window.addEventListener('DOMContentLoaded', () => {
     <div class="forge-container">
       <div style="display:flex;flex-direction:column;height:100%;overflow:hidden;">
         <div id="armoryTabs" style="flex-shrink:0;display:flex;gap:2px;padding:6px 8px;border-bottom:1px solid #333;background:#1a1a2e;flex-wrap:wrap;"></div>
+        <div id="armoryFilters" style="flex-shrink:0;display:flex;gap:6px;padding:5px 8px;border-bottom:1px solid #222;background:#111827;flex-wrap:wrap;align-items:center;">
+          <span style="font-size:11px;color:#666;margin-right:2px">Source:</span>
+        </div>
         <div class="recipe-list" id="recipeList" style="flex:1;overflow-y:auto;"></div>
       </div>
       <div class="forge-detail" id="forgeDetail" style="overflow-y:auto;">
@@ -1216,6 +1234,8 @@ let selectedArmoryTab = 'Weapons';
 let armoryEquipData = null;
 let selectedArmoryItemGuid = null;
 let armoryDupeNames = new Set(); // item names shared by >1 item (different soul slots)
+let armorySourceIndex = {};     // guid → { drops:[{mobName,dropRate}], shops:[{npcName,zone,buyPrice}], recipe:bool }
+let armorySourceFilters = new Set(['Crafted', 'Shop', 'Drop']); // active source filters
 
 const ARMORY_TABS = ['Weapons', 'Head', 'Head Lower', 'Back', 'Chest', 'Feet', 'Accessory', 'Souls'];
 const ARMORY_TAB_TO_SLOT = {
@@ -1229,6 +1249,93 @@ function buildDupeNameIndex(equipData) {
     counts[i.name] = (counts[i.name] || 0) + 1;
   });
   armoryDupeNames = new Set(Object.entries(counts).filter(([, c]) => c > 1).map(([n]) => n));
+}
+
+function buildSourceIndex(equipData, bestiaryData, npcData) {
+  armorySourceIndex = {};
+  const allGuids = new Set([
+    ...(equipData.weapons || []).map(w => w.guid),
+    ...(equipData.armor || []).map(a => a.guid),
+    ...(equipData.souls || []).map(s => s.guid),
+  ]);
+  allGuids.forEach(g => { armorySourceIndex[g] = { drops: [], shops: [], recipe: false }; });
+
+  // Monster drops
+  (bestiaryData?.monsters || []).forEach(mob => {
+    (mob.drops || []).forEach(drop => {
+      if (armorySourceIndex[drop.itemGuid]) {
+        armorySourceIndex[drop.itemGuid].drops.push({ mobName: mob.name, dropRate: drop.dropRate });
+      }
+    });
+  });
+
+  // NPC shops — each npc has shops[], each shop has items[]
+  (npcData?.npcs || []).forEach(npc => {
+    (npc.shops || []).forEach(shop => {
+      (shop.items || []).forEach(item => {
+        if (armorySourceIndex[item.itemGuid]) {
+          armorySourceIndex[item.itemGuid].shops.push({
+            npcName: npc.name, zone: npc.zone, buyPrice: item.buyPrice
+          });
+        }
+      });
+    });
+  });
+
+  // Craft recipes
+  (bestiaryData?.recipes || []).forEach(r => {
+    if (armorySourceIndex[r.resultGuid]) armorySourceIndex[r.resultGuid].recipe = true;
+  });
+}
+
+function renderArmoryFilterBar() {
+  const bar = document.getElementById('armoryFilters');
+  if (!bar) return;
+  const filters = [
+    { key: 'Crafted', cls: 'sf-craft', label: 'Crafted' },
+    { key: 'Shop',    cls: 'sf-shop',  label: 'Shop' },
+    { key: 'Drop',    cls: 'sf-drop',  label: 'Drop' },
+  ];
+  const btns = filters.map(f =>
+    `<button class="src-filter-btn ${f.cls} ${armorySourceFilters.has(f.key) ? 'active' : ''}"
+             onclick="toggleArmoryFilter('${f.key}')">${f.label}</button>`
+  ).join('');
+  bar.innerHTML = `<span style="font-size:11px;color:#666;margin-right:2px">Source:</span>${btns}`;
+}
+
+function toggleArmoryFilter(key) {
+  if (armorySourceFilters.has(key)) {
+    // Don't allow deselecting the last active filter
+    if (armorySourceFilters.size > 1) armorySourceFilters.delete(key);
+  } else {
+    armorySourceFilters.add(key);
+  }
+  renderArmoryFilterBar();
+  renderArmoryEquipList();
+}
+
+function itemMatchesSourceFilters(guid) {
+  const src = armorySourceIndex[guid];
+  if (!src) return true;
+  const hasCraft = src.recipe;
+  const hasShop = src.shops.length > 0;
+  const hasDrop = src.drops.length > 0;
+  // If item has no known source, always show it
+  if (!hasCraft && !hasShop && !hasDrop) return true;
+  if (armorySourceFilters.has('Crafted') && hasCraft) return true;
+  if (armorySourceFilters.has('Shop') && hasShop) return true;
+  if (armorySourceFilters.has('Drop') && hasDrop) return true;
+  return false;
+}
+
+function itemSourceBadges(guid) {
+  const src = armorySourceIndex[guid];
+  if (!src) return '';
+  let badges = '';
+  if (src.recipe) badges += `<span class="src-badge src-badge-craft">Craft</span>`;
+  if (src.shops.length) badges += `<span class="src-badge src-badge-shop">Shop</span>`;
+  if (src.drops.length) badges += `<span class="src-badge src-badge-drop">Drop</span>`;
+  return badges;
 }
 
 function armoryDisplayName(item) {
@@ -1250,12 +1357,18 @@ async function initForge() {
   // Load equipment data
   if (!armoryEquipData) {
     try {
-      const resp = await fetch('equipment.json', _nocache);
-      armoryEquipData = await resp.json();
+      const [eqResp, npcResp] = await Promise.all([
+        fetch('equipment.json', _nocache),
+        fetch('npcs.json', _nocache),
+      ]);
+      armoryEquipData = await eqResp.json();
+      const npcData = await npcResp.json();
       buildDupeNameIndex(armoryEquipData);
-    } catch(e) { console.error('Failed to load equipment.json for Armory', e); }
+      buildSourceIndex(armoryEquipData, data, npcData);
+    } catch(e) { console.error('Failed to load Armory data', e); }
   }
 
+  renderArmoryFilterBar();
   selectArmoryTab(selectedArmoryTab);
 }
 
@@ -1289,29 +1402,44 @@ function renderArmoryEquipList() {
       .sort((a, b) => (a.defense || 0) - (b.defense || 0));
   }
 
-  list.innerHTML = items.map(item => {
-    let typeLabel = '';
-    if (item.weaponType) typeLabel = item.weaponType.replace(/([A-Z])/g, ' $1').trim();
-    else if (item.armorType) typeLabel = item.armorType.replace(/([A-Z])/g, ' $1').trim();
-    else typeLabel = 'Soul Gem';
+  // Apply source filters
+  const filtered = items.filter(item => itemMatchesSourceFilters(item.guid));
 
+  function renderArmoryRow(item) {
     let statLabel = '';
     if (item.damage != null && item.weaponType !== 'Shield') statLabel = item.magicDamage > 0 ? `MAtK ${item.magicDamage}` : `ATK ${item.damage}`;
     else if (item.defense != null) statLabel = `DEF ${item.defense}`;
-
     const selected = item.guid === selectedArmoryItemGuid;
+    const badges = itemSourceBadges(item.guid);
     return `<div class="recipe-row ${selected ? 'selected' : ''}" data-guid="${item.guid}" onclick="selectArmoryItem('${item.guid}')">
       <div class="recipe-icon"><img src="${item.iconFile || ''}" onerror="this.style.display='none'"></div>
-      <div>
+      <div style="flex:1;min-width:0">
         <div class="recipe-name">${armoryDisplayName(item)}</div>
-        <div class="recipe-type">${typeLabel}</div>
+        ${badges ? `<div style="margin-top:3px">${badges}</div>` : ''}
       </div>
-      ${statLabel ? `<div style="font-size:11px;color:#6cf;margin-left:auto;white-space:nowrap">${statLabel}</div>` : ''}
+      ${statLabel ? `<div style="font-size:11px;color:#6cf;margin-left:8px;white-space:nowrap;flex-shrink:0">${statLabel}</div>` : ''}
     </div>`;
-  }).join('');
+  }
+
+  if (selectedArmoryTab === 'Weapons') {
+    // Group by weapon type with section headers
+    const groups = new Map();
+    filtered.forEach(item => {
+      const t = item.weaponType || 'Other';
+      if (!groups.has(t)) groups.set(t, []);
+      groups.get(t).push(item);
+    });
+    list.innerHTML = [...groups.entries()].map(([type, groupItems]) => {
+      const label = type.replace(/([A-Z])/g, ' $1').trim();
+      return `<div class="armory-section-header">${label}</div>${groupItems.map(renderArmoryRow).join('')}`;
+    }).join('') || '<div style="color:#555;padding:20px;text-align:center;font-size:13px">No items match current filters</div>';
+  } else {
+    list.innerHTML = filtered.map(renderArmoryRow).join('')
+      || '<div style="color:#555;padding:20px;text-align:center;font-size:13px">No items match current filters</div>';
+  }
 
   detail.innerHTML = '<div class="detail-empty">Select an item to view details</div>';
-  if (items.length > 0) selectArmoryItem(items[0].guid);
+  if (filtered.length > 0) selectArmoryItem(filtered[0].guid);
 }
 
 function selectArmoryItem(guid) {
@@ -1338,6 +1466,36 @@ function selectArmoryItem(guid) {
   if (item.bonuses && item.bonuses.length > 0) {
     const bonusLines = item.bonuses.map(b => b.text || (b.stat ? `+${b.amount || b.percent + '%'} ${b.stat}` : '')).filter(Boolean);
     if (bonusLines.length) statsHtml += `<div style="color:#8f8;margin-top:6px">${bonusLines.join('<br>')}</div>`;
+  }
+
+  // Source info — drops and shops
+  const src = armorySourceIndex[guid] || { drops: [], shops: [], recipe: false };
+  let sourceHtml = '';
+  if (src.drops.length > 0) {
+    const dropRows = src.drops.map(d =>
+      `<div style="display:flex;justify-content:space-between;padding:2px 0">
+        <span style="color:#ddd">${d.mobName}</span>
+        <span style="color:#f84;font-weight:bold">${parseFloat(d.dropRate.toFixed(2))}%</span>
+      </div>`
+    ).join('');
+    sourceHtml += `
+      <div style="margin-top:14px;border-top:1px solid #444;padding-top:10px">
+        <div style="font-size:13px;font-weight:bold;margin-bottom:6px;color:#f84">Drops From</div>
+        ${dropRows}
+      </div>`;
+  }
+  if (src.shops.length > 0) {
+    const shopRows = src.shops.map(s =>
+      `<div style="display:flex;justify-content:space-between;padding:2px 0">
+        <span style="color:#ddd">${s.npcName}${s.zone ? `<span style="color:#666;font-size:11px"> — ${s.zone}</span>` : ''}</span>
+        <span style="color:#6cf;font-weight:bold">${s.buyPrice.toLocaleString()}z</span>
+      </div>`
+    ).join('');
+    sourceHtml += `
+      <div style="margin-top:14px;border-top:1px solid #444;padding-top:10px">
+        <div style="font-size:13px;font-weight:bold;margin-bottom:6px;color:#6cf">Sold By</div>
+        ${shopRows}
+      </div>`;
   }
 
   // Craft recipe (if any)
@@ -1382,6 +1540,7 @@ function selectArmoryItem(guid) {
       ${item.description ? `<div style="color:#aaa;font-size:12px;font-style:italic;margin:4px 0">${item.description}</div>` : ''}
     </div>
     <div style="font-size:13px;line-height:1.8">${statsHtml}</div>
+    ${sourceHtml}
     ${recipeHtml}`;
 }
 
