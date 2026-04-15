@@ -29,8 +29,8 @@ The app uses `fetch()` to load JSON data files, so it must be served over HTTP â
 
 **Python (easiest):**
 ```bash
-git clone https://github.com/YOUR_USERNAME/game-db.git
-cd game-db
+git clone https://github.com/TheVibeEngineer/torbia-db.git
+cd torbia-db
 python3 -m http.server 8000
 ```
 Then open **http://localhost:8000** in your browser.
