@@ -1,5 +1,35 @@
 # Game Database Changelog
 
+## v4.5 (2026-04-15)
+
+### Armory — Renamed from Forge
+- Tab renamed from "Forge" to "Armory"; tab order updated to Bestiary → Armory → Build Planner → Elements → NPCs
+
+### Armory — Equipment organised by slot
+- Weapons, Head, Head Lower, Back, Chest, Feet, Accessory, Souls sub-tabs replace the old flat list
+- Weapon list grouped into sections by weapon type (One-Handed Sword, Two-Handed Axe, etc.)
+- Armor tabs filter to the relevant slot automatically — no redundant label on each card
+
+### Armory — Item source info
+- Source filter bar (Crafted / Shop / Drop) — multiselect, all on by default
+- Source badges (gold Craft / blue Shop / orange Drop) on each list card
+- Detail panel now shows **Drops From** (mob name + drop %) and **Sold By** (NPC name, zone, price) sections
+- Items that are both craftable and sold or dropped show all applicable badges
+
+### Armory — Duplicate name fix
+- Items sharing a display name are disambiguated with a `[N]` soul-slot suffix (e.g. Cloth Hood vs Cloth Hood [1])
+
+### Armory — Recipe info merged into item detail
+- Craft recipe (ingredients, anvil success rates) now appears inline in the item detail panel rather than as a separate pane
+
+### Build Planner — Equipment picker improvements
+- Picker grouped by weapon/armor type, sorted ATK/DEF low-to-high
+- Picker anchors to the slot button (top-left to top-right); falls back gracefully if near screen edge
+- Accessory picker no longer incorrectly center-aligns; long lists no longer clip at the bottom
+
+### DPS Calculator — Removed
+- DPS Calculator tab removed; all calculation capability lives in Build Planner
+
 ## v4.4 (2026-04-14)
 
 ### Build Planner — Weapon Element Imbue Skills
@@ -45,30 +75,17 @@
 ### Hit Chance System
 - **Bestiary**: HIT/FLEE now show effective values (Lv + DEX/AGI + base) with base in parentheses
 - **Bestiary**: Tooltip on HIT/FLEE rows shows full breakdown (hover anywhere on the row)
-- **DPS Calculator**: Added Base Level slider (1-99) for accurate HIT/FLEE calculation
-- **DPS Calculator**: Added HIT, FLEE, and Hit% to computed stats panel
-- **DPS Calculator**: Mob stats panel now shows effective FLEE, HIT, and hit chance both directions
-- **DPS Calculator**: Added Hit% column to skill table (physical only — magic shows "—")
-- **DPS Calculator**: Physical skill DPS now factors in miss chance (eff DPS = raw DPS x hit%)
-- **DPS Calculator**: Added Hit Chance formula to Damage Formulas panel
-- **DPS Calculator**: Mob list shows FLEE instead of MDEF for easier dodge comparison
-- **DPS Calculator**: Incoming mob DPS now factors in mob's hit chance on player
-- **DPS Calculator**: "Mob kills you" time accounts for mob miss rate
 - **Build Planner**: Fixed HIT formula from `DEX + LUCK/5` to correct `BaseLv + DEX`
 - **Build Planner**: Fixed FLEE formula from `AGI + LUCK/5` to correct `BaseLv + AGI`
 - **Build Planner**: Added Hit% to derived stats panel
 - **Build Planner**: Mob stats display shows FLEE and hit chance
 - **Build Planner**: Physical DPS factors in hit chance, Hit% column in DPS table
 - **Build Planner**: Kill time ("Die") accounts for mob miss rate
-- **Build Planner**: Fixed declaration ordering bug (requiredBaseLevel used before defined)
 
 ### Formulas
 - `HIT = BaseLevel + DEX + baseHIT`
 - `FLEE = BaseLevel + AGI + baseFLEE`
 - `hitChance = 80 + attacker.HIT - target.FLEE`
-- vs Monsters: unclamped (can exceed 100%)
-- vs Players: clamped to 5%-95%
-- Critical hits always land. Magic never misses.
 
 ## v4.1
 
