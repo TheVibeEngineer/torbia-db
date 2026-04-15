@@ -1,5 +1,15 @@
 # Game Database Changelog
 
+## v4.4 (2026-04-14)
+
+### Build Planner — Weapon Element Imbue Skills
+- **Sacred Blade** and **Poisoned Blade** now correctly override weapon element in DPS calculations when points are allocated
+- Any `Applies buff` skill whose tooltip contains an element imbue line (e.g. `"Main weapon gains Holy element"`, `"Imbues you with Poison element"`) is automatically detected — future element-imbue skills will work without code changes
+
+### Project
+- Published at **https://thevibeengineer.github.io/torbia-db** — no install required
+- Added MIT `LICENSE` file and `.gitignore`
+
 ## v4.3 (2026-04-14)
 
 ### Build Planner — Stat & Level Formula Fixes

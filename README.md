@@ -2,7 +2,7 @@
 
 A browser-based game database and build planner. Browse monsters, weapons, armour, skills, and plan your character build — all client-side, no server required beyond a simple static file host.
 
-![Game Database](https://img.shields.io/badge/version-4.3-green) ![License](https://img.shields.io/badge/license-MIT-blue)
+![Game Database](https://img.shields.io/badge/version-4.4-green) ![License](https://img.shields.io/badge/license-MIT-blue)
 
 ---
 
@@ -25,9 +25,17 @@ A browser-based game database and build planner. Browse monsters, weapons, armou
 
 ## Getting Started
 
+**Just want to use it?** Visit: **https://thevibeengineer.github.io/torbia-db**
+
+No installation required — runs entirely in your browser.
+
+---
+
+### Run locally
+
 The app uses `fetch()` to load JSON data files, so it must be served over HTTP — it won't work if you open `index.html` directly as a `file://` URL.
 
-**Python (easiest):**
+**Python:**
 ```bash
 git clone https://github.com/TheVibeEngineer/torbia-db.git
 cd torbia-db
@@ -72,11 +80,14 @@ If you spot incorrect stats, missing items, wrong skill values, or anything that
 ### Formula / mechanics corrections
 Game mechanics like damage formulas, stat scaling, and level curves were reverse-engineered from in-game observation. If you have better data points or can confirm/correct a formula, open an issue with your evidence and we'll update the code.
 
-### Known gaps (good first issues)
-- Sacred Blade / Poisoned Blade change weapon element — not yet wired into the DPS element table
-- Frenzy Slash stacking buff not modelled in DPS
-- Conqueror / Lethal Tempo on-hit stacking buffs not modelled in DPS
-- Formula passive bonuses currently use base stat values rather than fully-buffed values (two-pass calculation needed)
+### Known gaps
+- **Auto-attack DPS not modelled** — ASPD is calculated but never used to compute damage output; the DPS table only covers active skills. The ASPD → attacks/second formula needs in-game verification before this can be built.
+  - Frenzy Slash: on-use buff, max 5 stacks, +N ATK per stack (N = skill level) for 10s — would add to auto-attack baseline once that exists
+  - Conqueror: on-hit buff, max 3 stacks, +2/4/6 flat damage per stack for 10s — same
+  - Lethal Tempo: on-hit buff, max 5 stacks, +1 ASPD per stack, duration scales with skill level (3s–15s) — same
+- Formula passive bonuses (e.g. `+Strength/20 Attack`) — unclear whether the game calculates these off base stats only or base + flat bonuses; needs in-game verification before changing
+- Attunement passives (`+N% Fire/Ice/Earth/Electric skill damage`) are currently applied as a global damage multiplier rather than conditionally to matching-element skills only — needs element-conditional DPS logic to fix properly
+- Some skills (e.g. Blizzard) grant a weapon element imbue mid-tooltip (`"Imbues you with Ice element"`) but their first tooltip line is not `"Applies buff"`, so the element override is not currently detected — needs a broader parsing pass or case-by-case handling
 
 ### Code contributions
 The whole app is one HTML file. To make a change:
@@ -86,7 +97,7 @@ The whole app is one HTML file. To make a change:
 4. Test in browser
 5. Open a PR with a description of what you changed and why
 
-If you're using Claude Code, a `CLAUDE.md` is included with full architectural notes.
+The architecture is documented in `CHANGELOG.md` and inline comments in `index.html`.
 
 ---
 

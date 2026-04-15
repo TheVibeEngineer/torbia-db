@@ -3409,6 +3409,9 @@ function bpRecalc() {
         // "Forge Aura: always deal max physical damage"
         if (line.toLowerCase().includes('always deals maximum physical damage'))
           useMaxVariance = true;
+        // Weapon element override (e.g. Sacred Blade → Holy, Poisoned Blade → Poison)
+        const elemOverride = line.match(/(?:gains|with)\s+(\w+)\s+element/i);
+        if (elemOverride) weaponElem = elemOverride[1];
         // Reuse same parsing patterns as passive bonuses
         const pctDmg = line.match(/([+-]?\d+(?:\.\d+)?)%\s+damage\s+with\s+(\w+)\s+attacks/i)
                      || line.match(/([+-]?\d+(?:\.\d+)?)%\s+(\w+)\s+skill\s+damage/i);
