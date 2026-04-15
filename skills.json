@@ -1,0 +1,5241 @@
+{
+  "skills": [
+    {
+      "guid": "d54b9ae9e2bb2904daa3479eb6a5853c",
+      "name": "Vitality Surge",
+      "description": "Gives some HP",
+      "maxLevel": 3,
+      "isPassive": true,
+      "archetype": "Berserk",
+      "requiredSpentPoints": 0,
+      "x": 398.243469,
+      "y": -37.4450951,
+      "levels": [
+        {
+          "level": 1,
+          "bonuses": [
+            "+50 HP"
+          ]
+        },
+        {
+          "level": 2,
+          "bonuses": [
+            "+100 HP"
+          ]
+        },
+        {
+          "level": 3,
+          "bonuses": [
+            "+150 HP"
+          ]
+        }
+      ],
+      "iconFile": "skills/d54b9ae9e2bb2904daa3479eb6a5853c.png"
+    },
+    {
+      "guid": "e943f753d8d9b0a428ae92f75e9369ba",
+      "name": "Blessing",
+      "description": "Grants STR, INT and DEX",
+      "maxLevel": 5,
+      "isPassive": false,
+      "archetype": "Priest",
+      "requiredSpentPoints": 0,
+      "x": -238.8341,
+      "y": -73.88006,
+      "levels": [
+        {
+          "level": 1,
+          "manaCost": 10,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 2,
+          "manaCost": 15,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 3,
+          "manaCost": 20,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 4,
+          "manaCost": 25,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 5,
+          "manaCost": 30,
+          "hpCost": 0,
+          "moneyCost": 0
+        }
+      ],
+      "iconFile": "skills/e943f753d8d9b0a428ae92f75e9369ba.png",
+      "targetMask": "Ally",
+      "range": 15.0,
+      "afterCastDelay": 0.5,
+      "castTimeMs": 0,
+      "useCastTimePerLevel": false,
+      "canBeCancelled": false,
+      "tooltips": [
+        "Applies buff for 60s: Blessing\r\n+1 Strength\n+1 Intelligence\n+1 Dexterity.",
+        "Applies buff for 120s: Blessing\r\n+2 Strength\n+2 Intelligence\n+2 Dexterity.",
+        "Applies buff for 180s: Blessing\r\n+3 Strength\n+3 Intelligence\n+3 Dexterity.",
+        "Applies buff for 240s: Blessing\r\n+4 Strength\n+4 Intelligence\n+4 Dexterity.",
+        "Applies buff for 300s: Blessing\r\n+5 Strength\n+5 Intelligence\n+5 Dexterity."
+      ]
+    },
+    {
+      "guid": "730d8059ec34a174da01bd7175333dc2",
+      "name": "Flame Wave",
+      "description": "Blast fire damage in AOE",
+      "maxLevel": 5,
+      "isPassive": false,
+      "archetype": "Mage",
+      "requiredSpentPoints": 0,
+      "x": -283.165283,
+      "y": 640.169861,
+      "levels": [
+        {
+          "level": 1,
+          "manaCost": 15,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 2,
+          "manaCost": 20,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 3,
+          "manaCost": 25,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 4,
+          "manaCost": 30,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 5,
+          "manaCost": 35,
+          "hpCost": 0,
+          "moneyCost": 0
+        }
+      ],
+      "prerequisites": [
+        {
+          "skillGuid": "3e79de1df85678f43afe650ed0d52bb6",
+          "requiredLevel": 3
+        }
+      ],
+      "iconFile": "skills/730d8059ec34a174da01bd7175333dc2.png",
+      "targetMask": "Ground",
+      "range": 15.0,
+      "afterCastDelay": 5.0,
+      "castTimeMs": 600.0,
+      "useCastTimePerLevel": true,
+      "canBeCancelled": true,
+      "tooltips": [
+        "Hit up to 20 nearby enemies (radius 5.0m):\nDeals MATK 100% magical damage. Element: Fire.",
+        "Hit up to 20 nearby enemies (radius 5.0m):\nDeals MATK 200% magical damage. Element: Fire.",
+        "Hit up to 20 nearby enemies (radius 5.0m):\nDeals MATK 300% magical damage. Element: Fire.",
+        "Hit up to 20 nearby enemies (radius 5.0m):\nDeals MATK 400% magical damage. Element: Fire.",
+        "Hit up to 20 nearby enemies (radius 5.0m):\nDeals MATK 500% magical damage. Element: Fire."
+      ]
+    },
+    {
+      "guid": "ea6fa25c8674f934d81bbd66f1656135",
+      "name": "Berserker Roar",
+      "description": "Grrrrrrr",
+      "maxLevel": 5,
+      "isPassive": false,
+      "archetype": "Berserk",
+      "requiredSpentPoints": 40,
+      "x": 1000.0,
+      "y": 0.0,
+      "levels": [
+        {
+          "level": 1,
+          "manaCost": 10,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 2,
+          "manaCost": 20,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 3,
+          "manaCost": 30,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 4,
+          "manaCost": 40,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 5,
+          "manaCost": 50,
+          "hpCost": 0,
+          "moneyCost": 0
+        }
+      ],
+      "prerequisites": [
+        {
+          "skillGuid": "9ccc17f07fac3de499dc6c172b44da05",
+          "requiredLevel": 3
+        }
+      ],
+      "iconFile": "skills/ea6fa25c8674f934d81bbd66f1656135.png",
+      "targetMask": "Self",
+      "range": 5.0,
+      "afterCastDelay": 1.0,
+      "castTimeMs": 0,
+      "useCastTimePerLevel": false,
+      "canBeCancelled": false,
+      "tooltips": [
+        "Applies buff for 30s: Berserker Roar\r\n+3% damage with Physical attacks\nIncrease the damage taken from all sources by 2%.",
+        "Applies buff for 60s: Berserker Roar\r\n+6% damage with Physical attacks\nIncrease the damage taken from all sources by 4%.",
+        "Applies buff for 90s: Berserker Roar\r\n+9% damage with Physical attacks\nIncrease the damage taken from all sources by 6%.",
+        "Applies buff for 120s: Berserker Roar\r\n+12% damage with Physical attacks\nIncrease the damage taken from all sources by 8%.",
+        "Applies buff for 150s: Berserker Roar\r\n+15% damage with Physical attacks\nIncrease the damage taken from all sources by 10%."
+      ]
+    },
+    {
+      "guid": "ac595e4384132c249897b2864625abe4",
+      "name": "Rogue's gambit",
+      "description": "Let's play...",
+      "maxLevel": 5,
+      "isPassive": true,
+      "archetype": "Rogue",
+      "requiredSpentPoints": 25,
+      "x": -136.536621,
+      "y": -532.783,
+      "levels": [
+        {
+          "level": 1,
+          "bonuses": [
+            "+4 % Critical",
+            "Increase the damage taken from all sources by 2%"
+          ]
+        },
+        {
+          "level": 2,
+          "bonuses": [
+            "+8 % Critical",
+            "Increase the damage taken from all sources by 4%"
+          ]
+        },
+        {
+          "level": 3,
+          "bonuses": [
+            "+12 % Critical",
+            "Increase the damage taken from all sources by 6%"
+          ]
+        },
+        {
+          "level": 4,
+          "bonuses": [
+            "+16 % Critical",
+            "Increase the damage taken from all sources by 8%"
+          ]
+        },
+        {
+          "level": 5,
+          "bonuses": [
+            "+20 % Critical",
+            "Increase the damage taken from all sources by 10%"
+          ]
+        }
+      ],
+      "iconFile": "skills/ac595e4384132c249897b2864625abe4.png"
+    },
+    {
+      "guid": "fbb9463eb8c43034e89f6a44c6fb1cb7",
+      "name": "Divine Protection",
+      "description": "Divine defense...",
+      "maxLevel": 5,
+      "isPassive": true,
+      "archetype": "Priest",
+      "requiredSpentPoints": 0,
+      "x": -398.243469,
+      "y": -37.445034,
+      "levels": [
+        {
+          "level": 1,
+          "bonuses": [
+            "-3% damage taken from Demon enemies"
+          ]
+        },
+        {
+          "level": 2,
+          "bonuses": [
+            "-6% damage taken from Demon enemies"
+          ]
+        },
+        {
+          "level": 3,
+          "bonuses": [
+            "-9% damage taken from Demon enemies"
+          ]
+        },
+        {
+          "level": 4,
+          "bonuses": [
+            "-12% damage taken from Demon enemies"
+          ]
+        },
+        {
+          "level": 5,
+          "bonuses": [
+            "-15% damage taken from Demon enemies"
+          ]
+        }
+      ],
+      "iconFile": "skills/fbb9463eb8c43034e89f6a44c6fb1cb7.png"
+    },
+    {
+      "guid": "9ccc17f07fac3de499dc6c172b44da05",
+      "name": "Attack stance",
+      "description": "Sacrifices DEF in favor of ATK",
+      "maxLevel": 3,
+      "isPassive": true,
+      "archetype": "Berserk",
+      "requiredSpentPoints": 30,
+      "x": 820.394043,
+      "y": 222.381577,
+      "levels": [
+        {
+          "level": 1,
+          "bonuses": [
+            "-5 Defense",
+            "+10 Attack"
+          ]
+        },
+        {
+          "level": 2,
+          "bonuses": [
+            "-10 Defense",
+            "+20 Attack"
+          ]
+        },
+        {
+          "level": 3,
+          "bonuses": [
+            "-15 Defense",
+            "+30 Attack"
+          ]
+        }
+      ],
+      "iconFile": "skills/9ccc17f07fac3de499dc6c172b44da05.png"
+    },
+    {
+      "guid": "3e79de1df85678f43afe650ed0d52bb6",
+      "name": "Fire Attunement",
+      "description": "Pledge yourself to the fire element, empowering its spells",
+      "maxLevel": 3,
+      "isPassive": true,
+      "archetype": "Mage",
+      "requiredSpentPoints": 0,
+      "x": -136.53653,
+      "y": 532.7831,
+      "levels": [
+        {
+          "level": 1,
+          "bonuses": [
+            "+5% Fire skill damage"
+          ]
+        },
+        {
+          "level": 2,
+          "bonuses": [
+            "+10% Fire skill damage"
+          ]
+        },
+        {
+          "level": 3,
+          "bonuses": [
+            "+15% Fire skill damage"
+          ]
+        }
+      ],
+      "prerequisites": [
+        {
+          "skillGuid": "21aeef5db8f65ff4aa79cce34fcc9961",
+          "requiredLevel": 3
+        }
+      ],
+      "iconFile": "skills/3e79de1df85678f43afe650ed0d52bb6.png"
+    },
+    {
+      "guid": "120c01e2ab6e88540a0e8aed71aca0ff",
+      "name": "Edge tempering",
+      "description": "",
+      "maxLevel": 3,
+      "isPassive": true,
+      "archetype": "Blacksmith",
+      "requiredSpentPoints": 10,
+      "x": 177.074081,
+      "y": -677.233154,
+      "levels": [
+        {
+          "level": 1,
+          "bonuses": [
+            "+5% crafting success for OneHandedSword, TwoHandedSword, OneHandedAxe, TwoHandedAxe, Dagger"
+          ]
+        },
+        {
+          "level": 2,
+          "bonuses": [
+            "+10% crafting success for OneHandedSword, TwoHandedSword, OneHandedAxe, TwoHandedAxe, Dagger"
+          ]
+        },
+        {
+          "level": 3,
+          "bonuses": [
+            "+15% crafting success for OneHandedSword, TwoHandedSword, OneHandedAxe, TwoHandedAxe, Dagger"
+          ]
+        }
+      ],
+      "prerequisites": [
+        {
+          "skillGuid": "14897575f0264ac4a908e453e52ec8a4",
+          "requiredLevel": 3
+        }
+      ],
+      "iconFile": "skills/120c01e2ab6e88540a0e8aed71aca0ff.png"
+    },
+    {
+      "guid": "21aeef5db8f65ff4aa79cce34fcc9961",
+      "name": "firebolt",
+      "description": "A simple firebolt",
+      "maxLevel": 5,
+      "isPassive": false,
+      "archetype": "Mage",
+      "requiredSpentPoints": 0,
+      "x": -95.99335,
+      "y": 388.3108,
+      "levels": [
+        {
+          "level": 1,
+          "manaCost": 5,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 2,
+          "manaCost": 10,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 3,
+          "manaCost": 15,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 4,
+          "manaCost": 20,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 5,
+          "manaCost": 25,
+          "hpCost": 0,
+          "moneyCost": 0
+        }
+      ],
+      "iconFile": "skills/21aeef5db8f65ff4aa79cce34fcc9961.png",
+      "targetMask": "Enemy",
+      "range": 15.0,
+      "afterCastDelay": 1.0,
+      "castTimeMs": 500.0,
+      "useCastTimePerLevel": true,
+      "canBeCancelled": true,
+      "tooltips": [
+        "Deals MATK 100% magical damage. Element: Fire.",
+        "Deals MATK 200% magical damage. Element: Fire.",
+        "Deals MATK 300% magical damage. Element: Fire.",
+        "Deals MATK 400% magical damage. Element: Fire.",
+        "Deals MATK 500% magical damage. Element: Fire."
+      ]
+    },
+    {
+      "guid": "e156cd8054211c543ba53c7bf3fa4cf8",
+      "name": "Adrenaline Rush",
+      "description": "Gives some ASPD",
+      "maxLevel": 3,
+      "isPassive": true,
+      "archetype": "Berserk",
+      "requiredSpentPoints": 10,
+      "x": 529.671936,
+      "y": 148.1474,
+      "levels": [
+        {
+          "level": 1,
+          "bonuses": [
+            "+1 Attack Speed"
+          ]
+        },
+        {
+          "level": 2,
+          "bonuses": [
+            "+3 Attack Speed"
+          ]
+        },
+        {
+          "level": 3,
+          "bonuses": [
+            "+5 Attack Speed"
+          ]
+        }
+      ],
+      "iconFile": "skills/e156cd8054211c543ba53c7bf3fa4cf8.png"
+    },
+    {
+      "guid": "3b08922463cd2df41a9276c80c3887ac",
+      "name": "Bow Master",
+      "description": "Increases damage with Bows",
+      "maxLevel": 5,
+      "isPassive": true,
+      "archetype": "Hunter",
+      "requiredSpentPoints": 0,
+      "x": 183.399063,
+      "y": 169.896378,
+      "levels": [
+        {
+          "level": 1,
+          "bonuses": [
+            "+3% physical damage with Bow"
+          ]
+        },
+        {
+          "level": 2,
+          "bonuses": [
+            "+6% physical damage with Bow"
+          ]
+        },
+        {
+          "level": 3,
+          "bonuses": [
+            "+9% physical damage with Bow"
+          ]
+        },
+        {
+          "level": 4,
+          "bonuses": [
+            "+12% physical damage with Bow"
+          ]
+        },
+        {
+          "level": 5,
+          "bonuses": [
+            "+15% physical damage with Bow"
+          ]
+        }
+      ],
+      "iconFile": "skills/3b08922463cd2df41a9276c80c3887ac.png"
+    },
+    {
+      "guid": "e2f2b7a1dc6eb3a47bfe7ef160ee7ac1",
+      "name": "Double Strafe",
+      "description": "Throws two arrows at once",
+      "maxLevel": 5,
+      "isPassive": false,
+      "archetype": "Hunter",
+      "requiredSpentPoints": 0,
+      "x": 55.4350662,
+      "y": 243.776443,
+      "levels": [
+        {
+          "level": 1,
+          "manaCost": 12,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 2,
+          "manaCost": 12,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 3,
+          "manaCost": 12,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 4,
+          "manaCost": 12,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 5,
+          "manaCost": 12,
+          "hpCost": 0,
+          "moneyCost": 0
+        }
+      ],
+      "iconFile": "skills/e2f2b7a1dc6eb3a47bfe7ef160ee7ac1.png",
+      "requiredWeapons": [
+        "Bow"
+      ],
+      "targetMask": "Enemy",
+      "range": 0.0,
+      "afterCastDelay": 0.0,
+      "castTimeMs": 0,
+      "useCastTimePerLevel": false,
+      "canBeCancelled": false,
+      "tooltips": [
+        "Deals ATK 200% physical damage. Element: Weapon.",
+        "Deals ATK 240% physical damage. Element: Weapon.",
+        "Deals ATK 280% physical damage. Element: Weapon.",
+        "Deals ATK 320% physical damage. Element: Weapon.",
+        "Deals ATK 360% physical damage. Element: Weapon."
+      ]
+    },
+    {
+      "guid": "2cf9e57881542024f87d669fc8066d38",
+      "name": "Steal",
+      "description": "Stealing things...",
+      "maxLevel": 5,
+      "isPassive": false,
+      "archetype": "Rogue",
+      "requiredSpentPoints": 0,
+      "x": -288.290344,
+      "y": -277.288055,
+      "levels": [
+        {
+          "level": 1,
+          "manaCost": 8,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 2,
+          "manaCost": 10,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 3,
+          "manaCost": 12,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 4,
+          "manaCost": 14,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 5,
+          "manaCost": 16,
+          "hpCost": 0,
+          "moneyCost": 0
+        }
+      ],
+      "iconFile": "skills/2cf9e57881542024f87d669fc8066d38.png",
+      "targetMask": "Enemy",
+      "range": 0.0,
+      "afterCastDelay": 1.0,
+      "castTimeMs": 0,
+      "useCastTimePerLevel": false,
+      "canBeCancelled": false,
+      "tooltips": [
+        "Attempts to steal an item from the target monster.\nBase success chance: 10%\nItem steal rate depends on your DEX vs monster DEX.\nCannot steal from Boss, Frozen, or Petrified monsters.\nCan only steal once per monster.",
+        "Attempts to steal an item from the target monster.\nBase success chance: 20%\nItem steal rate depends on your DEX vs monster DEX.\nCannot steal from Boss, Frozen, or Petrified monsters.\nCan only steal once per monster.",
+        "Attempts to steal an item from the target monster.\nBase success chance: 30%\nItem steal rate depends on your DEX vs monster DEX.\nCannot steal from Boss, Frozen, or Petrified monsters.\nCan only steal once per monster.",
+        "Attempts to steal an item from the target monster.\nBase success chance: 40%\nItem steal rate depends on your DEX vs monster DEX.\nCannot steal from Boss, Frozen, or Petrified monsters.\nCan only steal once per monster.",
+        "Attempts to steal an item from the target monster.\nBase success chance: 50%\nItem steal rate depends on your DEX vs monster DEX.\nCannot steal from Boss, Frozen, or Petrified monsters.\nCan only steal once per monster."
+      ]
+    },
+    {
+      "guid": "8756d54763a790d4e9b6dc39595f35b2",
+      "name": "Overcharge",
+      "description": "",
+      "maxLevel": 5,
+      "isPassive": true,
+      "archetype": "Blacksmith",
+      "requiredSpentPoints": 0,
+      "x": 95.99333,
+      "y": -388.310822,
+      "levels": [
+        {
+          "level": 1,
+          "bonuses": [
+            "+6% money when selling items to NPCs"
+          ]
+        },
+        {
+          "level": 2,
+          "bonuses": [
+            "+12% money when selling items to NPCs"
+          ]
+        },
+        {
+          "level": 3,
+          "bonuses": [
+            "+18% money when selling items to NPCs"
+          ]
+        },
+        {
+          "level": 4,
+          "bonuses": [
+            "+24% money when selling items to NPCs"
+          ]
+        },
+        {
+          "level": 5,
+          "bonuses": [
+            "+30% money when selling items to NPCs"
+          ]
+        }
+      ],
+      "iconFile": "skills/8756d54763a790d4e9b6dc39595f35b2.png"
+    },
+    {
+      "guid": "a803ac4310768f144a6cddc1676f64ce",
+      "name": "Divine Focus",
+      "description": "Dedicate yourself to the healing arts, channeling divine energy to mend wounds",
+      "maxLevel": 5,
+      "isPassive": true,
+      "archetype": "Priest",
+      "requiredSpentPoints": 0,
+      "x": -384.2837,
+      "y": 111.022758,
+      "levels": [
+        {
+          "level": 1,
+          "bonuses": [
+            "+3% healing effectiveness"
+          ]
+        },
+        {
+          "level": 2,
+          "bonuses": [
+            "+6% healing effectiveness"
+          ]
+        },
+        {
+          "level": 3,
+          "bonuses": [
+            "+9% healing effectiveness"
+          ]
+        },
+        {
+          "level": 4,
+          "bonuses": [
+            "+12% healing effectiveness"
+          ]
+        },
+        {
+          "level": 5,
+          "bonuses": [
+            "+15% healing effectiveness"
+          ]
+        }
+      ],
+      "iconFile": "skills/a803ac4310768f144a6cddc1676f64ce.png"
+    },
+    {
+      "guid": "2f6dcfe62f859a342822f7d7955526dc",
+      "name": "Blood Resolve",
+      "description": "",
+      "maxLevel": 3,
+      "isPassive": true,
+      "archetype": "Berserk",
+      "requiredSpentPoints": 10,
+      "x": 550.0,
+      "y": 0.0,
+      "levels": [
+        {
+          "level": 1,
+          "bonuses": [
+            "+2 Attack"
+          ]
+        },
+        {
+          "level": 2,
+          "bonuses": [
+            "+4 Attack"
+          ]
+        },
+        {
+          "level": 3,
+          "bonuses": [
+            "+6 Attack"
+          ]
+        }
+      ],
+      "iconFile": "skills/2f6dcfe62f859a342822f7d7955526dc.png"
+    },
+    {
+      "guid": "3cb808111a6037948b4a6b17002101c3",
+      "name": "Roll the dice",
+      "description": "Funny rolls",
+      "maxLevel": 5,
+      "isPassive": false,
+      "archetype": "Rogue",
+      "requiredSpentPoints": 30,
+      "x": -412.820648,
+      "y": -565.313232,
+      "levels": [
+        {
+          "level": 1,
+          "manaCost": 10,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 2,
+          "manaCost": 20,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 3,
+          "manaCost": 30,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 4,
+          "manaCost": 40,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 5,
+          "manaCost": 50,
+          "hpCost": 0,
+          "moneyCost": 0
+        }
+      ],
+      "iconFile": "skills/3cb808111a6037948b4a6b17002101c3.png",
+      "targetMask": "Self",
+      "range": 5.0,
+      "afterCastDelay": 0.0,
+      "castTimeMs": 0,
+      "useCastTimePerLevel": false,
+      "canBeCancelled": false,
+      "tooltips": [
+        "Rolls a dice (1-6) and applies that many random buffs to yourself for 30s from a pool of possible effects.\r\n\r\nCannot be used again while the effects are still active.\r\n\r\nPossible buffs:\r\n- Applies buff (self) for 10s: Roll the dice: ATK\r\n+30 Attack\r\n- Applies buff (self) for 10s: Roll the dice: Armor penetration\r\n+25 % Armor Penetration\r\n- Applies buff (self) for 10s: Roll the dice: ASPD\r\n+10 Attack Speed\r\n- Applies buff (self) for 10s: Roll the dice: CRIT\r\n+30 % Critical\r\n- Applies buff (self) for 10s: Roll the dice: CRIT Damage\r\n+40 % Critical Damage\r\n- Applies buff (self) for 10s: Roll the dice: FLEE\r\n+20 Flee",
+        "Rolls a dice (1-6) and applies that many random buffs to yourself for 60s from a pool of possible effects.\r\n\r\nCannot be used again while the effects are still active.\r\n\r\nPossible buffs:\r\n- Applies buff (self) for 10s: Roll the dice: ATK\r\n+30 Attack\r\n- Applies buff (self) for 10s: Roll the dice: Armor penetration\r\n+25 % Armor Penetration\r\n- Applies buff (self) for 10s: Roll the dice: ASPD\r\n+10 Attack Speed\r\n- Applies buff (self) for 10s: Roll the dice: CRIT\r\n+30 % Critical\r\n- Applies buff (self) for 10s: Roll the dice: CRIT Damage\r\n+40 % Critical Damage\r\n- Applies buff (self) for 10s: Roll the dice: FLEE\r\n+20 Flee",
+        "Rolls a dice (1-6) and applies that many random buffs to yourself for 90s from a pool of possible effects.\r\n\r\nCannot be used again while the effects are still active.\r\n\r\nPossible buffs:\r\n- Applies buff (self) for 10s: Roll the dice: ATK\r\n+30 Attack\r\n- Applies buff (self) for 10s: Roll the dice: Armor penetration\r\n+25 % Armor Penetration\r\n- Applies buff (self) for 10s: Roll the dice: ASPD\r\n+10 Attack Speed\r\n- Applies buff (self) for 10s: Roll the dice: CRIT\r\n+30 % Critical\r\n- Applies buff (self) for 10s: Roll the dice: CRIT Damage\r\n+40 % Critical Damage\r\n- Applies buff (self) for 10s: Roll the dice: FLEE\r\n+20 Flee",
+        "Rolls a dice (1-6) and applies that many random buffs to yourself for 120s from a pool of possible effects.\r\n\r\nCannot be used again while the effects are still active.\r\n\r\nPossible buffs:\r\n- Applies buff (self) for 10s: Roll the dice: ATK\r\n+30 Attack\r\n- Applies buff (self) for 10s: Roll the dice: Armor penetration\r\n+25 % Armor Penetration\r\n- Applies buff (self) for 10s: Roll the dice: ASPD\r\n+10 Attack Speed\r\n- Applies buff (self) for 10s: Roll the dice: CRIT\r\n+30 % Critical\r\n- Applies buff (self) for 10s: Roll the dice: CRIT Damage\r\n+40 % Critical Damage\r\n- Applies buff (self) for 10s: Roll the dice: FLEE\r\n+20 Flee",
+        "Rolls a dice (1-6) and applies that many random buffs to yourself for 150s from a pool of possible effects.\r\n\r\nCannot be used again while the effects are still active.\r\n\r\nPossible buffs:\r\n- Applies buff (self) for 10s: Roll the dice: ATK\r\n+30 Attack\r\n- Applies buff (self) for 10s: Roll the dice: Armor penetration\r\n+25 % Armor Penetration\r\n- Applies buff (self) for 10s: Roll the dice: ASPD\r\n+10 Attack Speed\r\n- Applies buff (self) for 10s: Roll the dice: CRIT\r\n+30 % Critical\r\n- Applies buff (self) for 10s: Roll the dice: CRIT Damage\r\n+40 % Critical Damage\r\n- Applies buff (self) for 10s: Roll the dice: FLEE\r\n+20 Flee"
+      ]
+    },
+    {
+      "guid": "6d6b2455f3f41f6439fb4c8d92824222",
+      "name": "Hammer Tap",
+      "description": "Quick neutral strike, scales with weapon weight",
+      "maxLevel": 5,
+      "isPassive": false,
+      "archetype": "Blacksmith",
+      "requiredSpentPoints": 0,
+      "x": 183.399078,
+      "y": -169.896378,
+      "levels": [
+        {
+          "level": 1,
+          "manaCost": 8,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 2,
+          "manaCost": 10,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 3,
+          "manaCost": 12,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 4,
+          "manaCost": 14,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 5,
+          "manaCost": 16,
+          "hpCost": 0,
+          "moneyCost": 0
+        }
+      ],
+      "iconFile": "skills/6d6b2455f3f41f6439fb4c8d92824222.png",
+      "requiredWeapons": [
+        "OneHandedAxe",
+        "TwoHandedAxe",
+        "OneHandedSword",
+        "TwoHandedSword",
+        "OneHandedMace",
+        "TwoHandedMace",
+        "Dagger",
+        "OneHandedAxe"
+      ],
+      "targetMask": "Enemy",
+      "range": 0.0,
+      "afterCastDelay": 0.0,
+      "castTimeMs": 0,
+      "useCastTimePerLevel": false,
+      "canBeCancelled": false,
+      "tooltips": [
+        "Deals ATK 100% physical damage. Element: Weapon. +10% damage per 50 weapon weight.",
+        "Deals ATK 150% physical damage. Element: Weapon. +10% damage per 50 weapon weight.",
+        "Deals ATK 200% physical damage. Element: Weapon. +10% damage per 50 weapon weight.",
+        "Deals ATK 250% physical damage. Element: Weapon. +10% damage per 50 weapon weight.",
+        "Deals ATK 300% physical damage. Element: Weapon. +10% damage per 50 weapon weight."
+      ]
+    },
+    {
+      "guid": "8dd9d868c19ea724a9c48da84ef6cdd4",
+      "name": "Two-handed Quicken",
+      "description": "Increas your attack speed",
+      "maxLevel": 5,
+      "isPassive": false,
+      "archetype": "Berserk",
+      "requiredSpentPoints": 0,
+      "x": 836.799,
+      "y": -149.222687,
+      "levels": [
+        {
+          "level": 1,
+          "manaCost": 14,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 2,
+          "manaCost": 22,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 3,
+          "manaCost": 34,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 4,
+          "manaCost": 42,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 5,
+          "manaCost": 50,
+          "hpCost": 0,
+          "moneyCost": 0
+        }
+      ],
+      "prerequisites": [
+        {
+          "skillGuid": "17d622d059b84ec4f8c0e439a7e5e707",
+          "requiredLevel": 3
+        }
+      ],
+      "iconFile": "skills/8dd9d868c19ea724a9c48da84ef6cdd4.png",
+      "requiredWeapons": [
+        "TwoHandedSword"
+      ],
+      "targetMask": "Self",
+      "range": 5.0,
+      "afterCastDelay": 1.0,
+      "castTimeMs": 0,
+      "useCastTimePerLevel": false,
+      "canBeCancelled": false,
+      "tooltips": [
+        "Applies buff for 30s: Two Handed Quicken\r\n+2 Attack Speed (Condition: Main weapon: Two-Handed Sword).",
+        "Applies buff for 60s: Two Handed Quicken\r\n+4 Attack Speed (Condition: Main weapon: Two-Handed Sword).",
+        "Applies buff for 90s: Two Handed Quicken\r\n+6 Attack Speed (Condition: Main weapon: Two-Handed Sword).",
+        "Applies buff for 120s: Two Handed Quicken\r\n+8 Attack Speed (Condition: Main weapon: Two-Handed Sword).",
+        "Applies buff for 150s: Two Handed Quicken\r\n+10 Attack Speed (Condition: Main weapon: Two-Handed Sword)."
+      ]
+    },
+    {
+      "guid": "a8545cb1d9d909845b364ad6347ae3ca",
+      "name": "Deep Pockets",
+      "description": "",
+      "maxLevel": 5,
+      "isPassive": true,
+      "archetype": "Blacksmith",
+      "requiredSpentPoints": 0,
+      "x": 55.4351044,
+      "y": -243.776428,
+      "levels": [
+        {
+          "level": 1,
+          "bonuses": [
+            "+500 Max Weight"
+          ]
+        },
+        {
+          "level": 2,
+          "bonuses": [
+            "+1000 Max Weight"
+          ]
+        },
+        {
+          "level": 3,
+          "bonuses": [
+            "+1500 Max Weight"
+          ]
+        },
+        {
+          "level": 4,
+          "bonuses": [
+            "+2000 Max Weight"
+          ]
+        },
+        {
+          "level": 5,
+          "bonuses": [
+            "+2500 Max Weight"
+          ]
+        }
+      ],
+      "iconFile": "skills/a8545cb1d9d909845b364ad6347ae3ca.png"
+    },
+    {
+      "guid": "13de1fa8931fabd46af88dee4be2354c",
+      "name": "Heal",
+      "description": "I'll take care of you...",
+      "maxLevel": 5,
+      "isPassive": false,
+      "archetype": "Priest",
+      "requiredSpentPoints": 0,
+      "x": -238.8341,
+      "y": 73.88007,
+      "levels": [
+        {
+          "level": 1,
+          "manaCost": 15,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 2,
+          "manaCost": 15,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 3,
+          "manaCost": 25,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 4,
+          "manaCost": 25,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 5,
+          "manaCost": 30,
+          "hpCost": 0,
+          "moneyCost": 0
+        }
+      ],
+      "iconFile": "skills/13de1fa8931fabd46af88dee4be2354c.png",
+      "targetMask": "Ally",
+      "range": 15.0,
+      "afterCastDelay": 1.0,
+      "castTimeMs": 0,
+      "useCastTimePerLevel": false,
+      "canBeCancelled": false,
+      "tooltips": [
+        "Heals a target for [(BaseLV+INT)/8]*(4+8*SkillLV) HP. Deals half the heal as damage if the target is Undead.",
+        "Heals a target for [(BaseLV+INT)/8]*(4+8*SkillLV) HP. Deals half the heal as damage if the target is Undead.",
+        "Heals a target for [(BaseLV+INT)/8]*(4+8*SkillLV) HP. Deals half the heal as damage if the target is Undead.",
+        "Heals a target for [(BaseLV+INT)/8]*(4+8*SkillLV) HP. Deals half the heal as damage if the target is Undead.",
+        "Heals a target for [(BaseLV+INT)/8]*(4+8*SkillLV) HP. Deals half the heal as damage if the target is Undead."
+      ]
+    },
+    {
+      "guid": "109e1b0881777844eab2ded027352739",
+      "name": "Improve Concentration",
+      "description": "Concentrate yourself...",
+      "maxLevel": 5,
+      "isPassive": false,
+      "archetype": "Hunter",
+      "requiredSpentPoints": 10,
+      "x": 136.536545,
+      "y": 532.783,
+      "levels": [
+        {
+          "level": 1,
+          "manaCost": 10,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 2,
+          "manaCost": 20,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 3,
+          "manaCost": 30,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 4,
+          "manaCost": 40,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 5,
+          "manaCost": 50,
+          "hpCost": 0,
+          "moneyCost": 0
+        }
+      ],
+      "iconFile": "skills/109e1b0881777844eab2ded027352739.png",
+      "targetMask": "Self",
+      "range": 5.0,
+      "afterCastDelay": 1.0,
+      "castTimeMs": 0,
+      "useCastTimePerLevel": false,
+      "canBeCancelled": false,
+      "tooltips": [
+        "Applies buff for 60s: Improve Concentration\r\n+1 Dexterity\n+1 Agility.",
+        "Applies buff for 120s: Improve Concentration\r\n+2 Dexterity\n+2 Agility.",
+        "Applies buff for 180s: Improve Concentration\r\n+3 Dexterity\n+3 Agility.",
+        "Applies buff for 240s: Improve Concentration\r\n+4 Dexterity\n+4 Agility.",
+        "Applies buff for 300s: Improve Concentration\r\n+5 Dexterity\n+5 Agility."
+      ]
+    },
+    {
+      "guid": "40a41a800e7b68d4dacc07c883d250c7",
+      "name": "Masterwork Strike",
+      "description": "Brutal strike that consumes money and scales brutally with weapon weight",
+      "maxLevel": 5,
+      "isPassive": false,
+      "archetype": "Blacksmith",
+      "requiredSpentPoints": 40,
+      "x": 424.999939,
+      "y": -736.121643,
+      "levels": [
+        {
+          "level": 1,
+          "manaCost": 12,
+          "hpCost": 0,
+          "moneyCost": 400
+        },
+        {
+          "level": 2,
+          "manaCost": 16,
+          "hpCost": 0,
+          "moneyCost": 800
+        },
+        {
+          "level": 3,
+          "manaCost": 20,
+          "hpCost": 0,
+          "moneyCost": 1200
+        },
+        {
+          "level": 4,
+          "manaCost": 24,
+          "hpCost": 0,
+          "moneyCost": 1600
+        },
+        {
+          "level": 5,
+          "manaCost": 30,
+          "hpCost": 0,
+          "moneyCost": 2000
+        }
+      ],
+      "iconFile": "skills/40a41a800e7b68d4dacc07c883d250c7.png",
+      "requiredWeapons": [
+        "OneHandedAxe",
+        "TwoHandedAxe",
+        "OneHandedMace",
+        "TwoHandedMace"
+      ],
+      "targetMask": "Enemy",
+      "range": 0.0,
+      "afterCastDelay": 0.0,
+      "castTimeMs": 0,
+      "useCastTimePerLevel": false,
+      "canBeCancelled": false,
+      "tooltips": [
+        "Deals ATK 150% physical damage. Element: Weapon. +10% damage per 50 weapon weight.\r\nApplies effects when hit: 10% chance: Applies buff (target) for 1s: Stunned\r\nCrowd Control: Stunned",
+        "Deals ATK 250% physical damage. Element: Weapon. +10% damage per 50 weapon weight.\r\nApplies effects when hit: 20% chance: Applies buff (target) for 1.5s: Stunned\r\nCrowd Control: Stunned",
+        "Deals ATK 350% physical damage. Element: Weapon. +10% damage per 50 weapon weight.\r\nApplies effects when hit: 30% chance: Applies buff (target) for 2s: Stunned\r\nCrowd Control: Stunned",
+        "Deals ATK 450% physical damage. Element: Weapon. +10% damage per 50 weapon weight.\r\nApplies effects when hit: 40% chance: Applies buff (target) for 2.5s: Stunned\r\nCrowd Control: Stunned",
+        "Deals ATK 600% physical damage. Element: Weapon. +10% damage per 50 weapon weight.\r\nApplies effects when hit: 50% chance: Applies buff (target) for 3s: Stunned\r\nCrowd Control: Stunned"
+      ]
+    },
+    {
+      "guid": "29eba0b4140e7494f879d74ce4781e43",
+      "name": "Ice Attunement",
+      "description": "Pledge yourself to the ice element, empowering its spells",
+      "maxLevel": 3,
+      "isPassive": true,
+      "archetype": "Mage",
+      "requiredSpentPoints": 30,
+      "x": -412.820648,
+      "y": 565.3133,
+      "levels": [
+        {
+          "level": 1,
+          "bonuses": [
+            "+5% Ice skill damage"
+          ]
+        },
+        {
+          "level": 2,
+          "bonuses": [
+            "+10% Ice skill damage"
+          ]
+        },
+        {
+          "level": 3,
+          "bonuses": [
+            "+15% Ice skill damage"
+          ]
+        }
+      ],
+      "iconFile": "skills/29eba0b4140e7494f879d74ce4781e43.png"
+    },
+    {
+      "guid": "edaaec1cf2bb45e4b86bdfe3c8a9fa2d",
+      "name": "Dualwield mastery",
+      "description": "Better bonuses from offhand...",
+      "maxLevel": 5,
+      "isPassive": true,
+      "archetype": "Rogue",
+      "requiredSpentPoints": 15,
+      "x": -337.198059,
+      "y": -434.508331,
+      "levels": [
+        {
+          "level": 1,
+          "bonuses": [
+            "Reduce dual wield penalty by 5% (offhand weapon contributes more ATK/MATK)"
+          ]
+        },
+        {
+          "level": 2,
+          "bonuses": [
+            "Reduce dual wield penalty by 10% (offhand weapon contributes more ATK/MATK)"
+          ]
+        },
+        {
+          "level": 3,
+          "bonuses": [
+            "Reduce dual wield penalty by 15% (offhand weapon contributes more ATK/MATK)"
+          ]
+        },
+        {
+          "level": 4,
+          "bonuses": [
+            "Reduce dual wield penalty by 20% (offhand weapon contributes more ATK/MATK)"
+          ]
+        },
+        {
+          "level": 5,
+          "bonuses": [
+            "Reduce dual wield penalty by 25% (offhand weapon contributes more ATK/MATK)"
+          ]
+        }
+      ],
+      "iconFile": "skills/edaaec1cf2bb45e4b86bdfe3c8a9fa2d.png"
+    },
+    {
+      "guid": "802d75a2e1cd5c64da02d1314d747490",
+      "name": "Swiftness",
+      "description": "Dodging everything",
+      "maxLevel": 3,
+      "isPassive": true,
+      "archetype": "Hunter",
+      "requiredSpentPoints": 0,
+      "x": 124.999992,
+      "y": 216.506363,
+      "levels": [
+        {
+          "level": 1,
+          "bonuses": [
+            "+5 Flee"
+          ]
+        },
+        {
+          "level": 2,
+          "bonuses": [
+            "+10 Flee"
+          ]
+        },
+        {
+          "level": 3,
+          "bonuses": [
+            "+15 Flee"
+          ]
+        }
+      ],
+      "iconFile": "skills/802d75a2e1cd5c64da02d1314d747490.png"
+    },
+    {
+      "guid": "6c0aeb7f0f159674ab2710a3914c48bc",
+      "name": "Range arsenal",
+      "description": "",
+      "maxLevel": 3,
+      "isPassive": true,
+      "archetype": "Blacksmith",
+      "requiredSpentPoints": 15,
+      "x": 317.037537,
+      "y": -624.0891,
+      "levels": [
+        {
+          "level": 1,
+          "bonuses": [
+            "+5% crafting success for OneHandedSpear, TwoHandedSpear, Bow, OneHandedStaff, TwoHandedStaff"
+          ]
+        },
+        {
+          "level": 2,
+          "bonuses": [
+            "+10% crafting success for OneHandedSpear, TwoHandedSpear, Bow, OneHandedStaff, TwoHandedStaff"
+          ]
+        },
+        {
+          "level": 3,
+          "bonuses": [
+            "+15% crafting success for OneHandedSpear, TwoHandedSpear, Bow, OneHandedStaff, TwoHandedStaff"
+          ]
+        }
+      ],
+      "prerequisites": [
+        {
+          "skillGuid": "14897575f0264ac4a908e453e52ec8a4",
+          "requiredLevel": 3
+        }
+      ],
+      "iconFile": "skills/6c0aeb7f0f159674ab2710a3914c48bc.png"
+    },
+    {
+      "guid": "7361ac80a4e946c4d9dd0fa6b56e1bda",
+      "name": "Thickened Skin",
+      "description": "",
+      "maxLevel": 3,
+      "isPassive": true,
+      "archetype": "Blacksmith",
+      "requiredSpentPoints": 0,
+      "x": 166.6933,
+      "y": -363.611542,
+      "levels": [
+        {
+          "level": 1,
+          "bonuses": [
+            "Reduce the damage taken from ranged physical attacks by 5%"
+          ]
+        },
+        {
+          "level": 2,
+          "bonuses": [
+            "Reduce the damage taken from ranged physical attacks by 10%"
+          ]
+        },
+        {
+          "level": 3,
+          "bonuses": [
+            "Reduce the damage taken from ranged physical attacks by 15%"
+          ]
+        }
+      ],
+      "iconFile": "skills/7361ac80a4e946c4d9dd0fa6b56e1bda.png"
+    },
+    {
+      "guid": "4036ba5fc29850243a498c2024c26718",
+      "name": "Dodge",
+      "description": "",
+      "maxLevel": 3,
+      "isPassive": true,
+      "archetype": "Rogue",
+      "requiredSpentPoints": 5,
+      "x": -231.5501,
+      "y": -326.166443,
+      "levels": [
+        {
+          "level": 1,
+          "bonuses": [
+            "+5 Flee"
+          ]
+        },
+        {
+          "level": 2,
+          "bonuses": [
+            "+10 Flee"
+          ]
+        },
+        {
+          "level": 3,
+          "bonuses": [
+            "+15 Flee"
+          ]
+        }
+      ],
+      "iconFile": "skills/4036ba5fc29850243a498c2024c26718.png"
+    },
+    {
+      "guid": "052abacb92b0f16479ae13054ce6d5af",
+      "name": "Stone Spikes",
+      "description": "Jagged earth erupts beneath enemies in close range",
+      "maxLevel": 5,
+      "isPassive": false,
+      "archetype": "Mage",
+      "requiredSpentPoints": 0,
+      "x": -125.000015,
+      "y": 216.506348,
+      "levels": [
+        {
+          "level": 1,
+          "manaCost": 5,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 2,
+          "manaCost": 10,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 3,
+          "manaCost": 15,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 4,
+          "manaCost": 20,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 5,
+          "manaCost": 25,
+          "hpCost": 0,
+          "moneyCost": 0
+        }
+      ],
+      "iconFile": "skills/052abacb92b0f16479ae13054ce6d5af.png",
+      "targetMask": "Enemy",
+      "range": 15.0,
+      "afterCastDelay": 1.0,
+      "castTimeMs": 500.0,
+      "useCastTimePerLevel": true,
+      "canBeCancelled": true,
+      "tooltips": [
+        "Deals MATK 100% magical damage. Element: Earth.",
+        "Deals MATK 200% magical damage. Element: Earth.",
+        "Deals MATK 300% magical damage. Element: Earth.",
+        "Deals MATK 400% magical damage. Element: Earth.",
+        "Deals MATK 500% magical damage. Element: Earth."
+      ]
+    },
+    {
+      "guid": "08893cdd1b93de4488eaa98a1cc3f99b",
+      "name": "Holy Spark",
+      "description": "The holy light follows you...",
+      "maxLevel": 5,
+      "isPassive": false,
+      "archetype": "Priest",
+      "requiredSpentPoints": 15,
+      "x": -548.7221,
+      "y": -37.4708328,
+      "levels": [
+        {
+          "level": 1,
+          "manaCost": 25,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 2,
+          "manaCost": 30,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 3,
+          "manaCost": 35,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 4,
+          "manaCost": 40,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 5,
+          "manaCost": 45,
+          "hpCost": 0,
+          "moneyCost": 0
+        }
+      ],
+      "iconFile": "skills/08893cdd1b93de4488eaa98a1cc3f99b.png",
+      "requiredWeapons": [
+        "OneHandedStaff",
+        "TwoHandedStaff"
+      ],
+      "targetMask": "Ally, Enemy",
+      "range": 15.0,
+      "afterCastDelay": 5.0,
+      "castTimeMs": 300.0,
+      "useCastTimePerLevel": true,
+      "canBeCancelled": true,
+      "tooltips": [
+        "Heals a target for MATK 50% HP. Deals damage instead if the target is Undead.",
+        "Heals a target for MATK 100% HP. Deals damage instead if the target is Undead.",
+        "Heals a target for MATK 150% HP. Deals damage instead if the target is Undead.",
+        "Heals a target for MATK 200% HP. Deals damage instead if the target is Undead.",
+        "Heals a target for MATK 250% HP. Deals damage instead if the target is Undead."
+      ]
+    },
+    {
+      "guid": "0ef93bd49d3ac864f90d790806be8a54",
+      "name": "Sacred Blade",
+      "description": "A whisper of the divine flows through steel, turning faith into a blade of pure light",
+      "maxLevel": 5,
+      "isPassive": false,
+      "archetype": "Priest",
+      "requiredSpentPoints": 0,
+      "x": -850.0,
+      "y": -7.430936E-05,
+      "levels": [
+        {
+          "level": 1,
+          "manaCost": 10,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 2,
+          "manaCost": 15,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 3,
+          "manaCost": 20,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 4,
+          "manaCost": 25,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 5,
+          "manaCost": 30,
+          "hpCost": 0,
+          "moneyCost": 0
+        }
+      ],
+      "prerequisites": [
+        {
+          "skillGuid": "bb799b4e285516c4b87fce9254fa482f",
+          "requiredLevel": 3
+        }
+      ],
+      "iconFile": "skills/0ef93bd49d3ac864f90d790806be8a54.png",
+      "requiredWeapons": [
+        "OneHandedStaff",
+        "TwoHandedStaff"
+      ],
+      "targetMask": "Ally",
+      "range": 15.0,
+      "afterCastDelay": 0.5,
+      "castTimeMs": 0,
+      "useCastTimePerLevel": false,
+      "canBeCancelled": false,
+      "tooltips": [
+        "Applies buff for 60s: Sacred blade\r\nMain weapon gains Holy element.",
+        "Applies buff for 120s: Sacred blade\r\nMain weapon gains Holy element.",
+        "Applies buff for 180s: Sacred blade\r\nMain weapon gains Holy element.",
+        "Applies buff for 240s: Sacred blade\r\nMain weapon gains Holy element.",
+        "Applies buff for 300s: Sacred blade\r\nMain weapon gains Holy element."
+      ]
+    },
+    {
+      "guid": "abedeeeb872ba6341baf1f6f209e1ca6",
+      "name": "Strengthened Blows",
+      "description": "Gives some ATK",
+      "maxLevel": 3,
+      "isPassive": true,
+      "archetype": "Berserk",
+      "requiredSpentPoints": 0,
+      "x": 384.2837,
+      "y": -111.022713,
+      "levels": [
+        {
+          "level": 1,
+          "bonuses": [
+            "+5 Attack"
+          ]
+        },
+        {
+          "level": 2,
+          "bonuses": [
+            "+10 Attack"
+          ]
+        },
+        {
+          "level": 3,
+          "bonuses": [
+            "+15 Attack"
+          ]
+        }
+      ],
+      "iconFile": "skills/abedeeeb872ba6341baf1f6f209e1ca6.png"
+    },
+    {
+      "guid": "8950fd804cdfa00439037161da907d64",
+      "name": "Thunder Bolt",
+      "description": "Electrifying...",
+      "maxLevel": 5,
+      "isPassive": false,
+      "archetype": "Mage",
+      "requiredSpentPoints": 0,
+      "x": -183.399063,
+      "y": 169.8964,
+      "levels": [
+        {
+          "level": 1,
+          "manaCost": 5,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 2,
+          "manaCost": 10,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 3,
+          "manaCost": 15,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 4,
+          "manaCost": 20,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 5,
+          "manaCost": 25,
+          "hpCost": 0,
+          "moneyCost": 0
+        }
+      ],
+      "iconFile": "skills/8950fd804cdfa00439037161da907d64.png",
+      "targetMask": "Enemy",
+      "range": 15.0,
+      "afterCastDelay": 1.0,
+      "castTimeMs": 500.0,
+      "useCastTimePerLevel": true,
+      "canBeCancelled": true,
+      "tooltips": [
+        "Deals MATK 100% magical damage. Element: Electric.",
+        "Deals MATK 200% magical damage. Element: Electric.",
+        "Deals MATK 300% magical damage. Element: Electric.",
+        "Deals MATK 400% magical damage. Element: Electric.",
+        "Deals MATK 500% magical damage. Element: Electric."
+      ]
+    },
+    {
+      "guid": "ae76adb40f942fc43b9f02403999fccd",
+      "name": "Throw Knife",
+      "description": "Cling",
+      "maxLevel": 5,
+      "isPassive": false,
+      "archetype": "Rogue",
+      "requiredSpentPoints": 20,
+      "x": -207.69635,
+      "y": -509.276154,
+      "levels": [
+        {
+          "level": 1,
+          "manaCost": 12,
+          "hpCost": 0,
+          "moneyCost": 0,
+          "itemCosts": [
+            {
+              "itemGuid": "c7d9cb6399646f04592b44fa055f150b",
+              "amount": 1,
+              "itemName": "Kukri"
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "manaCost": 12,
+          "hpCost": 0,
+          "moneyCost": 0,
+          "itemCosts": [
+            {
+              "itemGuid": "c7d9cb6399646f04592b44fa055f150b",
+              "amount": 1,
+              "itemName": "Kukri"
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "manaCost": 12,
+          "hpCost": 0,
+          "moneyCost": 0,
+          "itemCosts": [
+            {
+              "itemGuid": "c7d9cb6399646f04592b44fa055f150b",
+              "amount": 1,
+              "itemName": "Kukri"
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "manaCost": 12,
+          "hpCost": 0,
+          "moneyCost": 0,
+          "itemCosts": [
+            {
+              "itemGuid": "c7d9cb6399646f04592b44fa055f150b",
+              "amount": 1,
+              "itemName": "Kukri"
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "manaCost": 12,
+          "hpCost": 0,
+          "moneyCost": 0,
+          "itemCosts": [
+            {
+              "itemGuid": "c7d9cb6399646f04592b44fa055f150b",
+              "amount": 1,
+              "itemName": "Kukri"
+            }
+          ]
+        }
+      ],
+      "iconFile": "skills/ae76adb40f942fc43b9f02403999fccd.png",
+      "targetMask": "Enemy",
+      "range": 15.0,
+      "afterCastDelay": 3.0,
+      "castTimeMs": 0,
+      "useCastTimePerLevel": false,
+      "canBeCancelled": false,
+      "tooltips": [
+        "Deals ATK 100% physical damage. Element: Weapon.",
+        "Deals ATK 120% physical damage. Element: Weapon.",
+        "Deals ATK 140% physical damage. Element: Weapon.",
+        "Deals ATK 170% physical damage. Element: Weapon.",
+        "Deals ATK 200% physical damage. Element: Weapon."
+      ]
+    },
+    {
+      "guid": "17d622d059b84ec4f8c0e439a7e5e707",
+      "name": "Two-handed sword mastery",
+      "description": "Increases damage with Two Handed Swords",
+      "maxLevel": 5,
+      "isPassive": true,
+      "archetype": "Berserk",
+      "requiredSpentPoints": 10,
+      "x": 690.979248,
+      "y": -112.016335,
+      "levels": [
+        {
+          "level": 1,
+          "bonuses": [
+            "+3% physical damage with TwoHandedSword"
+          ]
+        },
+        {
+          "level": 2,
+          "bonuses": [
+            "+6% physical damage with TwoHandedSword"
+          ]
+        },
+        {
+          "level": 3,
+          "bonuses": [
+            "+9% physical damage with TwoHandedSword"
+          ]
+        },
+        {
+          "level": 4,
+          "bonuses": [
+            "+12% physical damage with TwoHandedSword"
+          ]
+        },
+        {
+          "level": 5,
+          "bonuses": [
+            "+15% physical damage with TwoHandedSword"
+          ]
+        }
+      ],
+      "iconFile": "skills/17d622d059b84ec4f8c0e439a7e5e707.png"
+    },
+    {
+      "guid": "3885e9b6791fb9f409eaa36fd658b979",
+      "name": "Aimed Shot",
+      "description": "Guarantees critical strike",
+      "maxLevel": 5,
+      "isPassive": false,
+      "archetype": "Hunter",
+      "requiredSpentPoints": 35,
+      "x": 393.135376,
+      "y": 384.635651,
+      "levels": [
+        {
+          "level": 1,
+          "manaCost": 35,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 2,
+          "manaCost": 35,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 3,
+          "manaCost": 35,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 4,
+          "manaCost": 35,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 5,
+          "manaCost": 35,
+          "hpCost": 0,
+          "moneyCost": 0
+        }
+      ],
+      "prerequisites": [
+        {
+          "skillGuid": "46d32fdfae5be7b42a1f5f3e7ad58238",
+          "requiredLevel": 3
+        },
+        {
+          "skillGuid": "b2d19fe7d07a5c04cb2ef223f28aa575",
+          "requiredLevel": 3
+        }
+      ],
+      "iconFile": "skills/3885e9b6791fb9f409eaa36fd658b979.png",
+      "requiredWeapons": [
+        "Bow"
+      ],
+      "targetMask": "Enemy",
+      "range": 0.0,
+      "afterCastDelay": 5.0,
+      "castTimeMs": 500.0,
+      "useCastTimePerLevel": true,
+      "canBeCancelled": true,
+      "tooltips": [
+        "Deals ATK 200% physical damage. Element: Weapon.",
+        "Deals ATK 400% physical damage. Element: Weapon.",
+        "Deals ATK 600% physical damage. Element: Weapon.",
+        "Deals ATK 800% physical damage. Element: Weapon.",
+        "Deals ATK 1000% physical damage. Element: Weapon."
+      ]
+    },
+    {
+      "guid": "2ec1d13b1741d7f499c44aae1bc45136",
+      "name": "One-handed Quicken",
+      "description": "Increas your attack speed",
+      "maxLevel": 5,
+      "isPassive": false,
+      "archetype": "Berserk",
+      "requiredSpentPoints": 0,
+      "x": 820.394043,
+      "y": -222.381592,
+      "levels": [
+        {
+          "level": 1,
+          "manaCost": 14,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 2,
+          "manaCost": 22,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 3,
+          "manaCost": 34,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 4,
+          "manaCost": 42,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 5,
+          "manaCost": 50,
+          "hpCost": 0,
+          "moneyCost": 0
+        }
+      ],
+      "prerequisites": [
+        {
+          "skillGuid": "9d03338495050a5499b816cb9f5b5ba6",
+          "requiredLevel": 3
+        }
+      ],
+      "iconFile": "skills/2ec1d13b1741d7f499c44aae1bc45136.png",
+      "requiredWeapons": [
+        "OneHandedSword"
+      ],
+      "targetMask": "Self",
+      "range": 5.0,
+      "afterCastDelay": 1.0,
+      "castTimeMs": 0,
+      "useCastTimePerLevel": false,
+      "canBeCancelled": false,
+      "tooltips": [
+        "Applies buff for 30s: One Handed Quicken\r\n+2 Attack Speed (Condition: Main weapon: One-Handed Sword).",
+        "Applies buff for 60s: One Handed Quicken\r\n+4 Attack Speed (Condition: Main weapon: One-Handed Sword).",
+        "Applies buff for 90s: One Handed Quicken\r\n+6 Attack Speed (Condition: Main weapon: One-Handed Sword).",
+        "Applies buff for 120s: One Handed Quicken\r\n+8 Attack Speed (Condition: Main weapon: One-Handed Sword).",
+        "Applies buff for 150s: One Handed Quicken\r\n+10 Attack Speed (Condition: Main weapon: One-Handed Sword)."
+      ]
+    },
+    {
+      "guid": "f8caab21512fd854c91604e68474fd65",
+      "name": "Blindside",
+      "description": "You don't see me...",
+      "maxLevel": 5,
+      "isPassive": true,
+      "archetype": "Rogue",
+      "requiredSpentPoints": 15,
+      "x": -274.999939,
+      "y": -476.314,
+      "levels": [
+        {
+          "level": 1,
+          "bonuses": [
+            "+5% physical damage when attacking from behind"
+          ]
+        },
+        {
+          "level": 2,
+          "bonuses": [
+            "+10% physical damage when attacking from behind"
+          ]
+        },
+        {
+          "level": 3,
+          "bonuses": [
+            "+15% physical damage when attacking from behind"
+          ]
+        },
+        {
+          "level": 4,
+          "bonuses": [
+            "+20% physical damage when attacking from behind"
+          ]
+        },
+        {
+          "level": 5,
+          "bonuses": [
+            "+25% physical damage when attacking from behind"
+          ]
+        }
+      ],
+      "iconFile": "skills/f8caab21512fd854c91604e68474fd65.png"
+    },
+    {
+      "guid": "aa608a9d31f4bbc479588405aef7e5af",
+      "name": "Axe discipline",
+      "description": "",
+      "maxLevel": 5,
+      "isPassive": true,
+      "archetype": "Blacksmith",
+      "requiredSpentPoints": 10,
+      "x": 136.536392,
+      "y": -532.7831,
+      "levels": [
+        {
+          "level": 1,
+          "bonuses": [
+            "+3% physical damage with OneHandedAxe",
+            "+3% physical damage with TwoHandedAxe"
+          ]
+        },
+        {
+          "level": 2,
+          "bonuses": [
+            "+6% physical damage with OneHandedAxe",
+            "+6% physical damage with TwoHandedAxe"
+          ]
+        },
+        {
+          "level": 3,
+          "bonuses": [
+            "+9% physical damage with OneHandedAxe",
+            "+9% physical damage with TwoHandedAxe"
+          ]
+        },
+        {
+          "level": 4,
+          "bonuses": [
+            "+12% physical damage with OneHandedAxe",
+            "+12% physical damage with TwoHandedAxe"
+          ]
+        },
+        {
+          "level": 5,
+          "bonuses": [
+            "+15% physical damage with OneHandedAxe",
+            "+15% physical damage with TwoHandedAxe"
+          ]
+        }
+      ],
+      "iconFile": "skills/aa608a9d31f4bbc479588405aef7e5af.png"
+    },
+    {
+      "guid": "03694e8a0eb5668448e538a751a2a292",
+      "name": "Overheat",
+      "description": "Concentrate yourself...",
+      "maxLevel": 5,
+      "isPassive": false,
+      "archetype": "Blacksmith",
+      "requiredSpentPoints": 30,
+      "x": 497.964,
+      "y": -491.967316,
+      "levels": [
+        {
+          "level": 1,
+          "manaCost": 10,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 2,
+          "manaCost": 20,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 3,
+          "manaCost": 30,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 4,
+          "manaCost": 40,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 5,
+          "manaCost": 50,
+          "hpCost": 0,
+          "moneyCost": 0
+        }
+      ],
+      "prerequisites": [
+        {
+          "skillGuid": "c7541ae0372eb9c4c930361da9aaabc7",
+          "requiredLevel": 5
+        }
+      ],
+      "iconFile": "skills/03694e8a0eb5668448e538a751a2a292.png",
+      "requiredWeapons": [
+        "OneHandedAxe",
+        "TwoHandedAxe",
+        "OneHandedMace",
+        "TwoHandedMace"
+      ],
+      "targetMask": "Self",
+      "range": 5.0,
+      "afterCastDelay": 1.0,
+      "castTimeMs": 0,
+      "useCastTimePerLevel": false,
+      "canBeCancelled": false,
+      "tooltips": [
+        "Applies buff for 60s: Overheat\r\n+1.5 Attack Speed (Condition: Main weapon: One-Handed Axe / Two-Handed Axe / One-Handed Mace / Two-Handed Mace).",
+        "Applies buff for 120s: Overheat\r\n+3 Attack Speed (Condition: Main weapon: One-Handed Axe / Two-Handed Axe / One-Handed Mace / Two-Handed Mace).",
+        "Applies buff for 180s: Overheat\r\n+5 Attack Speed (Condition: Main weapon: One-Handed Axe / Two-Handed Axe / One-Handed Mace / Two-Handed Mace).",
+        "Applies buff for 240s: Overheat\r\n+7.5 Attack Speed (Condition: Main weapon: One-Handed Axe / Two-Handed Axe / One-Handed Mace / Two-Handed Mace).",
+        "Applies buff for 300s: Overheat\r\n+10 Attack Speed (Condition: Main weapon: One-Handed Axe / Two-Handed Axe / One-Handed Mace / Two-Handed Mace)."
+      ]
+    },
+    {
+      "guid": "aaa4b7f528b37734eb7c70243d09e89f",
+      "name": "Earth Attunement",
+      "description": "Pledge yourself to the earth element, empowering its spells",
+      "maxLevel": 3,
+      "isPassive": true,
+      "archetype": "Mage",
+      "requiredSpentPoints": 0,
+      "x": -166.693268,
+      "y": 363.611542,
+      "levels": [
+        {
+          "level": 1,
+          "bonuses": [
+            "+5% Earth skill damage"
+          ]
+        },
+        {
+          "level": 2,
+          "bonuses": [
+            "+10% Earth skill damage"
+          ]
+        },
+        {
+          "level": 3,
+          "bonuses": [
+            "+15% Earth skill damage"
+          ]
+        }
+      ],
+      "prerequisites": [
+        {
+          "skillGuid": "052abacb92b0f16479ae13054ce6d5af",
+          "requiredLevel": 3
+        }
+      ],
+      "iconFile": "skills/aaa4b7f528b37734eb7c70243d09e89f.png"
+    },
+    {
+      "guid": "d9eb43a34c40bbe4291f41dd01e29714",
+      "name": "Inferno Ricochet",
+      "description": "Burn...",
+      "maxLevel": 5,
+      "isPassive": false,
+      "archetype": "Mage",
+      "requiredSpentPoints": 15,
+      "x": -350.000031,
+      "y": 606.2178,
+      "levels": [
+        {
+          "level": 1,
+          "manaCost": 12,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 2,
+          "manaCost": 12,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 3,
+          "manaCost": 12,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 4,
+          "manaCost": 12,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 5,
+          "manaCost": 12,
+          "hpCost": 0,
+          "moneyCost": 0
+        }
+      ],
+      "prerequisites": [
+        {
+          "skillGuid": "3e79de1df85678f43afe650ed0d52bb6",
+          "requiredLevel": 3
+        }
+      ],
+      "iconFile": "skills/d9eb43a34c40bbe4291f41dd01e29714.png",
+      "targetMask": "Enemy",
+      "range": 15.0,
+      "afterCastDelay": 5.0,
+      "castTimeMs": 500.0,
+      "useCastTimePerLevel": true,
+      "canBeCancelled": false,
+      "tooltips": [
+        "Deals MATK 100% magical damage. Element: Fire.",
+        "Deals MATK 200% magical damage. Element: Fire.",
+        "Deals MATK 300% magical damage. Element: Fire.",
+        "Deals MATK 400% magical damage. Element: Fire.",
+        "Deals MATK 500% magical damage. Element: Fire."
+      ]
+    },
+    {
+      "guid": "8ef5354172313fd489c6b40d0745c547",
+      "name": "Glass Cannon",
+      "description": "Trade protection for devastating spell output",
+      "maxLevel": 5,
+      "isPassive": true,
+      "archetype": "Mage",
+      "requiredSpentPoints": 10,
+      "x": -207.69632,
+      "y": 509.276184,
+      "levels": [
+        {
+          "level": 1,
+          "bonuses": [
+            "+3% Magic Attack",
+            "Increase the damage taken from all sources by 2%"
+          ]
+        },
+        {
+          "level": 2,
+          "bonuses": [
+            "+6% Magic Attack",
+            "Increase the damage taken from all sources by 4%"
+          ]
+        },
+        {
+          "level": 3,
+          "bonuses": [
+            "+9% Magic Attack",
+            "Increase the damage taken from all sources by 6%"
+          ]
+        },
+        {
+          "level": 4,
+          "bonuses": [
+            "+12% Magic Attack",
+            "Increase the damage taken from all sources by 8%"
+          ]
+        },
+        {
+          "level": 5,
+          "bonuses": [
+            "+15% Magic Attack",
+            "Increase the damage taken from all sources by 10%"
+          ]
+        }
+      ],
+      "iconFile": "skills/8ef5354172313fd489c6b40d0745c547.png"
+    },
+    {
+      "guid": "707d0569342ed42408d203fe57d78cdd",
+      "name": "Holy Light",
+      "description": "Smite a foe with purifying radiance; devastating to the unholy",
+      "maxLevel": 5,
+      "isPassive": false,
+      "archetype": "Priest",
+      "requiredSpentPoints": 0,
+      "x": -538.534363,
+      "y": 111.717133,
+      "levels": [
+        {
+          "level": 1,
+          "manaCost": 5,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 2,
+          "manaCost": 10,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 3,
+          "manaCost": 15,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 4,
+          "manaCost": 20,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 5,
+          "manaCost": 25,
+          "hpCost": 0,
+          "moneyCost": 0
+        }
+      ],
+      "iconFile": "skills/707d0569342ed42408d203fe57d78cdd.png",
+      "targetMask": "Enemy",
+      "range": 15.0,
+      "afterCastDelay": 1.0,
+      "castTimeMs": 300.0,
+      "useCastTimePerLevel": true,
+      "canBeCancelled": true,
+      "tooltips": [
+        "Deals MATK 100% magical damage. Element: Holy.",
+        "Deals MATK 200% magical damage. Element: Holy.",
+        "Deals MATK 300% magical damage. Element: Holy.",
+        "Deals MATK 400% magical damage. Element: Holy.",
+        "Deals MATK 500% magical damage. Element: Holy."
+      ]
+    },
+    {
+      "guid": "12cd6c25a19483b439c5219d2781a770",
+      "name": "Wind Walk",
+      "description": "The breeze does not carry you — it follows your stride.",
+      "maxLevel": 3,
+      "isPassive": true,
+      "archetype": "Hunter",
+      "requiredSpentPoints": 5,
+      "x": 337.197937,
+      "y": 434.5084,
+      "levels": [
+        {
+          "level": 1,
+          "bonuses": [
+            "+2.5% Walk Speed"
+          ]
+        },
+        {
+          "level": 2,
+          "bonuses": [
+            "+5% Walk Speed"
+          ]
+        },
+        {
+          "level": 3,
+          "bonuses": [
+            "+7.5% Walk Speed"
+          ]
+        }
+      ],
+      "iconFile": "skills/12cd6c25a19483b439c5219d2781a770.png"
+    },
+    {
+      "guid": "f909b68ba8b1b1f4fb1c326000748b98",
+      "name": "Anvil Drop",
+      "description": "AOE brutal hit",
+      "maxLevel": 5,
+      "isPassive": false,
+      "archetype": "Blacksmith",
+      "requiredSpentPoints": 20,
+      "x": 381.958435,
+      "y": -586.607,
+      "levels": [
+        {
+          "level": 1,
+          "manaCost": 12,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 2,
+          "manaCost": 16,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 3,
+          "manaCost": 20,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 4,
+          "manaCost": 24,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 5,
+          "manaCost": 30,
+          "hpCost": 0,
+          "moneyCost": 0
+        }
+      ],
+      "prerequisites": [
+        {
+          "skillGuid": "b3c5ab05df8722543855c7319456d512",
+          "requiredLevel": 5
+        }
+      ],
+      "iconFile": "skills/f909b68ba8b1b1f4fb1c326000748b98.png",
+      "requiredWeapons": [
+        "OneHandedMace",
+        "TwoHandedMace"
+      ],
+      "targetMask": "Enemy",
+      "range": 0.0,
+      "afterCastDelay": 3.0,
+      "castTimeMs": 0,
+      "useCastTimePerLevel": false,
+      "canBeCancelled": false,
+      "tooltips": [
+        "Hit up to 20 nearby enemies (radius 6.0m):\nDeals ATK 100% physical damage. Element: Weapon. +10% damage per 50 weapon weight.",
+        "Hit up to 20 nearby enemies (radius 6.0m):\nDeals ATK 170% physical damage. Element: Weapon. +10% damage per 50 weapon weight.",
+        "Hit up to 20 nearby enemies (radius 6.0m):\nDeals ATK 250% physical damage. Element: Weapon. +10% damage per 50 weapon weight.",
+        "Hit up to 20 nearby enemies (radius 6.0m):\nDeals ATK 320% physical damage. Element: Weapon. +10% damage per 50 weapon weight.",
+        "Hit up to 20 nearby enemies (radius 6.0m):\nDeals ATK 400% physical damage. Element: Weapon. +10% damage per 50 weapon weight."
+      ]
+    },
+    {
+      "guid": "62ee83aa16e9ce74ca6b0b02796e7bd8",
+      "name": "Double Attack",
+      "description": "x2",
+      "maxLevel": 5,
+      "isPassive": true,
+      "archetype": "Rogue",
+      "requiredSpentPoints": 0,
+      "x": -183.399078,
+      "y": -169.896378,
+      "levels": [
+        {
+          "level": 1,
+          "bonuses": [
+            "5% chance to double attack"
+          ]
+        },
+        {
+          "level": 2,
+          "bonuses": [
+            "10% chance to double attack"
+          ]
+        },
+        {
+          "level": 3,
+          "bonuses": [
+            "15% chance to double attack"
+          ]
+        },
+        {
+          "level": 4,
+          "bonuses": [
+            "20% chance to double attack"
+          ]
+        },
+        {
+          "level": 5,
+          "bonuses": [
+            "25% chance to double attack"
+          ]
+        }
+      ],
+      "iconFile": "skills/62ee83aa16e9ce74ca6b0b02796e7bd8.png"
+    },
+    {
+      "guid": "de028e1365614f0449006deeadac720b",
+      "name": "Mental Fortitude",
+      "description": "Practice efficient incantations to maintain flow and pressure",
+      "maxLevel": 3,
+      "isPassive": true,
+      "archetype": "Mage",
+      "requiredSpentPoints": 15,
+      "x": -275.000031,
+      "y": 476.313965,
+      "levels": [
+        {
+          "level": 1,
+          "bonuses": [
+            "+15 SP",
+            "+5% Magic Defense"
+          ]
+        },
+        {
+          "level": 2,
+          "bonuses": [
+            "+30 SP",
+            "+10% Magic Defense"
+          ]
+        },
+        {
+          "level": 3,
+          "bonuses": [
+            "+45 SP",
+            "+15% Magic Defense"
+          ]
+        }
+      ],
+      "iconFile": "skills/de028e1365614f0449006deeadac720b.png"
+    },
+    {
+      "guid": "76d6c458550a4c34295f528fd47bb347",
+      "name": "Sprint",
+      "description": "The wind is not ahead or behind — it is with you.",
+      "maxLevel": 3,
+      "isPassive": false,
+      "archetype": "Hunter",
+      "requiredSpentPoints": 0,
+      "x": 381.9583,
+      "y": 586.607056,
+      "levels": [
+        {
+          "level": 1,
+          "manaCost": 10,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 2,
+          "manaCost": 20,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 3,
+          "manaCost": 30,
+          "hpCost": 0,
+          "moneyCost": 0
+        }
+      ],
+      "prerequisites": [
+        {
+          "skillGuid": "12cd6c25a19483b439c5219d2781a770",
+          "requiredLevel": 3
+        }
+      ],
+      "iconFile": "skills/76d6c458550a4c34295f528fd47bb347.png",
+      "targetMask": "Self",
+      "range": 5.0,
+      "afterCastDelay": 2.0,
+      "castTimeMs": 1000.0,
+      "useCastTimePerLevel": false,
+      "canBeCancelled": true,
+      "tooltips": [
+        "Applies buff for 30s: Sprint\r\n+5% Walk Speed.",
+        "Applies buff for 30s: Sprint\r\n+10% Walk Speed.",
+        "Applies buff for 30s: Sprint\r\n+15% Walk Speed."
+      ]
+    },
+    {
+      "guid": "27b110c51f5d812409092d1fb78902b3",
+      "name": "Poisoned Blade",
+      "description": "Imbues the main weapon with poison",
+      "maxLevel": 5,
+      "isPassive": false,
+      "archetype": "Rogue",
+      "requiredSpentPoints": 10,
+      "x": -95.9933243,
+      "y": -388.310822,
+      "levels": [
+        {
+          "level": 1,
+          "manaCost": 10,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 2,
+          "manaCost": 20,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 3,
+          "manaCost": 30,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 4,
+          "manaCost": 40,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 5,
+          "manaCost": 50,
+          "hpCost": 0,
+          "moneyCost": 0
+        }
+      ],
+      "iconFile": "skills/27b110c51f5d812409092d1fb78902b3.png",
+      "targetMask": "Self",
+      "range": 5.0,
+      "afterCastDelay": 1.0,
+      "castTimeMs": 0,
+      "useCastTimePerLevel": false,
+      "canBeCancelled": false,
+      "tooltips": [
+        "Applies buff for 60s: Poison\r\nImbues you with Poison element.",
+        "Applies buff for 120s: Poison\r\nImbues you with Poison element.",
+        "Applies buff for 180s: Poison\r\nImbues you with Poison element.",
+        "Applies buff for 240s: Poison\r\nImbues you with Poison element.",
+        "Applies buff for 300s: Poison\r\nImbues you with Poison element."
+      ]
+    },
+    {
+      "guid": "19334f29dd3ada148b3b97066b2b0af1",
+      "name": "Blood Instinct",
+      "description": "",
+      "maxLevel": 5,
+      "isPassive": true,
+      "archetype": "Berserk",
+      "requiredSpentPoints": 0,
+      "x": 544.8943,
+      "y": 74.76778,
+      "levels": [
+        {
+          "level": 1,
+          "bonuses": [
+            "+2 % Critical"
+          ]
+        },
+        {
+          "level": 2,
+          "bonuses": [
+            "+4 % Critical"
+          ]
+        },
+        {
+          "level": 3,
+          "bonuses": [
+            "+6 % Critical"
+          ]
+        },
+        {
+          "level": 4,
+          "bonuses": [
+            "+8 % Critical"
+          ]
+        },
+        {
+          "level": 5,
+          "bonuses": [
+            "+10 % Critical"
+          ]
+        }
+      ],
+      "prerequisites": [
+        {
+          "skillGuid": "ad284a751cffa224db250e5629d0a77e",
+          "requiredLevel": 5
+        }
+      ],
+      "iconFile": "skills/19334f29dd3ada148b3b97066b2b0af1.png"
+    },
+    {
+      "guid": "66d78b67d8515c942b3f247dcecbc4bd",
+      "name": "Conqueror",
+      "description": "Applies Conqueror on hit",
+      "maxLevel": 3,
+      "isPassive": true,
+      "archetype": "Berserk",
+      "requiredSpentPoints": 0,
+      "x": 698.9958,
+      "y": -37.48207,
+      "levels": [
+        {
+          "level": 1,
+          "bonuses": [
+            "On Hit applies Level 1 buff for 10s: <b>Conqueror</b>\r\nMax Stacks: 3\r\n+2 damage per stack on hit"
+          ]
+        },
+        {
+          "level": 2,
+          "bonuses": [
+            "On Hit applies Level 2 buff for 10s: <b>Conqueror</b>\r\nMax Stacks: 3\r\n+4 damage per stack on hit"
+          ]
+        },
+        {
+          "level": 3,
+          "bonuses": [
+            "On Hit applies Level 3 buff for 10s: <b>Conqueror</b>\r\nMax Stacks: 3\r\n+6 damage per stack on hit"
+          ]
+        }
+      ],
+      "prerequisites": [
+        {
+          "skillGuid": "2f6dcfe62f859a342822f7d7955526dc",
+          "requiredLevel": 3
+        }
+      ],
+      "iconFile": "skills/66d78b67d8515c942b3f247dcecbc4bd.png"
+    },
+    {
+      "guid": "219707843974d044d9331409385774a3",
+      "name": "Blood Haste",
+      "description": "",
+      "maxLevel": 5,
+      "isPassive": true,
+      "archetype": "Berserk",
+      "requiredSpentPoints": 20,
+      "x": 846.6933,
+      "y": -74.9027252,
+      "levels": [
+        {
+          "level": 1,
+          "bonuses": [
+            "+1 Attack Speed"
+          ]
+        },
+        {
+          "level": 2,
+          "bonuses": [
+            "+2 Attack Speed"
+          ]
+        },
+        {
+          "level": 3,
+          "bonuses": [
+            "+3 Attack Speed"
+          ]
+        },
+        {
+          "level": 4,
+          "bonuses": [
+            "+4 Attack Speed"
+          ]
+        },
+        {
+          "level": 5,
+          "bonuses": [
+            "+5 Attack Speed"
+          ]
+        }
+      ],
+      "iconFile": "skills/219707843974d044d9331409385774a3.png"
+    },
+    {
+      "guid": "38c93a8d858282e428ac720cb70b0082",
+      "name": "Arrow Rain",
+      "description": "An arrow storm arrives",
+      "maxLevel": 5,
+      "isPassive": false,
+      "archetype": "Hunter",
+      "requiredSpentPoints": 25,
+      "x": 317.0375,
+      "y": 624.0891,
+      "levels": [
+        {
+          "level": 1,
+          "manaCost": 40,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 2,
+          "manaCost": 40,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 3,
+          "manaCost": 40,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 4,
+          "manaCost": 40,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 5,
+          "manaCost": 40,
+          "hpCost": 0,
+          "moneyCost": 0
+        }
+      ],
+      "iconFile": "skills/38c93a8d858282e428ac720cb70b0082.png",
+      "requiredWeapons": [
+        "Bow"
+      ],
+      "targetMask": "Ground",
+      "range": 10.0,
+      "afterCastDelay": 5.0,
+      "castTimeMs": 700.0,
+      "useCastTimePerLevel": true,
+      "canBeCancelled": true,
+      "tooltips": [
+        "Hit up to 20 nearby enemies (radius 3.0m):\nDeals ATK 100% physical damage. Element: Weapon.",
+        "Hit up to 20 nearby enemies (radius 3.0m):\nDeals ATK 200% physical damage. Element: Weapon.",
+        "Hit up to 20 nearby enemies (radius 3.0m):\nDeals ATK 300% physical damage. Element: Weapon.",
+        "Hit up to 20 nearby enemies (radius 3.0m):\nDeals ATK 400% physical damage. Element: Weapon.",
+        "Hit up to 20 nearby enemies (radius 3.0m):\nDeals ATK 500% physical damage. Element: Weapon."
+      ]
+    },
+    {
+      "guid": "b02a294d5a087804eb84327e758ea68d",
+      "name": "Killing Blow",
+      "description": "A powerful hit meant to finish enemies",
+      "maxLevel": 5,
+      "isPassive": false,
+      "archetype": "Rogue",
+      "requiredSpentPoints": 40,
+      "x": -283.165466,
+      "y": -640.1698,
+      "levels": [
+        {
+          "level": 1,
+          "manaCost": 25,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 2,
+          "manaCost": 35,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 3,
+          "manaCost": 45,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 4,
+          "manaCost": 55,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 5,
+          "manaCost": 65,
+          "hpCost": 0,
+          "moneyCost": 0
+        }
+      ],
+      "prerequisites": [
+        {
+          "skillGuid": "ac595e4384132c249897b2864625abe4",
+          "requiredLevel": 5
+        }
+      ],
+      "iconFile": "skills/b02a294d5a087804eb84327e758ea68d.png",
+      "requiredWeapons": [
+        "Dagger"
+      ],
+      "targetMask": "Enemy",
+      "range": 0.0,
+      "afterCastDelay": 5.0,
+      "castTimeMs": 0,
+      "useCastTimePerLevel": false,
+      "canBeCancelled": false,
+      "tooltips": [
+        "Deals ATK 200% physical damage. Element: Weapon. Execution: Deals +30% bonus damage when target HP is at or below 30%.",
+        "Deals ATK 400% physical damage. Element: Weapon.",
+        "Deals ATK 600% physical damage. Element: Weapon. Execution: Deals +30% bonus damage when target HP is at or below 30%.",
+        "Deals ATK 800% physical damage. Element: Weapon. Execution: Deals +30% bonus damage when target HP is at or below 30%.",
+        "Deals ATK 1000% physical damage. Element: Weapon. Execution: Deals +30% bonus damage when target HP is at or below 30%."
+      ]
+    },
+    {
+      "guid": "4c45c108936652649af8a7358601ebbb",
+      "name": "Blood Lust",
+      "description": "",
+      "maxLevel": 5,
+      "isPassive": true,
+      "archetype": "Berserk",
+      "requiredSpentPoints": 20,
+      "x": 850.0,
+      "y": -7.0740216E-06,
+      "levels": [
+        {
+          "level": 1,
+          "bonuses": [
+            "Reduce the damage taken from all sources by 3%"
+          ]
+        },
+        {
+          "level": 2,
+          "bonuses": [
+            "Reduce the damage taken from all sources by 6%"
+          ]
+        },
+        {
+          "level": 3,
+          "bonuses": [
+            "Reduce the damage taken from all sources by 9%"
+          ]
+        },
+        {
+          "level": 4,
+          "bonuses": [
+            "Reduce the damage taken from all sources by 12%"
+          ]
+        },
+        {
+          "level": 5,
+          "bonuses": [
+            "Reduce the damage taken from all sources by 15%"
+          ]
+        }
+      ],
+      "iconFile": "skills/4c45c108936652649af8a7358601ebbb.png"
+    },
+    {
+      "guid": "5f0604074ba5b554a8286d450edec2ea",
+      "name": "Auto steal",
+      "description": "",
+      "maxLevel": 5,
+      "isPassive": true,
+      "archetype": "Rogue",
+      "requiredSpentPoints": 10,
+      "x": -393.1354,
+      "y": -384.63562,
+      "levels": [
+        {
+          "level": 1,
+          "bonuses": [
+            "7% chance to cast Steal Lv.1 on target on autoattack"
+          ]
+        },
+        {
+          "level": 2,
+          "bonuses": [
+            "10% chance to cast Steal Lv.2 on target on autoattack"
+          ]
+        },
+        {
+          "level": 3,
+          "bonuses": [
+            "13% chance to cast Steal Lv.3 on target on autoattack"
+          ]
+        },
+        {
+          "level": 4,
+          "bonuses": [
+            "16% chance to cast Steal Lv.4 on target on autoattack"
+          ]
+        },
+        {
+          "level": 5,
+          "bonuses": [
+            "20% chance to cast Steal Lv.5 on target on autoattack"
+          ]
+        }
+      ],
+      "prerequisites": [
+        {
+          "skillGuid": "2cf9e57881542024f87d669fc8066d38",
+          "requiredLevel": 5
+        }
+      ],
+      "iconFile": "skills/5f0604074ba5b554a8286d450edec2ea.png"
+    },
+    {
+      "guid": "2c20de59539ac5343adb6dea56a3614b",
+      "name": "Quenching Aura",
+      "description": "",
+      "maxLevel": 5,
+      "isPassive": true,
+      "archetype": "Blacksmith",
+      "requiredSpentPoints": 35,
+      "x": 442.498474,
+      "y": -542.3975,
+      "levels": [
+        {
+          "level": 1,
+          "bonuses": [
+            "Reduce the damage taken from all sources by 10%"
+          ]
+        },
+        {
+          "level": 2,
+          "bonuses": [
+            "Reduce the damage taken from all sources by 15%"
+          ]
+        },
+        {
+          "level": 3,
+          "bonuses": [
+            "Reduce the damage taken from all sources by 20%"
+          ]
+        },
+        {
+          "level": 4,
+          "bonuses": [
+            "Reduce the damage taken from all sources by 25%"
+          ]
+        },
+        {
+          "level": 5,
+          "bonuses": [
+            "Reduce the damage taken from all sources by 30%"
+          ]
+        }
+      ],
+      "prerequisites": [
+        {
+          "skillGuid": "2a0b0e82fa79af744ac0834a84f3816d",
+          "requiredLevel": 3
+        }
+      ],
+      "iconFile": "skills/2c20de59539ac5343adb6dea56a3614b.png"
+    },
+    {
+      "guid": "9d03338495050a5499b816cb9f5b5ba6",
+      "name": "Sword Mastery",
+      "description": "Increases damage with One Handed Swords",
+      "maxLevel": 5,
+      "isPassive": true,
+      "archetype": "Berserk",
+      "requiredSpentPoints": 10,
+      "x": 675.0382,
+      "y": -185.26593,
+      "levels": [
+        {
+          "level": 1,
+          "bonuses": [
+            "+3% physical damage with OneHandedSword"
+          ]
+        },
+        {
+          "level": 2,
+          "bonuses": [
+            "+6% physical damage with OneHandedSword"
+          ]
+        },
+        {
+          "level": 3,
+          "bonuses": [
+            "+9% physical damage with OneHandedSword"
+          ]
+        },
+        {
+          "level": 4,
+          "bonuses": [
+            "+12% physical damage with OneHandedSword"
+          ]
+        },
+        {
+          "level": 5,
+          "bonuses": [
+            "+15% physical damage with OneHandedSword"
+          ]
+        }
+      ],
+      "iconFile": "skills/9d03338495050a5499b816cb9f5b5ba6.png"
+    },
+    {
+      "guid": "dcacbf87118d84c43853505838384e6f",
+      "name": "Rivet Shot",
+      "description": "Throws a bolt that interrupts casts",
+      "maxLevel": 1,
+      "isPassive": false,
+      "archetype": "Blacksmith",
+      "requiredSpentPoints": 5,
+      "x": 231.550262,
+      "y": -326.166321,
+      "levels": [
+        {
+          "level": 1,
+          "manaCost": 40,
+          "hpCost": 0,
+          "moneyCost": 0,
+          "itemCosts": [
+            {
+              "itemGuid": "04847377bb78e2841956cc3548b47ed4",
+              "amount": 1,
+              "itemName": "Bolt"
+            }
+          ]
+        }
+      ],
+      "iconFile": "skills/dcacbf87118d84c43853505838384e6f.png",
+      "targetMask": "Enemy",
+      "range": 0.0,
+      "afterCastDelay": 3.0,
+      "castTimeMs": 1000.0,
+      "useCastTimePerLevel": false,
+      "canBeCancelled": false,
+      "tooltips": [
+        "Deals ATK 100% physical damage. Element: Neutral.\r\nApplies effects when hit: Interrupts the target's current cast."
+      ]
+    },
+    {
+      "guid": "55534818dd0eb0b47a9eaea34e217f3a",
+      "name": "Pure Strength",
+      "description": "+1 STR per rank",
+      "maxLevel": 3,
+      "isPassive": true,
+      "archetype": "Berserk",
+      "requiredSpentPoints": 0,
+      "x": 250.0,
+      "y": 0.0,
+      "levels": [
+        {
+          "level": 1,
+          "bonuses": [
+            "+1 Strength"
+          ]
+        },
+        {
+          "level": 2,
+          "bonuses": [
+            "+2 Strength"
+          ]
+        },
+        {
+          "level": 3,
+          "bonuses": [
+            "+3 Strength"
+          ]
+        }
+      ],
+      "iconFile": "skills/55534818dd0eb0b47a9eaea34e217f3a.png"
+    },
+    {
+      "guid": "788ed776ead987f4eb4fa27188b9b5b3",
+      "name": "Spellcraft Studies",
+      "description": "Foundational study that sharpens the mind and amplifies spell power",
+      "maxLevel": 5,
+      "isPassive": true,
+      "archetype": "Mage",
+      "requiredSpentPoints": 15,
+      "x": -337.198,
+      "y": 434.508331,
+      "levels": [
+        {
+          "level": 1,
+          "bonuses": [
+            "+1.5% Magic Attack",
+            "+1 SP Recovery"
+          ]
+        },
+        {
+          "level": 2,
+          "bonuses": [
+            "+3% Magic Attack",
+            "+2 SP Recovery"
+          ]
+        },
+        {
+          "level": 3,
+          "bonuses": [
+            "+4.5% Magic Attack",
+            "+3 SP Recovery"
+          ]
+        },
+        {
+          "level": 4,
+          "bonuses": [
+            "+6% Magic Attack",
+            "+4 SP Recovery"
+          ]
+        },
+        {
+          "level": 5,
+          "bonuses": [
+            "+7.5% Magic Attack",
+            "+5 SP Recovery"
+          ]
+        }
+      ],
+      "iconFile": "skills/788ed776ead987f4eb4fa27188b9b5b3.png"
+    },
+    {
+      "guid": "bb799b4e285516c4b87fce9254fa482f",
+      "name": "Holy Wrath",
+      "description": "Channel holy fury to smite the unholy and purge corruption",
+      "maxLevel": 5,
+      "isPassive": true,
+      "archetype": "Priest",
+      "requiredSpentPoints": 0,
+      "x": -700.0,
+      "y": -6.119594E-05,
+      "levels": [
+        {
+          "level": 1,
+          "bonuses": [
+            "+3% damage to Undead enemies"
+          ]
+        },
+        {
+          "level": 2,
+          "bonuses": [
+            "+6% damage to Undead enemies"
+          ]
+        },
+        {
+          "level": 3,
+          "bonuses": [
+            "+9% damage to Undead enemies"
+          ]
+        },
+        {
+          "level": 4,
+          "bonuses": [
+            "+12% damage to Undead enemies"
+          ]
+        },
+        {
+          "level": 5,
+          "bonuses": [
+            "+15% damage to Undead enemies"
+          ]
+        }
+      ],
+      "prerequisites": [
+        {
+          "skillGuid": "707d0569342ed42408d203fe57d78cdd",
+          "requiredLevel": 3
+        }
+      ],
+      "iconFile": "skills/bb799b4e285516c4b87fce9254fa482f.png"
+    },
+    {
+      "guid": "203009fc4e0456f40ba6c55272070123",
+      "name": "Blood Rage",
+      "description": "",
+      "maxLevel": 5,
+      "isPassive": true,
+      "archetype": "Berserk",
+      "requiredSpentPoints": 20,
+      "x": 846.6933,
+      "y": 74.90272,
+      "levels": [
+        {
+          "level": 1,
+          "bonuses": [
+            "+5 Attack"
+          ]
+        },
+        {
+          "level": 2,
+          "bonuses": [
+            "+10 Attack"
+          ]
+        },
+        {
+          "level": 3,
+          "bonuses": [
+            "+15 Attack"
+          ]
+        },
+        {
+          "level": 4,
+          "bonuses": [
+            "+20 Attack"
+          ]
+        },
+        {
+          "level": 5,
+          "bonuses": [
+            "+25 Attack"
+          ]
+        }
+      ],
+      "iconFile": "skills/203009fc4e0456f40ba6c55272070123.png"
+    },
+    {
+      "guid": "356f0723fb905b049b54f0ff7bde2180",
+      "name": "Critical Aim",
+      "description": "For the best hunters",
+      "maxLevel": 3,
+      "isPassive": true,
+      "archetype": "Hunter",
+      "requiredSpentPoints": 5,
+      "x": 166.693329,
+      "y": 363.6115,
+      "levels": [
+        {
+          "level": 1,
+          "bonuses": [
+            "+2 % Critical"
+          ]
+        },
+        {
+          "level": 2,
+          "bonuses": [
+            "+4 % Critical"
+          ]
+        },
+        {
+          "level": 3,
+          "bonuses": [
+            "+6 % Critical"
+          ]
+        }
+      ],
+      "iconFile": "skills/356f0723fb905b049b54f0ff7bde2180.png"
+    },
+    {
+      "guid": "4c03f7dcabe8bb3438bcc7049f6e80c1",
+      "name": "Mass Blessing",
+      "description": "Grants STR, INT and DEX",
+      "maxLevel": 1,
+      "isPassive": false,
+      "archetype": "Priest",
+      "requiredSpentPoints": 0,
+      "x": -384.2837,
+      "y": -111.022736,
+      "levels": [
+        {
+          "level": 1,
+          "manaCost": 50,
+          "hpCost": 0,
+          "moneyCost": 0
+        }
+      ],
+      "prerequisites": [
+        {
+          "skillGuid": "e943f753d8d9b0a428ae92f75e9369ba",
+          "requiredLevel": 5
+        }
+      ],
+      "iconFile": "skills/4c03f7dcabe8bb3438bcc7049f6e80c1.png",
+      "requiredWeapons": [
+        "OneHandedStaff",
+        "TwoHandedStaff"
+      ],
+      "targetMask": "Self",
+      "range": 15.0,
+      "afterCastDelay": 0.5,
+      "castTimeMs": 500.0,
+      "useCastTimePerLevel": true,
+      "canBeCancelled": true,
+      "tooltips": [
+        "Applies buff to party within 20m for 150s: Blessing\r\n+5 Strength\n+5 Intelligence\n+5 Dexterity."
+      ]
+    },
+    {
+      "guid": "928b6d5826ac3774d87c32e0791c63d1",
+      "name": "Lacerate",
+      "description": "A powerful melee hit",
+      "maxLevel": 5,
+      "isPassive": false,
+      "archetype": "Rogue",
+      "requiredSpentPoints": 0,
+      "x": -124.999977,
+      "y": -216.506363,
+      "levels": [
+        {
+          "level": 1,
+          "manaCost": 8,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 2,
+          "manaCost": 10,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 3,
+          "manaCost": 12,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 4,
+          "manaCost": 14,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 5,
+          "manaCost": 16,
+          "hpCost": 0,
+          "moneyCost": 0
+        }
+      ],
+      "iconFile": "skills/928b6d5826ac3774d87c32e0791c63d1.png",
+      "requiredWeapons": [
+        "Dagger"
+      ],
+      "targetMask": "Enemy",
+      "range": 0.0,
+      "afterCastDelay": 2.0,
+      "castTimeMs": 0,
+      "useCastTimePerLevel": false,
+      "canBeCancelled": false,
+      "tooltips": [
+        "Deals ATK 130% physical damage. Element: Weapon.\r\nApplies effects when hit: 5% chance: Applies buff (target) for 1s: Stunned\r\nCrowd Control: Stunned",
+        "Deals ATK 190% physical damage. Element: Weapon.\r\nApplies effects when hit: 10% chance: Applies buff (target) for 1.5s: Stunned\r\nCrowd Control: Stunned",
+        "Deals ATK 250% physical damage. Element: Weapon.\r\nApplies effects when hit: 15% chance: Applies buff (target) for 2s: Stunned\r\nCrowd Control: Stunned",
+        "Deals ATK 310% physical damage. Element: Weapon.\r\nApplies effects when hit: 20% chance: Applies buff (target) for 2.5s: Stunned\r\nCrowd Control: Stunned",
+        "Deals ATK 400% physical damage. Element: Weapon.\r\nApplies effects when hit: 25% chance: Applies buff (target) for 3s: Stunned\r\nCrowd Control: Stunned"
+      ]
+    },
+    {
+      "guid": "811c5bf2a5866bd468a5ad19ec6f1558",
+      "name": "Impact forging",
+      "description": "",
+      "maxLevel": 3,
+      "isPassive": true,
+      "archetype": "Blacksmith",
+      "requiredSpentPoints": 10,
+      "x": 248.480667,
+      "y": -654.413757,
+      "levels": [
+        {
+          "level": 1,
+          "bonuses": [
+            "+5% crafting success for OneHandedMace, TwoHandedMace, Shield"
+          ]
+        },
+        {
+          "level": 2,
+          "bonuses": [
+            "+10% crafting success for OneHandedMace, TwoHandedMace, Shield"
+          ]
+        },
+        {
+          "level": 3,
+          "bonuses": [
+            "+15% crafting success for OneHandedMace, TwoHandedMace, Shield"
+          ]
+        }
+      ],
+      "prerequisites": [
+        {
+          "skillGuid": "14897575f0264ac4a908e453e52ec8a4",
+          "requiredLevel": 3
+        }
+      ],
+      "iconFile": "skills/811c5bf2a5866bd468a5ad19ec6f1558.png"
+    },
+    {
+      "guid": "c7541ae0372eb9c4c930361da9aaabc7",
+      "name": "Tempering Party",
+      "description": "Concentrate yourself...",
+      "maxLevel": 5,
+      "isPassive": false,
+      "archetype": "Blacksmith",
+      "requiredSpentPoints": 15,
+      "x": 393.135254,
+      "y": -384.635773,
+      "levels": [
+        {
+          "level": 1,
+          "manaCost": 10,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 2,
+          "manaCost": 20,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 3,
+          "manaCost": 30,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 4,
+          "manaCost": 40,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 5,
+          "manaCost": 50,
+          "hpCost": 0,
+          "moneyCost": 0
+        }
+      ],
+      "prerequisites": [
+        {
+          "skillGuid": "e8f9a166ac882ce4e84674dd5a041260",
+          "requiredLevel": 5
+        }
+      ],
+      "iconFile": "skills/c7541ae0372eb9c4c930361da9aaabc7.png",
+      "targetMask": "Self",
+      "range": 0.0,
+      "afterCastDelay": 1.0,
+      "castTimeMs": 0,
+      "useCastTimePerLevel": false,
+      "canBeCancelled": false,
+      "tooltips": [
+        "Applies buff to party within 20m for 60s: Tempering\r\n+5% Attack.",
+        "Applies buff to party within 20m for 120s: Tempering\r\n+10% Attack.",
+        "Applies buff to party within 20m for 180s: Tempering\r\n+15% Attack.",
+        "Applies buff to party within 20m for 240s: Tempering\r\n+20% Attack.",
+        "Applies buff to party within 20m for 300s: Tempering\r\n+25% Attack."
+      ]
+    },
+    {
+      "guid": "d87d92c245dd0d443a296b99975e3048",
+      "name": "Storm Gust",
+      "description": "Bring the cold, bring the storm...",
+      "maxLevel": 5,
+      "isPassive": false,
+      "archetype": "Mage",
+      "requiredSpentPoints": 0,
+      "x": -425.000061,
+      "y": 736.1216,
+      "levels": [
+        {
+          "level": 1,
+          "manaCost": 20,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 2,
+          "manaCost": 25,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 3,
+          "manaCost": 30,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 4,
+          "manaCost": 35,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 5,
+          "manaCost": 40,
+          "hpCost": 0,
+          "moneyCost": 0
+        }
+      ],
+      "prerequisites": [
+        {
+          "skillGuid": "29eba0b4140e7494f879d74ce4781e43",
+          "requiredLevel": 3
+        }
+      ],
+      "iconFile": "skills/d87d92c245dd0d443a296b99975e3048.png",
+      "targetMask": "Ground",
+      "range": 15.0,
+      "afterCastDelay": 5.0,
+      "castTimeMs": 1000.0,
+      "useCastTimePerLevel": true,
+      "canBeCancelled": true,
+      "tooltips": [
+        "Creates a storm gust that deals Deals MATK 100% magical damage. Element: Ice. and applies Applies buff (target) for 10s: Frostbite\r\n-10% Walk Speed to enemies in the area.\n\nEvery 3 hits will apply: Applies buff (target) for 10s: Frozen\r\nCrowd Control: Frozen\r\n(Breaks on damage)\r\nImbues you with Ice element",
+        "Creates a storm gust that deals Deals MATK 100% magical damage. Element: Ice. and applies Applies buff (target) for 10s: Frostbite\r\n-20% Walk Speed to enemies in the area.\n\nEvery 3 hits will apply: Applies buff (target) for 10s: Frozen\r\nCrowd Control: Frozen\r\n(Breaks on damage)\r\nImbues you with Ice element",
+        "Creates a storm gust that deals Deals MATK 100% magical damage. Element: Ice. and applies Applies buff (target) for 10s: Frostbite\r\n-30% Walk Speed to enemies in the area.\n\nEvery 3 hits will apply: Applies buff (target) for 10s: Frozen\r\nCrowd Control: Frozen\r\n(Breaks on damage)\r\nImbues you with Ice element",
+        "Creates a storm gust that deals Deals MATK 100% magical damage. Element: Ice. and applies Applies buff (target) for 10s: Frostbite\r\n-40% Walk Speed to enemies in the area.\n\nEvery 3 hits will apply: Applies buff (target) for 10s: Frozen\r\nCrowd Control: Frozen\r\n(Breaks on damage)\r\nImbues you with Ice element",
+        "Creates a storm gust that deals Deals MATK 100% magical damage. Element: Ice. and applies Applies buff (target) for 10s: Frostbite\r\n-50% Walk Speed to enemies in the area.\n\nEvery 3 hits will apply: Applies buff (target) for 10s: Frozen\r\nCrowd Control: Frozen\r\n(Breaks on damage)\r\nImbues you with Ice element"
+      ]
+    },
+    {
+      "guid": "51c8f156784911543b8c28f34d3a64f7",
+      "name": "Quick Chanting",
+      "description": "Practice efficient incantations to maintain flow and pressure",
+      "maxLevel": 5,
+      "isPassive": true,
+      "archetype": "Mage",
+      "requiredSpentPoints": 20,
+      "x": -393.135376,
+      "y": 384.63562,
+      "levels": [
+        {
+          "level": 1,
+          "bonuses": [
+            "+3% damage with Magical attacks",
+            "+1% Walk Speed"
+          ]
+        },
+        {
+          "level": 2,
+          "bonuses": [
+            "+6% damage with Magical attacks",
+            "+2% Walk Speed"
+          ]
+        },
+        {
+          "level": 3,
+          "bonuses": [
+            "+9% damage with Magical attacks",
+            "+3% Walk Speed"
+          ]
+        },
+        {
+          "level": 4,
+          "bonuses": [
+            "+12% damage with Magical attacks",
+            "+4% Walk Speed"
+          ]
+        },
+        {
+          "level": 5,
+          "bonuses": [
+            "+15% damage with Magical attacks",
+            "+5% Walk Speed"
+          ]
+        }
+      ],
+      "iconFile": "skills/51c8f156784911543b8c28f34d3a64f7.png"
+    },
+    {
+      "guid": "904e81618f654cc4ea2da4da74678e04",
+      "name": "Health potion mastery",
+      "description": "Increase hp healing with items",
+      "maxLevel": 5,
+      "isPassive": true,
+      "archetype": "Berserk",
+      "requiredSpentPoints": 0,
+      "x": 238.834122,
+      "y": -73.88005,
+      "levels": [
+        {
+          "level": 1,
+          "bonuses": [
+            "+10% HP Item Multiplier"
+          ]
+        },
+        {
+          "level": 2,
+          "bonuses": [
+            "+20% HP Item Multiplier"
+          ]
+        },
+        {
+          "level": 3,
+          "bonuses": [
+            "+30% HP Item Multiplier"
+          ]
+        },
+        {
+          "level": 4,
+          "bonuses": [
+            "+40% HP Item Multiplier"
+          ]
+        },
+        {
+          "level": 5,
+          "bonuses": [
+            "+50% HP Item Multiplier"
+          ]
+        }
+      ],
+      "iconFile": "skills/904e81618f654cc4ea2da4da74678e04.png"
+    },
+    {
+      "guid": "7125decfc52e4304a9a3adf0024285eb",
+      "name": "Execute",
+      "description": "A powerful hit meant to finish enemies",
+      "maxLevel": 5,
+      "isPassive": false,
+      "archetype": "Berserk",
+      "requiredSpentPoints": 15,
+      "x": 690.979248,
+      "y": 112.016335,
+      "levels": [
+        {
+          "level": 1,
+          "manaCost": 25,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 2,
+          "manaCost": 35,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 3,
+          "manaCost": 45,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 4,
+          "manaCost": 55,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 5,
+          "manaCost": 65,
+          "hpCost": 0,
+          "moneyCost": 0
+        }
+      ],
+      "iconFile": "skills/7125decfc52e4304a9a3adf0024285eb.png",
+      "requiredWeapons": [
+        "OneHandedAxe",
+        "TwoHandedAxe",
+        "OneHandedSword",
+        "TwoHandedSword",
+        "OneHandedMace",
+        "TwoHandedMace"
+      ],
+      "targetMask": "Enemy",
+      "range": 0.0,
+      "afterCastDelay": 5.0,
+      "castTimeMs": 0,
+      "useCastTimePerLevel": false,
+      "canBeCancelled": false,
+      "tooltips": [
+        "Deals ATK 200% physical damage. Element: Weapon. Execution: Deals +30% bonus damage when target HP is at or below 30%.",
+        "Deals ATK 400% physical damage. Element: Weapon.",
+        "Deals ATK 600% physical damage. Element: Weapon. Execution: Deals +30% bonus damage when target HP is at or below 30%.",
+        "Deals ATK 800% physical damage. Element: Weapon. Execution: Deals +30% bonus damage when target HP is at or below 30%.",
+        "Deals ATK 1000% physical damage. Element: Weapon. Execution: Deals +30% bonus damage when target HP is at or below 30%."
+      ]
+    },
+    {
+      "guid": "29bdf4a621e5c414f9abe56991171e3d",
+      "name": "Halo",
+      "description": "Unleash a burst of holy power that heals allies or harms the wicked",
+      "maxLevel": 5,
+      "isPassive": false,
+      "archetype": "Priest",
+      "requiredSpentPoints": 20,
+      "x": -538.5344,
+      "y": -111.7171,
+      "levels": [
+        {
+          "level": 1,
+          "manaCost": 5,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 2,
+          "manaCost": 10,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 3,
+          "manaCost": 15,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 4,
+          "manaCost": 20,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 5,
+          "manaCost": 25,
+          "hpCost": 0,
+          "moneyCost": 0
+        }
+      ],
+      "iconFile": "skills/29bdf4a621e5c414f9abe56991171e3d.png",
+      "requiredWeapons": [
+        "OneHandedStaff",
+        "TwoHandedStaff"
+      ],
+      "targetMask": "Self",
+      "range": 15.0,
+      "afterCastDelay": 5.0,
+      "castTimeMs": 400.0,
+      "useCastTimePerLevel": true,
+      "canBeCancelled": true,
+      "tooltips": [
+        "Heals a target for MATK 100% HP. Deals damage instead if the target is Undead.",
+        "Heals a target for MATK 200% HP. Deals damage instead if the target is Undead.",
+        "Heals a target for MATK 300% HP. Deals damage instead if the target is Undead.",
+        "Heals a target for MATK 400% HP. Deals damage instead if the target is Undead.",
+        "Heals a target for MATK 500% HP. Deals damage instead if the target is Undead."
+      ]
+    },
+    {
+      "guid": "2a0b0e82fa79af744ac0834a84f3816d",
+      "name": "Smith's conditioning",
+      "description": "",
+      "maxLevel": 5,
+      "isPassive": true,
+      "archetype": "Blacksmith",
+      "requiredSpentPoints": 15,
+      "x": 337.197845,
+      "y": -434.508484,
+      "levels": [
+        {
+          "level": 1,
+          "bonuses": [
+            "+40 HP",
+            "+2 Defense"
+          ]
+        },
+        {
+          "level": 2,
+          "bonuses": [
+            "+80 HP",
+            "+4 Defense"
+          ]
+        },
+        {
+          "level": 3,
+          "bonuses": [
+            "+120 HP",
+            "+6 Defense"
+          ]
+        },
+        {
+          "level": 4,
+          "bonuses": [
+            "+160 HP",
+            "+8 Defense"
+          ]
+        },
+        {
+          "level": 5,
+          "bonuses": [
+            "+200 HP",
+            "+10 Defense"
+          ]
+        }
+      ],
+      "iconFile": "skills/2a0b0e82fa79af744ac0834a84f3816d.png"
+    },
+    {
+      "guid": "bf16345086512cb4ca96a4dc2eedb15c",
+      "name": "Precision",
+      "description": "More precision with melee weapons",
+      "maxLevel": 5,
+      "isPassive": true,
+      "archetype": "Rogue",
+      "requiredSpentPoints": 0,
+      "x": -55.4351,
+      "y": -243.776443,
+      "levels": [
+        {
+          "level": 1,
+          "bonuses": [
+            "+3 Hit"
+          ]
+        },
+        {
+          "level": 2,
+          "bonuses": [
+            "+6 Hit"
+          ]
+        },
+        {
+          "level": 3,
+          "bonuses": [
+            "+9 Hit"
+          ]
+        },
+        {
+          "level": 4,
+          "bonuses": [
+            "+12 Hit"
+          ]
+        },
+        {
+          "level": 5,
+          "bonuses": [
+            "+15 Hit"
+          ]
+        }
+      ],
+      "iconFile": "skills/bf16345086512cb4ca96a4dc2eedb15c.png"
+    },
+    {
+      "guid": "10bd66aac5ef27a4abd18f81f482c78c",
+      "name": "Dance of blades",
+      "description": "With a dagger in each hand, your strikes blur into a whirlwind of steel.",
+      "maxLevel": 5,
+      "isPassive": true,
+      "archetype": "Rogue",
+      "requiredSpentPoints": 10,
+      "x": -166.6933,
+      "y": -363.611542,
+      "levels": [
+        {
+          "level": 1,
+          "bonuses": [
+            "+2 Attack Speed"
+          ]
+        },
+        {
+          "level": 2,
+          "bonuses": [
+            "+4 Attack Speed"
+          ]
+        },
+        {
+          "level": 3,
+          "bonuses": [
+            "+6 Attack Speed"
+          ]
+        },
+        {
+          "level": 4,
+          "bonuses": [
+            "+8 Attack Speed"
+          ]
+        },
+        {
+          "level": 5,
+          "bonuses": [
+            "+10 Attack Speed"
+          ]
+        }
+      ],
+      "iconFile": "skills/10bd66aac5ef27a4abd18f81f482c78c.png"
+    },
+    {
+      "guid": "b3c5ab05df8722543855c7319456d512",
+      "name": "Mace discipline",
+      "description": "",
+      "maxLevel": 5,
+      "isPassive": true,
+      "archetype": "Blacksmith",
+      "requiredSpentPoints": 10,
+      "x": 274.999939,
+      "y": -476.314,
+      "levels": [
+        {
+          "level": 1,
+          "bonuses": [
+            "+3% physical damage with OneHandedMace",
+            "+3% physical damage with TwoHandedMace"
+          ]
+        },
+        {
+          "level": 2,
+          "bonuses": [
+            "+6% physical damage with OneHandedMace",
+            "+6% physical damage with TwoHandedMace"
+          ]
+        },
+        {
+          "level": 3,
+          "bonuses": [
+            "+9% physical damage with OneHandedMace",
+            "+9% physical damage with TwoHandedMace"
+          ]
+        },
+        {
+          "level": 4,
+          "bonuses": [
+            "+12% physical damage with OneHandedMace",
+            "+12% physical damage with TwoHandedMace"
+          ]
+        },
+        {
+          "level": 5,
+          "bonuses": [
+            "+15% physical damage with OneHandedMace",
+            "+15% physical damage with TwoHandedMace"
+          ]
+        }
+      ],
+      "iconFile": "skills/b3c5ab05df8722543855c7319456d512.png"
+    },
+    {
+      "guid": "11fb0e14bec1afb49a367a41ac0d5a9e",
+      "name": "Electric Attunement",
+      "description": "Pledge yourself to the electric element, empowering its spells",
+      "maxLevel": 3,
+      "isPassive": true,
+      "archetype": "Mage",
+      "requiredSpentPoints": 0,
+      "x": -288.290344,
+      "y": 277.2881,
+      "levels": [
+        {
+          "level": 1,
+          "bonuses": [
+            "+5% Electric skill damage"
+          ]
+        },
+        {
+          "level": 2,
+          "bonuses": [
+            "+10% Electric skill damage"
+          ]
+        },
+        {
+          "level": 3,
+          "bonuses": [
+            "+15% Electric skill damage"
+          ]
+        }
+      ],
+      "prerequisites": [
+        {
+          "skillGuid": "8950fd804cdfa00439037161da907d64",
+          "requiredLevel": 3
+        }
+      ],
+      "iconFile": "skills/11fb0e14bec1afb49a367a41ac0d5a9e.png"
+    },
+    {
+      "guid": "afa472b64c8c6a84cbcdb0ac54a34efa",
+      "name": "Agility",
+      "description": "Like the wind...",
+      "maxLevel": 5,
+      "isPassive": false,
+      "archetype": "Priest",
+      "requiredSpentPoints": 0,
+      "x": -250.0,
+      "y": -2.18556943E-05,
+      "levels": [
+        {
+          "level": 1,
+          "manaCost": 10,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 2,
+          "manaCost": 15,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 3,
+          "manaCost": 20,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 4,
+          "manaCost": 25,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 5,
+          "manaCost": 30,
+          "hpCost": 0,
+          "moneyCost": 0
+        }
+      ],
+      "iconFile": "skills/afa472b64c8c6a84cbcdb0ac54a34efa.png",
+      "targetMask": "Ally",
+      "range": 15.0,
+      "afterCastDelay": 1.0,
+      "castTimeMs": 200.0,
+      "useCastTimePerLevel": false,
+      "canBeCancelled": true,
+      "tooltips": [
+        "Applies buff for 60s: Agility\r\n+1 Agility\n+3% Walk Speed.",
+        "Applies buff for 120s: Agility\r\n+2 Agility\n+6% Walk Speed.",
+        "Applies buff for 180s: Agility\r\n+3 Agility\n+9% Walk Speed.",
+        "Applies buff for 240s: Agility\r\n+4 Agility\n+12% Walk Speed.",
+        "Applies buff for 300s: Agility\r\n+5 Agility\n+15% Walk Speed."
+      ]
+    },
+    {
+      "guid": "ad284a751cffa224db250e5629d0a77e",
+      "name": "Brutality",
+      "description": "Increase crit chance by 1% per rank",
+      "maxLevel": 5,
+      "isPassive": true,
+      "archetype": "Berserk",
+      "requiredSpentPoints": 10,
+      "x": 398.243469,
+      "y": 37.4450874,
+      "levels": [
+        {
+          "level": 1,
+          "bonuses": [
+            "+1 % Critical"
+          ]
+        },
+        {
+          "level": 2,
+          "bonuses": [
+            "+2 % Critical"
+          ]
+        },
+        {
+          "level": 3,
+          "bonuses": [
+            "+3 % Critical"
+          ]
+        },
+        {
+          "level": 4,
+          "bonuses": [
+            "+4 % Critical"
+          ]
+        },
+        {
+          "level": 5,
+          "bonuses": [
+            "+5 % Critical"
+          ]
+        }
+      ],
+      "iconFile": "skills/ad284a751cffa224db250e5629d0a77e.png"
+    },
+    {
+      "guid": "46d32fdfae5be7b42a1f5f3e7ad58238",
+      "name": "Precision Master",
+      "description": "Never miss",
+      "maxLevel": 3,
+      "isPassive": true,
+      "archetype": "Hunter",
+      "requiredSpentPoints": 0,
+      "x": 288.2903,
+      "y": 277.288116,
+      "levels": [
+        {
+          "level": 1,
+          "bonuses": [
+            "+5 Hit"
+          ]
+        },
+        {
+          "level": 2,
+          "bonuses": [
+            "+10 Hit"
+          ]
+        },
+        {
+          "level": 3,
+          "bonuses": [
+            "+15 Hit"
+          ]
+        }
+      ],
+      "iconFile": "skills/46d32fdfae5be7b42a1f5f3e7ad58238.png"
+    },
+    {
+      "guid": "ab13bf78f3f0fa94cb6cf882044ebc0e",
+      "name": "Blade's Edge",
+      "description": "+1 ATK for every 20 points of STR",
+      "maxLevel": 1,
+      "isPassive": true,
+      "archetype": "Berserk",
+      "requiredSpentPoints": 15,
+      "x": 698.9958,
+      "y": 37.4820633,
+      "levels": [
+        {
+          "level": 1,
+          "bonuses": [
+            "+Strength/20 Attack"
+          ]
+        }
+      ],
+      "iconFile": "skills/ab13bf78f3f0fa94cb6cf882044ebc0e.png"
+    },
+    {
+      "guid": "9e8f0200381482047a10c2567cd43649",
+      "name": "Sanctuary",
+      "description": "Creates an area that heals allies inside",
+      "maxLevel": 5,
+      "isPassive": false,
+      "archetype": "Priest",
+      "requiredSpentPoints": 0,
+      "x": -548.7221,
+      "y": 37.47087,
+      "levels": [
+        {
+          "level": 1,
+          "manaCost": 15,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 2,
+          "manaCost": 25,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 3,
+          "manaCost": 35,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 4,
+          "manaCost": 45,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 5,
+          "manaCost": 55,
+          "hpCost": 0,
+          "moneyCost": 0
+        }
+      ],
+      "prerequisites": [
+        {
+          "skillGuid": "a803ac4310768f144a6cddc1676f64ce",
+          "requiredLevel": 3
+        },
+        {
+          "skillGuid": "fbb9463eb8c43034e89f6a44c6fb1cb7",
+          "requiredLevel": 3
+        }
+      ],
+      "iconFile": "skills/9e8f0200381482047a10c2567cd43649.png",
+      "requiredWeapons": [
+        "OneHandedStaff",
+        "TwoHandedStaff"
+      ],
+      "targetMask": "Ground",
+      "range": 15.0,
+      "afterCastDelay": 5.0,
+      "castTimeMs": 1000.0,
+      "useCastTimePerLevel": false,
+      "canBeCancelled": true,
+      "tooltips": [
+        "Heals a target for MATK 30% HP. Deals damage instead if the target is Undead.",
+        "Heals a target for MATK 60% HP. Deals damage instead if the target is Undead.",
+        "Heals a target for MATK 90% HP. Deals damage instead if the target is Undead.",
+        "Heals a target for MATK 120% HP. Deals damage instead if the target is Undead.",
+        "Heals a target for MATK 150% HP. Deals damage instead if the target is Undead."
+      ]
+    },
+    {
+      "guid": "2970ee23625c2b64daec5282f047e240",
+      "name": "Whirlwind",
+      "description": "Hits in AOE physically",
+      "maxLevel": 5,
+      "isPassive": false,
+      "archetype": "Berserk",
+      "requiredSpentPoints": 30,
+      "x": 836.799,
+      "y": 149.222656,
+      "levels": [
+        {
+          "level": 1,
+          "manaCost": 15,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 2,
+          "manaCost": 20,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 3,
+          "manaCost": 25,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 4,
+          "manaCost": 30,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 5,
+          "manaCost": 35,
+          "hpCost": 0,
+          "moneyCost": 0
+        }
+      ],
+      "iconFile": "skills/2970ee23625c2b64daec5282f047e240.png",
+      "requiredWeapons": [
+        "OneHandedAxe",
+        "TwoHandedAxe",
+        "OneHandedSword",
+        "TwoHandedSword",
+        "OneHandedMace",
+        "TwoHandedMace"
+      ],
+      "targetMask": "Self",
+      "range": 10.0,
+      "afterCastDelay": 2.0,
+      "castTimeMs": 1000.0,
+      "useCastTimePerLevel": false,
+      "canBeCancelled": false,
+      "tooltips": [
+        "Hit up to 20 nearby enemies (radius 3.0m):\nDeals ATK 100% physical damage. Element: Weapon.",
+        "Hit up to 20 nearby enemies (radius 3.0m):\nDeals ATK 200% physical damage. Element: Weapon.",
+        "Hit up to 20 nearby enemies (radius 3.0m):\nDeals ATK 300% physical damage. Element: Weapon.",
+        "Hit up to 20 nearby enemies (radius 3.0m):\nDeals ATK 400% physical damage. Element: Weapon.",
+        "Hit up to 20 nearby enemies (radius 3.0m):\nDeals ATK 500% physical damage. Element: Weapon."
+      ]
+    },
+    {
+      "guid": "14897575f0264ac4a908e453e52ec8a4",
+      "name": "Master smith",
+      "description": "",
+      "maxLevel": 5,
+      "isPassive": true,
+      "archetype": "Blacksmith",
+      "requiredSpentPoints": 10,
+      "x": 207.696121,
+      "y": -509.276276,
+      "levels": [
+        {
+          "level": 1,
+          "bonuses": [
+            "+2% crafting success for all items"
+          ]
+        },
+        {
+          "level": 2,
+          "bonuses": [
+            "+4% crafting success for all items"
+          ]
+        },
+        {
+          "level": 3,
+          "bonuses": [
+            "+6% crafting success for all items"
+          ]
+        },
+        {
+          "level": 4,
+          "bonuses": [
+            "+8% crafting success for all items"
+          ]
+        },
+        {
+          "level": 5,
+          "bonuses": [
+            "+10% crafting success for all items"
+          ]
+        }
+      ],
+      "iconFile": "skills/14897575f0264ac4a908e453e52ec8a4.png"
+    },
+    {
+      "guid": "e8f9a166ac882ce4e84674dd5a041260",
+      "name": "Forge Aura",
+      "description": "Going stronger",
+      "maxLevel": 5,
+      "isPassive": false,
+      "archetype": "Blacksmith",
+      "requiredSpentPoints": 5,
+      "x": 288.2903,
+      "y": -277.288116,
+      "levels": [
+        {
+          "level": 1,
+          "manaCost": 10,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 2,
+          "manaCost": 20,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 3,
+          "manaCost": 30,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 4,
+          "manaCost": 40,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 5,
+          "manaCost": 50,
+          "hpCost": 0,
+          "moneyCost": 0
+        }
+      ],
+      "iconFile": "skills/e8f9a166ac882ce4e84674dd5a041260.png",
+      "targetMask": "Self",
+      "range": 0.0,
+      "afterCastDelay": 1.0,
+      "castTimeMs": 0,
+      "useCastTimePerLevel": false,
+      "canBeCancelled": false,
+      "tooltips": [
+        "Applies buff to party within 20m for 60s: Forge Aura\r\nAlways deals maximum physical damage (ignores ATK variance).",
+        "Applies buff to party within 20m for 120s: Forge Aura\r\nAlways deals maximum physical damage (ignores ATK variance).",
+        "Applies buff to party within 20m for 180s: Forge Aura\r\nAlways deals maximum physical damage (ignores ATK variance).",
+        "Applies buff to party within 20m for 240s: Forge Aura\r\nAlways deals maximum physical damage (ignores ATK variance).",
+        "Applies buff to party within 20m for 300s: Forge Aura\r\nAlways deals maximum physical damage (ignores ATK variance)."
+      ]
+    },
+    {
+      "guid": "28219e598bd11674a9deef5ee34c0f53",
+      "name": "Mass Agility",
+      "description": "Grants STR, INT and DEX",
+      "maxLevel": 1,
+      "isPassive": false,
+      "archetype": "Priest",
+      "requiredSpentPoints": 0,
+      "x": -398.243469,
+      "y": 37.4450569,
+      "levels": [
+        {
+          "level": 1,
+          "manaCost": 50,
+          "hpCost": 0,
+          "moneyCost": 0
+        }
+      ],
+      "prerequisites": [
+        {
+          "skillGuid": "afa472b64c8c6a84cbcdb0ac54a34efa",
+          "requiredLevel": 5
+        }
+      ],
+      "iconFile": "skills/28219e598bd11674a9deef5ee34c0f53.png",
+      "requiredWeapons": [
+        "OneHandedStaff",
+        "TwoHandedStaff"
+      ],
+      "targetMask": "Self",
+      "range": 15.0,
+      "afterCastDelay": 0.5,
+      "castTimeMs": 500.0,
+      "useCastTimePerLevel": true,
+      "canBeCancelled": true,
+      "tooltips": [
+        "Applies buff to party within 20m for 150s: Agility\r\n+5 Agility\n+15% Walk Speed."
+      ]
+    },
+    {
+      "guid": "61a39b3667a49414c9a8e3ff2082e6df",
+      "name": "Explosive Trap",
+      "description": "Old tricks, still deadly as ever.",
+      "maxLevel": 5,
+      "isPassive": false,
+      "archetype": "Hunter",
+      "requiredSpentPoints": 10,
+      "x": 274.999969,
+      "y": 476.314,
+      "levels": [
+        {
+          "level": 1,
+          "manaCost": 40,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 2,
+          "manaCost": 40,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 3,
+          "manaCost": 40,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 4,
+          "manaCost": 40,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 5,
+          "manaCost": 40,
+          "hpCost": 0,
+          "moneyCost": 0
+        }
+      ],
+      "iconFile": "skills/61a39b3667a49414c9a8e3ff2082e6df.png",
+      "targetMask": "Ground",
+      "range": 3.0,
+      "afterCastDelay": 1.0,
+      "castTimeMs": 0,
+      "useCastTimePerLevel": false,
+      "canBeCancelled": false,
+      "tooltips": [
+        "Places a trap that: \nExplode and apply the next effects to all the enemies inside:",
+        "Places a trap that: \nExplode and apply the next effects to all the enemies inside:",
+        "Places a trap that: \nExplode and apply the next effects to all the enemies inside:",
+        "Places a trap that: \nExplode and apply the next effects to all the enemies inside:",
+        "Places a trap that: \nExplode and apply the next effects to all the enemies inside:"
+      ]
+    },
+    {
+      "guid": "7908adda084436c4bb3ca46315085611",
+      "name": "Haggle",
+      "description": "",
+      "maxLevel": 5,
+      "isPassive": true,
+      "archetype": "Blacksmith",
+      "requiredSpentPoints": 0,
+      "x": 124.999977,
+      "y": -216.506363,
+      "levels": [
+        {
+          "level": 1,
+          "bonuses": [
+            "6% discount when buying items from NPCs"
+          ]
+        },
+        {
+          "level": 2,
+          "bonuses": [
+            "12% discount when buying items from NPCs"
+          ]
+        },
+        {
+          "level": 3,
+          "bonuses": [
+            "18% discount when buying items from NPCs"
+          ]
+        },
+        {
+          "level": 4,
+          "bonuses": [
+            "24% discount when buying items from NPCs"
+          ]
+        },
+        {
+          "level": 5,
+          "bonuses": [
+            "30% discount when buying items from NPCs"
+          ]
+        }
+      ],
+      "iconFile": "skills/7908adda084436c4bb3ca46315085611.png"
+    },
+    {
+      "guid": "ade9d0ab4ef69cf47ac5680654029ddc",
+      "name": "Bash",
+      "description": "A powerful melee hit",
+      "maxLevel": 5,
+      "isPassive": false,
+      "archetype": "Berserk",
+      "requiredSpentPoints": 0,
+      "x": 238.834122,
+      "y": 73.88005,
+      "levels": [
+        {
+          "level": 1,
+          "manaCost": 8,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 2,
+          "manaCost": 10,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 3,
+          "manaCost": 12,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 4,
+          "manaCost": 14,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 5,
+          "manaCost": 16,
+          "hpCost": 0,
+          "moneyCost": 0
+        }
+      ],
+      "iconFile": "skills/ade9d0ab4ef69cf47ac5680654029ddc.png",
+      "requiredWeapons": [
+        "OneHandedAxe",
+        "TwoHandedAxe",
+        "OneHandedSword",
+        "TwoHandedSword",
+        "OneHandedMace",
+        "TwoHandedMace",
+        "Barehands",
+        "Dagger"
+      ],
+      "targetMask": "Enemy",
+      "range": 0.0,
+      "afterCastDelay": 0.0,
+      "castTimeMs": 0,
+      "useCastTimePerLevel": false,
+      "canBeCancelled": false,
+      "tooltips": [
+        "Deals ATK 130% physical damage. Element: Weapon.\r\nApplies effects when hit: 10% chance: Applies buff (target) for 1s: Stunned\r\nCrowd Control: Stunned",
+        "Deals ATK 190% physical damage. Element: Weapon.\r\nApplies effects when hit: 20% chance: Applies buff (target) for 1.5s: Stunned\r\nCrowd Control: Stunned",
+        "Deals ATK 250% physical damage. Element: Weapon.\r\nApplies effects when hit: 30% chance: Applies buff (target) for 2s: Stunned\r\nCrowd Control: Stunned",
+        "Deals ATK 310% physical damage. Element: Weapon.\r\nApplies effects when hit: 40% chance: Applies buff (target) for 2.5s: Stunned\r\nCrowd Control: Stunned",
+        "Deals ATK 400% physical damage. Element: Weapon.\r\nApplies effects when hit: 50% chance: Applies buff (target) for 3s: Stunned\r\nCrowd Control: Stunned"
+      ]
+    },
+    {
+      "guid": "f8e449633963d114c832f203616568a8",
+      "name": "Coward",
+      "description": "Why fight fair?",
+      "maxLevel": 5,
+      "isPassive": true,
+      "archetype": "Rogue",
+      "requiredSpentPoints": 5,
+      "x": -349.999939,
+      "y": -606.217834,
+      "levels": [
+        {
+          "level": 1,
+          "bonuses": [
+            "+5% damage when you are not the target's focus"
+          ]
+        },
+        {
+          "level": 2,
+          "bonuses": [
+            "+10% damage when you are not the target's focus"
+          ]
+        },
+        {
+          "level": 3,
+          "bonuses": [
+            "+15% damage when you are not the target's focus"
+          ]
+        },
+        {
+          "level": 4,
+          "bonuses": [
+            "+20% damage when you are not the target's focus"
+          ]
+        },
+        {
+          "level": 5,
+          "bonuses": [
+            "+25% damage when you are not the target's focus"
+          ]
+        }
+      ],
+      "prerequisites": [
+        {
+          "skillGuid": "f8caab21512fd854c91604e68474fd65",
+          "requiredLevel": 3
+        }
+      ],
+      "iconFile": "skills/f8e449633963d114c832f203616568a8.png"
+    },
+    {
+      "guid": "52f4d18a622b52c4a866d7a6f2906fa7",
+      "name": "Icebound Snare Trap",
+      "description": "Struggle all you want; the ice will not let go.",
+      "maxLevel": 3,
+      "isPassive": false,
+      "archetype": "Hunter",
+      "requiredSpentPoints": 10,
+      "x": 207.696335,
+      "y": 509.276184,
+      "levels": [
+        {
+          "level": 1,
+          "manaCost": 25,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 2,
+          "manaCost": 25,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 3,
+          "manaCost": 25,
+          "hpCost": 0,
+          "moneyCost": 0
+        }
+      ],
+      "iconFile": "skills/52f4d18a622b52c4a866d7a6f2906fa7.png",
+      "targetMask": "Ground",
+      "range": 3.0,
+      "afterCastDelay": 1.0,
+      "castTimeMs": 0,
+      "useCastTimePerLevel": false,
+      "canBeCancelled": false,
+      "tooltips": [
+        "Places a trap that: \nApply Applies buff (target) for 10s: Frostbite\r\n-10% Walk Speed to all the enemies inside.",
+        "Places a trap that: \nApply Applies buff (target) for 10s: Frostbite\r\n-20% Walk Speed to all the enemies inside.",
+        "Places a trap that: \nApply Applies buff (target) for 10s: Frostbite\r\n-30% Walk Speed to all the enemies inside."
+      ]
+    },
+    {
+      "guid": "b2d19fe7d07a5c04cb2ef223f28aa575",
+      "name": "Halcon Eyes",
+      "description": "The breeze does not carry you — it follows your stride.",
+      "maxLevel": 3,
+      "isPassive": true,
+      "archetype": "Hunter",
+      "requiredSpentPoints": 5,
+      "x": 231.55014,
+      "y": 326.1664,
+      "levels": [
+        {
+          "level": 1,
+          "bonuses": [
+            "+1 Weapon Range"
+          ]
+        },
+        {
+          "level": 2,
+          "bonuses": [
+            "+2 Weapon Range"
+          ]
+        },
+        {
+          "level": 3,
+          "bonuses": [
+            "+3 Weapon Range"
+          ]
+        }
+      ],
+      "iconFile": "skills/b2d19fe7d07a5c04cb2ef223f28aa575.png"
+    },
+    {
+      "guid": "f1941608b82f4c34bbab04a0af6a5123",
+      "name": "Frenzy Slash",
+      "description": "A powerful melee hit",
+      "maxLevel": 5,
+      "isPassive": false,
+      "archetype": "Berserk",
+      "requiredSpentPoints": 0,
+      "x": 384.283722,
+      "y": 111.02269,
+      "levels": [
+        {
+          "level": 1,
+          "manaCost": 15,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 2,
+          "manaCost": 15,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 3,
+          "manaCost": 15,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 4,
+          "manaCost": 15,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 5,
+          "manaCost": 15,
+          "hpCost": 0,
+          "moneyCost": 0
+        }
+      ],
+      "prerequisites": [
+        {
+          "skillGuid": "ade9d0ab4ef69cf47ac5680654029ddc",
+          "requiredLevel": 3
+        }
+      ],
+      "iconFile": "skills/f1941608b82f4c34bbab04a0af6a5123.png",
+      "requiredWeapons": [
+        "OneHandedAxe",
+        "TwoHandedAxe",
+        "OneHandedSword",
+        "TwoHandedSword",
+        "OneHandedMace",
+        "TwoHandedMace"
+      ],
+      "targetMask": "Enemy",
+      "range": 0.0,
+      "afterCastDelay": 1.0,
+      "castTimeMs": 0,
+      "useCastTimePerLevel": false,
+      "canBeCancelled": false,
+      "tooltips": [
+        "Deals ATK 100% physical damage. Element: Weapon.\n\nApplies buff (self) for 10s: Frenzy\r\nMax Stacks: 5\r\n+1 Attack per stack",
+        "Deals ATK 200% physical damage. Element: Weapon.\n\nApplies buff (self) for 10s: Frenzy\r\nMax Stacks: 5\r\n+2 Attack per stack",
+        "Deals ATK 300% physical damage. Element: Weapon.\n\nApplies buff (self) for 10s: Frenzy\r\nMax Stacks: 5\r\n+3 Attack per stack",
+        "Deals ATK 400% physical damage. Element: Weapon.\n\nApplies buff (self) for 10s: Frenzy\r\nMax Stacks: 5\r\n+4 Attack per stack",
+        "Deals ATK 500% physical damage. Element: Weapon.\n\nApplies buff (self) for 10s: Frenzy\r\nMax Stacks: 5\r\n+5 Attack per stack"
+      ]
+    },
+    {
+      "guid": "b73edc202aceb7e44b9ddee3a072e892",
+      "name": "Triple Strafe",
+      "description": "Throws two arrows at once",
+      "maxLevel": 5,
+      "isPassive": false,
+      "archetype": "Hunter",
+      "requiredSpentPoints": 25,
+      "x": 95.9933548,
+      "y": 388.3108,
+      "levels": [
+        {
+          "level": 1,
+          "manaCost": 22,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 2,
+          "manaCost": 22,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 3,
+          "manaCost": 22,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 4,
+          "manaCost": 22,
+          "hpCost": 0,
+          "moneyCost": 0
+        },
+        {
+          "level": 5,
+          "manaCost": 22,
+          "hpCost": 0,
+          "moneyCost": 0
+        }
+      ],
+      "prerequisites": [
+        {
+          "skillGuid": "e2f2b7a1dc6eb3a47bfe7ef160ee7ac1",
+          "requiredLevel": 3
+        }
+      ],
+      "iconFile": "skills/b73edc202aceb7e44b9ddee3a072e892.png",
+      "requiredWeapons": [
+        "Bow"
+      ],
+      "targetMask": "Enemy",
+      "range": 0.0,
+      "afterCastDelay": 0.0,
+      "castTimeMs": 0,
+      "useCastTimePerLevel": false,
+      "canBeCancelled": false,
+      "tooltips": [
+        "Deals ATK 300% physical damage. Element: Weapon.",
+        "Deals ATK 350% physical damage. Element: Weapon.",
+        "Deals ATK 400% physical damage. Element: Weapon.",
+        "Deals ATK 450% physical damage. Element: Weapon.",
+        "Deals ATK 500% physical damage. Element: Weapon."
+      ]
+    },
+    {
+      "guid": "5fdbc3c0acd70ca4daa7bc473a46ea5f",
+      "name": "Defensive stance",
+      "description": "Sacrifices ATK in favor of DEF",
+      "maxLevel": 3,
+      "isPassive": true,
+      "archetype": "Berserk",
+      "requiredSpentPoints": 10,
+      "x": 544.8943,
+      "y": -74.76778,
+      "levels": [
+        {
+          "level": 1,
+          "bonuses": [
+            "+3 Defense",
+            "-10 Attack"
+          ]
+        },
+        {
+          "level": 2,
+          "bonuses": [
+            "+6 Defense",
+            "-20 Attack"
+          ]
+        },
+        {
+          "level": 3,
+          "bonuses": [
+            "+9 Defense",
+            "-30 Attack"
+          ]
+        }
+      ],
+      "prerequisites": [
+        {
+          "skillGuid": "d54b9ae9e2bb2904daa3479eb6a5853c",
+          "requiredLevel": 3
+        }
+      ],
+      "iconFile": "skills/5fdbc3c0acd70ca4daa7bc473a46ea5f.png"
+    },
+    {
+      "guid": "9e24abe3abfda6f4c87692b7dfc7974f",
+      "name": "Boss Fracture",
+      "description": "+5% damage to Bosses per rank",
+      "maxLevel": 3,
+      "isPassive": true,
+      "archetype": "Berserk",
+      "requiredSpentPoints": 10,
+      "x": 529.671936,
+      "y": -148.1474,
+      "levels": [
+        {
+          "level": 1,
+          "bonuses": [
+            "+5% damage to Boss enemies"
+          ]
+        },
+        {
+          "level": 2,
+          "bonuses": [
+            "+10% damage to Boss enemies"
+          ]
+        },
+        {
+          "level": 3,
+          "bonuses": [
+            "+15% damage to Boss enemies"
+          ]
+        }
+      ],
+      "prerequisites": [
+        {
+          "skillGuid": "abedeeeb872ba6341baf1f6f209e1ca6",
+          "requiredLevel": 3
+        }
+      ],
+      "iconFile": "skills/9e24abe3abfda6f4c87692b7dfc7974f.png"
+    },
+    {
+      "guid": "fd017a86d6db9dc45aa3542fd560bcb3",
+      "name": "Mana Shield",
+      "description": "Shape mana into a ward against harm",
+      "maxLevel": 5,
+      "isPassive": true,
+      "archetype": "Mage",
+      "requiredSpentPoints": 5,
+      "x": -231.550079,
+      "y": 326.166473,
+      "levels": [
+        {
+          "level": 1,
+          "bonuses": [
+            "Reduce the damage taken from all sources by 1%",
+            "Reduce the damage taken from magical attacks by 3%"
+          ]
+        },
+        {
+          "level": 2,
+          "bonuses": [
+            "Reduce the damage taken from all sources by 2%",
+            "Reduce the damage taken from magical attacks by 6%"
+          ]
+        },
+        {
+          "level": 3,
+          "bonuses": [
+            "Reduce the damage taken from all sources by 3%",
+            "Reduce the damage taken from magical attacks by 9%"
+          ]
+        },
+        {
+          "level": 4,
+          "bonuses": [
+            "Reduce the damage taken from all sources by 4%",
+            "Reduce the damage taken from magical attacks by 12%"
+          ]
+        },
+        {
+          "level": 5,
+          "bonuses": [
+            "Reduce the damage taken from all sources by 5%",
+            "Reduce the damage taken from magical attacks by 15%"
+          ]
+        }
+      ],
+      "iconFile": "skills/fd017a86d6db9dc45aa3542fd560bcb3.png"
+    },
+    {
+      "guid": "2f890ea354588294eb94c63371c3d8fb",
+      "name": "Lethal Tempo",
+      "description": "Applies Lethal Thempo on hit",
+      "maxLevel": 5,
+      "isPassive": true,
+      "archetype": "Berserk",
+      "requiredSpentPoints": 0,
+      "x": 675.0382,
+      "y": 185.26593,
+      "levels": [
+        {
+          "level": 1,
+          "bonuses": [
+            "On Hit applies Level 1 buff for 3s: <b>Lethal Tempo</b>\r\nMax Stacks: 5\r\n+1 Attack Speed per stack"
+          ]
+        },
+        {
+          "level": 2,
+          "bonuses": [
+            "On Hit applies Level 2 buff for 6s: <b>Lethal Tempo</b>\r\nMax Stacks: 5\r\n+1 Attack Speed per stack"
+          ]
+        },
+        {
+          "level": 3,
+          "bonuses": [
+            "On Hit applies Level 3 buff for 9s: <b>Lethal Tempo</b>\r\nMax Stacks: 5\r\n+1 Attack Speed per stack"
+          ]
+        },
+        {
+          "level": 4,
+          "bonuses": [
+            "On Hit applies Level 4 buff for 12s: <b>Lethal Tempo</b>\r\nMax Stacks: 5\r\n+1 Attack Speed per stack"
+          ]
+        },
+        {
+          "level": 5,
+          "bonuses": [
+            "On Hit applies Level 5 buff for 15s: <b>Lethal Tempo</b>\r\nMax Stacks: 5\r\n+1 Attack Speed per stack"
+          ]
+        }
+      ],
+      "prerequisites": [
+        {
+          "skillGuid": "e156cd8054211c543ba53c7bf3fa4cf8",
+          "requiredLevel": 3
+        }
+      ],
+      "iconFile": "skills/2f890ea354588294eb94c63371c3d8fb.png"
+    },
+    {
+      "guid": "79067934bf4f6b644b522f508207e43a",
+      "name": "Mana Reservoir",
+      "description": "Deepen your well of mana for longer battles",
+      "maxLevel": 5,
+      "isPassive": true,
+      "archetype": "Mage",
+      "requiredSpentPoints": 0,
+      "x": -55.43506,
+      "y": 243.776443,
+      "levels": [
+        {
+          "level": 1,
+          "bonuses": [
+            "+20 SP",
+            "+1 SP Recovery",
+            "+Intelligence/15 SP Recovery"
+          ]
+        },
+        {
+          "level": 2,
+          "bonuses": [
+            "+40 SP",
+            "+2 SP Recovery",
+            "+Intelligence/15 SP Recovery"
+          ]
+        },
+        {
+          "level": 3,
+          "bonuses": [
+            "+60 SP",
+            "+3 SP Recovery",
+            "+Intelligence/15 SP Recovery"
+          ]
+        },
+        {
+          "level": 4,
+          "bonuses": [
+            "+80 SP",
+            "+4 SP Recovery",
+            "+Intelligence/15 SP Recovery"
+          ]
+        },
+        {
+          "level": 5,
+          "bonuses": [
+            "+100 SP",
+            "+5 SP Recovery",
+            "+Intelligence/15 SP Recovery"
+          ]
+        }
+      ],
+      "iconFile": "skills/79067934bf4f6b644b522f508207e43a.png"
+    }
+  ],
+  "connections": [
+    {
+      "from": "052abacb92b0f16479ae13054ce6d5af",
+      "to": "aaa4b7f528b37734eb7c70243d09e89f"
+    },
+    {
+      "from": "9ccc17f07fac3de499dc6c172b44da05",
+      "to": "ea6fa25c8674f934d81bbd66f1656135"
+    },
+    {
+      "from": "8950fd804cdfa00439037161da907d64",
+      "to": "11fb0e14bec1afb49a367a41ac0d5a9e"
+    },
+    {
+      "from": "2a0b0e82fa79af744ac0834a84f3816d",
+      "to": "2c20de59539ac5343adb6dea56a3614b"
+    },
+    {
+      "from": "14897575f0264ac4a908e453e52ec8a4",
+      "to": "811c5bf2a5866bd468a5ad19ec6f1558"
+    },
+    {
+      "from": "e156cd8054211c543ba53c7bf3fa4cf8",
+      "to": "2f890ea354588294eb94c63371c3d8fb"
+    },
+    {
+      "from": "d54b9ae9e2bb2904daa3479eb6a5853c",
+      "to": "5fdbc3c0acd70ca4daa7bc473a46ea5f"
+    },
+    {
+      "from": "bb799b4e285516c4b87fce9254fa482f",
+      "to": "0ef93bd49d3ac864f90d790806be8a54"
+    },
+    {
+      "from": "21aeef5db8f65ff4aa79cce34fcc9961",
+      "to": "3e79de1df85678f43afe650ed0d52bb6"
+    },
+    {
+      "from": "b3c5ab05df8722543855c7319456d512",
+      "to": "f909b68ba8b1b1f4fb1c326000748b98"
+    },
+    {
+      "from": "b2d19fe7d07a5c04cb2ef223f28aa575",
+      "to": "3885e9b6791fb9f409eaa36fd658b979"
+    },
+    {
+      "from": "3e79de1df85678f43afe650ed0d52bb6",
+      "to": "d9eb43a34c40bbe4291f41dd01e29714"
+    },
+    {
+      "from": "fbb9463eb8c43034e89f6a44c6fb1cb7",
+      "to": "9e8f0200381482047a10c2567cd43649"
+    },
+    {
+      "from": "9d03338495050a5499b816cb9f5b5ba6",
+      "to": "2ec1d13b1741d7f499c44aae1bc45136"
+    },
+    {
+      "from": "46d32fdfae5be7b42a1f5f3e7ad58238",
+      "to": "3885e9b6791fb9f409eaa36fd658b979"
+    },
+    {
+      "from": "ac595e4384132c249897b2864625abe4",
+      "to": "b02a294d5a087804eb84327e758ea68d"
+    },
+    {
+      "from": "3e79de1df85678f43afe650ed0d52bb6",
+      "to": "730d8059ec34a174da01bd7175333dc2"
+    },
+    {
+      "from": "ad284a751cffa224db250e5629d0a77e",
+      "to": "19334f29dd3ada148b3b97066b2b0af1"
+    },
+    {
+      "from": "a803ac4310768f144a6cddc1676f64ce",
+      "to": "9e8f0200381482047a10c2567cd43649"
+    },
+    {
+      "from": "707d0569342ed42408d203fe57d78cdd",
+      "to": "bb799b4e285516c4b87fce9254fa482f"
+    },
+    {
+      "from": "29eba0b4140e7494f879d74ce4781e43",
+      "to": "d87d92c245dd0d443a296b99975e3048"
+    },
+    {
+      "from": "e2f2b7a1dc6eb3a47bfe7ef160ee7ac1",
+      "to": "b73edc202aceb7e44b9ddee3a072e892"
+    },
+    {
+      "from": "e943f753d8d9b0a428ae92f75e9369ba",
+      "to": "4c03f7dcabe8bb3438bcc7049f6e80c1"
+    },
+    {
+      "from": "e8f9a166ac882ce4e84674dd5a041260",
+      "to": "c7541ae0372eb9c4c930361da9aaabc7"
+    },
+    {
+      "from": "14897575f0264ac4a908e453e52ec8a4",
+      "to": "120c01e2ab6e88540a0e8aed71aca0ff"
+    },
+    {
+      "from": "f8caab21512fd854c91604e68474fd65",
+      "to": "f8e449633963d114c832f203616568a8"
+    },
+    {
+      "from": "14897575f0264ac4a908e453e52ec8a4",
+      "to": "6c0aeb7f0f159674ab2710a3914c48bc"
+    },
+    {
+      "from": "2f6dcfe62f859a342822f7d7955526dc",
+      "to": "66d78b67d8515c942b3f247dcecbc4bd"
+    },
+    {
+      "from": "ade9d0ab4ef69cf47ac5680654029ddc",
+      "to": "f1941608b82f4c34bbab04a0af6a5123"
+    },
+    {
+      "from": "afa472b64c8c6a84cbcdb0ac54a34efa",
+      "to": "28219e598bd11674a9deef5ee34c0f53"
+    },
+    {
+      "from": "12cd6c25a19483b439c5219d2781a770",
+      "to": "76d6c458550a4c34295f528fd47bb347"
+    },
+    {
+      "from": "2cf9e57881542024f87d669fc8066d38",
+      "to": "5f0604074ba5b554a8286d450edec2ea"
+    },
+    {
+      "from": "c7541ae0372eb9c4c930361da9aaabc7",
+      "to": "03694e8a0eb5668448e538a751a2a292"
+    },
+    {
+      "from": "17d622d059b84ec4f8c0e439a7e5e707",
+      "to": "8dd9d868c19ea724a9c48da84ef6cdd4"
+    },
+    {
+      "from": "abedeeeb872ba6341baf1f6f209e1ca6",
+      "to": "9e24abe3abfda6f4c87692b7dfc7974f"
+    }
+  ]
+}

@@ -1,0 +1,2349 @@
+{
+  "weapons": [
+    {
+      "guid": "a0580bd1a7a77224f92bd2cf2747b560",
+      "name": "Archer Bow",
+      "description": "A simple wooden bow",
+      "weaponType": "Bow",
+      "damage": 30,
+      "magicDamage": 0,
+      "defense": 0,
+      "weaponLevel": 2,
+      "element": "Neutral",
+      "attackType": "Physical",
+      "attackRange": 10.0,
+      "weight": 15,
+      "buyPrice": 13500,
+      "requiredLevel": 1,
+      "isRefinable": true,
+      "soulSlots": 2,
+      "bindingType": "None",
+      "equippableSlots": [
+        "WeaponMain"
+      ],
+      "blockSlots": [
+        "WeaponSecondary"
+      ],
+      "bonuses": [
+        {
+          "type": "WeaponPhysicalDamageBonus",
+          "trigger": "OnStatCalculate",
+          "text": "+20% physical damage with Bow",
+          "percent": 20.0,
+          "weaponType": "Bow"
+        }
+      ],
+      "tooltip": "Archer Bow [2]\nA simple wooden bow\n\n+20% physical damage with Bow\n\nType: Bow\nAttack: 30\nElement: Neutral\nAttack Range: 10\nWeight: 15\nLevel: 2\nRequired Level: 1\n\nEmpty Soul Slot\nEmpty Soul Slot",
+      "iconFile": "equipment/a0580bd1a7a77224f92bd2cf2747b560.png"
+    },
+    {
+      "guid": "9b5156070cae35f4b902209efd631626",
+      "name": "Bow",
+      "description": "A simple wooden bow",
+      "weaponType": "Bow",
+      "damage": 5,
+      "magicDamage": 0,
+      "defense": 0,
+      "weaponLevel": 1,
+      "element": "Neutral",
+      "attackType": "Physical",
+      "attackRange": 10.0,
+      "weight": 15,
+      "buyPrice": 1750,
+      "requiredLevel": 1,
+      "isRefinable": true,
+      "soulSlots": 1,
+      "bindingType": "None",
+      "equippableSlots": [
+        "WeaponMain"
+      ],
+      "blockSlots": [
+        "WeaponSecondary"
+      ],
+      "tooltip": "Bow [1]\nA simple wooden bow\n\nType: Bow\nAttack: 5\nElement: Neutral\nAttack Range: 10\nWeight: 15\nLevel: 1\nRequired Level: 1\n\nEmpty Soul Slot",
+      "iconFile": "equipment/9b5156070cae35f4b902209efd631626.png"
+    },
+    {
+      "guid": "76f81fbc7ce30994a80246d73d44c771",
+      "name": "Drill Spear",
+      "description": "Turns stone into dust, and men into silence.",
+      "weaponType": "OneHandedSpear",
+      "damage": 18,
+      "magicDamage": 0,
+      "defense": 0,
+      "weaponLevel": 1,
+      "element": "Neutral",
+      "attackType": "Physical",
+      "attackRange": 0.0,
+      "weight": 20,
+      "buyPrice": 4600,
+      "requiredLevel": 5,
+      "isRefinable": true,
+      "soulSlots": 3,
+      "bindingType": "None",
+      "equippableSlots": [
+        "WeaponMain"
+      ],
+      "blockSlots": [],
+      "tooltip": "Drill Spear [3]\nTurns stone into dust, and men into silence.\n\nType: One-Handed Spear\nAttack: 18\nElement: Neutral\nAttack Range: 0\nWeight: 20\nLevel: 1\nRequired Level: 5\n\nEmpty Soul Slot\nEmpty Soul Slot\nEmpty Soul Slot",
+      "iconFile": "equipment/76f81fbc7ce30994a80246d73d44c771.png"
+    },
+    {
+      "guid": "3f5cdc1f2f2df2a449550182f50bc665",
+      "name": "Droplet Wand",
+      "description": "A straight piece, steady focus.",
+      "weaponType": "OneHandedStaff",
+      "damage": 0,
+      "magicDamage": 50,
+      "defense": 0,
+      "weaponLevel": 1,
+      "element": "Water",
+      "attackType": "Magical",
+      "attackRange": 10.0,
+      "weight": 35,
+      "buyPrice": 14250,
+      "requiredLevel": 24,
+      "isRefinable": true,
+      "soulSlots": 1,
+      "bindingType": "None",
+      "equippableSlots": [
+        "WeaponMain"
+      ],
+      "blockSlots": [],
+      "bonuses": [
+        {
+          "type": "ElementDamageBonus",
+          "trigger": "OnStatCalculate",
+          "text": "+20% damage to Water enemies",
+          "percent": 20.0,
+          "element": "Water"
+        },
+        {
+          "type": "FlatBonus",
+          "trigger": "OnStatCalculate",
+          "text": "+2 INT",
+          "stat": "INT",
+          "amount": 2.0
+        }
+      ],
+      "tooltip": "Droplet Wand [1]\nA straight piece, steady focus.\n\n+20% damage to Water enemies\r\n+2 Intelligence\n\nType: One-Handed Staff\nMagic Attack: 50\nElement: Water\nAttack Range: 10\nWeight: 35\nLevel: 1\nRequired Level: 24\n\nEmpty Soul Slot",
+      "iconFile": "equipment/3f5cdc1f2f2df2a449550182f50bc665.png"
+    },
+    {
+      "guid": "1b722b9f653af0e47841fca153f47d53",
+      "name": "Golem Spear",
+      "description": "Pierces both flesh and will.",
+      "weaponType": "OneHandedSpear",
+      "damage": 30,
+      "magicDamage": 0,
+      "defense": 0,
+      "weaponLevel": 2,
+      "element": "Neutral",
+      "attackType": "Physical",
+      "attackRange": 0.0,
+      "weight": 35,
+      "buyPrice": 15500,
+      "requiredLevel": 0,
+      "isRefinable": true,
+      "soulSlots": 1,
+      "bindingType": "None",
+      "equippableSlots": [
+        "WeaponMain"
+      ],
+      "blockSlots": [],
+      "tooltip": "Golem Spear [1]\nPierces both flesh and will.\n\nType: One-Handed Spear\nAttack: 30\nElement: Neutral\nAttack Range: 0\nWeight: 35\nLevel: 2\nRequired Level: 0\n\nEmpty Soul Slot",
+      "iconFile": "equipment/1b722b9f653af0e47841fca153f47d53.png"
+    },
+    {
+      "guid": "03f1cce23f44e4542863dd9e821f8af1",
+      "name": "Harpy Bow",
+      "description": "Stung with malice, it sings in flgiht.",
+      "weaponType": "Bow",
+      "damage": 65,
+      "magicDamage": 0,
+      "defense": 0,
+      "weaponLevel": 3,
+      "element": "Neutral",
+      "attackType": "Physical",
+      "attackRange": 10.0,
+      "weight": 55,
+      "buyPrice": 47250,
+      "requiredLevel": 24,
+      "isRefinable": true,
+      "soulSlots": 1,
+      "bindingType": "None",
+      "equippableSlots": [
+        "WeaponMain"
+      ],
+      "blockSlots": [
+        "WeaponSecondary"
+      ],
+      "tooltip": "Harpy Bow [1]\nStung with malice, it sings in flgiht.\n\nType: Bow\nAttack: 65\nElement: Neutral\nAttack Range: 10\nWeight: 55\nLevel: 3\nRequired Level: 24\n\nEmpty Soul Slot",
+      "iconFile": "equipment/03f1cce23f44e4542863dd9e821f8af1.png"
+    },
+    {
+      "guid": "5123973144b20ee4592677f14c7006ca",
+      "name": "Iron-Banded Staff",
+      "description": "Rings keep its promise.",
+      "weaponType": "TwoHandedStaff",
+      "damage": 0,
+      "magicDamage": 50,
+      "defense": 0,
+      "weaponLevel": 2,
+      "element": "Neutral",
+      "attackType": "Magical",
+      "attackRange": 10.0,
+      "weight": 126,
+      "buyPrice": 37600,
+      "requiredLevel": 0,
+      "isRefinable": true,
+      "soulSlots": 0,
+      "bindingType": "None",
+      "equippableSlots": [
+        "WeaponMain"
+      ],
+      "blockSlots": [
+        "WeaponSecondary"
+      ],
+      "tooltip": "Iron-Banded Staff\nRings keep its promise.\n\nType: Two-Handed Staff\nMagic Attack: 50\nElement: Neutral\nAttack Range: 10\nWeight: 126\nLevel: 2\nRequired Level: 0",
+      "iconFile": "equipment/5123973144b20ee4592677f14c7006ca.png"
+    },
+    {
+      "guid": "76de058be53aed249b92b265e75b30cc",
+      "name": "Iron Boot Knife",
+      "description": "Hidden more than admired.",
+      "weaponType": "Dagger",
+      "damage": 25,
+      "magicDamage": 0,
+      "defense": 0,
+      "weaponLevel": 2,
+      "element": "Neutral",
+      "attackType": "Physical",
+      "attackRange": 2.5,
+      "weight": 15,
+      "buyPrice": 11500,
+      "requiredLevel": 12,
+      "isRefinable": true,
+      "soulSlots": 1,
+      "bindingType": "None",
+      "equippableSlots": [
+        "WeaponMain",
+        "WeaponSecondary"
+      ],
+      "blockSlots": [],
+      "tooltip": "Iron Boot Knife [1]\nHidden more than admired.\n\nType: Dagger\nAttack: 25\nElement: Neutral\nAttack Range: 2.5\nWeight: 15\nLevel: 2\nRequired Level: 12\n\nEmpty Soul Slot",
+      "iconFile": "equipment/76de058be53aed249b92b265e75b30cc.png"
+    },
+    {
+      "guid": "4bba1a2f2494ac24c87eed3f61a4093d",
+      "name": "Iron Face Shield",
+      "description": "Takes dents so you don't.",
+      "weaponType": "Shield",
+      "damage": 0,
+      "magicDamage": 0,
+      "defense": 3,
+      "weaponLevel": 3,
+      "element": "Neutral",
+      "attackType": "Physical",
+      "attackRange": 0.0,
+      "weight": 118,
+      "buyPrice": 22200,
+      "requiredLevel": 0,
+      "isRefinable": true,
+      "soulSlots": 0,
+      "bindingType": "None",
+      "equippableSlots": [
+        "WeaponSecondary"
+      ],
+      "blockSlots": [],
+      "tooltip": "Iron Face Shield\nTakes dents so you don't.\n\nType: Shield\nDefense: 3\nWeight: 118\nLevel: 3\nRequired Level: 0",
+      "iconFile": "equipment/4bba1a2f2494ac24c87eed3f61a4093d.png"
+    },
+    {
+      "guid": "de76cbbfbe8f38e41859f58bd6e6dc3d",
+      "name": "Iron Fell Axe",
+      "description": "Drops trunks without talk.",
+      "weaponType": "TwoHandedAxe",
+      "damage": 75,
+      "magicDamage": 0,
+      "defense": 0,
+      "weaponLevel": 2,
+      "element": "Neutral",
+      "attackType": "Physical",
+      "attackRange": 0.0,
+      "weight": 200,
+      "buyPrice": 50000,
+      "requiredLevel": 0,
+      "isRefinable": true,
+      "soulSlots": 1,
+      "bindingType": "None",
+      "equippableSlots": [
+        "WeaponMain"
+      ],
+      "blockSlots": [
+        "WeaponSecondary"
+      ],
+      "tooltip": "Iron Fell Axe [1]\nDrops trunks without talk.\n\nType: Two-Handed Axe\nAttack: 75\nElement: Neutral\nAttack Range: 0\nWeight: 200\nLevel: 2\nRequired Level: 0\n\nEmpty Soul Slot",
+      "iconFile": "equipment/de76cbbfbe8f38e41859f58bd6e6dc3d.png"
+    },
+    {
+      "guid": "0ae1caa841ac4c94195eaf3b5f4fefb7",
+      "name": "Iron Great Sword",
+      "description": "Build for the old gods...",
+      "weaponType": "TwoHandedSword",
+      "damage": 95,
+      "magicDamage": 0,
+      "defense": 0,
+      "weaponLevel": 2,
+      "element": "Neutral",
+      "attackType": "Physical",
+      "attackRange": 3.0,
+      "weight": 90,
+      "buyPrice": 47000,
+      "requiredLevel": 0,
+      "isRefinable": true,
+      "soulSlots": 1,
+      "bindingType": "None",
+      "equippableSlots": [
+        "WeaponMain"
+      ],
+      "blockSlots": [
+        "WeaponSecondary"
+      ],
+      "tooltip": "Iron Great Sword [1]\nBuild for the old gods...\n\nType: Two-Handed Sword\nAttack: 95\nElement: Neutral\nAttack Range: 3\nWeight: 90\nLevel: 2\nRequired Level: 0\n\nEmpty Soul Slot",
+      "iconFile": "equipment/0ae1caa841ac4c94195eaf3b5f4fefb7.png"
+    },
+    {
+      "guid": "ddda40da3517cad489b08076e4137507",
+      "name": "Iron Mace",
+      "description": "",
+      "weaponType": "OneHandedMace",
+      "damage": 35,
+      "magicDamage": 0,
+      "defense": 0,
+      "weaponLevel": 1,
+      "element": "Neutral",
+      "attackType": "Physical",
+      "attackRange": 0.0,
+      "weight": 100,
+      "buyPrice": 12000,
+      "requiredLevel": 0,
+      "isRefinable": true,
+      "soulSlots": 1,
+      "bindingType": "None",
+      "equippableSlots": [
+        "WeaponMain",
+        "WeaponSecondary"
+      ],
+      "blockSlots": [],
+      "tooltip": "Iron Mace [1]\n\n\nType: One-Handed Mace\nAttack: 35\nElement: Neutral\nAttack Range: 0\nWeight: 100\nLevel: 1\nRequired Level: 0\n\nEmpty Soul Slot",
+      "iconFile": "equipment/ddda40da3517cad489b08076e4137507.png"
+    },
+    {
+      "guid": "1b7d9836fec73b64fa564eb55a4a7048",
+      "name": "Javelin",
+      "description": "",
+      "weaponType": "OneHandedSpear",
+      "damage": 52,
+      "magicDamage": 0,
+      "defense": 0,
+      "weaponLevel": 3,
+      "element": "Neutral",
+      "attackType": "Physical",
+      "attackRange": 0.0,
+      "weight": 45,
+      "buyPrice": 37950,
+      "requiredLevel": 0,
+      "isRefinable": true,
+      "soulSlots": 0,
+      "bindingType": "None",
+      "equippableSlots": [
+        "WeaponMain"
+      ],
+      "blockSlots": [],
+      "tooltip": "Javelin\n\n\nType: One-Handed Spear\nAttack: 52\nElement: Neutral\nAttack Range: 0\nWeight: 45\nLevel: 3\nRequired Level: 0",
+      "iconFile": "equipment/1b7d9836fec73b64fa564eb55a4a7048.png"
+    },
+    {
+      "guid": "e6b58ff47484f524eb29216198357cd8",
+      "name": "Knife",
+      "description": "A basic knife.",
+      "weaponType": "Dagger",
+      "damage": 15,
+      "magicDamage": 0,
+      "defense": 0,
+      "weaponLevel": 1,
+      "element": "Neutral",
+      "attackType": "Physical",
+      "attackRange": 2.5,
+      "weight": 10,
+      "buyPrice": 3500,
+      "requiredLevel": 0,
+      "isRefinable": true,
+      "soulSlots": 3,
+      "bindingType": "None",
+      "equippableSlots": [
+        "WeaponMain",
+        "WeaponSecondary"
+      ],
+      "blockSlots": [],
+      "tooltip": "Knife [3]\nA basic knife.\n\nType: Dagger\nAttack: 15\nElement: Neutral\nAttack Range: 2.5\nWeight: 10\nLevel: 1\nRequired Level: 0\n\nEmpty Soul Slot\nEmpty Soul Slot\nEmpty Soul Slot",
+      "iconFile": "equipment/e6b58ff47484f524eb29216198357cd8.png"
+    },
+    {
+      "guid": "0c1cb4560687b974497bf0e0cd9d1f02",
+      "name": "Lizzard Dagger",
+      "description": "Dagger with venom.",
+      "weaponType": "Dagger",
+      "damage": 65,
+      "magicDamage": 0,
+      "defense": 0,
+      "weaponLevel": 3,
+      "element": "Poison",
+      "attackType": "Physical",
+      "attackRange": 2.5,
+      "weight": 15,
+      "buyPrice": 41250,
+      "requiredLevel": 0,
+      "isRefinable": true,
+      "soulSlots": 1,
+      "bindingType": "None",
+      "equippableSlots": [
+        "WeaponMain",
+        "WeaponSecondary"
+      ],
+      "blockSlots": [],
+      "tooltip": "Lizzard Dagger [1]\nDagger with venom.\n\nType: Dagger\nAttack: 65\nElement: Poison\nAttack Range: 2.5\nWeight: 15\nLevel: 3\nRequired Level: 0\n\nEmpty Soul Slot",
+      "iconFile": "equipment/0c1cb4560687b974497bf0e0cd9d1f02.png"
+    },
+    {
+      "guid": "409613dd570f1f448b9187b2f8cb3fdd",
+      "name": "Morning Star",
+      "description": "",
+      "weaponType": "OneHandedMace",
+      "damage": 67,
+      "magicDamage": 0,
+      "defense": 0,
+      "weaponLevel": 3,
+      "element": "Neutral",
+      "attackType": "Physical",
+      "attackRange": 0.0,
+      "weight": 65,
+      "buyPrice": 49950,
+      "requiredLevel": 0,
+      "isRefinable": true,
+      "soulSlots": 0,
+      "bindingType": "None",
+      "equippableSlots": [
+        "WeaponMain",
+        "WeaponSecondary"
+      ],
+      "blockSlots": [],
+      "tooltip": "Morning Star\n\n\nType: One-Handed Mace\nAttack: 67\nElement: Neutral\nAttack Range: 0\nWeight: 65\nLevel: 3\nRequired Level: 0",
+      "iconFile": "equipment/409613dd570f1f448b9187b2f8cb3fdd.png"
+    },
+    {
+      "guid": "08b2258334f6a6c41bf49d215d38bd97",
+      "name": "Plain Oak Wand",
+      "description": "A straight piece, steady focus.",
+      "weaponType": "OneHandedStaff",
+      "damage": 0,
+      "magicDamage": 12,
+      "defense": 0,
+      "weaponLevel": 1,
+      "element": "Neutral",
+      "attackType": "Magical",
+      "attackRange": 10.0,
+      "weight": 40,
+      "buyPrice": 5000,
+      "requiredLevel": 0,
+      "isRefinable": true,
+      "soulSlots": 0,
+      "bindingType": "None",
+      "equippableSlots": [
+        "WeaponMain"
+      ],
+      "blockSlots": [],
+      "tooltip": "Plain Oak Wand\nA straight piece, steady focus.\n\nType: One-Handed Staff\nMagic Attack: 12\nElement: Neutral\nAttack Range: 10\nWeight: 40\nLevel: 1\nRequired Level: 0",
+      "iconFile": "equipment/08b2258334f6a6c41bf49d215d38bd97.png"
+    },
+    {
+      "guid": "d84feb66b65016d46a6dda20d44de265",
+      "name": "Plain War Axe",
+      "description": "Not fancy—just falls hard.",
+      "weaponType": "TwoHandedAxe",
+      "damage": 67,
+      "magicDamage": 0,
+      "defense": 0,
+      "weaponLevel": 3,
+      "element": "Neutral",
+      "attackType": "Physical",
+      "attackRange": 0.0,
+      "weight": 208,
+      "buyPrice": 71400,
+      "requiredLevel": 0,
+      "isRefinable": true,
+      "soulSlots": 0,
+      "bindingType": "None",
+      "equippableSlots": [
+        "WeaponMain"
+      ],
+      "blockSlots": [
+        "WeaponSecondary"
+      ],
+      "tooltip": "Plain War Axe\nNot fancy—just falls hard.\n\nType: Two-Handed Axe\nAttack: 67\nElement: Neutral\nAttack Range: 0\nWeight: 208\nLevel: 3\nRequired Level: 0",
+      "iconFile": "equipment/d84feb66b65016d46a6dda20d44de265.png"
+    },
+    {
+      "guid": "2088a8474858c8149885acd8566503b5",
+      "name": "Reinforced Board Shield",
+      "description": "Nails hold quiet together.",
+      "weaponType": "Shield",
+      "damage": 0,
+      "magicDamage": 0,
+      "defense": 2,
+      "weaponLevel": 2,
+      "element": "Neutral",
+      "attackType": "Physical",
+      "attackRange": 0.0,
+      "weight": 126,
+      "buyPrice": 14600,
+      "requiredLevel": 0,
+      "isRefinable": true,
+      "soulSlots": 0,
+      "bindingType": "None",
+      "equippableSlots": [
+        "WeaponSecondary"
+      ],
+      "blockSlots": [],
+      "tooltip": "Reinforced Board Shield\nNails hold quiet together.\n\nType: Shield\nDefense: 2\nWeight: 126\nLevel: 2\nRequired Level: 0",
+      "iconFile": "equipment/2088a8474858c8149885acd8566503b5.png"
+    },
+    {
+      "guid": "15798b5155fe94445af0c8ae3754e1de",
+      "name": "Riveted War Maul",
+      "description": "Built to endure dull days.",
+      "weaponType": "TwoHandedMace",
+      "damage": 105,
+      "magicDamage": 0,
+      "defense": 0,
+      "weaponLevel": 3,
+      "element": "Neutral",
+      "attackType": "Physical",
+      "attackRange": 4.0,
+      "weight": 400,
+      "buyPrice": 123000,
+      "requiredLevel": 0,
+      "isRefinable": true,
+      "soulSlots": 0,
+      "bindingType": "None",
+      "equippableSlots": [
+        "WeaponMain"
+      ],
+      "blockSlots": [
+        "WeaponSecondary"
+      ],
+      "tooltip": "Riveted War Maul\nBuilt to endure dull days.\n\nType: Two-Handed Mace\nAttack: 105\nElement: Neutral\nAttack Range: 4\nWeight: 400\nLevel: 3\nRequired Level: 0",
+      "iconFile": "equipment/15798b5155fe94445af0c8ae3754e1de.png"
+    },
+    {
+      "guid": "8a6335da2c1f46148bf5c445ff8801b5",
+      "name": "Robust Bow",
+      "description": "Never miss a shot",
+      "weaponType": "Bow",
+      "damage": 18,
+      "magicDamage": 0,
+      "defense": 0,
+      "weaponLevel": 2,
+      "element": "Neutral",
+      "attackType": "Physical",
+      "attackRange": 10.0,
+      "weight": 15,
+      "buyPrice": 8700,
+      "requiredLevel": 0,
+      "isRefinable": true,
+      "soulSlots": 2,
+      "bindingType": "None",
+      "equippableSlots": [
+        "WeaponMain"
+      ],
+      "blockSlots": [
+        "WeaponSecondary"
+      ],
+      "bonuses": [
+        {
+          "type": "FlatBonus",
+          "trigger": "OnStatCalculate",
+          "text": "+10 DEX",
+          "stat": "DEX",
+          "amount": 10.0
+        }
+      ],
+      "tooltip": "Robust Bow [2]\nNever miss a shot\n\n+10 Dexterity\n\nType: Bow\nAttack: 18\nElement: Neutral\nAttack Range: 10\nWeight: 15\nLevel: 2\nRequired Level: 0\n\nEmpty Soul Slot\nEmpty Soul Slot",
+      "iconFile": "equipment/8a6335da2c1f46148bf5c445ff8801b5.png"
+    },
+    {
+      "guid": "d58f2e3664254b74288e01dac08e4fa9",
+      "name": "Robust Bow",
+      "description": "Never miss a shot",
+      "weaponType": "Bow",
+      "damage": 18,
+      "magicDamage": 0,
+      "defense": 0,
+      "weaponLevel": 2,
+      "element": "Neutral",
+      "attackType": "Physical",
+      "attackRange": 10.0,
+      "weight": 15,
+      "buyPrice": 8700,
+      "requiredLevel": 0,
+      "isRefinable": true,
+      "soulSlots": 4,
+      "bindingType": "None",
+      "equippableSlots": [
+        "WeaponMain"
+      ],
+      "blockSlots": [
+        "WeaponSecondary"
+      ],
+      "bonuses": [
+        {
+          "type": "FlatBonus",
+          "trigger": "OnStatCalculate",
+          "text": "+10 DEX",
+          "stat": "DEX",
+          "amount": 10.0
+        }
+      ],
+      "tooltip": "Robust Bow [4]\nNever miss a shot\n\n+10 Dexterity\n\nType: Bow\nAttack: 18\nElement: Neutral\nAttack Range: 10\nWeight: 15\nLevel: 2\nRequired Level: 0\n\nEmpty Soul Slot\nEmpty Soul Slot\nEmpty Soul Slot\nEmpty Soul Slot",
+      "iconFile": "equipment/d58f2e3664254b74288e01dac08e4fa9.png"
+    },
+    {
+      "guid": "c1a7c4684bc656746903c104feb871ad",
+      "name": "Runed Birch Stick",
+      "description": "Simple marks guide flow.",
+      "weaponType": "OneHandedStaff",
+      "damage": 0,
+      "magicDamage": 40,
+      "defense": 0,
+      "weaponLevel": 3,
+      "element": "Neutral",
+      "attackType": "Magical",
+      "attackRange": 10.0,
+      "weight": 60,
+      "buyPrice": 39000,
+      "requiredLevel": 0,
+      "isRefinable": true,
+      "soulSlots": 0,
+      "bindingType": "None",
+      "equippableSlots": [
+        "WeaponMain"
+      ],
+      "blockSlots": [],
+      "tooltip": "Runed Birch Stick\nSimple marks guide flow.\n\nType: One-Handed Staff\nMagic Attack: 40\nElement: Neutral\nAttack Range: 10\nWeight: 60\nLevel: 3\nRequired Level: 0",
+      "iconFile": "equipment/c1a7c4684bc656746903c104feb871ad.png"
+    },
+    {
+      "guid": "31761354633bd1942b1863704f2aaf4d",
+      "name": "Rusting Shiv",
+      "description": "A crude blade",
+      "weaponType": "Dagger",
+      "damage": 45,
+      "magicDamage": 0,
+      "defense": 0,
+      "weaponLevel": 3,
+      "element": "Neutral",
+      "attackType": "Physical",
+      "attackRange": 2.5,
+      "weight": 15,
+      "buyPrice": 29250,
+      "requiredLevel": 20,
+      "isRefinable": true,
+      "soulSlots": 0,
+      "bindingType": "None",
+      "equippableSlots": [
+        "WeaponMain",
+        "WeaponSecondary"
+      ],
+      "blockSlots": [],
+      "tooltip": "Rusting Shiv\nA crude blade\n\nType: Dagger\nAttack: 45\nElement: Neutral\nAttack Range: 2.5\nWeight: 15\nLevel: 3\nRequired Level: 20",
+      "iconFile": "equipment/31761354633bd1942b1863704f2aaf4d.png"
+    },
+    {
+      "guid": "b43604ee0fc6c214f8a74b48dd3c575c",
+      "name": "Short Sword",
+      "description": "Edge enough to learn respect.",
+      "weaponType": "OneHandedSword",
+      "damage": 50,
+      "magicDamage": 0,
+      "defense": 0,
+      "weaponLevel": 2,
+      "element": "Neutral",
+      "attackType": "Physical",
+      "attackRange": 2.5,
+      "weight": 50,
+      "buyPrice": 25000,
+      "requiredLevel": 0,
+      "isRefinable": true,
+      "soulSlots": 1,
+      "bindingType": "None",
+      "equippableSlots": [
+        "WeaponMain",
+        "WeaponSecondary"
+      ],
+      "blockSlots": [],
+      "tooltip": "Short Sword [1]\nEdge enough to learn respect.\n\nType: One-Handed Sword\nAttack: 50\nElement: Neutral\nAttack Range: 2.5\nWeight: 50\nLevel: 2\nRequired Level: 0\n\nEmpty Soul Slot",
+      "iconFile": "equipment/b43604ee0fc6c214f8a74b48dd3c575c.png"
+    },
+    {
+      "guid": "00c45e0741dfea74ba075d93e448c36b",
+      "name": "Staff",
+      "description": "A simple stick",
+      "weaponType": "OneHandedStaff",
+      "damage": 0,
+      "magicDamage": 27,
+      "defense": 0,
+      "weaponLevel": 2,
+      "element": "Neutral",
+      "attackType": "Magical",
+      "attackRange": 10.0,
+      "weight": 15,
+      "buyPrice": 15000,
+      "requiredLevel": 0,
+      "isRefinable": true,
+      "soulSlots": 0,
+      "bindingType": "None",
+      "equippableSlots": [
+        "WeaponMain"
+      ],
+      "blockSlots": [],
+      "tooltip": "Staff\nA simple stick\n\nType: One-Handed Staff\nMagic Attack: 27\nElement: Neutral\nAttack Range: 10\nWeight: 15\nLevel: 2\nRequired Level: 0",
+      "iconFile": "equipment/00c45e0741dfea74ba075d93e448c36b.png"
+    },
+    {
+      "guid": "a01b807ed6af801418b221990a8e8241",
+      "name": "Steel Chopper",
+      "description": "Sturdy grip; no surprises.",
+      "weaponType": "OneHandedAxe",
+      "damage": 65,
+      "magicDamage": 0,
+      "defense": 0,
+      "weaponLevel": 3,
+      "element": "Neutral",
+      "attackType": "Physical",
+      "attackRange": 0.0,
+      "weight": 120,
+      "buyPrice": 57000,
+      "requiredLevel": 0,
+      "isRefinable": true,
+      "soulSlots": 0,
+      "bindingType": "None",
+      "equippableSlots": [
+        "WeaponMain",
+        "WeaponSecondary"
+      ],
+      "blockSlots": [],
+      "tooltip": "Steel Chopper\nSturdy grip; no surprises.\n\nType: One-Handed Axe\nAttack: 65\nElement: Neutral\nAttack Range: 0\nWeight: 120\nLevel: 3\nRequired Level: 0",
+      "iconFile": "equipment/a01b807ed6af801418b221990a8e8241.png"
+    },
+    {
+      "guid": "ff36ca3f2180daf40a86a4309a61abd9",
+      "name": "Steel Great Sword",
+      "description": "Build for the old gods...",
+      "weaponType": "TwoHandedSword",
+      "damage": 130,
+      "magicDamage": 0,
+      "defense": 0,
+      "weaponLevel": 3,
+      "element": "Neutral",
+      "attackType": "Physical",
+      "attackRange": 3.0,
+      "weight": 125,
+      "buyPrice": 96750,
+      "requiredLevel": 0,
+      "isRefinable": true,
+      "soulSlots": 0,
+      "bindingType": "None",
+      "equippableSlots": [
+        "WeaponMain"
+      ],
+      "blockSlots": [
+        "WeaponSecondary"
+      ],
+      "tooltip": "Steel Great Sword\nBuild for the old gods...\n\nType: Two-Handed Sword\nAttack: 130\nElement: Neutral\nAttack Range: 3\nWeight: 125\nLevel: 3\nRequired Level: 0",
+      "iconFile": "equipment/ff36ca3f2180daf40a86a4309a61abd9.png"
+    },
+    {
+      "guid": "c4c8c977c8df1494f8d463c3656405f0",
+      "name": "Steel Sword",
+      "description": "",
+      "weaponType": "OneHandedSword",
+      "damage": 72,
+      "magicDamage": 0,
+      "defense": 0,
+      "weaponLevel": 3,
+      "element": "Neutral",
+      "attackType": "Physical",
+      "attackRange": 0.0,
+      "weight": 70,
+      "buyPrice": 53700,
+      "requiredLevel": 0,
+      "isRefinable": true,
+      "soulSlots": 0,
+      "bindingType": "None",
+      "equippableSlots": [
+        "WeaponMain",
+        "WeaponSecondary"
+      ],
+      "blockSlots": [],
+      "tooltip": "Steel Sword\n\n\nType: One-Handed Sword\nAttack: 72\nElement: Neutral\nAttack Range: 0\nWeight: 70\nLevel: 3\nRequired Level: 0",
+      "iconFile": "equipment/c4c8c977c8df1494f8d463c3656405f0.png"
+    },
+    {
+      "guid": "2270ecf0952351445a6be7bb86073a68",
+      "name": "Steel Sword",
+      "description": "",
+      "weaponType": "OneHandedSword",
+      "damage": 72,
+      "magicDamage": 0,
+      "defense": 0,
+      "weaponLevel": 3,
+      "element": "Neutral",
+      "attackType": "Physical",
+      "attackRange": 0.0,
+      "weight": 70,
+      "buyPrice": 53700,
+      "requiredLevel": 0,
+      "isRefinable": true,
+      "soulSlots": 1,
+      "bindingType": "None",
+      "equippableSlots": [
+        "WeaponMain",
+        "WeaponSecondary"
+      ],
+      "blockSlots": [],
+      "tooltip": "Steel Sword [1]\n\n\nType: One-Handed Sword\nAttack: 72\nElement: Neutral\nAttack Range: 0\nWeight: 70\nLevel: 3\nRequired Level: 0\n\nEmpty Soul Slot",
+      "iconFile": "equipment/2270ecf0952351445a6be7bb86073a68.png"
+    },
+    {
+      "guid": "88c10994e8aec334aa649349f64c1271",
+      "name": "Stone Hammer",
+      "description": "Reliable when patience thins.",
+      "weaponType": "TwoHandedMace",
+      "damage": 55,
+      "magicDamage": 0,
+      "defense": 0,
+      "weaponLevel": 2,
+      "element": "Neutral",
+      "attackType": "Physical",
+      "attackRange": 4.0,
+      "weight": 325,
+      "buyPrice": 54500,
+      "requiredLevel": 0,
+      "isRefinable": true,
+      "soulSlots": 1,
+      "bindingType": "None",
+      "equippableSlots": [
+        "WeaponMain"
+      ],
+      "blockSlots": [
+        "WeaponSecondary"
+      ],
+      "tooltip": "Stone Hammer [1]\nReliable when patience thins.\n\nType: Two-Handed Mace\nAttack: 55\nElement: Neutral\nAttack Range: 4\nWeight: 325\nLevel: 2\nRequired Level: 0\n\nEmpty Soul Slot",
+      "iconFile": "equipment/88c10994e8aec334aa649349f64c1271.png"
+    },
+    {
+      "guid": "c01f0ba11fdf4dd44b390678d64d89ff",
+      "name": "Stone Hammer",
+      "description": "Reliable when patience thins.",
+      "weaponType": "TwoHandedMace",
+      "damage": 55,
+      "magicDamage": 0,
+      "defense": 0,
+      "weaponLevel": 2,
+      "element": "Neutral",
+      "attackType": "Physical",
+      "attackRange": 4.0,
+      "weight": 325,
+      "buyPrice": 54500,
+      "requiredLevel": 0,
+      "isRefinable": true,
+      "soulSlots": 1,
+      "bindingType": "None",
+      "equippableSlots": [
+        "WeaponMain"
+      ],
+      "blockSlots": [
+        "WeaponSecondary"
+      ],
+      "tooltip": "Stone Hammer [1]\nReliable when patience thins.\n\nType: Two-Handed Mace\nAttack: 55\nElement: Neutral\nAttack Range: 4\nWeight: 325\nLevel: 2\nRequired Level: 0\n\nEmpty Soul Slot",
+      "iconFile": "equipment/c01f0ba11fdf4dd44b390678d64d89ff.png"
+    },
+    {
+      "guid": "ff79f1cf3ad065640b43158afab8b4bb",
+      "name": "Stone Hatchet",
+      "description": "Chips more than it bites.",
+      "weaponType": "OneHandedAxe",
+      "damage": 40,
+      "magicDamage": 0,
+      "defense": 0,
+      "weaponLevel": 2,
+      "element": "Neutral",
+      "attackType": "Physical",
+      "attackRange": 0.0,
+      "weight": 80,
+      "buyPrice": 24000,
+      "requiredLevel": 0,
+      "isRefinable": true,
+      "soulSlots": 1,
+      "bindingType": "None",
+      "equippableSlots": [
+        "WeaponMain",
+        "WeaponSecondary"
+      ],
+      "blockSlots": [],
+      "tooltip": "Stone Hatchet [1]\nChips more than it bites.\n\nType: One-Handed Axe\nAttack: 40\nElement: Neutral\nAttack Range: 0\nWeight: 80\nLevel: 2\nRequired Level: 0\n\nEmpty Soul Slot",
+      "iconFile": "equipment/ff79f1cf3ad065640b43158afab8b4bb.png"
+    },
+    {
+      "guid": "9ca0e12e66ae3d94aab58a1314a5bb76",
+      "name": "Studded Iron Mace",
+      "description": "Studs hold attention.",
+      "weaponType": "OneHandedMace",
+      "damage": 58,
+      "magicDamage": 0,
+      "defense": 0,
+      "weaponLevel": 2,
+      "element": "Neutral",
+      "attackType": "Physical",
+      "attackRange": 3.0,
+      "weight": 150,
+      "buyPrice": 38200,
+      "requiredLevel": 0,
+      "isRefinable": true,
+      "soulSlots": 0,
+      "bindingType": "None",
+      "equippableSlots": [
+        "WeaponMain",
+        "WeaponSecondary"
+      ],
+      "blockSlots": [],
+      "tooltip": "Studded Iron Mace\nStuds hold attention.\n\nType: One-Handed Mace\nAttack: 58\nElement: Neutral\nAttack Range: 3\nWeight: 150\nLevel: 2\nRequired Level: 0",
+      "iconFile": "equipment/9ca0e12e66ae3d94aab58a1314a5bb76.png"
+    },
+    {
+      "guid": "ead796c02b032c349a7528a1036ccd62",
+      "name": "Sturdy Oak Staff",
+      "description": "Weight steadies wandering thought.",
+      "weaponType": "TwoHandedStaff",
+      "damage": 0,
+      "magicDamage": 17,
+      "defense": 0,
+      "weaponLevel": 1,
+      "element": "Neutral",
+      "attackType": "Magical",
+      "attackRange": 10.0,
+      "weight": 90,
+      "buyPrice": 8750,
+      "requiredLevel": 0,
+      "isRefinable": true,
+      "soulSlots": 0,
+      "bindingType": "None",
+      "equippableSlots": [
+        "WeaponMain"
+      ],
+      "blockSlots": [
+        "WeaponSecondary"
+      ],
+      "tooltip": "Sturdy Oak Staff\nWeight steadies wandering thought.\n\nType: Two-Handed Staff\nMagic Attack: 17\nElement: Neutral\nAttack Range: 10\nWeight: 90\nLevel: 1\nRequired Level: 0",
+      "iconFile": "equipment/ead796c02b032c349a7528a1036ccd62.png"
+    },
+    {
+      "guid": "7ecaa19b118942f438ca5b08765847ef",
+      "name": "Training Mace",
+      "description": "Stops when talk won’t.",
+      "weaponType": "OneHandedMace",
+      "damage": 22,
+      "magicDamage": 0,
+      "defense": 0,
+      "weaponLevel": 1,
+      "element": "Neutral",
+      "attackType": "Physical",
+      "attackRange": 3.0,
+      "weight": 100,
+      "buyPrice": 9400,
+      "requiredLevel": 0,
+      "isRefinable": true,
+      "soulSlots": 3,
+      "bindingType": "None",
+      "equippableSlots": [
+        "WeaponMain",
+        "WeaponSecondary"
+      ],
+      "blockSlots": [],
+      "tooltip": "Training Mace [3]\nStops when talk won’t.\n\nType: One-Handed Mace\nAttack: 22\nElement: Neutral\nAttack Range: 3\nWeight: 100\nLevel: 1\nRequired Level: 0\n\nEmpty Soul Slot\nEmpty Soul Slot\nEmpty Soul Slot",
+      "iconFile": "equipment/7ecaa19b118942f438ca5b08765847ef.png"
+    },
+    {
+      "guid": "70d22ed45bbcf79409bc9b2025c7d4a0",
+      "name": "Training Sword",
+      "description": "A simple yet useful training sword",
+      "weaponType": "OneHandedSword",
+      "damage": 30,
+      "magicDamage": 0,
+      "defense": 0,
+      "weaponLevel": 1,
+      "element": "Neutral",
+      "attackType": "Physical",
+      "attackRange": 2.5,
+      "weight": 30,
+      "buyPrice": 7500,
+      "requiredLevel": 0,
+      "isRefinable": true,
+      "soulSlots": 3,
+      "bindingType": "None",
+      "equippableSlots": [
+        "WeaponMain",
+        "WeaponSecondary"
+      ],
+      "blockSlots": [],
+      "tooltip": "Training Sword [3]\nA simple yet useful training sword\n\nType: One-Handed Sword\nAttack: 30\nElement: Neutral\nAttack Range: 2.5\nWeight: 30\nLevel: 1\nRequired Level: 0\n\nEmpty Soul Slot\nEmpty Soul Slot\nEmpty Soul Slot",
+      "iconFile": "equipment/70d22ed45bbcf79409bc9b2025c7d4a0.png"
+    },
+    {
+      "guid": "a841e573c0c52834f85988a28781f7e7",
+      "name": "Wood Great Sword",
+      "description": "Weight teaches faster than words.",
+      "weaponType": "TwoHandedSword",
+      "damage": 55,
+      "magicDamage": 0,
+      "defense": 0,
+      "weaponLevel": 1,
+      "element": "Neutral",
+      "attackType": "Physical",
+      "attackRange": 3.0,
+      "weight": 50,
+      "buyPrice": 13500,
+      "requiredLevel": 0,
+      "isRefinable": true,
+      "soulSlots": 3,
+      "bindingType": "None",
+      "equippableSlots": [
+        "WeaponMain"
+      ],
+      "blockSlots": [
+        "WeaponSecondary"
+      ],
+      "tooltip": "Wood Great Sword [3]\nWeight teaches faster than words.\n\nType: Two-Handed Sword\nAttack: 55\nElement: Neutral\nAttack Range: 3\nWeight: 50\nLevel: 1\nRequired Level: 0\n\nEmpty Soul Slot\nEmpty Soul Slot\nEmpty Soul Slot",
+      "iconFile": "equipment/a841e573c0c52834f85988a28781f7e7.png"
+    },
+    {
+      "guid": "a5253322d02ef2c42a5882f5259bae1a",
+      "name": "Woodcutter's Axe",
+      "description": "A plain edge for plain work.",
+      "weaponType": "OneHandedAxe",
+      "damage": 26,
+      "magicDamage": 0,
+      "defense": 0,
+      "weaponLevel": 1,
+      "element": "Neutral",
+      "attackType": "Physical",
+      "attackRange": 0.0,
+      "weight": 60,
+      "buyPrice": 8200,
+      "requiredLevel": 0,
+      "isRefinable": true,
+      "soulSlots": 3,
+      "bindingType": "None",
+      "equippableSlots": [
+        "WeaponMain",
+        "WeaponSecondary"
+      ],
+      "blockSlots": [],
+      "tooltip": "Woodcutter's Axe [3]\nA plain edge for plain work.\n\nType: One-Handed Axe\nAttack: 26\nElement: Neutral\nAttack Range: 0\nWeight: 60\nLevel: 1\nRequired Level: 0\n\nEmpty Soul Slot\nEmpty Soul Slot\nEmpty Soul Slot",
+      "iconFile": "equipment/a5253322d02ef2c42a5882f5259bae1a.png"
+    },
+    {
+      "guid": "1e192041da8d6384ca345ba551d023ae",
+      "name": "Woodcutter's Hew",
+      "description": "Two hands, one purpose.",
+      "weaponType": "TwoHandedAxe",
+      "damage": 45,
+      "magicDamage": 0,
+      "defense": 0,
+      "weaponLevel": 1,
+      "element": "Neutral",
+      "attackType": "Physical",
+      "attackRange": 0.0,
+      "weight": 150,
+      "buyPrice": 16500,
+      "requiredLevel": 0,
+      "isRefinable": true,
+      "soulSlots": 3,
+      "bindingType": "None",
+      "equippableSlots": [
+        "WeaponMain"
+      ],
+      "blockSlots": [
+        "WeaponSecondary"
+      ],
+      "tooltip": "Woodcutter's Hew [3]\nTwo hands, one purpose.\n\nType: Two-Handed Axe\nAttack: 45\nElement: Neutral\nAttack Range: 0\nWeight: 150\nLevel: 1\nRequired Level: 0\n\nEmpty Soul Slot\nEmpty Soul Slot\nEmpty Soul Slot",
+      "iconFile": "equipment/1e192041da8d6384ca345ba551d023ae.png"
+    },
+    {
+      "guid": "3eb8bd51cc5a91f4f8caab1d2ecd8012",
+      "name": "Wooden Core",
+      "description": "A \"little\" wooden hammer",
+      "weaponType": "TwoHandedMace",
+      "damage": 38,
+      "magicDamage": 0,
+      "defense": 0,
+      "weaponLevel": 1,
+      "element": "Neutral",
+      "attackType": "Physical",
+      "attackRange": 4.0,
+      "weight": 250,
+      "buyPrice": 20100,
+      "requiredLevel": 0,
+      "isRefinable": true,
+      "soulSlots": 3,
+      "bindingType": "None",
+      "equippableSlots": [
+        "WeaponMain"
+      ],
+      "blockSlots": [
+        "WeaponSecondary"
+      ],
+      "tooltip": "Wooden Core [3]\nA \"little\" wooden hammer\n\nType: Two-Handed Mace\nAttack: 38\nElement: Neutral\nAttack Range: 4\nWeight: 250\nLevel: 1\nRequired Level: 0\n\nEmpty Soul Slot\nEmpty Soul Slot\nEmpty Soul Slot",
+      "iconFile": "equipment/3eb8bd51cc5a91f4f8caab1d2ecd8012.png"
+    },
+    {
+      "guid": "fef4196a7efbb4e4da2122fc2144107c",
+      "name": "Wooden Round Shield",
+      "description": "Stops what you see coming.",
+      "weaponType": "Shield",
+      "damage": 0,
+      "magicDamage": 0,
+      "defense": 1,
+      "weaponLevel": 1,
+      "element": "Neutral",
+      "attackType": "Physical",
+      "attackRange": 0.0,
+      "weight": 102,
+      "buyPrice": 5600,
+      "requiredLevel": 0,
+      "isRefinable": true,
+      "soulSlots": 0,
+      "bindingType": "None",
+      "equippableSlots": [
+        "WeaponSecondary"
+      ],
+      "blockSlots": [],
+      "tooltip": "Wooden Round Shield\nStops what you see coming.\n\nType: Shield\nDefense: 1\nWeight: 102\nLevel: 1\nRequired Level: 0",
+      "iconFile": "equipment/fef4196a7efbb4e4da2122fc2144107c.png"
+    },
+    {
+      "guid": "706d180b9c10e744c9ad3763dfe70215",
+      "name": "Wrapped Ash Staff",
+      "description": "Leather stops slipping doubts.",
+      "weaponType": "TwoHandedStaff",
+      "damage": 0,
+      "magicDamage": 65,
+      "defense": 0,
+      "weaponLevel": 3,
+      "element": "Neutral",
+      "attackType": "Magical",
+      "attackRange": 10.0,
+      "weight": 102,
+      "buyPrice": 64050,
+      "requiredLevel": 0,
+      "isRefinable": true,
+      "soulSlots": 0,
+      "bindingType": "None",
+      "equippableSlots": [
+        "WeaponMain"
+      ],
+      "blockSlots": [
+        "WeaponSecondary"
+      ],
+      "tooltip": "Wrapped Ash Staff\nLeather stops slipping doubts.\n\nType: Two-Handed Staff\nMagic Attack: 65\nElement: Neutral\nAttack Range: 10\nWeight: 102\nLevel: 3\nRequired Level: 0",
+      "iconFile": "equipment/706d180b9c10e744c9ad3763dfe70215.png"
+    }
+  ],
+  "armor": [
+    {
+      "guid": "fd766e1d099f9154a8807fb3977631ea",
+      "name": "Black Ring",
+      "description": "",
+      "armorType": "Accessory",
+      "defense": 0,
+      "weight": 15,
+      "buyPrice": 750,
+      "requiredLevel": 30,
+      "isRefinable": false,
+      "soulSlots": 1,
+      "bindingType": "None",
+      "equippableSlots": [
+        "Accessory1",
+        "Accessory2"
+      ],
+      "bonuses": [
+        {
+          "type": "FlatBonus",
+          "trigger": "OnStatCalculate",
+          "text": "+2 DEX",
+          "stat": "DEX",
+          "amount": 2.0
+        }
+      ],
+      "tooltip": "Black Ring [1]\n\n\n+2 Dexterity\n\nType: Accessory\nDefense: 0\nWeight: 15\nRequired Level: 30\n\nEmpty Soul Slot",
+      "iconFile": "equipment/fd766e1d099f9154a8807fb3977631ea.png"
+    },
+    {
+      "guid": "f274162e0b17c7445b30a709b7768783",
+      "name": "Spider Ring",
+      "description": "",
+      "armorType": "Accessory",
+      "defense": 0,
+      "weight": 15,
+      "buyPrice": 750,
+      "requiredLevel": 30,
+      "isRefinable": false,
+      "soulSlots": 0,
+      "bindingType": "None",
+      "equippableSlots": [
+        "Accessory1",
+        "Accessory2"
+      ],
+      "bonuses": [
+        {
+          "type": "FlatBonus",
+          "trigger": "OnStatCalculate",
+          "text": "+2 AGI",
+          "stat": "AGI",
+          "amount": 2.0
+        },
+        {
+          "type": "PercentBonus",
+          "trigger": "OnStatCalculate",
+          "text": "+5% ATK",
+          "stat": "ATK",
+          "percent": 5.0
+        }
+      ],
+      "tooltip": "Spider Ring\n\n\n+2 Agility\r\n+5% Attack\n\nType: Accessory\nDefense: 0\nWeight: 15\nRequired Level: 30",
+      "iconFile": "equipment/f274162e0b17c7445b30a709b7768783.png"
+    },
+    {
+      "guid": "475179da82526d64d8dee5beb3408d08",
+      "name": "Starring",
+      "description": "",
+      "armorType": "Accessory",
+      "defense": 0,
+      "weight": 15,
+      "buyPrice": 750,
+      "requiredLevel": 30,
+      "isRefinable": false,
+      "soulSlots": 0,
+      "bindingType": "None",
+      "equippableSlots": [
+        "Accessory1",
+        "Accessory2"
+      ],
+      "bonuses": [
+        {
+          "type": "FlatBonus",
+          "trigger": "OnStatCalculate",
+          "text": "+2 INT",
+          "stat": "INT",
+          "amount": 2.0
+        },
+        {
+          "type": "PercentBonus",
+          "trigger": "OnStatCalculate",
+          "text": "+5% MATK",
+          "stat": "MATK",
+          "percent": 5.0
+        }
+      ],
+      "tooltip": "Starring\n\n\n+2 Intelligence\r\n+5% Magic Attack\n\nType: Accessory\nDefense: 0\nWeight: 15\nRequired Level: 30",
+      "iconFile": "equipment/475179da82526d64d8dee5beb3408d08.png"
+    },
+    {
+      "guid": "60727443d8ac8714c8d273dbe505159f",
+      "name": "Backpack",
+      "description": "An empty bag",
+      "armorType": "Back",
+      "defense": 1,
+      "weight": 30,
+      "buyPrice": 3500,
+      "requiredLevel": 0,
+      "isRefinable": true,
+      "soulSlots": 1,
+      "bindingType": "None",
+      "equippableSlots": [
+        "Back"
+      ],
+      "bonuses": [
+        {
+          "type": "FlatBonus",
+          "trigger": "OnStatCalculate",
+          "text": "+500 MaxWeight",
+          "stat": "MaxWeight",
+          "amount": 500.0
+        }
+      ],
+      "tooltip": "Backpack [1]\nAn empty bag\n\n+500 Max Weight\n\nType: Back\nDefense: 1\nWeight: 30\nRequired Level: 0\n\nEmpty Soul Slot",
+      "iconFile": "equipment/60727443d8ac8714c8d273dbe505159f.png"
+    },
+    {
+      "guid": "e9484de4c5e08d5479daef39dd4d1971",
+      "name": "Garment",
+      "description": "Comfort and caution make strange companions.",
+      "armorType": "Back",
+      "defense": 1,
+      "weight": 30,
+      "buyPrice": 3500,
+      "requiredLevel": 0,
+      "isRefinable": true,
+      "soulSlots": 0,
+      "bindingType": "None",
+      "equippableSlots": [
+        "Back"
+      ],
+      "tooltip": "Garment\nComfort and caution make strange companions.\n\nType: Back\nDefense: 1\nWeight: 30\nRequired Level: 0",
+      "iconFile": "equipment/e9484de4c5e08d5479daef39dd4d1971.png"
+    },
+    {
+      "guid": "42e30408c83b23347a7f23ec7a8a5f58",
+      "name": "Garment",
+      "description": "Comfort and caution make strange companions.",
+      "armorType": "Back",
+      "defense": 1,
+      "weight": 30,
+      "buyPrice": 3500,
+      "requiredLevel": 0,
+      "isRefinable": true,
+      "soulSlots": 1,
+      "bindingType": "None",
+      "equippableSlots": [
+        "Back"
+      ],
+      "tooltip": "Garment [1]\nComfort and caution make strange companions.\n\nType: Back\nDefense: 1\nWeight: 30\nRequired Level: 0\n\nEmpty Soul Slot",
+      "iconFile": "equipment/42e30408c83b23347a7f23ec7a8a5f58.png"
+    },
+    {
+      "guid": "15697baea11541f4da8ad6c2f7651d75",
+      "name": "Chainmail Hauberk",
+      "description": "Woven iron, woven hope.",
+      "armorType": "Chest",
+      "defense": 3,
+      "weight": 200,
+      "buyPrice": 16000,
+      "requiredLevel": 10,
+      "isRefinable": true,
+      "soulSlots": 0,
+      "bindingType": "None",
+      "equippableSlots": [
+        "Chest"
+      ],
+      "tooltip": "Chainmail Hauberk\nWoven iron, woven hope.\n\nType: Chest\nDefense: 3\nWeight: 200\nRequired Level: 10",
+      "iconFile": "equipment/15697baea11541f4da8ad6c2f7651d75.png"
+    },
+    {
+      "guid": "4e86bff4de40f84408019d2b91b79b79",
+      "name": "Leather Tunic",
+      "description": "Tanned hide, hardened hearts.",
+      "armorType": "Chest",
+      "defense": 2,
+      "weight": 100,
+      "buyPrice": 9000,
+      "requiredLevel": 5,
+      "isRefinable": true,
+      "soulSlots": 0,
+      "bindingType": "None",
+      "equippableSlots": [
+        "Chest"
+      ],
+      "tooltip": "Leather Tunic\nTanned hide, hardened hearts.\n\nType: Chest\nDefense: 2\nWeight: 100\nRequired Level: 5",
+      "iconFile": "equipment/4e86bff4de40f84408019d2b91b79b79.png"
+    },
+    {
+      "guid": "0334c8062f931a64c9ebd0935deb176f",
+      "name": "Linen Shirt",
+      "description": "The humblest thread may weave great deeds.",
+      "armorType": "Chest",
+      "defense": 1,
+      "weight": 30,
+      "buyPrice": 3500,
+      "requiredLevel": 1,
+      "isRefinable": true,
+      "soulSlots": 0,
+      "bindingType": "None",
+      "equippableSlots": [
+        "Chest"
+      ],
+      "tooltip": "Linen Shirt\nThe humblest thread may weave great deeds.\n\nType: Chest\nDefense: 1\nWeight: 30\nRequired Level: 1",
+      "iconFile": "equipment/0334c8062f931a64c9ebd0935deb176f.png"
+    },
+    {
+      "guid": "130596e374bb200469de90d787d6a09a",
+      "name": "Padded Vest",
+      "description": "Layers of care between flesh and harm.",
+      "armorType": "Chest",
+      "defense": 2,
+      "weight": 60,
+      "buyPrice": 7000,
+      "requiredLevel": 0,
+      "isRefinable": true,
+      "soulSlots": 0,
+      "bindingType": "None",
+      "equippableSlots": [
+        "Chest"
+      ],
+      "tooltip": "Padded Vest\nLayers of care between flesh and harm.\n\nType: Chest\nDefense: 2\nWeight: 60\nRequired Level: 0",
+      "iconFile": "equipment/130596e374bb200469de90d787d6a09a.png"
+    },
+    {
+      "guid": "0d465f6040a31104090d967287c75a8b",
+      "name": "Padded Vest",
+      "description": "Layers of care between flesh and harm.",
+      "armorType": "Chest",
+      "defense": 2,
+      "weight": 60,
+      "buyPrice": 7000,
+      "requiredLevel": 0,
+      "isRefinable": true,
+      "soulSlots": 1,
+      "bindingType": "None",
+      "equippableSlots": [
+        "Chest"
+      ],
+      "tooltip": "Padded Vest [1]\nLayers of care between flesh and harm.\n\nType: Chest\nDefense: 2\nWeight: 60\nRequired Level: 0\n\nEmpty Soul Slot",
+      "iconFile": "equipment/0d465f6040a31104090d967287c75a8b.png"
+    },
+    {
+      "guid": "0dd9566431c50a84dbb1d8cb7642cc62",
+      "name": "Plate Armor",
+      "description": "The anvil's final word.",
+      "armorType": "Chest",
+      "defense": 4,
+      "weight": 280,
+      "buyPrice": 22000,
+      "requiredLevel": 12,
+      "isRefinable": true,
+      "soulSlots": 0,
+      "bindingType": "None",
+      "equippableSlots": [
+        "Chest"
+      ],
+      "tooltip": "Plate Armor\nThe anvil's final word.\n\nType: Chest\nDefense: 4\nWeight: 280\nRequired Level: 12",
+      "iconFile": "equipment/0dd9566431c50a84dbb1d8cb7642cc62.png"
+    },
+    {
+      "guid": "928445db101994941bb2f03c1fa0a205",
+      "name": "Plate Armor",
+      "description": "The anvil's final word.",
+      "armorType": "Chest",
+      "defense": 4,
+      "weight": 280,
+      "buyPrice": 22000,
+      "requiredLevel": 12,
+      "isRefinable": true,
+      "soulSlots": 1,
+      "bindingType": "None",
+      "equippableSlots": [
+        "Chest"
+      ],
+      "tooltip": "Plate Armor [1]\nThe anvil's final word.\n\nType: Chest\nDefense: 4\nWeight: 280\nRequired Level: 12\n\nEmpty Soul Slot",
+      "iconFile": "equipment/928445db101994941bb2f03c1fa0a205.png"
+    },
+    {
+      "guid": "a1b16cfc39cdb0240b44a511ee5c0916",
+      "name": "Studded Armor",
+      "description": "Each rivet a lesson learned in battle.",
+      "armorType": "Chest",
+      "defense": 3,
+      "weight": 160,
+      "buyPrice": 14000,
+      "requiredLevel": 8,
+      "isRefinable": true,
+      "soulSlots": 0,
+      "bindingType": "None",
+      "equippableSlots": [
+        "Chest"
+      ],
+      "tooltip": "Studded Armor\nEach rivet a lesson learned in battle.\n\nType: Chest\nDefense: 3\nWeight: 160\nRequired Level: 8",
+      "iconFile": "equipment/a1b16cfc39cdb0240b44a511ee5c0916.png"
+    },
+    {
+      "guid": "4a3dcf29d811a0747a20783cedd5f7b0",
+      "name": "Cloth Shoes",
+      "description": "Soft steps on hard roads.",
+      "armorType": "Feet",
+      "defense": 1,
+      "weight": 20,
+      "buyPrice": 3000,
+      "requiredLevel": 1,
+      "isRefinable": true,
+      "soulSlots": 0,
+      "bindingType": "None",
+      "equippableSlots": [
+        "Feet"
+      ],
+      "tooltip": "Cloth Shoes\nSoft steps on hard roads.\n\nType: Feet\nDefense: 1\nWeight: 20\nRequired Level: 1",
+      "iconFile": "equipment/4a3dcf29d811a0747a20783cedd5f7b0.png"
+    },
+    {
+      "guid": "580819b1b136b4648a7181d7506d3289",
+      "name": "Cloth Shoes",
+      "description": "Soft steps on hard roads.",
+      "armorType": "Feet",
+      "defense": 1,
+      "weight": 20,
+      "buyPrice": 3000,
+      "requiredLevel": 1,
+      "isRefinable": true,
+      "soulSlots": 1,
+      "bindingType": "None",
+      "equippableSlots": [
+        "Feet"
+      ],
+      "tooltip": "Cloth Shoes [1]\nSoft steps on hard roads.\n\nType: Feet\nDefense: 1\nWeight: 20\nRequired Level: 1\n\nEmpty Soul Slot",
+      "iconFile": "equipment/580819b1b136b4648a7181d7506d3289.png"
+    },
+    {
+      "guid": "fe3c6eab2de23354f9128a37e7ff4c5f",
+      "name": "Iron Boots",
+      "description": "Heavy steps, steady purpose.",
+      "armorType": "Feet",
+      "defense": 4,
+      "weight": 150,
+      "buyPrice": 15500,
+      "requiredLevel": 10,
+      "isRefinable": true,
+      "soulSlots": 0,
+      "bindingType": "None",
+      "equippableSlots": [
+        "Feet"
+      ],
+      "tooltip": "Iron Boots\nHeavy steps, steady purpose.\n\nType: Feet\nDefense: 4\nWeight: 150\nRequired Level: 10",
+      "iconFile": "equipment/fe3c6eab2de23354f9128a37e7ff4c5f.png"
+    },
+    {
+      "guid": "f43fabcc154e56c458743d6b780f0f99",
+      "name": "Iron Boots",
+      "description": "Heavy steps, steady purpose.",
+      "armorType": "Feet",
+      "defense": 4,
+      "weight": 150,
+      "buyPrice": 15500,
+      "requiredLevel": 10,
+      "isRefinable": true,
+      "soulSlots": 1,
+      "bindingType": "None",
+      "equippableSlots": [
+        "Feet"
+      ],
+      "tooltip": "Iron Boots [1]\nHeavy steps, steady purpose.\n\nType: Feet\nDefense: 4\nWeight: 150\nRequired Level: 10\n\nEmpty Soul Slot",
+      "iconFile": "equipment/f43fabcc154e56c458743d6b780f0f99.png"
+    },
+    {
+      "guid": "deb09a165316205419bd55a6a4bde674",
+      "name": "Leather Boots",
+      "description": "Every mile etched into worn soles.",
+      "armorType": "Feet",
+      "defense": 2,
+      "weight": 55,
+      "buyPrice": 6750,
+      "requiredLevel": 3,
+      "isRefinable": true,
+      "soulSlots": 0,
+      "bindingType": "None",
+      "equippableSlots": [
+        "Feet"
+      ],
+      "tooltip": "Leather Boots\nEvery mile etched into worn soles.\n\nType: Feet\nDefense: 2\nWeight: 55\nRequired Level: 3",
+      "iconFile": "equipment/deb09a165316205419bd55a6a4bde674.png"
+    },
+    {
+      "guid": "a7e59094d97aa344caf97f6014b1c472",
+      "name": "Reinforced Boots",
+      "description": "Footing determines fate.",
+      "armorType": "Feet",
+      "defense": 2,
+      "weight": 120,
+      "buyPrice": 10000,
+      "requiredLevel": 8,
+      "isRefinable": true,
+      "soulSlots": 0,
+      "bindingType": "None",
+      "equippableSlots": [
+        "Feet"
+      ],
+      "tooltip": "Reinforced Boots\nFooting determines fate.\n\nType: Feet\nDefense: 2\nWeight: 120\nRequired Level: 8",
+      "iconFile": "equipment/a7e59094d97aa344caf97f6014b1c472.png"
+    },
+    {
+      "guid": "c5837751255cb5e4a955248f31b89fff",
+      "name": "Steel Sabatons",
+      "description": "March forward; let nothing bar the way.",
+      "armorType": "Feet",
+      "defense": 3,
+      "weight": 200,
+      "buyPrice": 16000,
+      "requiredLevel": 12,
+      "isRefinable": true,
+      "soulSlots": 0,
+      "bindingType": "None",
+      "equippableSlots": [
+        "Feet"
+      ],
+      "tooltip": "Steel Sabatons\nMarch forward; let nothing bar the way.\n\nType: Feet\nDefense: 3\nWeight: 200\nRequired Level: 12",
+      "iconFile": "equipment/c5837751255cb5e4a955248f31b89fff.png"
+    },
+    {
+      "guid": "3e59ce5be82ac9540924ef0eef0de0bb",
+      "name": "Sturdy Boots",
+      "description": "The ground beneath remembers your passing.",
+      "armorType": "Feet",
+      "defense": 2,
+      "weight": 25,
+      "buyPrice": 5250,
+      "requiredLevel": 5,
+      "isRefinable": true,
+      "soulSlots": 0,
+      "bindingType": "None",
+      "equippableSlots": [
+        "Feet"
+      ],
+      "tooltip": "Sturdy Boots\nThe ground beneath remembers your passing.\n\nType: Feet\nDefense: 2\nWeight: 25\nRequired Level: 5",
+      "iconFile": "equipment/3e59ce5be82ac9540924ef0eef0de0bb.png"
+    },
+    {
+      "guid": "8fceee6469b2b534e9a1879e199f24fa",
+      "name": "Apple of archer",
+      "description": "Only for the brave",
+      "armorType": "Head",
+      "defense": 1,
+      "weight": 25,
+      "buyPrice": 3250,
+      "requiredLevel": 1,
+      "isRefinable": true,
+      "soulSlots": 0,
+      "bindingType": "None",
+      "equippableSlots": [
+        "Head"
+      ],
+      "bonuses": [
+        {
+          "type": "FlatBonus",
+          "trigger": "OnStatCalculate",
+          "text": "+3 DEX",
+          "stat": "DEX",
+          "amount": 3.0
+        }
+      ],
+      "tooltip": "Apple of archer\nOnly for the brave\n\n+3 Dexterity\n\nType: Head\nDefense: 1\nWeight: 25\nRequired Level: 1",
+      "iconFile": "equipment/8fceee6469b2b534e9a1879e199f24fa.png"
+    },
+    {
+      "guid": "92bd5cd985d211c41b463b4d25f16ada",
+      "name": "Cloth Hood",
+      "description": "Even the smallest shield may turn fate's arrow.",
+      "armorType": "Head",
+      "defense": 1,
+      "weight": 25,
+      "buyPrice": 3250,
+      "requiredLevel": 1,
+      "isRefinable": true,
+      "soulSlots": 0,
+      "bindingType": "None",
+      "equippableSlots": [
+        "Head"
+      ],
+      "tooltip": "Cloth Hood\nEven the smallest shield may turn fate's arrow.\n\nType: Head\nDefense: 1\nWeight: 25\nRequired Level: 1",
+      "iconFile": "equipment/92bd5cd985d211c41b463b4d25f16ada.png"
+    },
+    {
+      "guid": "f0d0d450c34c674428a290986d1c51be",
+      "name": "Cloth Hood",
+      "description": "Even the smallest shield may turn fate's arrow.",
+      "armorType": "Head",
+      "defense": 1,
+      "weight": 25,
+      "buyPrice": 3250,
+      "requiredLevel": 1,
+      "isRefinable": true,
+      "soulSlots": 1,
+      "bindingType": "None",
+      "equippableSlots": [
+        "Head"
+      ],
+      "tooltip": "Cloth Hood [1]\nEven the smallest shield may turn fate's arrow.\n\nType: Head\nDefense: 1\nWeight: 25\nRequired Level: 1\n\nEmpty Soul Slot",
+      "iconFile": "equipment/f0d0d450c34c674428a290986d1c51be.png"
+    },
+    {
+      "guid": "29f6018783d3ffe4eab02aa0f7c52cbd",
+      "name": "Hardened Helm",
+      "description": "Strength is forged one strike at a time.",
+      "armorType": "Head",
+      "defense": 3,
+      "weight": 140,
+      "buyPrice": 13000,
+      "requiredLevel": 8,
+      "isRefinable": true,
+      "soulSlots": 0,
+      "bindingType": "None",
+      "equippableSlots": [
+        "Head"
+      ],
+      "tooltip": "Hardened Helm\nStrength is forged one strike at a time.\n\nType: Head\nDefense: 3\nWeight: 140\nRequired Level: 8",
+      "iconFile": "equipment/29f6018783d3ffe4eab02aa0f7c52cbd.png"
+    },
+    {
+      "guid": "7cc2246adc231174397caa259fe856c2",
+      "name": "Hardened Helm",
+      "description": "Strength is forged one strike at a time.",
+      "armorType": "Head",
+      "defense": 3,
+      "weight": 140,
+      "buyPrice": 13000,
+      "requiredLevel": 8,
+      "isRefinable": true,
+      "soulSlots": 1,
+      "bindingType": "None",
+      "equippableSlots": [
+        "Head"
+      ],
+      "tooltip": "Hardened Helm [1]\nStrength is forged one strike at a time.\n\nType: Head\nDefense: 3\nWeight: 140\nRequired Level: 8\n\nEmpty Soul Slot",
+      "iconFile": "equipment/7cc2246adc231174397caa259fe856c2.png"
+    },
+    {
+      "guid": "fce718608c2af5c408374b5b6df94103",
+      "name": "Iron Helmet",
+      "description": "The smith's hammer sings a song of protection.",
+      "armorType": "Head",
+      "defense": 5,
+      "weight": 180,
+      "buyPrice": 19000,
+      "requiredLevel": 10,
+      "isRefinable": true,
+      "soulSlots": 0,
+      "bindingType": "None",
+      "equippableSlots": [
+        "Head"
+      ],
+      "tooltip": "Iron Helmet\nThe smith's hammer sings a song of protection.\n\nType: Head\nDefense: 5\nWeight: 180\nRequired Level: 10",
+      "iconFile": "equipment/fce718608c2af5c408374b5b6df94103.png"
+    },
+    {
+      "guid": "e722fc1fee7d27b4784c761359aa98d9",
+      "name": "Ormys Necklace",
+      "description": "Brilliant...",
+      "armorType": "HeadLower",
+      "defense": 1,
+      "weight": 25,
+      "buyPrice": 3250,
+      "requiredLevel": 20,
+      "isRefinable": false,
+      "soulSlots": 0,
+      "bindingType": "None",
+      "equippableSlots": [
+        "HeadLower"
+      ],
+      "bonuses": [
+        {
+          "type": "FlatBonus",
+          "trigger": "OnStatCalculate",
+          "text": "+2 AGI",
+          "stat": "AGI",
+          "amount": 2.0
+        }
+      ],
+      "tooltip": "Ormys Necklace\nBrilliant...\n\n+2 Agility\n\nType: Head Lower\nDefense: 1\nWeight: 25\nRequired Level: 20",
+      "iconFile": "equipment/e722fc1fee7d27b4784c761359aa98d9.png"
+    },
+    {
+      "guid": "2c340a40f7fa0784283f075fad58edb1",
+      "name": "Mushroom Hat",
+      "description": "",
+      "armorType": "Head",
+      "defense": 2,
+      "weight": 80,
+      "buyPrice": 8000,
+      "requiredLevel": 5,
+      "isRefinable": true,
+      "soulSlots": 0,
+      "bindingType": "None",
+      "equippableSlots": [
+        "Head"
+      ],
+      "bonuses": [
+        {
+          "type": "FlatBonus",
+          "trigger": "OnStatCalculate",
+          "text": "+50 HPRecovery",
+          "stat": "HPRecovery",
+          "amount": 50.0
+        }
+      ],
+      "tooltip": "Mushroom Hat\n\n\n+50 HP Recovery\n\nType: Head\nDefense: 2\nWeight: 80\nRequired Level: 5",
+      "iconFile": "equipment/2c340a40f7fa0784283f075fad58edb1.png"
+    },
+    {
+      "guid": "db0be2d6a8df1744bb4d6c638999b658",
+      "name": "Padded Coif",
+      "description": "Comfort and caution make strange companions.",
+      "armorType": "Head",
+      "defense": 2,
+      "weight": 45,
+      "buyPrice": 6250,
+      "requiredLevel": 0,
+      "isRefinable": true,
+      "soulSlots": 0,
+      "bindingType": "None",
+      "equippableSlots": [
+        "Head"
+      ],
+      "tooltip": "Padded Coif\nComfort and caution make strange companions.\n\nType: Head\nDefense: 2\nWeight: 45\nRequired Level: 0",
+      "iconFile": "equipment/db0be2d6a8df1744bb4d6c638999b658.png"
+    },
+    {
+      "guid": "0ff578f8927bdc14fb6397af84901fe1",
+      "name": "Padded Coif",
+      "description": "Comfort and caution make strange companions.",
+      "armorType": "Head",
+      "defense": 2,
+      "weight": 45,
+      "buyPrice": 6250,
+      "requiredLevel": 0,
+      "isRefinable": true,
+      "soulSlots": 1,
+      "bindingType": "None",
+      "equippableSlots": [
+        "Head"
+      ],
+      "tooltip": "Padded Coif [1]\nComfort and caution make strange companions.\n\nType: Head\nDefense: 2\nWeight: 45\nRequired Level: 0\n\nEmpty Soul Slot",
+      "iconFile": "equipment/0ff578f8927bdc14fb6397af84901fe1.png"
+    },
+    {
+      "guid": "e7658e2bac45acd4d8dffc5fd028fac3",
+      "name": "Slime hat",
+      "description": "",
+      "armorType": "Head",
+      "defense": 1,
+      "weight": 40,
+      "buyPrice": 4000,
+      "requiredLevel": 20,
+      "isRefinable": true,
+      "soulSlots": 0,
+      "bindingType": "None",
+      "equippableSlots": [
+        "Head"
+      ],
+      "bonuses": [
+        {
+          "type": "FlatBonus",
+          "trigger": "OnStatCalculate",
+          "text": "+50 SP",
+          "stat": "SP",
+          "amount": 50.0
+        },
+        {
+          "type": "FlatBonus",
+          "trigger": "OnStatCalculate",
+          "text": "+30 SPRecovery",
+          "stat": "SPRecovery",
+          "amount": 30.0
+        }
+      ],
+      "tooltip": "Slime hat\n\n\n+50 SP\r\n+30 SP Recovery\n\nType: Head\nDefense: 1\nWeight: 40\nRequired Level: 20",
+      "iconFile": "equipment/e7658e2bac45acd4d8dffc5fd028fac3.png"
+    },
+    {
+      "guid": "588dd0a1f5fc70e41843bbb41a1ce6ce",
+      "name": "Steel Helm",
+      "description": "Iron rusts, but steel endures.",
+      "armorType": "Head",
+      "defense": 4,
+      "weight": 220,
+      "buyPrice": 19000,
+      "requiredLevel": 12,
+      "isRefinable": true,
+      "soulSlots": 0,
+      "bindingType": "None",
+      "equippableSlots": [
+        "Head"
+      ],
+      "tooltip": "Steel Helm\nIron rusts, but steel endures.\n\nType: Head\nDefense: 4\nWeight: 220\nRequired Level: 12",
+      "iconFile": "equipment/588dd0a1f5fc70e41843bbb41a1ce6ce.png"
+    }
+  ],
+  "souls": [
+    {
+      "guid": "e7f7fbb0d33f9fa408573c6968c9699e",
+      "name": "Giant Mushroom soul",
+      "description": "Contains a monster soul, use with caution",
+      "soulType": "Chest",
+      "weight": 1,
+      "buyPrice": 10,
+      "bindingType": "None",
+      "bonuses": [
+        {
+          "type": "MissingHpFlatBonus",
+          "trigger": "OnStatCalculate",
+          "text": "+30 HPRecovery when HP below 40%",
+          "stat": "HPRecovery"
+        }
+      ],
+      "tooltip": "Giant Mushroom soul\nContains a monster soul, use with caution\n\n+30 HP Recovery when below 40% HP\nType: Soul (Chest)\nWeight: 1",
+      "iconFile": "equipment/e7f7fbb0d33f9fa408573c6968c9699e.png"
+    },
+    {
+      "guid": "f64ac4fccab45034bb04de1d5d4e3200",
+      "name": "Grand Slime soul",
+      "description": "Contains a monster soul, use with caution",
+      "soulType": "Chest",
+      "weight": 1,
+      "buyPrice": 10,
+      "bindingType": "None",
+      "bonuses": [
+        {
+          "type": "FlatBonus",
+          "trigger": "OnStatCalculate",
+          "text": "+500 HP",
+          "stat": "HP",
+          "amount": 500.0
+        }
+      ],
+      "tooltip": "Grand Slime soul\nContains a monster soul, use with caution\n\n+500 HP\nType: Soul (Chest)\nWeight: 1",
+      "iconFile": "equipment/f64ac4fccab45034bb04de1d5d4e3200.png"
+    },
+    {
+      "guid": "e8718be806cedb64cadec166b9a9d5cb",
+      "name": "Hammer Trunk soul",
+      "description": "Contains a monster soul, use with caution",
+      "soulType": "Weapon",
+      "weight": 1,
+      "buyPrice": 10,
+      "bindingType": "None",
+      "bonuses": [
+        {
+          "type": "OnHitFlatBonus",
+          "trigger": "OnStatCalculate",
+          "text": "+10 damage on hit",
+          "amount": 10.0
+        }
+      ],
+      "tooltip": "Hammer Trunk soul\nContains a monster soul, use with caution\n\n+10 damage on hit\nType: Soul (Weapon)\nWeight: 1",
+      "iconFile": "equipment/e8718be806cedb64cadec166b9a9d5cb.png"
+    },
+    {
+      "guid": "e5891e4e477040d4bb21bc51966b74fd",
+      "name": "Harpy soul",
+      "description": "Contains a monster soul, use with caution",
+      "soulType": "Footgear",
+      "weight": 1,
+      "buyPrice": 10,
+      "bindingType": "None",
+      "bonuses": [
+        {
+          "type": "PercentBonus",
+          "trigger": "OnStatCalculate",
+          "text": "+6% WalkSpeed",
+          "stat": "WalkSpeed",
+          "percent": 6.0
+        }
+      ],
+      "tooltip": "Harpy soul\nContains a monster soul, use with caution\n\n+6% Walk Speed\nType: Soul (Footgear)\nWeight: 1",
+      "iconFile": "equipment/e5891e4e477040d4bb21bc51966b74fd.png"
+    },
+    {
+      "guid": "a9dbbaca6b0aa7b4ebf97a0fbf353503",
+      "name": "Hoardbird soul",
+      "description": "Contains a monster soul, use with caution",
+      "soulType": "Accessory",
+      "weight": 1,
+      "buyPrice": 10,
+      "bindingType": "None",
+      "bonuses": [
+        {
+          "type": "FlatBonus",
+          "trigger": "OnStatCalculate",
+          "text": "+2 INT",
+          "stat": "INT",
+          "amount": 2.0
+        }
+      ],
+      "tooltip": "Hoardbird soul\nContains a monster soul, use with caution\n\n+2 Intelligence\nType: Soul (Accessory)\nWeight: 1",
+      "iconFile": "equipment/a9dbbaca6b0aa7b4ebf97a0fbf353503.png"
+    },
+    {
+      "guid": "778009e7e26a8dc48ba244c64845ed6a",
+      "name": "Lamia soul",
+      "description": "Contains a monster soul, use with caution",
+      "soulType": "Weapon",
+      "weight": 1,
+      "buyPrice": 10,
+      "bindingType": "None",
+      "bonuses": [
+        {
+          "type": "OffhandPenaltyReductionBonus",
+          "trigger": "OnStatCalculate",
+          "text": "Reduce dual wield penalty by 15%",
+          "percent": 15.0
+        }
+      ],
+      "tooltip": "Lamia soul\nContains a monster soul, use with caution\n\nReduce dual wield penalty by 15% (offhand weapon contributes more ATK/MATK)\nType: Soul (Weapon)\nWeight: 1",
+      "iconFile": "equipment/778009e7e26a8dc48ba244c64845ed6a.png"
+    },
+    {
+      "guid": "3f9e8808135c16d45b6eff061ccecd54",
+      "name": "Mushroom soul",
+      "description": "Contains a monster soul, use with caution",
+      "soulType": "Headgear",
+      "weight": 1,
+      "buyPrice": 10,
+      "bindingType": "None",
+      "bonuses": [
+        {
+          "type": "HealingBonusPercent",
+          "trigger": "OnStatCalculate",
+          "text": "+10% healing effectiveness",
+          "percent": 10.0
+        }
+      ],
+      "tooltip": "Mushroom soul\nContains a monster soul, use with caution\n\n+10% healing effectiveness\nType: Soul (Headgear)\nWeight: 1",
+      "iconFile": "equipment/3f9e8808135c16d45b6eff061ccecd54.png"
+    },
+    {
+      "guid": "a4ddef20a84f23e4e8a05a21fb5f2f71",
+      "name": "Mystar soul",
+      "description": "Contains a monster soul, use with caution",
+      "soulType": "Weapon",
+      "weight": 1,
+      "buyPrice": 10,
+      "bindingType": "None",
+      "bonuses": [
+        {
+          "type": "OnAutoAttackCastSkillBonus",
+          "trigger": "OnStatCalculate",
+          "text": "10% chance to cast skill on auto attack"
+        }
+      ],
+      "tooltip": "Mystar soul\nContains a monster soul, use with caution\n\n10% chance to cast Holy Light Lv.6 on target on autoattack\nType: Soul (Weapon)\nWeight: 1",
+      "iconFile": "equipment/a4ddef20a84f23e4e8a05a21fb5f2f71.png"
+    },
+    {
+      "guid": "c08b02ba13a0dc84a9a057b479b736eb",
+      "name": "Sandworm soul",
+      "description": "Contains a monster soul, use with caution",
+      "soulType": "Back",
+      "weight": 1,
+      "buyPrice": 10,
+      "bindingType": "None",
+      "bonuses": [
+        {
+          "type": "DamageTakenBonus",
+          "trigger": "OnStatCalculate",
+          "text": "-10% damage taken",
+          "percent": -10.0
+        }
+      ],
+      "tooltip": "Sandworm soul\nContains a monster soul, use with caution\n\nReduce the damage taken from all sources by 10%\nType: Soul (Back)\nWeight: 1",
+      "iconFile": "equipment/c08b02ba13a0dc84a9a057b479b736eb.png"
+    },
+    {
+      "guid": "52d116ce1653f8144af2c956233aaa5a",
+      "name": "Sarui soul",
+      "description": "Contains a monster soul, use with caution",
+      "soulType": "Weapon",
+      "weight": 1,
+      "buyPrice": 10,
+      "bindingType": "None",
+      "bonuses": [
+        {
+          "type": "WeaponPhysicalDamageBonus",
+          "trigger": "OnStatCalculate",
+          "text": "+10% physical damage with Dagger",
+          "percent": 10.0,
+          "weaponType": "Dagger"
+        }
+      ],
+      "tooltip": "Sarui soul\nContains a monster soul, use with caution\n\n+10% physical damage with Dagger\nType: Soul (Weapon)\nWeight: 1",
+      "iconFile": "equipment/52d116ce1653f8144af2c956233aaa5a.png"
+    },
+    {
+      "guid": "76b5dd7ec1e01464e82357d054586846",
+      "name": "Sarui soul",
+      "description": "Contains a monster soul, use with caution",
+      "soulType": "Weapon",
+      "weight": 1,
+      "buyPrice": 10,
+      "bindingType": "None",
+      "bonuses": [
+        {
+          "type": "WeaponPhysicalDamageBonus",
+          "trigger": "OnStatCalculate",
+          "text": "+15% physical damage with Dagger",
+          "percent": 15.0,
+          "weaponType": "Dagger"
+        }
+      ],
+      "tooltip": "Sarui soul\nContains a monster soul, use with caution\n\n+15% physical damage with Dagger\nType: Soul (Weapon)\nWeight: 1",
+      "iconFile": "equipment/76b5dd7ec1e01464e82357d054586846.png"
+    },
+    {
+      "guid": "42bccdc0771e1d64eb4eae2f2361e525",
+      "name": "Shunt soul",
+      "description": "Contains a monster soul, use with caution",
+      "soulType": "Weapon",
+      "weight": 1,
+      "buyPrice": 10,
+      "bindingType": "None",
+      "bonuses": [
+        {
+          "type": "WeaponPhysicalDamageBonus",
+          "trigger": "OnStatCalculate",
+          "text": "+15% physical damage with One Handed Spear",
+          "percent": 15.0,
+          "weaponType": "OneHandedSpear"
+        },
+        {
+          "type": "WeaponPhysicalDamageBonus",
+          "trigger": "OnStatCalculate",
+          "text": "+15% physical damage with Two Handed Spear",
+          "percent": 15.0,
+          "weaponType": "TwoHandedSpear"
+        }
+      ],
+      "tooltip": "Shunt soul\nContains a monster soul, use with caution\n\n+15% physical damage with OneHandedSpear\r\n+15% physical damage with TwoHandedSpear\nType: Soul (Weapon)\nWeight: 1",
+      "iconFile": "equipment/42bccdc0771e1d64eb4eae2f2361e525.png"
+    },
+    {
+      "guid": "914bd74ecc4e0c245b98449f369ce42e",
+      "name": "Skeleton Archer soul",
+      "description": "Contains a monster soul, use with caution",
+      "soulType": "Accessory",
+      "weight": 1,
+      "buyPrice": 10,
+      "bindingType": "None",
+      "bonuses": [
+        {
+          "type": "PhysicalRangedDamageBonus",
+          "trigger": "OnStatCalculate",
+          "text": "+12% ranged physical damage",
+          "percent": 12.0
+        }
+      ],
+      "tooltip": "Skeleton Archer soul\nContains a monster soul, use with caution\n\n+12% ranged physical damage\nType: Soul (Accessory)\nWeight: 1",
+      "iconFile": "equipment/914bd74ecc4e0c245b98449f369ce42e.png"
+    },
+    {
+      "guid": "009fda97112109b4cb8a09ad236e6fac",
+      "name": "Skeleton Slaughter soul",
+      "description": "Contains a monster soul, use with caution",
+      "soulType": "Accessory",
+      "weight": 1,
+      "buyPrice": 10,
+      "bindingType": "None",
+      "bonuses": [
+        {
+          "type": "FlatBonus",
+          "trigger": "OnStatCalculate",
+          "text": "+10 CRIT",
+          "stat": "CRIT",
+          "amount": 10.0
+        }
+      ],
+      "tooltip": "Skeleton Slaughter soul\nContains a monster soul, use with caution\n\n+10 % Critical\nType: Soul (Accessory)\nWeight: 1",
+      "iconFile": "equipment/009fda97112109b4cb8a09ad236e6fac.png"
+    },
+    {
+      "guid": "bc62fbd44fe991e4598ffbd70d899c0e",
+      "name": "Skeleton Thief soul",
+      "description": "Contains a monster soul, use with caution",
+      "soulType": "Accessory",
+      "weight": 1,
+      "buyPrice": 10,
+      "bindingType": "None",
+      "bonuses": [
+        {
+          "type": "DiscountBonus",
+          "trigger": "OnStatCalculate",
+          "text": "5% discount when buying from NPCs",
+          "percent": 5.0
+        },
+        {
+          "type": "OverchargeBonus",
+          "trigger": "OnStatCalculate",
+          "text": "+5% money when selling to NPCs",
+          "percent": 5.0
+        }
+      ],
+      "tooltip": "Skeleton Thief soul\nContains a monster soul, use with caution\n\n5% discount when buying items from NPCs\r\n+5% money when selling items to NPCs\nType: Soul (Accessory)\nWeight: 1",
+      "iconFile": "equipment/bc62fbd44fe991e4598ffbd70d899c0e.png"
+    },
+    {
+      "guid": "cd0e782edf48801489232940062900da",
+      "name": "Blue Slime soul",
+      "description": "Contains a monster soul, use with caution",
+      "soulType": "Weapon",
+      "weight": 1,
+      "buyPrice": 10,
+      "bindingType": "None",
+      "bonuses": [
+        {
+          "type": "ElementDamageBonus",
+          "trigger": "OnStatCalculate",
+          "text": "+10% damage to Water enemies",
+          "percent": 10.0,
+          "element": "Water"
+        }
+      ],
+      "tooltip": "Blue Slime soul\nContains a monster soul, use with caution\n\n+10% damage to Water enemies\nType: Soul (Weapon)\nWeight: 1",
+      "iconFile": "equipment/cd0e782edf48801489232940062900da.png"
+    },
+    {
+      "guid": "014fa28e6916dbb4dbb3f114b3de129f",
+      "name": "Green Slime soul",
+      "description": "Contains a monster soul, use with caution",
+      "soulType": "Weapon",
+      "weight": 1,
+      "buyPrice": 10,
+      "bindingType": "None",
+      "bonuses": [
+        {
+          "type": "ElementDamageBonus",
+          "trigger": "OnStatCalculate",
+          "text": "+10% damage to Poison enemies",
+          "percent": 10.0,
+          "element": "Poison"
+        }
+      ],
+      "tooltip": "Green Slime soul\nContains a monster soul, use with caution\n\n+10% damage to Poison enemies\nType: Soul (Weapon)\nWeight: 1",
+      "iconFile": "equipment/014fa28e6916dbb4dbb3f114b3de129f.png"
+    },
+    {
+      "guid": "5a62fa3deadc7494b9c3f355b8f7a786",
+      "name": "Red Slime soul",
+      "description": "Contains a monster soul, use with caution",
+      "soulType": "Weapon",
+      "weight": 1,
+      "buyPrice": 10,
+      "bindingType": "None",
+      "bonuses": [
+        {
+          "type": "ElementDamageBonus",
+          "trigger": "OnStatCalculate",
+          "text": "+10% damage to Fire enemies",
+          "percent": 10.0,
+          "element": "Fire"
+        }
+      ],
+      "tooltip": "Red Slime soul\nContains a monster soul, use with caution\n\n+10% damage to Fire enemies\nType: Soul (Weapon)\nWeight: 1",
+      "iconFile": "equipment/5a62fa3deadc7494b9c3f355b8f7a786.png"
+    },
+    {
+      "guid": "46b61cff5e09be54893ca98708c929ae",
+      "name": "Yellow Slime soul",
+      "description": "Contains a monster soul, use with caution",
+      "soulType": "Weapon",
+      "weight": 1,
+      "buyPrice": 10,
+      "bindingType": "None",
+      "bonuses": [
+        {
+          "type": "ElementDamageBonus",
+          "trigger": "OnStatCalculate",
+          "text": "+10% damage to Earth enemies",
+          "percent": 10.0,
+          "element": "Earth"
+        }
+      ],
+      "tooltip": "Yellow Slime soul\nContains a monster soul, use with caution\n\n+10% damage to Earth enemies\nType: Soul (Weapon)\nWeight: 1",
+      "iconFile": "equipment/46b61cff5e09be54893ca98708c929ae.png"
+    },
+    {
+      "guid": "7ddc6ba2a4bcb8f46b27cba49d4a8405",
+      "name": "Slug Soul",
+      "description": "Contains a monster soul, use with caution",
+      "soulType": "Weapon",
+      "weight": 1,
+      "buyPrice": 10,
+      "bindingType": "None",
+      "bonuses": [
+        {
+          "type": "FlatBonus",
+          "trigger": "OnStatCalculate",
+          "text": "+20 ArmorPenetrationPercent",
+          "stat": "ArmorPenetrationPercent",
+          "amount": 20.0
+        }
+      ],
+      "tooltip": "Slug Soul\nContains a monster soul, use with caution\n\n+20 % Armor Penetration\nType: Soul (Weapon)\nWeight: 1",
+      "iconFile": "equipment/7ddc6ba2a4bcb8f46b27cba49d4a8405.png"
+    },
+    {
+      "guid": "4d7f3cb09c9e69a4b847d8473db75965",
+      "name": "Spider rock soul",
+      "description": "Contains a monster soul, use with caution",
+      "soulType": "Weapon",
+      "weight": 1,
+      "buyPrice": 10,
+      "bindingType": "None",
+      "bonuses": [
+        {
+          "type": "FlatBonus",
+          "trigger": "OnStatCalculate",
+          "text": "+15 ATK",
+          "stat": "ATK",
+          "amount": 15.0
+        }
+      ],
+      "tooltip": "Spider rock soul\nContains a monster soul, use with caution\n\n+15 Attack\nType: Soul (Weapon)\nWeight: 1",
+      "iconFile": "equipment/4d7f3cb09c9e69a4b847d8473db75965.png"
+    },
+    {
+      "guid": "88b321b08feeacb48bfa8fa3de2ccf3e",
+      "name": "Trunk soul",
+      "description": "Contains a monster soul, use with caution",
+      "soulType": "Weapon",
+      "weight": 1,
+      "buyPrice": 10,
+      "bindingType": "None",
+      "bonuses": [
+        {
+          "type": "OnHitFlatBonus",
+          "trigger": "OnStatCalculate",
+          "text": "+10 damage on hit",
+          "amount": 10.0
+        }
+      ],
+      "tooltip": "Trunk soul\nContains a monster soul, use with caution\n\n+10 damage on hit\nType: Soul (Weapon)\nWeight: 1",
+      "iconFile": "equipment/88b321b08feeacb48bfa8fa3de2ccf3e.png"
+    },
+    {
+      "guid": "984ea6c77439c05468bfc2881bbd0283",
+      "name": "Wildhog soul",
+      "description": "Contains a monster soul, use with caution",
+      "soulType": "Chest",
+      "weight": 1,
+      "buyPrice": 10,
+      "bindingType": "None",
+      "bonuses": [
+        {
+          "type": "FlatBonus",
+          "trigger": "OnStatCalculate",
+          "text": "+20 ATK",
+          "stat": "ATK",
+          "amount": 20.0
+        }
+      ],
+      "tooltip": "Wildhog soul\nContains a monster soul, use with caution\n\n+20 Attack\nType: Soul (Chest)\nWeight: 1",
+      "iconFile": "equipment/984ea6c77439c05468bfc2881bbd0283.png"
+    }
+  ],
+  "exportDate": "2026-04-10 04:00:55"
+}

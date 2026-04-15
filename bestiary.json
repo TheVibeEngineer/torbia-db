@@ -1,0 +1,4686 @@
+{
+  "monsters": [
+    {
+      "guid": "cf103c41f1373bf4cb0bd9894f57c62f",
+      "name": "Giant Mushroom",
+      "class": "Monster",
+      "race": "Plant",
+      "element": "Earth",
+      "weaponElement": "Neutral",
+      "str": 1,
+      "agi": 24,
+      "vit": 24,
+      "int": 10,
+      "dex": 40,
+      "luck": 16,
+      "level": 39,
+      "hp": 3700,
+      "sp": 0,
+      "atk": 85,
+      "def": 0,
+      "matk": 1,
+      "mdef": 5,
+      "hit": 0,
+      "crit": 0,
+      "flee": 0,
+      "aspd": 120,
+      "baseExp": 1073,
+      "jobExp": 1517,
+      "isAggressive": false,
+      "allowPatrolling": true,
+      "patrollingSpeed": 3.0,
+      "patrolRadius": 10.0,
+      "walkingSpeedMultiplier": 1.0,
+      "walkSpeed": 6.0,
+      "resetAggroDistance": 30.0,
+      "retargetProtectionTime": 2.0,
+      "autoAttackRange": 4.0,
+      "attackDelay": 1.5,
+      "skillCheckInterval": 1.0,
+      "drops": [
+        {
+          "itemGuid": "7d03885077a5eb3469f12a97dae3ceb2",
+          "dropRate": 90.0
+        },
+        {
+          "itemGuid": "e7f7fbb0d33f9fa408573c6968c9699e",
+          "dropRate": 0.1
+        },
+        {
+          "itemGuid": "2c340a40f7fa0784283f075fad58edb1",
+          "dropRate": 0.3
+        },
+        {
+          "itemGuid": "b18ea4ad3c4b036449bca40f37dda2c6",
+          "dropRate": 5.0
+        }
+      ],
+      "activeSkills": [],
+      "passiveSkills": [],
+      "minions": null,
+      "iconFile": "monsters/cf103c41f1373bf4cb0bd9894f57c62f.png",
+      "zones": [
+        {
+          "name": "Whispering Island",
+          "count": 30
+        }
+      ]
+    },
+    {
+      "guid": "f5ef464eb2ec75c4ca1052f4dea73083",
+      "name": "Harpy",
+      "class": "Monster",
+      "race": "Beast",
+      "element": "Shadow",
+      "weaponElement": "Neutral",
+      "str": 1,
+      "agi": 20,
+      "vit": 28,
+      "int": 15,
+      "dex": 32,
+      "luck": 20,
+      "level": 68,
+      "hp": 13600,
+      "sp": 0,
+      "atk": 200,
+      "def": 0,
+      "matk": 1,
+      "mdef": 0,
+      "hit": 0,
+      "crit": 0,
+      "flee": 0,
+      "aspd": 0,
+      "baseExp": 8160,
+      "jobExp": 2945,
+      "isAggressive": true,
+      "allowPatrolling": true,
+      "patrollingSpeed": 4.0,
+      "patrolRadius": 10.0,
+      "walkingSpeedMultiplier": 1.0,
+      "walkSpeed": 7.0,
+      "resetAggroDistance": 30.0,
+      "retargetProtectionTime": 2.0,
+      "autoAttackRange": 3.0,
+      "attackDelay": 1.05,
+      "skillCheckInterval": 1.0,
+      "drops": [
+        {
+          "itemGuid": "b0859f93522691848a85a46cf8dba510",
+          "dropRate": 90.0
+        },
+        {
+          "itemGuid": "0121d789d9ce10244af1f7ee4e2d9da3",
+          "dropRate": 5.0
+        },
+        {
+          "itemGuid": "04083afd8ecb8234e8590e053912e870",
+          "dropRate": 25.0
+        },
+        {
+          "itemGuid": "03f1cce23f44e4542863dd9e821f8af1",
+          "dropRate": 1.0
+        },
+        {
+          "itemGuid": "e5891e4e477040d4bb21bc51966b74fd",
+          "dropRate": 0.1
+        },
+        {
+          "itemGuid": "fd766e1d099f9154a8807fb3977631ea",
+          "dropRate": 0.5
+        }
+      ],
+      "activeSkills": [
+        {
+          "skillGuid": "b73edc202aceb7e44b9ddee3a072e892",
+          "level": 5,
+          "condition": null,
+          "delayOverride": 5.0,
+          "rangeOverride": 10.0,
+          "name": "hunter_triple_strafe"
+        }
+      ],
+      "passiveSkills": [],
+      "minions": null,
+      "iconFile": "monsters/f5ef464eb2ec75c4ca1052f4dea73083.png",
+      "zones": [
+        {
+          "name": "Whispering Groves",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "guid": "4c9ead9298fd3da438af85296346e16a",
+      "name": "Grand Slime",
+      "class": "Monster",
+      "race": "Elemental",
+      "element": "Water",
+      "weaponElement": "Neutral",
+      "str": 50,
+      "agi": 50,
+      "vit": 50,
+      "int": 20,
+      "dex": 60,
+      "luck": 16,
+      "level": 55,
+      "hp": 8950,
+      "sp": 0,
+      "atk": 250,
+      "def": 5,
+      "matk": 1,
+      "mdef": 5,
+      "hit": 0,
+      "crit": 0,
+      "flee": 0,
+      "aspd": 0,
+      "baseExp": 5370,
+      "jobExp": 4361,
+      "isAggressive": false,
+      "allowPatrolling": true,
+      "patrollingSpeed": 4.0,
+      "patrolRadius": 10.0,
+      "walkingSpeedMultiplier": 1.0,
+      "walkSpeed": 4.0,
+      "resetAggroDistance": 30.0,
+      "retargetProtectionTime": 2.0,
+      "autoAttackRange": 3.0,
+      "attackDelay": 1.2,
+      "skillCheckInterval": 1.0,
+      "drops": [
+        {
+          "itemGuid": "f64ac4fccab45034bb04de1d5d4e3200",
+          "dropRate": 0.1
+        },
+        {
+          "itemGuid": "772f2df26a6c60043a91859a5f0edce7",
+          "dropRate": 90.0
+        },
+        {
+          "itemGuid": "772f2df26a6c60043a91859a5f0edce7",
+          "dropRate": 90.0
+        },
+        {
+          "itemGuid": "772f2df26a6c60043a91859a5f0edce7",
+          "dropRate": 90.0
+        },
+        {
+          "itemGuid": "3f5cdc1f2f2df2a449550182f50bc665",
+          "dropRate": 5.0
+        },
+        {
+          "itemGuid": "e7658e2bac45acd4d8dffc5fd028fac3",
+          "dropRate": 1.0
+        }
+      ],
+      "activeSkills": [
+        {
+          "skillGuid": "13de1fa8931fabd46af88dee4be2354c",
+          "level": 5,
+          "condition": "HpBelowPercentCondition",
+          "delayOverride": 3.0,
+          "rangeOverride": 10.0,
+          "name": "priest_heal"
+        }
+      ],
+      "passiveSkills": [],
+      "minions": null,
+      "iconFile": "monsters/4c9ead9298fd3da438af85296346e16a.png",
+      "zones": [
+        {
+          "name": "Whispering Island",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "guid": "d690fa208753f7c4aad51014edc694f5",
+      "name": "Hammer Trunk",
+      "class": "Monster",
+      "race": "Beast",
+      "element": "Earth",
+      "weaponElement": "Neutral",
+      "str": 1,
+      "agi": 24,
+      "vit": 18,
+      "int": 10,
+      "dex": 40,
+      "luck": 16,
+      "level": 48,
+      "hp": 3520,
+      "sp": 0,
+      "atk": 180,
+      "def": 10,
+      "matk": 1,
+      "mdef": 5,
+      "hit": 0,
+      "crit": 0,
+      "flee": 0,
+      "aspd": 0,
+      "baseExp": 1542,
+      "jobExp": 1305,
+      "isAggressive": false,
+      "allowPatrolling": true,
+      "patrollingSpeed": 2.0,
+      "patrolRadius": 10.0,
+      "walkingSpeedMultiplier": 1.0,
+      "walkSpeed": 7.0,
+      "resetAggroDistance": 30.0,
+      "retargetProtectionTime": 2.0,
+      "autoAttackRange": 3.5,
+      "attackDelay": 2.0,
+      "skillCheckInterval": 1.0,
+      "drops": [
+        {
+          "itemGuid": "4bd40717d4bb69e499bb21c13118ace9",
+          "dropRate": 20.0
+        },
+        {
+          "itemGuid": "e8718be806cedb64cadec166b9a9d5cb",
+          "dropRate": 0.1
+        },
+        {
+          "itemGuid": "25b0b957015ddce41a247eb668f1f86c",
+          "dropRate": 80.0
+        },
+        {
+          "itemGuid": "c01f0ba11fdf4dd44b390678d64d89ff",
+          "dropRate": 0.2
+        }
+      ],
+      "activeSkills": [
+        {
+          "skillGuid": "533d4ca0b2f0463469e374cedf0646e0",
+          "level": 5,
+          "condition": null,
+          "delayOverride": 5.0,
+          "name": "hammerTrunk_bash"
+        }
+      ],
+      "passiveSkills": [],
+      "minions": null,
+      "iconFile": "monsters/d690fa208753f7c4aad51014edc694f5.png",
+      "zones": [
+        {
+          "name": "Orris Exterior",
+          "count": 19
+        },
+        {
+          "name": "Whispering Groves",
+          "count": 15
+        }
+      ]
+    },
+    {
+      "guid": "15e79c8c3bea40747b1472a42b084348",
+      "name": "Hoardbird",
+      "class": "Monster",
+      "race": "Beast",
+      "element": "Neutral",
+      "weaponElement": "Neutral",
+      "str": 1,
+      "agi": 4,
+      "vit": 3,
+      "int": 5,
+      "dex": 9,
+      "luck": 10,
+      "level": 4,
+      "hp": 115,
+      "sp": 0,
+      "atk": 12,
+      "def": 5,
+      "matk": 1,
+      "mdef": 0,
+      "hit": 0,
+      "crit": 0,
+      "flee": 0,
+      "aspd": 0,
+      "baseExp": 25,
+      "jobExp": 19,
+      "isAggressive": false,
+      "allowPatrolling": true,
+      "patrollingSpeed": 3.0,
+      "patrolRadius": 10.0,
+      "walkingSpeedMultiplier": 1.0,
+      "walkSpeed": 7.0,
+      "resetAggroDistance": 30.0,
+      "retargetProtectionTime": 2.0,
+      "autoAttackRange": 2.5,
+      "attackDelay": 1.67,
+      "skillCheckInterval": 1.0,
+      "drops": [
+        {
+          "itemGuid": "238b6b86ca5993d459480bcc67f1c572",
+          "dropRate": 5.0
+        },
+        {
+          "itemGuid": "83788f7379e122e4da2f8eeec9ace900",
+          "dropRate": 25.0
+        },
+        {
+          "itemGuid": "ef61aa6ca04db0c46b9639922c6655d5",
+          "dropRate": 10.0
+        },
+        {
+          "itemGuid": "245d60189d5f57b4e8abc8512eea537c",
+          "dropRate": 80.0
+        },
+        {
+          "itemGuid": "a9dbbaca6b0aa7b4ebf97a0fbf353503",
+          "dropRate": 0.1
+        },
+        {
+          "itemGuid": "b0859f93522691848a85a46cf8dba510",
+          "dropRate": 10.0
+        }
+      ],
+      "activeSkills": [],
+      "passiveSkills": [],
+      "minions": null,
+      "iconFile": "monsters/15e79c8c3bea40747b1472a42b084348.png",
+      "zones": [
+        {
+          "name": "Whispering Island",
+          "count": 35
+        },
+        {
+          "name": "Whispering Groves",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "guid": "0057e06e36257624b8dba9850629851b",
+      "name": "Mushroom",
+      "class": "Monster",
+      "race": "Plant",
+      "element": "Earth",
+      "weaponElement": "Neutral",
+      "str": 1,
+      "agi": 12,
+      "vit": 12,
+      "int": 5,
+      "dex": 19,
+      "luck": 8,
+      "level": 32,
+      "hp": 2450,
+      "sp": 0,
+      "atk": 60,
+      "def": 0,
+      "matk": 1,
+      "mdef": 5,
+      "hit": 0,
+      "crit": 0,
+      "flee": 0,
+      "aspd": 120,
+      "baseExp": 674,
+      "jobExp": 1103,
+      "isAggressive": false,
+      "allowPatrolling": true,
+      "patrollingSpeed": 3.0,
+      "patrolRadius": 10.0,
+      "walkingSpeedMultiplier": 1.0,
+      "walkSpeed": 3.0,
+      "resetAggroDistance": 30.0,
+      "retargetProtectionTime": 2.0,
+      "autoAttackRange": 2.5,
+      "attackDelay": 1.5,
+      "skillCheckInterval": 1.0,
+      "drops": [
+        {
+          "itemGuid": "7d03885077a5eb3469f12a97dae3ceb2",
+          "dropRate": 60.0
+        },
+        {
+          "itemGuid": "3f9e8808135c16d45b6eff061ccecd54",
+          "dropRate": 0.1
+        },
+        {
+          "itemGuid": "580819b1b136b4648a7181d7506d3289",
+          "dropRate": 0.5
+        }
+      ],
+      "activeSkills": [],
+      "passiveSkills": [],
+      "minions": null,
+      "iconFile": "monsters/0057e06e36257624b8dba9850629851b.png",
+      "zones": [
+        {
+          "name": "Whispering Island",
+          "count": 55
+        }
+      ]
+    },
+    {
+      "guid": "75d2f791d098ac749a542af754767a1c",
+      "name": "Mystar",
+      "class": "Monster",
+      "race": "Fairy",
+      "element": "Wind",
+      "weaponElement": "Neutral",
+      "str": 1,
+      "agi": 28,
+      "vit": 50,
+      "int": 10,
+      "dex": 40,
+      "luck": 16,
+      "level": 49,
+      "hp": 1960,
+      "sp": 0,
+      "atk": 50,
+      "def": 30,
+      "matk": 130,
+      "mdef": 30,
+      "hit": 0,
+      "crit": 0,
+      "flee": 0,
+      "aspd": 0,
+      "baseExp": 666,
+      "jobExp": 941,
+      "isAggressive": true,
+      "allowPatrolling": true,
+      "patrollingSpeed": 2.0,
+      "patrolRadius": 10.0,
+      "walkingSpeedMultiplier": 1.0,
+      "walkSpeed": 5.0,
+      "resetAggroDistance": 30.0,
+      "retargetProtectionTime": 2.0,
+      "autoAttackRange": 10.0,
+      "attackDelay": 1.4,
+      "skillCheckInterval": 1.0,
+      "drops": [
+        {
+          "itemGuid": "a4ddef20a84f23e4e8a05a21fb5f2f71",
+          "dropRate": 0.1
+        },
+        {
+          "itemGuid": "475179da82526d64d8dee5beb3408d08",
+          "dropRate": 0.3
+        },
+        {
+          "itemGuid": "25b0b957015ddce41a247eb668f1f86c",
+          "dropRate": 90.0
+        },
+        {
+          "itemGuid": "42e30408c83b23347a7f23ec7a8a5f58",
+          "dropRate": 0.3
+        }
+      ],
+      "activeSkills": [],
+      "passiveSkills": [],
+      "minions": null,
+      "iconFile": "monsters/75d2f791d098ac749a542af754767a1c.png",
+      "zones": [
+        {
+          "name": "Orris Exterior",
+          "count": 12
+        }
+      ]
+    },
+    {
+      "guid": "ecfb13990b2603249b5d5f583f2d3a3d",
+      "name": "Lamia",
+      "class": "Monster",
+      "race": "Beast",
+      "element": "Poison",
+      "weaponElement": "Neutral",
+      "str": 15,
+      "agi": 15,
+      "vit": 30,
+      "int": 5,
+      "dex": 20,
+      "luck": 10,
+      "level": 29,
+      "hp": 2200,
+      "sp": 0,
+      "atk": 90,
+      "def": 5,
+      "matk": 1,
+      "mdef": 5,
+      "hit": 0,
+      "crit": 0,
+      "flee": 0,
+      "aspd": 0,
+      "baseExp": 985,
+      "jobExp": 433,
+      "isAggressive": false,
+      "allowPatrolling": true,
+      "patrollingSpeed": 4.0,
+      "patrolRadius": 10.0,
+      "walkingSpeedMultiplier": 1.0,
+      "walkSpeed": 7.0,
+      "resetAggroDistance": 30.0,
+      "retargetProtectionTime": 2.0,
+      "autoAttackRange": 3.0,
+      "attackDelay": 1.96,
+      "skillCheckInterval": 1.0,
+      "drops": [
+        {
+          "itemGuid": "778009e7e26a8dc48ba244c64845ed6a",
+          "dropRate": 0.1
+        },
+        {
+          "itemGuid": "2b8f7e0062aa476409aa3e8abc104477",
+          "dropRate": 10.0
+        },
+        {
+          "itemGuid": "02dce72135c64fe489e2c0ea6c30f2b3",
+          "dropRate": 10.0
+        },
+        {
+          "itemGuid": "e722fc1fee7d27b4784c761359aa98d9",
+          "dropRate": 0.3
+        },
+        {
+          "itemGuid": "0d465f6040a31104090d967287c75a8b",
+          "dropRate": 0.4
+        },
+        {
+          "itemGuid": "c4eb1113cf902e642bfaaf0a855c8285",
+          "dropRate": 70.0
+        }
+      ],
+      "activeSkills": [],
+      "passiveSkills": [],
+      "minions": null,
+      "iconFile": "monsters/ecfb13990b2603249b5d5f583f2d3a3d.png",
+      "zones": [
+        {
+          "name": "Orris Fortress",
+          "count": 25
+        },
+        {
+          "name": "Orris Stairs Left",
+          "count": 11
+        },
+        {
+          "name": "Orris Stairs Right",
+          "count": 9
+        },
+        {
+          "name": "Whispering Groves",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "guid": "81dff5a69563dbe4db789d26a7fdc275",
+      "name": "Red Sarui",
+      "class": "Monster",
+      "race": "Beast",
+      "element": "Poison",
+      "weaponElement": "Neutral",
+      "str": 1,
+      "agi": 12,
+      "vit": 12,
+      "int": 5,
+      "dex": 19,
+      "luck": 8,
+      "level": 46,
+      "hp": 2600,
+      "sp": 0,
+      "atk": 190,
+      "def": 0,
+      "matk": 1,
+      "mdef": 5,
+      "hit": 0,
+      "crit": 0,
+      "flee": 0,
+      "aspd": 0,
+      "baseExp": 1040,
+      "jobExp": 551,
+      "isAggressive": true,
+      "allowPatrolling": true,
+      "patrollingSpeed": 5.0,
+      "patrolRadius": 5.0,
+      "walkingSpeedMultiplier": 1.0,
+      "walkSpeed": 7.0,
+      "resetAggroDistance": 30.0,
+      "retargetProtectionTime": 2.0,
+      "autoAttackRange": 2.5,
+      "attackDelay": 1.87,
+      "skillCheckInterval": 1.0,
+      "drops": [
+        {
+          "itemGuid": "c4eb1113cf902e642bfaaf0a855c8285",
+          "dropRate": 50.0
+        },
+        {
+          "itemGuid": "83788f7379e122e4da2f8eeec9ace900",
+          "dropRate": 25.0
+        },
+        {
+          "itemGuid": "72473e874ce86c640aaec7b519373fb3",
+          "dropRate": 50.0
+        },
+        {
+          "itemGuid": "76b5dd7ec1e01464e82357d054586846",
+          "dropRate": 0.1
+        },
+        {
+          "itemGuid": "928445db101994941bb2f03c1fa0a205",
+          "dropRate": 0.5
+        },
+        {
+          "itemGuid": "02dce72135c64fe489e2c0ea6c30f2b3",
+          "dropRate": 10.0
+        }
+      ],
+      "activeSkills": [],
+      "passiveSkills": [
+        {
+          "skillGuid": "66d78b67d8515c942b3f247dcecbc4bd",
+          "level": 3,
+          "name": "agression_conqueror"
+        }
+      ],
+      "minions": null,
+      "iconFile": "monsters/81dff5a69563dbe4db789d26a7fdc275.png",
+      "zones": [
+        {
+          "name": "Whispering Groves",
+          "count": 39
+        },
+        {
+          "name": "Orris Exterior",
+          "count": 2
+        },
+        {
+          "name": "Whispering Island",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "guid": "dd9b62e7b5394a641aa9929164f2e2b7",
+      "name": "Sandworm",
+      "class": "Monster",
+      "race": "Beast",
+      "element": "Earth",
+      "weaponElement": "Neutral",
+      "str": 24,
+      "agi": 18,
+      "vit": 23,
+      "int": 30,
+      "dex": 45,
+      "luck": 5,
+      "level": 48,
+      "hp": 4600,
+      "sp": 0,
+      "atk": 185,
+      "def": 0,
+      "matk": 1,
+      "mdef": 5,
+      "hit": 0,
+      "crit": 0,
+      "flee": 0,
+      "aspd": 0,
+      "baseExp": 2082,
+      "jobExp": 1562,
+      "isAggressive": false,
+      "allowPatrolling": false,
+      "patrollingSpeed": 2.0,
+      "patrolRadius": 10.0,
+      "walkingSpeedMultiplier": 1.0,
+      "walkSpeed": 7.0,
+      "resetAggroDistance": 30.0,
+      "retargetProtectionTime": 2.0,
+      "autoAttackRange": 2.5,
+      "attackDelay": 1.5,
+      "skillCheckInterval": 1.0,
+      "drops": [
+        {
+          "itemGuid": "1b722b9f653af0e47841fca153f47d53",
+          "dropRate": 1.0
+        },
+        {
+          "itemGuid": "25b0b957015ddce41a247eb668f1f86c",
+          "dropRate": 25.0
+        },
+        {
+          "itemGuid": "97ece8736dc9c9f4d98482721a71c366",
+          "dropRate": 50.0
+        },
+        {
+          "itemGuid": "c08b02ba13a0dc84a9a057b479b736eb",
+          "dropRate": 0.1
+        }
+      ],
+      "activeSkills": [],
+      "passiveSkills": [],
+      "minions": null,
+      "iconFile": "monsters/dd9b62e7b5394a641aa9929164f2e2b7.png",
+      "zones": [
+        {
+          "name": "Korrin Valley",
+          "count": 36
+        }
+      ]
+    },
+    {
+      "guid": "0cee63a1667f2de4590c9beb2a4ab47f",
+      "name": "Sarui",
+      "class": "Monster",
+      "race": "Beast",
+      "element": "Poison",
+      "weaponElement": "Neutral",
+      "str": 1,
+      "agi": 12,
+      "vit": 12,
+      "int": 5,
+      "dex": 19,
+      "luck": 8,
+      "level": 19,
+      "hp": 560,
+      "sp": 0,
+      "atk": 42,
+      "def": 0,
+      "matk": 1,
+      "mdef": 5,
+      "hit": 0,
+      "crit": 0,
+      "flee": 0,
+      "aspd": 0,
+      "baseExp": 146,
+      "jobExp": 118,
+      "isAggressive": true,
+      "allowPatrolling": true,
+      "patrollingSpeed": 5.0,
+      "patrolRadius": 5.0,
+      "walkingSpeedMultiplier": 1.0,
+      "walkSpeed": 7.0,
+      "resetAggroDistance": 30.0,
+      "retargetProtectionTime": 2.0,
+      "autoAttackRange": 2.5,
+      "attackDelay": 1.87,
+      "skillCheckInterval": 1.0,
+      "drops": [
+        {
+          "itemGuid": "5f4a03a2a22ed1a44bd4f2b15adfb573",
+          "dropRate": 50.0
+        },
+        {
+          "itemGuid": "83788f7379e122e4da2f8eeec9ace900",
+          "dropRate": 50.0
+        },
+        {
+          "itemGuid": "72473e874ce86c640aaec7b519373fb3",
+          "dropRate": 15.0
+        },
+        {
+          "itemGuid": "52d116ce1653f8144af2c956233aaa5a",
+          "dropRate": 0.1
+        },
+        {
+          "itemGuid": "0c1cb4560687b974497bf0e0cd9d1f02",
+          "dropRate": 0.1
+        },
+        {
+          "itemGuid": "02dce72135c64fe489e2c0ea6c30f2b3",
+          "dropRate": 5.0
+        }
+      ],
+      "activeSkills": [],
+      "passiveSkills": [
+        {
+          "skillGuid": "66d78b67d8515c942b3f247dcecbc4bd",
+          "level": 3,
+          "name": "agression_conqueror"
+        }
+      ],
+      "minions": null,
+      "iconFile": "monsters/0cee63a1667f2de4590c9beb2a4ab47f.png",
+      "zones": [
+        {
+          "name": "Orris Fortress",
+          "count": 43
+        },
+        {
+          "name": "Orris Stairs Left",
+          "count": 16
+        },
+        {
+          "name": "Orris Stairs Right",
+          "count": 16
+        }
+      ]
+    },
+    {
+      "guid": "bb193fcd6eb053f49babfb369941612c",
+      "name": "Shunt",
+      "class": "Monster",
+      "race": "Beast",
+      "element": "Earth",
+      "weaponElement": "Neutral",
+      "str": 1,
+      "agi": 24,
+      "vit": 48,
+      "int": 25,
+      "dex": 34,
+      "luck": 10,
+      "level": 50,
+      "hp": 3680,
+      "sp": 0,
+      "atk": 210,
+      "def": 10,
+      "matk": 1,
+      "mdef": 5,
+      "hit": 0,
+      "crit": 0,
+      "flee": 0,
+      "aspd": 0,
+      "baseExp": 1072,
+      "jobExp": 789,
+      "isAggressive": true,
+      "allowPatrolling": false,
+      "patrollingSpeed": 3.0,
+      "patrolRadius": 10.0,
+      "walkingSpeedMultiplier": 1.0,
+      "walkSpeed": 6.0,
+      "resetAggroDistance": 30.0,
+      "retargetProtectionTime": 2.0,
+      "autoAttackRange": 4.0,
+      "attackDelay": 1.86,
+      "skillCheckInterval": 1.0,
+      "drops": [
+        {
+          "itemGuid": "19a2958557c12034097824eb364d82b5",
+          "dropRate": 15.0
+        },
+        {
+          "itemGuid": "77ce119fa44128e46af0feeab2aab5ad",
+          "dropRate": 50.0
+        },
+        {
+          "itemGuid": "97ece8736dc9c9f4d98482721a71c366",
+          "dropRate": 15.0
+        },
+        {
+          "itemGuid": "1b7d9836fec73b64fa564eb55a4a7048",
+          "dropRate": 1.0
+        },
+        {
+          "itemGuid": "42bccdc0771e1d64eb4eae2f2361e525",
+          "dropRate": 0.1
+        }
+      ],
+      "activeSkills": [],
+      "passiveSkills": [],
+      "minions": null,
+      "iconFile": "monsters/bb193fcd6eb053f49babfb369941612c.png",
+      "zones": [
+        {
+          "name": "Korrin Valley",
+          "count": 41
+        }
+      ]
+    },
+    {
+      "guid": "bc08d0fc32e1f5648b23340383b4801c",
+      "name": "Skeleton Archer",
+      "class": "Monster",
+      "race": "Undead",
+      "element": "Undead",
+      "weaponElement": "Neutral",
+      "str": 1,
+      "agi": 5,
+      "vit": 5,
+      "int": 0,
+      "dex": 12,
+      "luck": 15,
+      "level": 25,
+      "hp": 1380,
+      "sp": 0,
+      "atk": 75,
+      "def": 0,
+      "matk": 1,
+      "mdef": 0,
+      "hit": 10,
+      "crit": 1,
+      "flee": 19,
+      "aspd": 120,
+      "baseExp": 483,
+      "jobExp": 580,
+      "isAggressive": true,
+      "allowPatrolling": true,
+      "patrollingSpeed": 3.0,
+      "patrolRadius": 10.0,
+      "walkingSpeedMultiplier": 1.0,
+      "walkSpeed": 6.0,
+      "resetAggroDistance": 30.0,
+      "retargetProtectionTime": 2.0,
+      "autoAttackRange": 12.0,
+      "attackDelay": 2.0,
+      "skillCheckInterval": 1.0,
+      "drops": [
+        {
+          "itemGuid": "914bd74ecc4e0c245b98449f369ce42e",
+          "dropRate": 0.1
+        },
+        {
+          "itemGuid": "8fceee6469b2b534e9a1879e199f24fa",
+          "dropRate": 0.1
+        },
+        {
+          "itemGuid": "83788f7379e122e4da2f8eeec9ace900",
+          "dropRate": 90.0
+        },
+        {
+          "itemGuid": "02dce72135c64fe489e2c0ea6c30f2b3",
+          "dropRate": 2.0
+        },
+        {
+          "itemGuid": "d58f2e3664254b74288e01dac08e4fa9",
+          "dropRate": 1.0
+        }
+      ],
+      "activeSkills": [],
+      "passiveSkills": [],
+      "minions": null,
+      "iconFile": "monsters/bc08d0fc32e1f5648b23340383b4801c.png",
+      "zones": [
+        {
+          "name": "Orris Stairs Right",
+          "count": 94
+        },
+        {
+          "name": "Orris Stairs Left",
+          "count": 13
+        }
+      ]
+    },
+    {
+      "guid": "49d9627cb7886aa41b30fa51c91bd7b9",
+      "name": "Skeleton Slaughter",
+      "class": "Monster",
+      "race": "Undead",
+      "element": "Undead",
+      "weaponElement": "Neutral",
+      "str": 1,
+      "agi": 5,
+      "vit": 20,
+      "int": 0,
+      "dex": 50,
+      "luck": 80,
+      "level": 34,
+      "hp": 1750,
+      "sp": 0,
+      "atk": 80,
+      "def": 15,
+      "matk": 1,
+      "mdef": 0,
+      "hit": 10,
+      "crit": 1,
+      "flee": 19,
+      "aspd": 120,
+      "baseExp": 718,
+      "jobExp": 718,
+      "isAggressive": true,
+      "allowPatrolling": true,
+      "patrollingSpeed": 3.0,
+      "patrolRadius": 10.0,
+      "walkingSpeedMultiplier": 1.0,
+      "walkSpeed": 8.0,
+      "resetAggroDistance": 30.0,
+      "retargetProtectionTime": 2.0,
+      "autoAttackRange": 2.5,
+      "attackDelay": 1.49,
+      "skillCheckInterval": 1.0,
+      "drops": [
+        {
+          "itemGuid": "009fda97112109b4cb8a09ad236e6fac",
+          "dropRate": 0.1
+        },
+        {
+          "itemGuid": "f43fabcc154e56c458743d6b780f0f99",
+          "dropRate": 0.15
+        },
+        {
+          "itemGuid": "7cc2246adc231174397caa259fe856c2",
+          "dropRate": 0.3
+        },
+        {
+          "itemGuid": "83788f7379e122e4da2f8eeec9ace900",
+          "dropRate": 90.0
+        },
+        {
+          "itemGuid": "02dce72135c64fe489e2c0ea6c30f2b3",
+          "dropRate": 5.0
+        }
+      ],
+      "activeSkills": [],
+      "passiveSkills": [],
+      "minions": null,
+      "iconFile": "monsters/49d9627cb7886aa41b30fa51c91bd7b9.png",
+      "zones": [
+        {
+          "name": "Orris Stairs Left",
+          "count": 46
+        },
+        {
+          "name": "Orris Stairs Right",
+          "count": 30
+        }
+      ]
+    },
+    {
+      "guid": "8df5ff7e3614aaa4a928415378ff527f",
+      "name": "Skeleton Thief",
+      "class": "Monster",
+      "race": "Undead",
+      "element": "Undead",
+      "weaponElement": "Neutral",
+      "str": 1,
+      "agi": 5,
+      "vit": 5,
+      "int": 0,
+      "dex": 12,
+      "luck": 15,
+      "level": 5,
+      "hp": 80,
+      "sp": 0,
+      "atk": 8,
+      "def": 0,
+      "matk": 1,
+      "mdef": 0,
+      "hit": 10,
+      "crit": 1,
+      "flee": 19,
+      "aspd": 120,
+      "baseExp": 14,
+      "jobExp": 15,
+      "isAggressive": false,
+      "allowPatrolling": true,
+      "patrollingSpeed": 3.0,
+      "patrolRadius": 10.0,
+      "walkingSpeedMultiplier": 1.0,
+      "walkSpeed": 6.0,
+      "resetAggroDistance": 30.0,
+      "retargetProtectionTime": 2.0,
+      "autoAttackRange": 2.5,
+      "attackDelay": 1.49,
+      "skillCheckInterval": 1.0,
+      "drops": [
+        {
+          "itemGuid": "bc62fbd44fe991e4598ffbd70d899c0e",
+          "dropRate": 0.1
+        },
+        {
+          "itemGuid": "7cc2246adc231174397caa259fe856c2",
+          "dropRate": 0.1
+        },
+        {
+          "itemGuid": "83788f7379e122e4da2f8eeec9ace900",
+          "dropRate": 90.0
+        },
+        {
+          "itemGuid": "02dce72135c64fe489e2c0ea6c30f2b3",
+          "dropRate": 2.0
+        }
+      ],
+      "activeSkills": [],
+      "passiveSkills": [],
+      "minions": null,
+      "iconFile": "monsters/8df5ff7e3614aaa4a928415378ff527f.png",
+      "zones": [
+        {
+          "name": "Lowen Crypt",
+          "count": 78
+        },
+        {
+          "name": "Orris Fortress",
+          "count": 15
+        },
+        {
+          "name": "Lowen Sewer",
+          "count": 10
+        }
+      ]
+    },
+    {
+      "guid": "a014b6c87602802418ae4811427b2b9d",
+      "name": "Blue Slime",
+      "class": "Monster",
+      "race": "Plant",
+      "element": "Water",
+      "weaponElement": "Neutral",
+      "str": 1,
+      "agi": 3,
+      "vit": 3,
+      "int": 0,
+      "dex": 12,
+      "luck": 15,
+      "level": 3,
+      "hp": 70,
+      "sp": 0,
+      "atk": 10,
+      "def": 0,
+      "matk": 1,
+      "mdef": 0,
+      "hit": 0,
+      "crit": 0,
+      "flee": 0,
+      "aspd": 0,
+      "baseExp": 10,
+      "jobExp": 10,
+      "isAggressive": false,
+      "allowPatrolling": true,
+      "patrollingSpeed": 2.0,
+      "patrolRadius": 10.0,
+      "walkingSpeedMultiplier": 1.0,
+      "walkSpeed": 3.0,
+      "resetAggroDistance": 30.0,
+      "retargetProtectionTime": 2.0,
+      "autoAttackRange": 2.5,
+      "attackDelay": 1.37,
+      "skillCheckInterval": 1.0,
+      "drops": [
+        {
+          "itemGuid": "772f2df26a6c60043a91859a5f0edce7",
+          "dropRate": 50.0
+        },
+        {
+          "itemGuid": "a12f71b4d85434645bb7fad465d04ca4",
+          "dropRate": 5.0
+        },
+        {
+          "itemGuid": "cd0e782edf48801489232940062900da",
+          "dropRate": 0.1
+        },
+        {
+          "itemGuid": "ef61aa6ca04db0c46b9639922c6655d5",
+          "dropRate": 5.0
+        }
+      ],
+      "activeSkills": [],
+      "passiveSkills": [],
+      "minions": null,
+      "iconFile": "monsters/a014b6c87602802418ae4811427b2b9d.png",
+      "zones": [
+        {
+          "name": "Whispering Island",
+          "count": 38
+        },
+        {
+          "name": "Lowen Sewer",
+          "count": 15
+        },
+        {
+          "name": "Whispering Cave",
+          "count": 15
+        }
+      ]
+    },
+    {
+      "guid": "7eed573b5eb3f974db425a77a1ef864c",
+      "name": "Green Slime",
+      "class": "Monster",
+      "race": "Plant",
+      "element": "Poison",
+      "weaponElement": "Neutral",
+      "str": 1,
+      "agi": 3,
+      "vit": 3,
+      "int": 0,
+      "dex": 12,
+      "luck": 15,
+      "level": 15,
+      "hp": 280,
+      "sp": 0,
+      "atk": 30,
+      "def": 0,
+      "matk": 1,
+      "mdef": 0,
+      "hit": 0,
+      "crit": 0,
+      "flee": 0,
+      "aspd": 0,
+      "baseExp": 59,
+      "jobExp": 70,
+      "isAggressive": false,
+      "allowPatrolling": true,
+      "patrollingSpeed": 2.0,
+      "patrolRadius": 10.0,
+      "walkingSpeedMultiplier": 1.0,
+      "walkSpeed": 3.0,
+      "resetAggroDistance": 30.0,
+      "retargetProtectionTime": 2.0,
+      "autoAttackRange": 8.0,
+      "attackDelay": 1.37,
+      "skillCheckInterval": 1.0,
+      "drops": [
+        {
+          "itemGuid": "772f2df26a6c60043a91859a5f0edce7",
+          "dropRate": 100.0
+        },
+        {
+          "itemGuid": "ef61aa6ca04db0c46b9639922c6655d5",
+          "dropRate": 5.0
+        },
+        {
+          "itemGuid": "19abb920113d4194794ec8973b688eca",
+          "dropRate": 5.0
+        },
+        {
+          "itemGuid": "014fa28e6916dbb4dbb3f114b3de129f",
+          "dropRate": 0.1
+        },
+        {
+          "itemGuid": "0ff578f8927bdc14fb6397af84901fe1",
+          "dropRate": 0.4
+        }
+      ],
+      "activeSkills": [],
+      "passiveSkills": [],
+      "minions": null,
+      "iconFile": "monsters/7eed573b5eb3f974db425a77a1ef864c.png",
+      "zones": [
+        {
+          "name": "Orris Fortress",
+          "count": 30
+        },
+        {
+          "name": "Whispering Island",
+          "count": 18
+        }
+      ]
+    },
+    {
+      "guid": "9e1ab52dbb28a5645a281a14746006c1",
+      "name": "Red Slime",
+      "class": "Monster",
+      "race": "Plant",
+      "element": "Fire",
+      "weaponElement": "Neutral",
+      "str": 1,
+      "agi": 3,
+      "vit": 3,
+      "int": 0,
+      "dex": 12,
+      "luck": 15,
+      "level": 99,
+      "hp": 1850,
+      "sp": 0,
+      "atk": 10,
+      "def": 0,
+      "matk": 1,
+      "mdef": 0,
+      "hit": 0,
+      "crit": 0,
+      "flee": 0,
+      "aspd": 0,
+      "baseExp": 555,
+      "jobExp": 648,
+      "isAggressive": false,
+      "allowPatrolling": true,
+      "patrollingSpeed": 2.0,
+      "patrolRadius": 10.0,
+      "walkingSpeedMultiplier": 1.0,
+      "walkSpeed": 3.0,
+      "resetAggroDistance": 30.0,
+      "retargetProtectionTime": 2.0,
+      "autoAttackRange": 2.5,
+      "attackDelay": 1.37,
+      "skillCheckInterval": 1.0,
+      "drops": [
+        {
+          "itemGuid": "772f2df26a6c60043a91859a5f0edce7",
+          "dropRate": 100.0
+        },
+        {
+          "itemGuid": "ef61aa6ca04db0c46b9639922c6655d5",
+          "dropRate": 10.0
+        },
+        {
+          "itemGuid": "ef10d0864f8d2cf41a81497417595ca2",
+          "dropRate": 5.0
+        },
+        {
+          "itemGuid": "5a62fa3deadc7494b9c3f355b8f7a786",
+          "dropRate": 0.1
+        }
+      ],
+      "activeSkills": [],
+      "passiveSkills": [],
+      "minions": null,
+      "iconFile": "monsters/9e1ab52dbb28a5645a281a14746006c1.png",
+      "zones": []
+    },
+    {
+      "guid": "a53783a9ab722234aab2098b6ddcd09a",
+      "name": "Yellow Slime",
+      "class": "Monster",
+      "race": "Plant",
+      "element": "Earth",
+      "weaponElement": "Neutral",
+      "str": 1,
+      "agi": 3,
+      "vit": 3,
+      "int": 0,
+      "dex": 12,
+      "luck": 15,
+      "level": 99,
+      "hp": 750,
+      "sp": 0,
+      "atk": 10,
+      "def": 0,
+      "matk": 1,
+      "mdef": 0,
+      "hit": 0,
+      "crit": 0,
+      "flee": 0,
+      "aspd": 0,
+      "baseExp": 195,
+      "jobExp": 203,
+      "isAggressive": false,
+      "allowPatrolling": true,
+      "patrollingSpeed": 2.0,
+      "patrolRadius": 10.0,
+      "walkingSpeedMultiplier": 1.0,
+      "walkSpeed": 3.0,
+      "resetAggroDistance": 30.0,
+      "retargetProtectionTime": 2.0,
+      "autoAttackRange": 2.5,
+      "attackDelay": 1.37,
+      "skillCheckInterval": 1.0,
+      "drops": [
+        {
+          "itemGuid": "772f2df26a6c60043a91859a5f0edce7",
+          "dropRate": 100.0
+        },
+        {
+          "itemGuid": "a12f71b4d85434645bb7fad465d04ca4",
+          "dropRate": 1.0
+        },
+        {
+          "itemGuid": "46b61cff5e09be54893ca98708c929ae",
+          "dropRate": 0.1
+        }
+      ],
+      "activeSkills": [],
+      "passiveSkills": [],
+      "minions": null,
+      "iconFile": "monsters/a53783a9ab722234aab2098b6ddcd09a.png",
+      "zones": []
+    },
+    {
+      "guid": "0b3e0cc164f50ae488c2b78e6ae5b3b6",
+      "name": "Slug",
+      "class": "Monster",
+      "race": "Elemental",
+      "element": "Water",
+      "weaponElement": "Neutral",
+      "str": 1,
+      "agi": 3,
+      "vit": 20,
+      "int": 0,
+      "dex": 12,
+      "luck": 15,
+      "level": 15,
+      "hp": 380,
+      "sp": 0,
+      "atk": 40,
+      "def": 0,
+      "matk": 1,
+      "mdef": 0,
+      "hit": 10,
+      "crit": 1,
+      "flee": 19,
+      "aspd": 120,
+      "baseExp": 114,
+      "jobExp": 103,
+      "isAggressive": false,
+      "allowPatrolling": true,
+      "patrollingSpeed": 3.0,
+      "patrolRadius": 10.0,
+      "walkingSpeedMultiplier": 1.0,
+      "walkSpeed": 5.0,
+      "resetAggroDistance": 30.0,
+      "retargetProtectionTime": 2.0,
+      "autoAttackRange": 2.5,
+      "attackDelay": 2.0,
+      "skillCheckInterval": 1.0,
+      "drops": [
+        {
+          "itemGuid": "7ddc6ba2a4bcb8f46b27cba49d4a8405",
+          "dropRate": 0.1
+        },
+        {
+          "itemGuid": "25b0b957015ddce41a247eb668f1f86c",
+          "dropRate": 25.0
+        },
+        {
+          "itemGuid": "772f2df26a6c60043a91859a5f0edce7",
+          "dropRate": 50.0
+        },
+        {
+          "itemGuid": "0e2758cee898fc74b96c0a0f15ff3f9d",
+          "dropRate": 0.1
+        },
+        {
+          "itemGuid": "9cea487f3b5e598439f11a287ad2b9d7",
+          "dropRate": 1.0
+        }
+      ],
+      "activeSkills": [],
+      "passiveSkills": [],
+      "minions": null,
+      "iconFile": "monsters/0b3e0cc164f50ae488c2b78e6ae5b3b6.png",
+      "zones": [
+        {
+          "name": "Whispering Cave",
+          "count": 31
+        }
+      ]
+    },
+    {
+      "guid": "d7eecd001bfd41c4386a09b776238a8c",
+      "name": "Spider Rock",
+      "class": "Monster",
+      "race": "Beast",
+      "element": "Earth",
+      "weaponElement": "Neutral",
+      "str": 1,
+      "agi": 48,
+      "vit": 15,
+      "int": 10,
+      "dex": 40,
+      "luck": 16,
+      "level": 44,
+      "hp": 2170,
+      "sp": 0,
+      "atk": 68,
+      "def": 5,
+      "matk": 1,
+      "mdef": 5,
+      "hit": 0,
+      "crit": 0,
+      "flee": 0,
+      "aspd": 0,
+      "baseExp": 738,
+      "jobExp": 828,
+      "isAggressive": true,
+      "allowPatrolling": true,
+      "patrollingSpeed": 2.0,
+      "patrolRadius": 10.0,
+      "walkingSpeedMultiplier": 1.0,
+      "walkSpeed": 7.0,
+      "resetAggroDistance": 30.0,
+      "retargetProtectionTime": 2.0,
+      "autoAttackRange": 2.5,
+      "attackDelay": 1.0,
+      "skillCheckInterval": 1.0,
+      "drops": [
+        {
+          "itemGuid": "4d7f3cb09c9e69a4b847d8473db75965",
+          "dropRate": 0.1
+        },
+        {
+          "itemGuid": "25b0b957015ddce41a247eb668f1f86c",
+          "dropRate": 50.0
+        },
+        {
+          "itemGuid": "f274162e0b17c7445b30a709b7768783",
+          "dropRate": 0.2
+        },
+        {
+          "itemGuid": "743df4af4bf30a349b09beb31c8364ed",
+          "dropRate": 20.0
+        }
+      ],
+      "activeSkills": [],
+      "passiveSkills": [],
+      "minions": null,
+      "iconFile": "monsters/d7eecd001bfd41c4386a09b776238a8c.png",
+      "zones": [
+        {
+          "name": "Orris Exterior",
+          "count": 26
+        }
+      ]
+    },
+    {
+      "guid": "23ac6790a46f0e747abb8f1f5a184767",
+      "name": "Trunk",
+      "class": "Monster",
+      "race": "Beast",
+      "element": "Earth",
+      "weaponElement": "Neutral",
+      "str": 1,
+      "agi": 24,
+      "vit": 14,
+      "int": 10,
+      "dex": 25,
+      "luck": 16,
+      "level": 18,
+      "hp": 425,
+      "sp": 0,
+      "atk": 36,
+      "def": 10,
+      "matk": 1,
+      "mdef": 5,
+      "hit": 0,
+      "crit": 0,
+      "flee": 0,
+      "aspd": 0,
+      "baseExp": 81,
+      "jobExp": 68,
+      "isAggressive": false,
+      "allowPatrolling": true,
+      "patrollingSpeed": 2.0,
+      "patrolRadius": 10.0,
+      "walkingSpeedMultiplier": 1.0,
+      "walkSpeed": 7.0,
+      "resetAggroDistance": 30.0,
+      "retargetProtectionTime": 2.0,
+      "autoAttackRange": 3.5,
+      "attackDelay": 2.0,
+      "skillCheckInterval": 1.0,
+      "drops": [
+        {
+          "itemGuid": "4bd40717d4bb69e499bb21c13118ace9",
+          "dropRate": 10.0
+        },
+        {
+          "itemGuid": "88b321b08feeacb48bfa8fa3de2ccf3e",
+          "dropRate": 0.1
+        },
+        {
+          "itemGuid": "25b0b957015ddce41a247eb668f1f86c",
+          "dropRate": 80.0
+        }
+      ],
+      "activeSkills": [
+        {
+          "skillGuid": "533d4ca0b2f0463469e374cedf0646e0",
+          "level": 1,
+          "condition": null,
+          "delayOverride": 5.0,
+          "name": "hammerTrunk_bash"
+        }
+      ],
+      "passiveSkills": [],
+      "minions": null,
+      "iconFile": "monsters/23ac6790a46f0e747abb8f1f5a184767.png",
+      "zones": [
+        {
+          "name": "Whispering Island",
+          "count": 64
+        }
+      ]
+    },
+    {
+      "guid": "aed6766203d679241b8e70e541420970",
+      "name": "Wild Hog",
+      "class": "Monster",
+      "race": "Beast",
+      "element": "Neutral",
+      "weaponElement": "Neutral",
+      "str": 40,
+      "agi": 50,
+      "vit": 30,
+      "int": 5,
+      "dex": 50,
+      "luck": 10,
+      "level": 32,
+      "hp": 3150,
+      "sp": 0,
+      "atk": 130,
+      "def": 10,
+      "matk": 1,
+      "mdef": 3,
+      "hit": 0,
+      "crit": 0,
+      "flee": 0,
+      "aspd": 0,
+      "baseExp": 1229,
+      "jobExp": 882,
+      "isAggressive": false,
+      "allowPatrolling": true,
+      "patrollingSpeed": 2.0,
+      "patrolRadius": 10.0,
+      "walkingSpeedMultiplier": 1.0,
+      "walkSpeed": 6.0,
+      "resetAggroDistance": 30.0,
+      "retargetProtectionTime": 2.0,
+      "autoAttackRange": 2.5,
+      "attackDelay": 1.3,
+      "skillCheckInterval": 1.0,
+      "drops": [
+        {
+          "itemGuid": "984ea6c77439c05468bfc2881bbd0283",
+          "dropRate": 0.1
+        },
+        {
+          "itemGuid": "41301bc50c4b171459e76c323a6ae60e",
+          "dropRate": 10.0
+        },
+        {
+          "itemGuid": "f0d0d450c34c674428a290986d1c51be",
+          "dropRate": 0.5
+        },
+        {
+          "itemGuid": "60727443d8ac8714c8d273dbe505159f",
+          "dropRate": 0.1
+        }
+      ],
+      "activeSkills": [
+        {
+          "skillGuid": "76d6c458550a4c34295f528fd47bb347",
+          "level": 3,
+          "condition": "HpBelowPercentCondition",
+          "name": "hunter_sprint"
+        }
+      ],
+      "passiveSkills": [],
+      "minions": null,
+      "iconFile": "monsters/aed6766203d679241b8e70e541420970.png",
+      "zones": [
+        {
+          "name": "Whispering Island",
+          "count": 74
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "guid": "7d03885077a5eb3469f12a97dae3ceb2",
+      "name": "Mushroom",
+      "description": "",
+      "weight": 3,
+      "buyPrice": 650,
+      "requiredLevel": 0,
+      "isStackable": true,
+      "isRefinable": false,
+      "type": "ItemAssetEtc",
+      "iconFile": "items/7d03885077a5eb3469f12a97dae3ceb2.png"
+    },
+    {
+      "guid": "e7f7fbb0d33f9fa408573c6968c9699e",
+      "name": "Giant Mushroom soul",
+      "description": "Contains a monster soul, use with caution",
+      "weight": 1,
+      "buyPrice": 10,
+      "requiredLevel": 0,
+      "isStackable": true,
+      "isRefinable": false,
+      "type": "ItemAssetSoul",
+      "soulType": "Chest",
+      "bonuses": [
+        "+30 HPRecovery when HP below 40%"
+      ],
+      "iconFile": "items/e7f7fbb0d33f9fa408573c6968c9699e.png"
+    },
+    {
+      "guid": "2c340a40f7fa0784283f075fad58edb1",
+      "name": "Mushroom Hat",
+      "description": "",
+      "weight": 80,
+      "buyPrice": 8000,
+      "requiredLevel": 5,
+      "isStackable": false,
+      "isRefinable": true,
+      "type": "ItemAssetArmor",
+      "defense": 2,
+      "soulSlots": 0,
+      "bonuses": [
+        "+50 HPRecovery"
+      ],
+      "armorType": "Head",
+      "iconFile": "items/2c340a40f7fa0784283f075fad58edb1.png"
+    },
+    {
+      "guid": "b18ea4ad3c4b036449bca40f37dda2c6",
+      "name": "Blue potion",
+      "description": "Heals some  mana",
+      "weight": 1,
+      "buyPrice": 500,
+      "requiredLevel": 0,
+      "isStackable": true,
+      "isRefinable": false,
+      "type": "ItemAssetUsable",
+      "iconFile": "items/b18ea4ad3c4b036449bca40f37dda2c6.png"
+    },
+    {
+      "guid": "b0859f93522691848a85a46cf8dba510",
+      "name": "Black Feather",
+      "description": "Dark as the forest\u00e2\u20ac\u2122s silence.",
+      "weight": 1,
+      "buyPrice": 215,
+      "requiredLevel": 0,
+      "isStackable": true,
+      "isRefinable": false,
+      "type": "ItemAssetEtc",
+      "iconFile": "items/b0859f93522691848a85a46cf8dba510.png"
+    },
+    {
+      "guid": "0121d789d9ce10244af1f7ee4e2d9da3",
+      "name": "Harpy Egg",
+      "description": "Rumor says it hums on stormy nights.",
+      "weight": 12,
+      "buyPrice": 75,
+      "requiredLevel": 0,
+      "isStackable": true,
+      "isRefinable": false,
+      "type": "ItemAssetEtc",
+      "iconFile": "items/0121d789d9ce10244af1f7ee4e2d9da3.png"
+    },
+    {
+      "guid": "04083afd8ecb8234e8590e053912e870",
+      "name": "Harpy Talon",
+      "description": "Clutch of the predator, cold and merciless",
+      "weight": 5,
+      "buyPrice": 125,
+      "requiredLevel": 0,
+      "isStackable": true,
+      "isRefinable": false,
+      "type": "ItemAssetEtc",
+      "iconFile": "items/04083afd8ecb8234e8590e053912e870.png"
+    },
+    {
+      "guid": "03f1cce23f44e4542863dd9e821f8af1",
+      "name": "Harpy Bow",
+      "description": "Stung with malice, it sings in flgiht.",
+      "weight": 55,
+      "buyPrice": 47250,
+      "requiredLevel": 24,
+      "isStackable": false,
+      "isRefinable": true,
+      "type": "ItemAssetWeapon",
+      "defense": 0,
+      "soulSlots": 1,
+      "damage": 65,
+      "magicDamage": 0,
+      "weaponLevel": 3,
+      "attackRange": 10.0,
+      "element": "Neutral",
+      "attackType": "Physical",
+      "weaponType": "Bow",
+      "iconFile": "items/03f1cce23f44e4542863dd9e821f8af1.png"
+    },
+    {
+      "guid": "e5891e4e477040d4bb21bc51966b74fd",
+      "name": "Harpy soul",
+      "description": "Contains a monster soul, use with caution",
+      "weight": 1,
+      "buyPrice": 10,
+      "requiredLevel": 0,
+      "isStackable": true,
+      "isRefinable": false,
+      "type": "ItemAssetSoul",
+      "soulType": "Footgear",
+      "bonuses": [
+        "+6% WalkSpeed"
+      ],
+      "iconFile": "items/e5891e4e477040d4bb21bc51966b74fd.png"
+    },
+    {
+      "guid": "fd766e1d099f9154a8807fb3977631ea",
+      "name": "Black Ring",
+      "description": "",
+      "weight": 15,
+      "buyPrice": 750,
+      "requiredLevel": 30,
+      "isStackable": false,
+      "isRefinable": false,
+      "type": "ItemAssetArmor",
+      "defense": 0,
+      "soulSlots": 1,
+      "bonuses": [
+        "+2 DEX"
+      ],
+      "armorType": "Accessory",
+      "iconFile": "items/fd766e1d099f9154a8807fb3977631ea.png"
+    },
+    {
+      "guid": "f64ac4fccab45034bb04de1d5d4e3200",
+      "name": "Grand Slime soul",
+      "description": "Contains a monster soul, use with caution",
+      "weight": 1,
+      "buyPrice": 10,
+      "requiredLevel": 0,
+      "isStackable": true,
+      "isRefinable": false,
+      "type": "ItemAssetSoul",
+      "soulType": "Chest",
+      "bonuses": [
+        "+500 HP"
+      ],
+      "iconFile": "items/f64ac4fccab45034bb04de1d5d4e3200.png"
+    },
+    {
+      "guid": "772f2df26a6c60043a91859a5f0edce7",
+      "name": "Slime droplet",
+      "description": "Condensed slime fluid, restores a small amount of mana.",
+      "weight": 1,
+      "buyPrice": 100,
+      "requiredLevel": 0,
+      "isStackable": true,
+      "isRefinable": false,
+      "type": "ItemAssetUsable",
+      "iconFile": "items/772f2df26a6c60043a91859a5f0edce7.png"
+    },
+    {
+      "guid": "3f5cdc1f2f2df2a449550182f50bc665",
+      "name": "Droplet Wand",
+      "description": "A straight piece, steady focus.",
+      "weight": 35,
+      "buyPrice": 14250,
+      "requiredLevel": 24,
+      "isStackable": false,
+      "isRefinable": true,
+      "type": "ItemAssetWeapon",
+      "defense": 0,
+      "soulSlots": 1,
+      "bonuses": [
+        "+20% damage to Water enemies",
+        "+2 INT"
+      ],
+      "damage": 0,
+      "magicDamage": 50,
+      "weaponLevel": 1,
+      "attackRange": 10.0,
+      "element": "Water",
+      "attackType": "Magical",
+      "weaponType": "OneHandedStaff",
+      "iconFile": "items/3f5cdc1f2f2df2a449550182f50bc665.png"
+    },
+    {
+      "guid": "e7658e2bac45acd4d8dffc5fd028fac3",
+      "name": "Slime hat",
+      "description": "",
+      "weight": 40,
+      "buyPrice": 4000,
+      "requiredLevel": 20,
+      "isStackable": false,
+      "isRefinable": true,
+      "type": "ItemAssetArmor",
+      "defense": 1,
+      "soulSlots": 0,
+      "bonuses": [
+        "+50 SP",
+        "+30 SPRecovery"
+      ],
+      "armorType": "Head",
+      "iconFile": "items/e7658e2bac45acd4d8dffc5fd028fac3.png"
+    },
+    {
+      "guid": "4bd40717d4bb69e499bb21c13118ace9",
+      "name": "Wooden Slat",
+      "description": "Simple wooden slat.",
+      "weight": 7,
+      "buyPrice": 450,
+      "requiredLevel": 0,
+      "isStackable": true,
+      "isRefinable": false,
+      "type": "ItemAssetEtc",
+      "iconFile": "items/4bd40717d4bb69e499bb21c13118ace9.png"
+    },
+    {
+      "guid": "e8718be806cedb64cadec166b9a9d5cb",
+      "name": "Hammer Trunk soul",
+      "description": "Contains a monster soul, use with caution",
+      "weight": 1,
+      "buyPrice": 10,
+      "requiredLevel": 0,
+      "isStackable": true,
+      "isRefinable": false,
+      "type": "ItemAssetSoul",
+      "soulType": "Weapon",
+      "bonuses": [
+        "+10 damage on hit"
+      ],
+      "iconFile": "items/e8718be806cedb64cadec166b9a9d5cb.png"
+    },
+    {
+      "guid": "25b0b957015ddce41a247eb668f1f86c",
+      "name": "Stone Chunk",
+      "description": "A heartbeat of stone, pulsing faintly.",
+      "weight": 25,
+      "buyPrice": 270,
+      "requiredLevel": 0,
+      "isStackable": true,
+      "isRefinable": false,
+      "type": "ItemAssetEtc",
+      "iconFile": "items/25b0b957015ddce41a247eb668f1f86c.png"
+    },
+    {
+      "guid": "c01f0ba11fdf4dd44b390678d64d89ff",
+      "name": "Stone Hammer",
+      "description": "Reliable when patience thins.",
+      "weight": 325,
+      "buyPrice": 54500,
+      "requiredLevel": 0,
+      "isStackable": false,
+      "isRefinable": true,
+      "type": "ItemAssetWeapon",
+      "defense": 0,
+      "soulSlots": 1,
+      "damage": 55,
+      "magicDamage": 0,
+      "weaponLevel": 2,
+      "attackRange": 4.0,
+      "element": "Neutral",
+      "attackType": "Physical",
+      "weaponType": "TwoHandedMace",
+      "iconFile": "items/c01f0ba11fdf4dd44b390678d64d89ff.png"
+    },
+    {
+      "guid": "238b6b86ca5993d459480bcc67f1c572",
+      "name": "Gold Coin",
+      "description": "Polished by beak and claw, never spent.",
+      "weight": 3,
+      "buyPrice": 1500,
+      "requiredLevel": 0,
+      "isStackable": true,
+      "isRefinable": false,
+      "type": "ItemAssetEtc",
+      "iconFile": "items/238b6b86ca5993d459480bcc67f1c572.png"
+    },
+    {
+      "guid": "83788f7379e122e4da2f8eeec9ace900",
+      "name": "Fine Bone",
+      "description": "Light as air, brittle as memory.",
+      "weight": 2,
+      "buyPrice": 250,
+      "requiredLevel": 0,
+      "isStackable": true,
+      "isRefinable": false,
+      "type": "ItemAssetEtc",
+      "iconFile": "items/83788f7379e122e4da2f8eeec9ace900.png"
+    },
+    {
+      "guid": "ef61aa6ca04db0c46b9639922c6655d5",
+      "name": "Monster Eye",
+      "description": "Gleams with secrets unseen.",
+      "weight": 4,
+      "buyPrice": 1500,
+      "requiredLevel": 0,
+      "isStackable": true,
+      "isRefinable": false,
+      "type": "ItemAssetEtc",
+      "iconFile": "items/ef61aa6ca04db0c46b9639922c6655d5.png"
+    },
+    {
+      "guid": "245d60189d5f57b4e8abc8512eea537c",
+      "name": "Meat",
+      "description": "Heals some hp",
+      "weight": 1,
+      "buyPrice": 50,
+      "requiredLevel": 0,
+      "isStackable": true,
+      "isRefinable": false,
+      "type": "ItemAssetUsable",
+      "iconFile": "items/245d60189d5f57b4e8abc8512eea537c.png"
+    },
+    {
+      "guid": "a9dbbaca6b0aa7b4ebf97a0fbf353503",
+      "name": "Hoardbird soul",
+      "description": "Contains a monster soul, use with caution",
+      "weight": 1,
+      "buyPrice": 10,
+      "requiredLevel": 0,
+      "isStackable": true,
+      "isRefinable": false,
+      "type": "ItemAssetSoul",
+      "soulType": "Accessory",
+      "bonuses": [
+        "+2 INT"
+      ],
+      "iconFile": "items/a9dbbaca6b0aa7b4ebf97a0fbf353503.png"
+    },
+    {
+      "guid": "3f9e8808135c16d45b6eff061ccecd54",
+      "name": "Mushroom soul",
+      "description": "Contains a monster soul, use with caution",
+      "weight": 1,
+      "buyPrice": 10,
+      "requiredLevel": 0,
+      "isStackable": true,
+      "isRefinable": false,
+      "type": "ItemAssetSoul",
+      "soulType": "Headgear",
+      "bonuses": [
+        "+10% healing effectiveness"
+      ],
+      "iconFile": "items/3f9e8808135c16d45b6eff061ccecd54.png"
+    },
+    {
+      "guid": "580819b1b136b4648a7181d7506d3289",
+      "name": "Cloth Shoes",
+      "description": "Soft steps on hard roads.",
+      "weight": 20,
+      "buyPrice": 3000,
+      "requiredLevel": 1,
+      "isStackable": false,
+      "isRefinable": true,
+      "type": "ItemAssetArmor",
+      "defense": 1,
+      "soulSlots": 1,
+      "armorType": "Feet",
+      "iconFile": "items/580819b1b136b4648a7181d7506d3289.png"
+    },
+    {
+      "guid": "a4ddef20a84f23e4e8a05a21fb5f2f71",
+      "name": "Mystar soul",
+      "description": "Contains a monster soul, use with caution",
+      "weight": 1,
+      "buyPrice": 10,
+      "requiredLevel": 0,
+      "isStackable": true,
+      "isRefinable": false,
+      "type": "ItemAssetSoul",
+      "soulType": "Weapon",
+      "bonuses": [
+        "10% chance to cast skill on auto attack"
+      ],
+      "iconFile": "items/a4ddef20a84f23e4e8a05a21fb5f2f71.png"
+    },
+    {
+      "guid": "475179da82526d64d8dee5beb3408d08",
+      "name": "Starring",
+      "description": "",
+      "weight": 15,
+      "buyPrice": 750,
+      "requiredLevel": 30,
+      "isStackable": false,
+      "isRefinable": false,
+      "type": "ItemAssetArmor",
+      "defense": 0,
+      "soulSlots": 0,
+      "bonuses": [
+        "+2 INT",
+        "+5% MATK"
+      ],
+      "armorType": "Accessory",
+      "iconFile": "items/475179da82526d64d8dee5beb3408d08.png"
+    },
+    {
+      "guid": "42e30408c83b23347a7f23ec7a8a5f58",
+      "name": "Garment",
+      "description": "Comfort and caution make strange companions.",
+      "weight": 30,
+      "buyPrice": 3500,
+      "requiredLevel": 0,
+      "isStackable": false,
+      "isRefinable": true,
+      "type": "ItemAssetArmor",
+      "defense": 1,
+      "soulSlots": 1,
+      "armorType": "Back",
+      "iconFile": "items/42e30408c83b23347a7f23ec7a8a5f58.png"
+    },
+    {
+      "guid": "778009e7e26a8dc48ba244c64845ed6a",
+      "name": "Lamia soul",
+      "description": "Contains a monster soul, use with caution",
+      "weight": 1,
+      "buyPrice": 10,
+      "requiredLevel": 0,
+      "isStackable": true,
+      "isRefinable": false,
+      "type": "ItemAssetSoul",
+      "soulType": "Weapon",
+      "bonuses": [
+        "Reduce dual wield penalty by 15%"
+      ],
+      "iconFile": "items/778009e7e26a8dc48ba244c64845ed6a.png"
+    },
+    {
+      "guid": "2b8f7e0062aa476409aa3e8abc104477",
+      "name": "Charm of the Serpent",
+      "description": "Whispers coil within its bronze.",
+      "weight": 12,
+      "buyPrice": 5000,
+      "requiredLevel": 0,
+      "isStackable": true,
+      "isRefinable": false,
+      "type": "ItemAssetEtc",
+      "iconFile": "items/2b8f7e0062aa476409aa3e8abc104477.png"
+    },
+    {
+      "guid": "02dce72135c64fe489e2c0ea6c30f2b3",
+      "name": "Iron Ingot",
+      "description": "Forged from forgotten ruins.",
+      "weight": 20,
+      "buyPrice": 500,
+      "requiredLevel": 0,
+      "isStackable": true,
+      "isRefinable": false,
+      "type": "ItemAssetEtc",
+      "iconFile": "items/02dce72135c64fe489e2c0ea6c30f2b3.png"
+    },
+    {
+      "guid": "e722fc1fee7d27b4784c761359aa98d9",
+      "name": "Ormys Necklace",
+      "description": "Brilliant...",
+      "weight": 25,
+      "buyPrice": 3250,
+      "requiredLevel": 20,
+      "isStackable": false,
+      "isRefinable": false,
+      "type": "ItemAssetArmor",
+      "defense": 1,
+      "soulSlots": 0,
+      "bonuses": [
+        "+2 AGI"
+      ],
+      "armorType": "HeadLower",
+      "iconFile": "items/e722fc1fee7d27b4784c761359aa98d9.png"
+    },
+    {
+      "guid": "0d465f6040a31104090d967287c75a8b",
+      "name": "Padded Vest",
+      "description": "Layers of care between flesh and harm.",
+      "weight": 60,
+      "buyPrice": 7000,
+      "requiredLevel": 0,
+      "isStackable": false,
+      "isRefinable": true,
+      "type": "ItemAssetArmor",
+      "defense": 2,
+      "soulSlots": 1,
+      "armorType": "Chest",
+      "iconFile": "items/0d465f6040a31104090d967287c75a8b.png"
+    },
+    {
+      "guid": "c4eb1113cf902e642bfaaf0a855c8285",
+      "name": "Crest Scale",
+      "description": "Marks the proud, shattered in battle.",
+      "weight": 7,
+      "buyPrice": 424,
+      "requiredLevel": 0,
+      "isStackable": true,
+      "isRefinable": false,
+      "type": "ItemAssetEtc",
+      "iconFile": "items/c4eb1113cf902e642bfaaf0a855c8285.png"
+    },
+    {
+      "guid": "72473e874ce86c640aaec7b519373fb3",
+      "name": "Lizzard Fang",
+      "description": "Venom clings to its edge.",
+      "weight": 8,
+      "buyPrice": 255,
+      "requiredLevel": 0,
+      "isStackable": true,
+      "isRefinable": false,
+      "type": "ItemAssetEtc",
+      "iconFile": "items/72473e874ce86c640aaec7b519373fb3.png"
+    },
+    {
+      "guid": "76b5dd7ec1e01464e82357d054586846",
+      "name": "Sarui soul",
+      "description": "Contains a monster soul, use with caution",
+      "weight": 1,
+      "buyPrice": 10,
+      "requiredLevel": 0,
+      "isStackable": true,
+      "isRefinable": false,
+      "type": "ItemAssetSoul",
+      "soulType": "Weapon",
+      "bonuses": [
+        "+15% physical damage with Dagger"
+      ],
+      "iconFile": "items/76b5dd7ec1e01464e82357d054586846.png"
+    },
+    {
+      "guid": "928445db101994941bb2f03c1fa0a205",
+      "name": "Plate Armor",
+      "description": "The anvil's final word.",
+      "weight": 280,
+      "buyPrice": 22000,
+      "requiredLevel": 12,
+      "isStackable": false,
+      "isRefinable": true,
+      "type": "ItemAssetArmor",
+      "defense": 4,
+      "soulSlots": 1,
+      "armorType": "Chest",
+      "iconFile": "items/928445db101994941bb2f03c1fa0a205.png"
+    },
+    {
+      "guid": "1b722b9f653af0e47841fca153f47d53",
+      "name": "Golem Spear",
+      "description": "Pierces both flesh and will.",
+      "weight": 35,
+      "buyPrice": 15500,
+      "requiredLevel": 0,
+      "isStackable": false,
+      "isRefinable": true,
+      "type": "ItemAssetWeapon",
+      "defense": 0,
+      "soulSlots": 1,
+      "damage": 30,
+      "magicDamage": 0,
+      "weaponLevel": 2,
+      "attackRange": 0.0,
+      "element": "Neutral",
+      "attackType": "Physical",
+      "weaponType": "OneHandedSpear",
+      "iconFile": "items/1b722b9f653af0e47841fca153f47d53.png"
+    },
+    {
+      "guid": "97ece8736dc9c9f4d98482721a71c366",
+      "name": "Rock Salt",
+      "description": "Crystals born from endless suns.",
+      "weight": 6,
+      "buyPrice": 24,
+      "requiredLevel": 0,
+      "isStackable": true,
+      "isRefinable": false,
+      "type": "ItemAssetEtc",
+      "iconFile": "items/97ece8736dc9c9f4d98482721a71c366.png"
+    },
+    {
+      "guid": "c08b02ba13a0dc84a9a057b479b736eb",
+      "name": "Sandworm soul",
+      "description": "Contains a monster soul, use with caution",
+      "weight": 1,
+      "buyPrice": 10,
+      "requiredLevel": 0,
+      "isStackable": true,
+      "isRefinable": false,
+      "type": "ItemAssetSoul",
+      "soulType": "Back",
+      "bonuses": [
+        "-10% damage taken"
+      ],
+      "iconFile": "items/c08b02ba13a0dc84a9a057b479b736eb.png"
+    },
+    {
+      "guid": "5f4a03a2a22ed1a44bd4f2b15adfb573",
+      "name": "Crest Scale",
+      "description": "Marks the proud, shattered in battle.",
+      "weight": 7,
+      "buyPrice": 424,
+      "requiredLevel": 0,
+      "isStackable": true,
+      "isRefinable": false,
+      "type": "ItemAssetEtc",
+      "iconFile": "items/5f4a03a2a22ed1a44bd4f2b15adfb573.png"
+    },
+    {
+      "guid": "52d116ce1653f8144af2c956233aaa5a",
+      "name": "Sarui soul",
+      "description": "Contains a monster soul, use with caution",
+      "weight": 1,
+      "buyPrice": 10,
+      "requiredLevel": 0,
+      "isStackable": true,
+      "isRefinable": false,
+      "type": "ItemAssetSoul",
+      "soulType": "Weapon",
+      "bonuses": [
+        "+10% physical damage with Dagger"
+      ],
+      "iconFile": "items/52d116ce1653f8144af2c956233aaa5a.png"
+    },
+    {
+      "guid": "0c1cb4560687b974497bf0e0cd9d1f02",
+      "name": "Lizzard Dagger",
+      "description": "Dagger with venom.",
+      "weight": 15,
+      "buyPrice": 41250,
+      "requiredLevel": 0,
+      "isStackable": false,
+      "isRefinable": true,
+      "type": "ItemAssetWeapon",
+      "defense": 0,
+      "soulSlots": 1,
+      "damage": 65,
+      "magicDamage": 0,
+      "weaponLevel": 3,
+      "attackRange": 2.5,
+      "element": "Poison",
+      "attackType": "Physical",
+      "weaponType": "Dagger",
+      "iconFile": "items/0c1cb4560687b974497bf0e0cd9d1f02.png"
+    },
+    {
+      "guid": "19a2958557c12034097824eb364d82b5",
+      "name": "Iron Ore",
+      "description": "Raw strength, yet unshaped.",
+      "weight": 18,
+      "buyPrice": 45,
+      "requiredLevel": 0,
+      "isStackable": true,
+      "isRefinable": false,
+      "type": "ItemAssetEtc",
+      "iconFile": "items/19a2958557c12034097824eb364d82b5.png"
+    },
+    {
+      "guid": "77ce119fa44128e46af0feeab2aab5ad",
+      "name": "Cactus Flesh",
+      "description": "Bitter water in a cruel land.",
+      "weight": 7,
+      "buyPrice": 152,
+      "requiredLevel": 0,
+      "isStackable": true,
+      "isRefinable": false,
+      "type": "ItemAssetEtc",
+      "iconFile": "items/77ce119fa44128e46af0feeab2aab5ad.png"
+    },
+    {
+      "guid": "1b7d9836fec73b64fa564eb55a4a7048",
+      "name": "Javelin",
+      "description": "",
+      "weight": 45,
+      "buyPrice": 37950,
+      "requiredLevel": 0,
+      "isStackable": false,
+      "isRefinable": true,
+      "type": "ItemAssetWeapon",
+      "defense": 0,
+      "soulSlots": 0,
+      "damage": 52,
+      "magicDamage": 0,
+      "weaponLevel": 3,
+      "attackRange": 0.0,
+      "element": "Neutral",
+      "attackType": "Physical",
+      "weaponType": "OneHandedSpear",
+      "iconFile": "items/1b7d9836fec73b64fa564eb55a4a7048.png"
+    },
+    {
+      "guid": "42bccdc0771e1d64eb4eae2f2361e525",
+      "name": "Shunt soul",
+      "description": "Contains a monster soul, use with caution",
+      "weight": 1,
+      "buyPrice": 10,
+      "requiredLevel": 0,
+      "isStackable": true,
+      "isRefinable": false,
+      "type": "ItemAssetSoul",
+      "soulType": "Weapon",
+      "bonuses": [
+        "+15% physical damage with One Handed Spear",
+        "+15% physical damage with Two Handed Spear"
+      ],
+      "iconFile": "items/42bccdc0771e1d64eb4eae2f2361e525.png"
+    },
+    {
+      "guid": "914bd74ecc4e0c245b98449f369ce42e",
+      "name": "Skeleton Archer soul",
+      "description": "Contains a monster soul, use with caution",
+      "weight": 1,
+      "buyPrice": 10,
+      "requiredLevel": 0,
+      "isStackable": true,
+      "isRefinable": false,
+      "type": "ItemAssetSoul",
+      "soulType": "Accessory",
+      "bonuses": [
+        "+12% ranged physical damage"
+      ],
+      "iconFile": "items/914bd74ecc4e0c245b98449f369ce42e.png"
+    },
+    {
+      "guid": "8fceee6469b2b534e9a1879e199f24fa",
+      "name": "Apple of archer",
+      "description": "Only for the brave",
+      "weight": 25,
+      "buyPrice": 3250,
+      "requiredLevel": 1,
+      "isStackable": false,
+      "isRefinable": true,
+      "type": "ItemAssetArmor",
+      "defense": 1,
+      "soulSlots": 0,
+      "bonuses": [
+        "+3 DEX"
+      ],
+      "armorType": "Head",
+      "iconFile": "items/8fceee6469b2b534e9a1879e199f24fa.png"
+    },
+    {
+      "guid": "d58f2e3664254b74288e01dac08e4fa9",
+      "name": "Robust Bow",
+      "description": "Never miss a shot",
+      "weight": 15,
+      "buyPrice": 8700,
+      "requiredLevel": 0,
+      "isStackable": false,
+      "isRefinable": true,
+      "type": "ItemAssetWeapon",
+      "defense": 0,
+      "soulSlots": 4,
+      "bonuses": [
+        "+10 DEX"
+      ],
+      "damage": 18,
+      "magicDamage": 0,
+      "weaponLevel": 2,
+      "attackRange": 10.0,
+      "element": "Neutral",
+      "attackType": "Physical",
+      "weaponType": "Bow",
+      "iconFile": "items/d58f2e3664254b74288e01dac08e4fa9.png"
+    },
+    {
+      "guid": "009fda97112109b4cb8a09ad236e6fac",
+      "name": "Skeleton Slaughter soul",
+      "description": "Contains a monster soul, use with caution",
+      "weight": 1,
+      "buyPrice": 10,
+      "requiredLevel": 0,
+      "isStackable": true,
+      "isRefinable": false,
+      "type": "ItemAssetSoul",
+      "soulType": "Accessory",
+      "bonuses": [
+        "+10 CRIT"
+      ],
+      "iconFile": "items/009fda97112109b4cb8a09ad236e6fac.png"
+    },
+    {
+      "guid": "f43fabcc154e56c458743d6b780f0f99",
+      "name": "Iron Boots",
+      "description": "Heavy steps, steady purpose.",
+      "weight": 150,
+      "buyPrice": 15500,
+      "requiredLevel": 10,
+      "isStackable": false,
+      "isRefinable": true,
+      "type": "ItemAssetArmor",
+      "defense": 4,
+      "soulSlots": 1,
+      "armorType": "Feet",
+      "iconFile": "items/f43fabcc154e56c458743d6b780f0f99.png"
+    },
+    {
+      "guid": "7cc2246adc231174397caa259fe856c2",
+      "name": "Hardened Helm",
+      "description": "Strength is forged one strike at a time.",
+      "weight": 140,
+      "buyPrice": 13000,
+      "requiredLevel": 8,
+      "isStackable": false,
+      "isRefinable": true,
+      "type": "ItemAssetArmor",
+      "defense": 3,
+      "soulSlots": 1,
+      "armorType": "Head",
+      "iconFile": "items/7cc2246adc231174397caa259fe856c2.png"
+    },
+    {
+      "guid": "bc62fbd44fe991e4598ffbd70d899c0e",
+      "name": "Skeleton Thief soul",
+      "description": "Contains a monster soul, use with caution",
+      "weight": 1,
+      "buyPrice": 10,
+      "requiredLevel": 0,
+      "isStackable": true,
+      "isRefinable": false,
+      "type": "ItemAssetSoul",
+      "soulType": "Accessory",
+      "bonuses": [
+        "5% discount when buying from NPCs",
+        "+5% money when selling to NPCs"
+      ],
+      "iconFile": "items/bc62fbd44fe991e4598ffbd70d899c0e.png"
+    },
+    {
+      "guid": "a12f71b4d85434645bb7fad465d04ca4",
+      "name": "Blue Pearl",
+      "description": "",
+      "weight": 5,
+      "buyPrice": 1500,
+      "requiredLevel": 0,
+      "isStackable": true,
+      "isRefinable": false,
+      "type": "ItemAssetEtc",
+      "iconFile": "items/a12f71b4d85434645bb7fad465d04ca4.png"
+    },
+    {
+      "guid": "cd0e782edf48801489232940062900da",
+      "name": "Blue Slime soul",
+      "description": "Contains a monster soul, use with caution",
+      "weight": 1,
+      "buyPrice": 10,
+      "requiredLevel": 0,
+      "isStackable": true,
+      "isRefinable": false,
+      "type": "ItemAssetSoul",
+      "soulType": "Weapon",
+      "bonuses": [
+        "+10% damage to Water enemies"
+      ],
+      "iconFile": "items/cd0e782edf48801489232940062900da.png"
+    },
+    {
+      "guid": "19abb920113d4194794ec8973b688eca",
+      "name": "Blue Pearl",
+      "description": "",
+      "weight": 5,
+      "buyPrice": 1500,
+      "requiredLevel": 0,
+      "isStackable": true,
+      "isRefinable": false,
+      "type": "ItemAssetEtc",
+      "iconFile": "items/19abb920113d4194794ec8973b688eca.png"
+    },
+    {
+      "guid": "014fa28e6916dbb4dbb3f114b3de129f",
+      "name": "Green Slime soul",
+      "description": "Contains a monster soul, use with caution",
+      "weight": 1,
+      "buyPrice": 10,
+      "requiredLevel": 0,
+      "isStackable": true,
+      "isRefinable": false,
+      "type": "ItemAssetSoul",
+      "soulType": "Weapon",
+      "bonuses": [
+        "+10% damage to Poison enemies"
+      ],
+      "iconFile": "items/014fa28e6916dbb4dbb3f114b3de129f.png"
+    },
+    {
+      "guid": "0ff578f8927bdc14fb6397af84901fe1",
+      "name": "Padded Coif",
+      "description": "Comfort and caution make strange companions.",
+      "weight": 45,
+      "buyPrice": 6250,
+      "requiredLevel": 0,
+      "isStackable": false,
+      "isRefinable": true,
+      "type": "ItemAssetArmor",
+      "defense": 2,
+      "soulSlots": 1,
+      "armorType": "Head",
+      "iconFile": "items/0ff578f8927bdc14fb6397af84901fe1.png"
+    },
+    {
+      "guid": "ef10d0864f8d2cf41a81497417595ca2",
+      "name": "Blue Pearl",
+      "description": "",
+      "weight": 5,
+      "buyPrice": 1500,
+      "requiredLevel": 0,
+      "isStackable": true,
+      "isRefinable": false,
+      "type": "ItemAssetEtc",
+      "iconFile": "items/ef10d0864f8d2cf41a81497417595ca2.png"
+    },
+    {
+      "guid": "5a62fa3deadc7494b9c3f355b8f7a786",
+      "name": "Red Slime soul",
+      "description": "Contains a monster soul, use with caution",
+      "weight": 1,
+      "buyPrice": 10,
+      "requiredLevel": 0,
+      "isStackable": true,
+      "isRefinable": false,
+      "type": "ItemAssetSoul",
+      "soulType": "Weapon",
+      "bonuses": [
+        "+10% damage to Fire enemies"
+      ],
+      "iconFile": "items/5a62fa3deadc7494b9c3f355b8f7a786.png"
+    },
+    {
+      "guid": "46b61cff5e09be54893ca98708c929ae",
+      "name": "Yellow Slime soul",
+      "description": "Contains a monster soul, use with caution",
+      "weight": 1,
+      "buyPrice": 10,
+      "requiredLevel": 0,
+      "isStackable": true,
+      "isRefinable": false,
+      "type": "ItemAssetSoul",
+      "soulType": "Weapon",
+      "bonuses": [
+        "+10% damage to Earth enemies"
+      ],
+      "iconFile": "items/46b61cff5e09be54893ca98708c929ae.png"
+    },
+    {
+      "guid": "7ddc6ba2a4bcb8f46b27cba49d4a8405",
+      "name": "Slug Soul",
+      "description": "Contains a monster soul, use with caution",
+      "weight": 1,
+      "buyPrice": 10,
+      "requiredLevel": 0,
+      "isStackable": true,
+      "isRefinable": false,
+      "type": "ItemAssetSoul",
+      "soulType": "Weapon",
+      "bonuses": [
+        "+20 ArmorPenetrationPercent"
+      ],
+      "iconFile": "items/7ddc6ba2a4bcb8f46b27cba49d4a8405.png"
+    },
+    {
+      "guid": "0e2758cee898fc74b96c0a0f15ff3f9d",
+      "name": "Golden Anvil",
+      "description": "This is the favourite Anvon's Anvil, only legends can use it.",
+      "weight": 1,
+      "buyPrice": 50000,
+      "requiredLevel": 0,
+      "isStackable": false,
+      "isRefinable": false,
+      "type": "ItemAssetUsable",
+      "iconFile": "items/0e2758cee898fc74b96c0a0f15ff3f9d.png"
+    },
+    {
+      "guid": "9cea487f3b5e598439f11a287ad2b9d7",
+      "name": "Stone",
+      "description": "A precious stone",
+      "weight": 5,
+      "buyPrice": 15000,
+      "requiredLevel": 0,
+      "isStackable": true,
+      "isRefinable": false,
+      "type": "ItemAssetEtc",
+      "iconFile": "items/9cea487f3b5e598439f11a287ad2b9d7.png"
+    },
+    {
+      "guid": "4d7f3cb09c9e69a4b847d8473db75965",
+      "name": "Spider rock soul",
+      "description": "Contains a monster soul, use with caution",
+      "weight": 1,
+      "buyPrice": 10,
+      "requiredLevel": 0,
+      "isStackable": true,
+      "isRefinable": false,
+      "type": "ItemAssetSoul",
+      "soulType": "Weapon",
+      "bonuses": [
+        "+15 ATK"
+      ],
+      "iconFile": "items/4d7f3cb09c9e69a4b847d8473db75965.png"
+    },
+    {
+      "guid": "f274162e0b17c7445b30a709b7768783",
+      "name": "Spider Ring",
+      "description": "",
+      "weight": 15,
+      "buyPrice": 750,
+      "requiredLevel": 30,
+      "isStackable": false,
+      "isRefinable": false,
+      "type": "ItemAssetArmor",
+      "defense": 0,
+      "soulSlots": 0,
+      "bonuses": [
+        "+2 AGI",
+        "+5% ATK"
+      ],
+      "armorType": "Accessory",
+      "iconFile": "items/f274162e0b17c7445b30a709b7768783.png"
+    },
+    {
+      "guid": "743df4af4bf30a349b09beb31c8364ed",
+      "name": "Linen Strip",
+      "description": "Light thread wound tight and ready.",
+      "weight": 1,
+      "buyPrice": 312,
+      "requiredLevel": 0,
+      "isStackable": true,
+      "isRefinable": false,
+      "type": "ItemAssetEtc",
+      "iconFile": "items/743df4af4bf30a349b09beb31c8364ed.png"
+    },
+    {
+      "guid": "88b321b08feeacb48bfa8fa3de2ccf3e",
+      "name": "Trunk soul",
+      "description": "Contains a monster soul, use with caution",
+      "weight": 1,
+      "buyPrice": 10,
+      "requiredLevel": 0,
+      "isStackable": true,
+      "isRefinable": false,
+      "type": "ItemAssetSoul",
+      "soulType": "Weapon",
+      "bonuses": [
+        "+10 damage on hit"
+      ],
+      "iconFile": "items/88b321b08feeacb48bfa8fa3de2ccf3e.png"
+    },
+    {
+      "guid": "984ea6c77439c05468bfc2881bbd0283",
+      "name": "Wildhog soul",
+      "description": "Contains a monster soul, use with caution",
+      "weight": 1,
+      "buyPrice": 10,
+      "requiredLevel": 0,
+      "isStackable": true,
+      "isRefinable": false,
+      "type": "ItemAssetSoul",
+      "soulType": "Chest",
+      "bonuses": [
+        "+20 ATK"
+      ],
+      "iconFile": "items/984ea6c77439c05468bfc2881bbd0283.png"
+    },
+    {
+      "guid": "41301bc50c4b171459e76c323a6ae60e",
+      "name": "Crude Leather",
+      "description": "Stiff and unrefined, but it holds.",
+      "weight": 3,
+      "buyPrice": 52,
+      "requiredLevel": 0,
+      "isStackable": true,
+      "isRefinable": false,
+      "type": "ItemAssetEtc",
+      "iconFile": "items/41301bc50c4b171459e76c323a6ae60e.png"
+    },
+    {
+      "guid": "f0d0d450c34c674428a290986d1c51be",
+      "name": "Cloth Hood",
+      "description": "Even the smallest shield may turn fate's arrow.",
+      "weight": 25,
+      "buyPrice": 3250,
+      "requiredLevel": 1,
+      "isStackable": false,
+      "isRefinable": true,
+      "type": "ItemAssetArmor",
+      "defense": 1,
+      "soulSlots": 1,
+      "armorType": "Head",
+      "iconFile": "items/f0d0d450c34c674428a290986d1c51be.png"
+    },
+    {
+      "guid": "60727443d8ac8714c8d273dbe505159f",
+      "name": "Backpack",
+      "description": "An empty bag",
+      "weight": 30,
+      "buyPrice": 3500,
+      "requiredLevel": 0,
+      "isStackable": false,
+      "isRefinable": true,
+      "type": "ItemAssetArmor",
+      "defense": 1,
+      "soulSlots": 1,
+      "bonuses": [
+        "+500 MaxWeight"
+      ],
+      "armorType": "Back",
+      "iconFile": "items/60727443d8ac8714c8d273dbe505159f.png"
+    },
+    {
+      "guid": "a0580bd1a7a77224f92bd2cf2747b560",
+      "name": "Archer Bow",
+      "description": "A simple wooden bow",
+      "weight": 15,
+      "buyPrice": 13500,
+      "requiredLevel": 1,
+      "isStackable": false,
+      "isRefinable": true,
+      "type": "ItemAssetWeapon",
+      "defense": 0,
+      "soulSlots": 2,
+      "bonuses": [
+        "+20% physical damage with Bow"
+      ],
+      "damage": 30,
+      "magicDamage": 0,
+      "weaponLevel": 2,
+      "attackRange": 10.0,
+      "element": "Neutral",
+      "attackType": "Physical",
+      "weaponType": "Bow",
+      "iconFile": "items/a0580bd1a7a77224f92bd2cf2747b560.png"
+    },
+    {
+      "guid": "9b5156070cae35f4b902209efd631626",
+      "name": "Bow",
+      "description": "A simple wooden bow",
+      "weight": 15,
+      "buyPrice": 1750,
+      "requiredLevel": 1,
+      "isStackable": false,
+      "isRefinable": true,
+      "type": "ItemAssetWeapon",
+      "defense": 0,
+      "soulSlots": 1,
+      "damage": 5,
+      "magicDamage": 0,
+      "weaponLevel": 1,
+      "attackRange": 10.0,
+      "element": "Neutral",
+      "attackType": "Physical",
+      "weaponType": "Bow",
+      "iconFile": "items/9b5156070cae35f4b902209efd631626.png"
+    },
+    {
+      "guid": "76f81fbc7ce30994a80246d73d44c771",
+      "name": "Drill Spear",
+      "description": "Turns stone into dust, and men into silence.",
+      "weight": 20,
+      "buyPrice": 4600,
+      "requiredLevel": 5,
+      "isStackable": false,
+      "isRefinable": true,
+      "type": "ItemAssetWeapon",
+      "defense": 0,
+      "soulSlots": 3,
+      "damage": 18,
+      "magicDamage": 0,
+      "weaponLevel": 1,
+      "attackRange": 0.0,
+      "element": "Neutral",
+      "attackType": "Physical",
+      "weaponType": "OneHandedSpear",
+      "iconFile": "items/76f81fbc7ce30994a80246d73d44c771.png"
+    },
+    {
+      "guid": "5123973144b20ee4592677f14c7006ca",
+      "name": "Iron-Banded Staff",
+      "description": "Rings keep its promise.",
+      "weight": 126,
+      "buyPrice": 37600,
+      "requiredLevel": 0,
+      "isStackable": false,
+      "isRefinable": true,
+      "type": "ItemAssetWeapon",
+      "defense": 0,
+      "soulSlots": 0,
+      "damage": 0,
+      "magicDamage": 50,
+      "weaponLevel": 2,
+      "attackRange": 10.0,
+      "element": "Neutral",
+      "attackType": "Magical",
+      "weaponType": "TwoHandedStaff",
+      "iconFile": "items/5123973144b20ee4592677f14c7006ca.png"
+    },
+    {
+      "guid": "76de058be53aed249b92b265e75b30cc",
+      "name": "Iron Boot Knife",
+      "description": "Hidden more than admired.",
+      "weight": 15,
+      "buyPrice": 11500,
+      "requiredLevel": 12,
+      "isStackable": false,
+      "isRefinable": true,
+      "type": "ItemAssetWeapon",
+      "defense": 0,
+      "soulSlots": 1,
+      "damage": 25,
+      "magicDamage": 0,
+      "weaponLevel": 2,
+      "attackRange": 2.5,
+      "element": "Neutral",
+      "attackType": "Physical",
+      "weaponType": "Dagger",
+      "iconFile": "items/76de058be53aed249b92b265e75b30cc.png"
+    },
+    {
+      "guid": "4bba1a2f2494ac24c87eed3f61a4093d",
+      "name": "Iron Face Shield",
+      "description": "Takes dents so you don't.",
+      "weight": 118,
+      "buyPrice": 22200,
+      "requiredLevel": 0,
+      "isStackable": false,
+      "isRefinable": true,
+      "type": "ItemAssetWeapon",
+      "defense": 3,
+      "soulSlots": 0,
+      "damage": 0,
+      "magicDamage": 0,
+      "weaponLevel": 3,
+      "attackRange": 0.0,
+      "element": "Neutral",
+      "attackType": "Physical",
+      "weaponType": "Shield",
+      "iconFile": "items/4bba1a2f2494ac24c87eed3f61a4093d.png"
+    },
+    {
+      "guid": "de76cbbfbe8f38e41859f58bd6e6dc3d",
+      "name": "Iron Fell Axe",
+      "description": "Drops trunks without talk.",
+      "weight": 200,
+      "buyPrice": 50000,
+      "requiredLevel": 0,
+      "isStackable": false,
+      "isRefinable": true,
+      "type": "ItemAssetWeapon",
+      "defense": 0,
+      "soulSlots": 1,
+      "damage": 75,
+      "magicDamage": 0,
+      "weaponLevel": 2,
+      "attackRange": 0.0,
+      "element": "Neutral",
+      "attackType": "Physical",
+      "weaponType": "TwoHandedAxe",
+      "iconFile": "items/de76cbbfbe8f38e41859f58bd6e6dc3d.png"
+    },
+    {
+      "guid": "0ae1caa841ac4c94195eaf3b5f4fefb7",
+      "name": "Iron Great Sword",
+      "description": "Build for the old gods...",
+      "weight": 90,
+      "buyPrice": 47000,
+      "requiredLevel": 0,
+      "isStackable": false,
+      "isRefinable": true,
+      "type": "ItemAssetWeapon",
+      "defense": 0,
+      "soulSlots": 1,
+      "damage": 95,
+      "magicDamage": 0,
+      "weaponLevel": 2,
+      "attackRange": 3.0,
+      "element": "Neutral",
+      "attackType": "Physical",
+      "weaponType": "TwoHandedSword",
+      "iconFile": "items/0ae1caa841ac4c94195eaf3b5f4fefb7.png"
+    },
+    {
+      "guid": "ddda40da3517cad489b08076e4137507",
+      "name": "Iron Mace",
+      "description": "",
+      "weight": 100,
+      "buyPrice": 12000,
+      "requiredLevel": 0,
+      "isStackable": false,
+      "isRefinable": true,
+      "type": "ItemAssetWeapon",
+      "defense": 0,
+      "soulSlots": 1,
+      "damage": 35,
+      "magicDamage": 0,
+      "weaponLevel": 1,
+      "attackRange": 0.0,
+      "element": "Neutral",
+      "attackType": "Physical",
+      "weaponType": "OneHandedMace",
+      "iconFile": "items/ddda40da3517cad489b08076e4137507.png"
+    },
+    {
+      "guid": "15697baea11541f4da8ad6c2f7651d75",
+      "name": "Chainmail Hauberk",
+      "description": "Woven iron, woven hope.",
+      "weight": 200,
+      "buyPrice": 16000,
+      "requiredLevel": 10,
+      "isStackable": false,
+      "isRefinable": true,
+      "type": "ItemAssetArmor",
+      "defense": 3,
+      "soulSlots": 0,
+      "armorType": "Chest",
+      "iconFile": "items/15697baea11541f4da8ad6c2f7651d75.png"
+    },
+    {
+      "guid": "2c8aed916de8ed848b74ac97e9f5c3ce",
+      "name": "Leather Strip",
+      "description": "Worn smooth by a thousand grips.",
+      "weight": 2,
+      "buyPrice": 342,
+      "requiredLevel": 0,
+      "isStackable": true,
+      "isRefinable": false,
+      "type": "ItemAssetEtc",
+      "iconFile": "items/2c8aed916de8ed848b74ac97e9f5c3ce.png"
+    },
+    {
+      "guid": "4e86bff4de40f84408019d2b91b79b79",
+      "name": "Leather Tunic",
+      "description": "Tanned hide, hardened hearts.",
+      "weight": 100,
+      "buyPrice": 9000,
+      "requiredLevel": 5,
+      "isStackable": false,
+      "isRefinable": true,
+      "type": "ItemAssetArmor",
+      "defense": 2,
+      "soulSlots": 0,
+      "armorType": "Chest",
+      "iconFile": "items/4e86bff4de40f84408019d2b91b79b79.png"
+    },
+    {
+      "guid": "0334c8062f931a64c9ebd0935deb176f",
+      "name": "Linen Shirt",
+      "description": "The humblest thread may weave great deeds.",
+      "weight": 30,
+      "buyPrice": 3500,
+      "requiredLevel": 1,
+      "isStackable": false,
+      "isRefinable": true,
+      "type": "ItemAssetArmor",
+      "defense": 1,
+      "soulSlots": 0,
+      "armorType": "Chest",
+      "iconFile": "items/0334c8062f931a64c9ebd0935deb176f.png"
+    },
+    {
+      "guid": "130596e374bb200469de90d787d6a09a",
+      "name": "Padded Vest",
+      "description": "Layers of care between flesh and harm.",
+      "weight": 60,
+      "buyPrice": 7000,
+      "requiredLevel": 0,
+      "isStackable": false,
+      "isRefinable": true,
+      "type": "ItemAssetArmor",
+      "defense": 2,
+      "soulSlots": 0,
+      "armorType": "Chest",
+      "iconFile": "items/130596e374bb200469de90d787d6a09a.png"
+    },
+    {
+      "guid": "0dd9566431c50a84dbb1d8cb7642cc62",
+      "name": "Plate Armor",
+      "description": "The anvil's final word.",
+      "weight": 280,
+      "buyPrice": 22000,
+      "requiredLevel": 12,
+      "isStackable": false,
+      "isRefinable": true,
+      "type": "ItemAssetArmor",
+      "defense": 4,
+      "soulSlots": 0,
+      "armorType": "Chest",
+      "iconFile": "items/0dd9566431c50a84dbb1d8cb7642cc62.png"
+    },
+    {
+      "guid": "a1b16cfc39cdb0240b44a511ee5c0916",
+      "name": "Studded Armor",
+      "description": "Each rivet a lesson learned in battle.",
+      "weight": 160,
+      "buyPrice": 14000,
+      "requiredLevel": 8,
+      "isStackable": false,
+      "isRefinable": true,
+      "type": "ItemAssetArmor",
+      "defense": 3,
+      "soulSlots": 0,
+      "armorType": "Chest",
+      "iconFile": "items/a1b16cfc39cdb0240b44a511ee5c0916.png"
+    },
+    {
+      "guid": "4a3dcf29d811a0747a20783cedd5f7b0",
+      "name": "Cloth Shoes",
+      "description": "Soft steps on hard roads.",
+      "weight": 20,
+      "buyPrice": 3000,
+      "requiredLevel": 1,
+      "isStackable": false,
+      "isRefinable": true,
+      "type": "ItemAssetArmor",
+      "defense": 1,
+      "soulSlots": 0,
+      "armorType": "Feet",
+      "iconFile": "items/4a3dcf29d811a0747a20783cedd5f7b0.png"
+    },
+    {
+      "guid": "fe3c6eab2de23354f9128a37e7ff4c5f",
+      "name": "Iron Boots",
+      "description": "Heavy steps, steady purpose.",
+      "weight": 150,
+      "buyPrice": 15500,
+      "requiredLevel": 10,
+      "isStackable": false,
+      "isRefinable": true,
+      "type": "ItemAssetArmor",
+      "defense": 4,
+      "soulSlots": 0,
+      "armorType": "Feet",
+      "iconFile": "items/fe3c6eab2de23354f9128a37e7ff4c5f.png"
+    },
+    {
+      "guid": "deb09a165316205419bd55a6a4bde674",
+      "name": "Leather Boots",
+      "description": "Every mile etched into worn soles.",
+      "weight": 55,
+      "buyPrice": 6750,
+      "requiredLevel": 3,
+      "isStackable": false,
+      "isRefinable": true,
+      "type": "ItemAssetArmor",
+      "defense": 2,
+      "soulSlots": 0,
+      "armorType": "Feet",
+      "iconFile": "items/deb09a165316205419bd55a6a4bde674.png"
+    },
+    {
+      "guid": "a7e59094d97aa344caf97f6014b1c472",
+      "name": "Reinforced Boots",
+      "description": "Footing determines fate.",
+      "weight": 120,
+      "buyPrice": 10000,
+      "requiredLevel": 8,
+      "isStackable": false,
+      "isRefinable": true,
+      "type": "ItemAssetArmor",
+      "defense": 2,
+      "soulSlots": 0,
+      "armorType": "Feet",
+      "iconFile": "items/a7e59094d97aa344caf97f6014b1c472.png"
+    },
+    {
+      "guid": "c5837751255cb5e4a955248f31b89fff",
+      "name": "Steel Sabatons",
+      "description": "March forward; let nothing bar the way.",
+      "weight": 200,
+      "buyPrice": 16000,
+      "requiredLevel": 12,
+      "isStackable": false,
+      "isRefinable": true,
+      "type": "ItemAssetArmor",
+      "defense": 3,
+      "soulSlots": 0,
+      "armorType": "Feet",
+      "iconFile": "items/c5837751255cb5e4a955248f31b89fff.png"
+    },
+    {
+      "guid": "3e59ce5be82ac9540924ef0eef0de0bb",
+      "name": "Sturdy Boots",
+      "description": "The ground beneath remembers your passing.",
+      "weight": 25,
+      "buyPrice": 5250,
+      "requiredLevel": 5,
+      "isStackable": false,
+      "isRefinable": true,
+      "type": "ItemAssetArmor",
+      "defense": 2,
+      "soulSlots": 0,
+      "armorType": "Feet",
+      "iconFile": "items/3e59ce5be82ac9540924ef0eef0de0bb.png"
+    },
+    {
+      "guid": "92bd5cd985d211c41b463b4d25f16ada",
+      "name": "Cloth Hood",
+      "description": "Even the smallest shield may turn fate's arrow.",
+      "weight": 25,
+      "buyPrice": 3250,
+      "requiredLevel": 1,
+      "isStackable": false,
+      "isRefinable": true,
+      "type": "ItemAssetArmor",
+      "defense": 1,
+      "soulSlots": 0,
+      "armorType": "Head",
+      "iconFile": "items/92bd5cd985d211c41b463b4d25f16ada.png"
+    },
+    {
+      "guid": "29f6018783d3ffe4eab02aa0f7c52cbd",
+      "name": "Hardened Helm",
+      "description": "Strength is forged one strike at a time.",
+      "weight": 140,
+      "buyPrice": 13000,
+      "requiredLevel": 8,
+      "isStackable": false,
+      "isRefinable": true,
+      "type": "ItemAssetArmor",
+      "defense": 3,
+      "soulSlots": 0,
+      "armorType": "Head",
+      "iconFile": "items/29f6018783d3ffe4eab02aa0f7c52cbd.png"
+    },
+    {
+      "guid": "fce718608c2af5c408374b5b6df94103",
+      "name": "Iron Helmet",
+      "description": "The smith's hammer sings a song of protection.",
+      "weight": 180,
+      "buyPrice": 19000,
+      "requiredLevel": 10,
+      "isStackable": false,
+      "isRefinable": true,
+      "type": "ItemAssetArmor",
+      "defense": 5,
+      "soulSlots": 0,
+      "armorType": "Head",
+      "iconFile": "items/fce718608c2af5c408374b5b6df94103.png"
+    },
+    {
+      "guid": "db0be2d6a8df1744bb4d6c638999b658",
+      "name": "Padded Coif",
+      "description": "Comfort and caution make strange companions.",
+      "weight": 45,
+      "buyPrice": 6250,
+      "requiredLevel": 0,
+      "isStackable": false,
+      "isRefinable": true,
+      "type": "ItemAssetArmor",
+      "defense": 2,
+      "soulSlots": 0,
+      "armorType": "Head",
+      "iconFile": "items/db0be2d6a8df1744bb4d6c638999b658.png"
+    },
+    {
+      "guid": "588dd0a1f5fc70e41843bbb41a1ce6ce",
+      "name": "Steel Helm",
+      "description": "Iron rusts, but steel endures.",
+      "weight": 220,
+      "buyPrice": 19000,
+      "requiredLevel": 12,
+      "isStackable": false,
+      "isRefinable": true,
+      "type": "ItemAssetArmor",
+      "defense": 4,
+      "soulSlots": 0,
+      "armorType": "Head",
+      "iconFile": "items/588dd0a1f5fc70e41843bbb41a1ce6ce.png"
+    },
+    {
+      "guid": "e6b58ff47484f524eb29216198357cd8",
+      "name": "Knife",
+      "description": "A basic knife.",
+      "weight": 10,
+      "buyPrice": 3500,
+      "requiredLevel": 0,
+      "isStackable": false,
+      "isRefinable": true,
+      "type": "ItemAssetWeapon",
+      "defense": 0,
+      "soulSlots": 3,
+      "damage": 15,
+      "magicDamage": 0,
+      "weaponLevel": 1,
+      "attackRange": 2.5,
+      "element": "Neutral",
+      "attackType": "Physical",
+      "weaponType": "Dagger",
+      "iconFile": "items/e6b58ff47484f524eb29216198357cd8.png"
+    },
+    {
+      "guid": "08b2258334f6a6c41bf49d215d38bd97",
+      "name": "Plain Oak Wand",
+      "description": "A straight piece, steady focus.",
+      "weight": 40,
+      "buyPrice": 5000,
+      "requiredLevel": 0,
+      "isStackable": false,
+      "isRefinable": true,
+      "type": "ItemAssetWeapon",
+      "defense": 0,
+      "soulSlots": 0,
+      "damage": 0,
+      "magicDamage": 12,
+      "weaponLevel": 1,
+      "attackRange": 10.0,
+      "element": "Neutral",
+      "attackType": "Magical",
+      "weaponType": "OneHandedStaff",
+      "iconFile": "items/08b2258334f6a6c41bf49d215d38bd97.png"
+    },
+    {
+      "guid": "2088a8474858c8149885acd8566503b5",
+      "name": "Reinforced Board Shield",
+      "description": "Nails hold quiet together.",
+      "weight": 126,
+      "buyPrice": 14600,
+      "requiredLevel": 0,
+      "isStackable": false,
+      "isRefinable": true,
+      "type": "ItemAssetWeapon",
+      "defense": 2,
+      "soulSlots": 0,
+      "damage": 0,
+      "magicDamage": 0,
+      "weaponLevel": 2,
+      "attackRange": 0.0,
+      "element": "Neutral",
+      "attackType": "Physical",
+      "weaponType": "Shield",
+      "iconFile": "items/2088a8474858c8149885acd8566503b5.png"
+    },
+    {
+      "guid": "15798b5155fe94445af0c8ae3754e1de",
+      "name": "Riveted War Maul",
+      "description": "Built to endure dull days.",
+      "weight": 400,
+      "buyPrice": 123000,
+      "requiredLevel": 0,
+      "isStackable": false,
+      "isRefinable": true,
+      "type": "ItemAssetWeapon",
+      "defense": 0,
+      "soulSlots": 0,
+      "damage": 105,
+      "magicDamage": 0,
+      "weaponLevel": 3,
+      "attackRange": 4.0,
+      "element": "Neutral",
+      "attackType": "Physical",
+      "weaponType": "TwoHandedMace",
+      "iconFile": "items/15798b5155fe94445af0c8ae3754e1de.png"
+    },
+    {
+      "guid": "8a6335da2c1f46148bf5c445ff8801b5",
+      "name": "Robust Bow",
+      "description": "Never miss a shot",
+      "weight": 15,
+      "buyPrice": 8700,
+      "requiredLevel": 0,
+      "isStackable": false,
+      "isRefinable": true,
+      "type": "ItemAssetWeapon",
+      "defense": 0,
+      "soulSlots": 2,
+      "bonuses": [
+        "+10 DEX"
+      ],
+      "damage": 18,
+      "magicDamage": 0,
+      "weaponLevel": 2,
+      "attackRange": 10.0,
+      "element": "Neutral",
+      "attackType": "Physical",
+      "weaponType": "Bow",
+      "iconFile": "items/8a6335da2c1f46148bf5c445ff8801b5.png"
+    },
+    {
+      "guid": "c1a7c4684bc656746903c104feb871ad",
+      "name": "Runed Birch Stick",
+      "description": "Simple marks guide flow.",
+      "weight": 60,
+      "buyPrice": 39000,
+      "requiredLevel": 0,
+      "isStackable": false,
+      "isRefinable": true,
+      "type": "ItemAssetWeapon",
+      "defense": 0,
+      "soulSlots": 0,
+      "damage": 0,
+      "magicDamage": 40,
+      "weaponLevel": 3,
+      "attackRange": 10.0,
+      "element": "Neutral",
+      "attackType": "Magical",
+      "weaponType": "OneHandedStaff",
+      "iconFile": "items/c1a7c4684bc656746903c104feb871ad.png"
+    },
+    {
+      "guid": "31761354633bd1942b1863704f2aaf4d",
+      "name": "Rusting Shiv",
+      "description": "A crude blade",
+      "weight": 15,
+      "buyPrice": 29250,
+      "requiredLevel": 20,
+      "isStackable": false,
+      "isRefinable": true,
+      "type": "ItemAssetWeapon",
+      "defense": 0,
+      "soulSlots": 0,
+      "damage": 45,
+      "magicDamage": 0,
+      "weaponLevel": 3,
+      "attackRange": 2.5,
+      "element": "Neutral",
+      "attackType": "Physical",
+      "weaponType": "Dagger",
+      "iconFile": "items/31761354633bd1942b1863704f2aaf4d.png"
+    },
+    {
+      "guid": "b43604ee0fc6c214f8a74b48dd3c575c",
+      "name": "Short Sword",
+      "description": "Edge enough to learn respect.",
+      "weight": 50,
+      "buyPrice": 25000,
+      "requiredLevel": 0,
+      "isStackable": false,
+      "isRefinable": true,
+      "type": "ItemAssetWeapon",
+      "defense": 0,
+      "soulSlots": 1,
+      "damage": 50,
+      "magicDamage": 0,
+      "weaponLevel": 2,
+      "attackRange": 2.5,
+      "element": "Neutral",
+      "attackType": "Physical",
+      "weaponType": "OneHandedSword",
+      "iconFile": "items/b43604ee0fc6c214f8a74b48dd3c575c.png"
+    },
+    {
+      "guid": "00c45e0741dfea74ba075d93e448c36b",
+      "name": "Staff",
+      "description": "A simple stick",
+      "weight": 15,
+      "buyPrice": 15000,
+      "requiredLevel": 0,
+      "isStackable": false,
+      "isRefinable": true,
+      "type": "ItemAssetWeapon",
+      "defense": 0,
+      "soulSlots": 0,
+      "damage": 0,
+      "magicDamage": 27,
+      "weaponLevel": 2,
+      "attackRange": 10.0,
+      "element": "Neutral",
+      "attackType": "Magical",
+      "weaponType": "OneHandedStaff",
+      "iconFile": "items/00c45e0741dfea74ba075d93e448c36b.png"
+    },
+    {
+      "guid": "a01b807ed6af801418b221990a8e8241",
+      "name": "Steel Chopper",
+      "description": "Sturdy grip; no surprises.",
+      "weight": 120,
+      "buyPrice": 57000,
+      "requiredLevel": 0,
+      "isStackable": false,
+      "isRefinable": true,
+      "type": "ItemAssetWeapon",
+      "defense": 0,
+      "soulSlots": 0,
+      "damage": 65,
+      "magicDamage": 0,
+      "weaponLevel": 3,
+      "attackRange": 0.0,
+      "element": "Neutral",
+      "attackType": "Physical",
+      "weaponType": "OneHandedAxe",
+      "iconFile": "items/a01b807ed6af801418b221990a8e8241.png"
+    },
+    {
+      "guid": "ff36ca3f2180daf40a86a4309a61abd9",
+      "name": "Steel Great Sword",
+      "description": "Build for the old gods...",
+      "weight": 125,
+      "buyPrice": 96750,
+      "requiredLevel": 0,
+      "isStackable": false,
+      "isRefinable": true,
+      "type": "ItemAssetWeapon",
+      "defense": 0,
+      "soulSlots": 0,
+      "damage": 130,
+      "magicDamage": 0,
+      "weaponLevel": 3,
+      "attackRange": 3.0,
+      "element": "Neutral",
+      "attackType": "Physical",
+      "weaponType": "TwoHandedSword",
+      "iconFile": "items/ff36ca3f2180daf40a86a4309a61abd9.png"
+    },
+    {
+      "guid": "c4c8c977c8df1494f8d463c3656405f0",
+      "name": "Steel Sword",
+      "description": "",
+      "weight": 70,
+      "buyPrice": 53700,
+      "requiredLevel": 0,
+      "isStackable": false,
+      "isRefinable": true,
+      "type": "ItemAssetWeapon",
+      "defense": 0,
+      "soulSlots": 0,
+      "damage": 72,
+      "magicDamage": 0,
+      "weaponLevel": 3,
+      "attackRange": 0.0,
+      "element": "Neutral",
+      "attackType": "Physical",
+      "weaponType": "OneHandedSword",
+      "iconFile": "items/c4c8c977c8df1494f8d463c3656405f0.png"
+    },
+    {
+      "guid": "88c10994e8aec334aa649349f64c1271",
+      "name": "Stone Hammer",
+      "description": "Reliable when patience thins.",
+      "weight": 325,
+      "buyPrice": 54500,
+      "requiredLevel": 0,
+      "isStackable": false,
+      "isRefinable": true,
+      "type": "ItemAssetWeapon",
+      "defense": 0,
+      "soulSlots": 1,
+      "damage": 55,
+      "magicDamage": 0,
+      "weaponLevel": 2,
+      "attackRange": 4.0,
+      "element": "Neutral",
+      "attackType": "Physical",
+      "weaponType": "TwoHandedMace",
+      "iconFile": "items/88c10994e8aec334aa649349f64c1271.png"
+    },
+    {
+      "guid": "ff79f1cf3ad065640b43158afab8b4bb",
+      "name": "Stone Hatchet",
+      "description": "Chips more than it bites.",
+      "weight": 80,
+      "buyPrice": 24000,
+      "requiredLevel": 0,
+      "isStackable": false,
+      "isRefinable": true,
+      "type": "ItemAssetWeapon",
+      "defense": 0,
+      "soulSlots": 1,
+      "damage": 40,
+      "magicDamage": 0,
+      "weaponLevel": 2,
+      "attackRange": 0.0,
+      "element": "Neutral",
+      "attackType": "Physical",
+      "weaponType": "OneHandedAxe",
+      "iconFile": "items/ff79f1cf3ad065640b43158afab8b4bb.png"
+    },
+    {
+      "guid": "9ca0e12e66ae3d94aab58a1314a5bb76",
+      "name": "Studded Iron Mace",
+      "description": "Studs hold attention.",
+      "weight": 150,
+      "buyPrice": 38200,
+      "requiredLevel": 0,
+      "isStackable": false,
+      "isRefinable": true,
+      "type": "ItemAssetWeapon",
+      "defense": 0,
+      "soulSlots": 0,
+      "damage": 58,
+      "magicDamage": 0,
+      "weaponLevel": 2,
+      "attackRange": 3.0,
+      "element": "Neutral",
+      "attackType": "Physical",
+      "weaponType": "OneHandedMace",
+      "iconFile": "items/9ca0e12e66ae3d94aab58a1314a5bb76.png"
+    },
+    {
+      "guid": "ead796c02b032c349a7528a1036ccd62",
+      "name": "Sturdy Oak Staff",
+      "description": "Weight steadies wandering thought.",
+      "weight": 90,
+      "buyPrice": 8750,
+      "requiredLevel": 0,
+      "isStackable": false,
+      "isRefinable": true,
+      "type": "ItemAssetWeapon",
+      "defense": 0,
+      "soulSlots": 0,
+      "damage": 0,
+      "magicDamage": 17,
+      "weaponLevel": 1,
+      "attackRange": 10.0,
+      "element": "Neutral",
+      "attackType": "Magical",
+      "weaponType": "TwoHandedStaff",
+      "iconFile": "items/ead796c02b032c349a7528a1036ccd62.png"
+    },
+    {
+      "guid": "7ecaa19b118942f438ca5b08765847ef",
+      "name": "Training Mace",
+      "description": "Stops when talk won\u00e2\u20ac\u2122t.",
+      "weight": 100,
+      "buyPrice": 9400,
+      "requiredLevel": 0,
+      "isStackable": false,
+      "isRefinable": true,
+      "type": "ItemAssetWeapon",
+      "defense": 0,
+      "soulSlots": 3,
+      "damage": 22,
+      "magicDamage": 0,
+      "weaponLevel": 1,
+      "attackRange": 3.0,
+      "element": "Neutral",
+      "attackType": "Physical",
+      "weaponType": "OneHandedMace",
+      "iconFile": "items/7ecaa19b118942f438ca5b08765847ef.png"
+    },
+    {
+      "guid": "70d22ed45bbcf79409bc9b2025c7d4a0",
+      "name": "Training Sword",
+      "description": "A simple yet useful training sword",
+      "weight": 30,
+      "buyPrice": 7500,
+      "requiredLevel": 0,
+      "isStackable": false,
+      "isRefinable": true,
+      "type": "ItemAssetWeapon",
+      "defense": 0,
+      "soulSlots": 3,
+      "damage": 30,
+      "magicDamage": 0,
+      "weaponLevel": 1,
+      "attackRange": 2.5,
+      "element": "Neutral",
+      "attackType": "Physical",
+      "weaponType": "OneHandedSword",
+      "iconFile": "items/70d22ed45bbcf79409bc9b2025c7d4a0.png"
+    },
+    {
+      "guid": "a841e573c0c52834f85988a28781f7e7",
+      "name": "Wood Great Sword",
+      "description": "Weight teaches faster than words.",
+      "weight": 50,
+      "buyPrice": 13500,
+      "requiredLevel": 0,
+      "isStackable": false,
+      "isRefinable": true,
+      "type": "ItemAssetWeapon",
+      "defense": 0,
+      "soulSlots": 3,
+      "damage": 55,
+      "magicDamage": 0,
+      "weaponLevel": 1,
+      "attackRange": 3.0,
+      "element": "Neutral",
+      "attackType": "Physical",
+      "weaponType": "TwoHandedSword",
+      "iconFile": "items/a841e573c0c52834f85988a28781f7e7.png"
+    },
+    {
+      "guid": "a5253322d02ef2c42a5882f5259bae1a",
+      "name": "Woodcutter's Axe",
+      "description": "A plain edge for plain work.",
+      "weight": 60,
+      "buyPrice": 8200,
+      "requiredLevel": 0,
+      "isStackable": false,
+      "isRefinable": true,
+      "type": "ItemAssetWeapon",
+      "defense": 0,
+      "soulSlots": 3,
+      "damage": 26,
+      "magicDamage": 0,
+      "weaponLevel": 1,
+      "attackRange": 0.0,
+      "element": "Neutral",
+      "attackType": "Physical",
+      "weaponType": "OneHandedAxe",
+      "iconFile": "items/a5253322d02ef2c42a5882f5259bae1a.png"
+    },
+    {
+      "guid": "1e192041da8d6384ca345ba551d023ae",
+      "name": "Woodcutter's Hew",
+      "description": "Two hands, one purpose.",
+      "weight": 150,
+      "buyPrice": 16500,
+      "requiredLevel": 0,
+      "isStackable": false,
+      "isRefinable": true,
+      "type": "ItemAssetWeapon",
+      "defense": 0,
+      "soulSlots": 3,
+      "damage": 45,
+      "magicDamage": 0,
+      "weaponLevel": 1,
+      "attackRange": 0.0,
+      "element": "Neutral",
+      "attackType": "Physical",
+      "weaponType": "TwoHandedAxe",
+      "iconFile": "items/1e192041da8d6384ca345ba551d023ae.png"
+    },
+    {
+      "guid": "3eb8bd51cc5a91f4f8caab1d2ecd8012",
+      "name": "Wooden Core",
+      "description": "A \"little\" wooden hammer",
+      "weight": 250,
+      "buyPrice": 20100,
+      "requiredLevel": 0,
+      "isStackable": false,
+      "isRefinable": true,
+      "type": "ItemAssetWeapon",
+      "defense": 0,
+      "soulSlots": 3,
+      "damage": 38,
+      "magicDamage": 0,
+      "weaponLevel": 1,
+      "attackRange": 4.0,
+      "element": "Neutral",
+      "attackType": "Physical",
+      "weaponType": "TwoHandedMace",
+      "iconFile": "items/3eb8bd51cc5a91f4f8caab1d2ecd8012.png"
+    },
+    {
+      "guid": "fef4196a7efbb4e4da2122fc2144107c",
+      "name": "Wooden Round Shield",
+      "description": "Stops what you see coming.",
+      "weight": 102,
+      "buyPrice": 5600,
+      "requiredLevel": 0,
+      "isStackable": false,
+      "isRefinable": true,
+      "type": "ItemAssetWeapon",
+      "defense": 1,
+      "soulSlots": 0,
+      "damage": 0,
+      "magicDamage": 0,
+      "weaponLevel": 1,
+      "attackRange": 0.0,
+      "element": "Neutral",
+      "attackType": "Physical",
+      "weaponType": "Shield",
+      "iconFile": "items/fef4196a7efbb4e4da2122fc2144107c.png"
+    },
+    {
+      "guid": "706d180b9c10e744c9ad3763dfe70215",
+      "name": "Wrapped Ash Staff",
+      "description": "Leather stops slipping doubts.",
+      "weight": 102,
+      "buyPrice": 64050,
+      "requiredLevel": 0,
+      "isStackable": false,
+      "isRefinable": true,
+      "type": "ItemAssetWeapon",
+      "defense": 0,
+      "soulSlots": 0,
+      "damage": 0,
+      "magicDamage": 65,
+      "weaponLevel": 3,
+      "attackRange": 10.0,
+      "element": "Neutral",
+      "attackType": "Magical",
+      "weaponType": "TwoHandedStaff",
+      "iconFile": "items/706d180b9c10e744c9ad3763dfe70215.png"
+    }
+  ],
+  "recipes": [
+    {
+      "guid": "dce9f1a88b50cec408519649af264aeb",
+      "name": "Archer Bow",
+      "category": "Weapons",
+      "resultGuid": "a0580bd1a7a77224f92bd2cf2747b560",
+      "resultType": "ItemAssetWeapon",
+      "ingredients": [
+        {
+          "itemGuid": "4bd40717d4bb69e499bb21c13118ace9",
+          "name": "Wooden Slat",
+          "quantity": 12
+        },
+        {
+          "itemGuid": "743df4af4bf30a349b09beb31c8364ed",
+          "name": "Linen Strip",
+          "quantity": 7
+        }
+      ]
+    },
+    {
+      "guid": "78f19398d3a6e3f4db1984510e9f9ea1",
+      "name": "Bow",
+      "category": "Weapons",
+      "resultGuid": "9b5156070cae35f4b902209efd631626",
+      "resultType": "ItemAssetWeapon",
+      "ingredients": [
+        {
+          "itemGuid": "4bd40717d4bb69e499bb21c13118ace9",
+          "name": "Wooden Slat",
+          "quantity": 5
+        },
+        {
+          "itemGuid": "743df4af4bf30a349b09beb31c8364ed",
+          "name": "Linen Strip",
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "guid": "26a7723b7cdb5bd489a0d5bca52b4af4",
+      "name": "Drill Spear",
+      "category": "Weapons",
+      "resultGuid": "76f81fbc7ce30994a80246d73d44c771",
+      "resultType": "ItemAssetWeapon",
+      "ingredients": [
+        {
+          "itemGuid": "4bd40717d4bb69e499bb21c13118ace9",
+          "name": "Wooden Slat",
+          "quantity": 5
+        }
+      ]
+    },
+    {
+      "guid": "71a42817a26e15c4cae838dec20f9ae4",
+      "name": "Golem Spear",
+      "category": "Weapons",
+      "resultGuid": "1b722b9f653af0e47841fca153f47d53",
+      "resultType": "ItemAssetWeapon",
+      "ingredients": [
+        {
+          "itemGuid": "4bd40717d4bb69e499bb21c13118ace9",
+          "name": "Wooden Slat",
+          "quantity": 10
+        },
+        {
+          "itemGuid": "25b0b957015ddce41a247eb668f1f86c",
+          "name": "Stone Chunk",
+          "quantity": 5
+        }
+      ]
+    },
+    {
+      "guid": "df39731787febc24690f3e7931f49d9f",
+      "name": "Iron-Banded Staff",
+      "category": "Weapons",
+      "resultGuid": "5123973144b20ee4592677f14c7006ca",
+      "resultType": "ItemAssetWeapon",
+      "ingredients": [
+        {
+          "itemGuid": "4bd40717d4bb69e499bb21c13118ace9",
+          "name": "Wooden Slat",
+          "quantity": 20
+        },
+        {
+          "itemGuid": "02dce72135c64fe489e2c0ea6c30f2b3",
+          "name": "Iron Ingot",
+          "quantity": 12
+        }
+      ]
+    },
+    {
+      "guid": "8eeb198a87633af43a450eed6fab072e",
+      "name": "Iron Boot Knife",
+      "category": "Weapons",
+      "resultGuid": "76de058be53aed249b92b265e75b30cc",
+      "resultType": "ItemAssetWeapon",
+      "ingredients": [
+        {
+          "itemGuid": "4bd40717d4bb69e499bb21c13118ace9",
+          "name": "Wooden Slat",
+          "quantity": 10
+        },
+        {
+          "itemGuid": "02dce72135c64fe489e2c0ea6c30f2b3",
+          "name": "Iron Ingot",
+          "quantity": 6
+        }
+      ]
+    },
+    {
+      "guid": "524e0dbf80a3c2b41a809f1ccaecc420",
+      "name": "Iron Face Shield",
+      "category": "Weapons",
+      "resultGuid": "4bba1a2f2494ac24c87eed3f61a4093d",
+      "resultType": "ItemAssetWeapon",
+      "ingredients": [
+        {
+          "itemGuid": "4bd40717d4bb69e499bb21c13118ace9",
+          "name": "Wooden Slat",
+          "quantity": 15
+        },
+        {
+          "itemGuid": "02dce72135c64fe489e2c0ea6c30f2b3",
+          "name": "Iron Ingot",
+          "quantity": 12
+        }
+      ]
+    },
+    {
+      "guid": "be5bfcf6cd4d7a54cbcb8b6932eb3ebb",
+      "name": "Iron Fell Axe",
+      "category": "Weapons",
+      "resultGuid": "de76cbbfbe8f38e41859f58bd6e6dc3d",
+      "resultType": "ItemAssetWeapon",
+      "ingredients": [
+        {
+          "itemGuid": "4bd40717d4bb69e499bb21c13118ace9",
+          "name": "Wooden Slat",
+          "quantity": 10
+        },
+        {
+          "itemGuid": "02dce72135c64fe489e2c0ea6c30f2b3",
+          "name": "Iron Ingot",
+          "quantity": 6
+        },
+        {
+          "itemGuid": "743df4af4bf30a349b09beb31c8364ed",
+          "name": "Linen Strip",
+          "quantity": 6
+        }
+      ]
+    },
+    {
+      "guid": "5bd67ca4d14d16d4799d4850352ec31b",
+      "name": "Iron Great Sword",
+      "category": "Weapons",
+      "resultGuid": "0ae1caa841ac4c94195eaf3b5f4fefb7",
+      "resultType": "ItemAssetWeapon",
+      "ingredients": [
+        {
+          "itemGuid": "4bd40717d4bb69e499bb21c13118ace9",
+          "name": "Wooden Slat",
+          "quantity": 20
+        },
+        {
+          "itemGuid": "02dce72135c64fe489e2c0ea6c30f2b3",
+          "name": "Iron Ingot",
+          "quantity": 12
+        }
+      ]
+    },
+    {
+      "guid": "aa9ab16368e8ec24c919e22d9f190f7f",
+      "name": "Iron Mace",
+      "category": "Weapons",
+      "resultGuid": "ddda40da3517cad489b08076e4137507",
+      "resultType": "ItemAssetWeapon",
+      "ingredients": [
+        {
+          "itemGuid": "4bd40717d4bb69e499bb21c13118ace9",
+          "name": "Wooden Slat",
+          "quantity": 10
+        },
+        {
+          "itemGuid": "02dce72135c64fe489e2c0ea6c30f2b3",
+          "name": "Iron Ingot",
+          "quantity": 6
+        }
+      ]
+    },
+    {
+      "guid": "114f5f55e030a7b4492fa78dc35941b2",
+      "name": "Chainmail Hauberk",
+      "category": "Gear",
+      "resultGuid": "15697baea11541f4da8ad6c2f7651d75",
+      "resultType": "ItemAssetArmor",
+      "ingredients": [
+        {
+          "itemGuid": "2c8aed916de8ed848b74ac97e9f5c3ce",
+          "name": "Leather Strip",
+          "quantity": 9
+        },
+        {
+          "itemGuid": "02dce72135c64fe489e2c0ea6c30f2b3",
+          "name": "Iron Ingot",
+          "quantity": 6
+        }
+      ]
+    },
+    {
+      "guid": "233a5b6c4e753ce49bf2cab172d89c7f",
+      "name": "Leather Tunic",
+      "category": "Gear",
+      "resultGuid": "4e86bff4de40f84408019d2b91b79b79",
+      "resultType": "ItemAssetArmor",
+      "ingredients": [
+        {
+          "itemGuid": "2c8aed916de8ed848b74ac97e9f5c3ce",
+          "name": "Leather Strip",
+          "quantity": 6
+        },
+        {
+          "itemGuid": "743df4af4bf30a349b09beb31c8364ed",
+          "name": "Linen Strip",
+          "quantity": 6
+        }
+      ]
+    },
+    {
+      "guid": "90786d0904fbb864690f4d6a5bba8c9d",
+      "name": "Linen Shirt",
+      "category": "Gear",
+      "resultGuid": "0334c8062f931a64c9ebd0935deb176f",
+      "resultType": "ItemAssetArmor",
+      "ingredients": [
+        {
+          "itemGuid": "743df4af4bf30a349b09beb31c8364ed",
+          "name": "Linen Strip",
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "guid": "05fd933519dc5d845a33673e9c983478",
+      "name": "Padded Vest",
+      "category": "Gear",
+      "resultGuid": "130596e374bb200469de90d787d6a09a",
+      "resultType": "ItemAssetArmor",
+      "ingredients": [
+        {
+          "itemGuid": "2c8aed916de8ed848b74ac97e9f5c3ce",
+          "name": "Leather Strip",
+          "quantity": 6
+        },
+        {
+          "itemGuid": "743df4af4bf30a349b09beb31c8364ed",
+          "name": "Linen Strip",
+          "quantity": 6
+        }
+      ]
+    },
+    {
+      "guid": "1cb5f7055be4d4c4f93aefda9703f023",
+      "name": "Plate Armor",
+      "category": "Gear",
+      "resultGuid": "0dd9566431c50a84dbb1d8cb7642cc62",
+      "resultType": "ItemAssetArmor",
+      "ingredients": [
+        {
+          "itemGuid": "02dce72135c64fe489e2c0ea6c30f2b3",
+          "name": "Iron Ingot",
+          "quantity": 12
+        },
+        {
+          "itemGuid": "743df4af4bf30a349b09beb31c8364ed",
+          "name": "Linen Strip",
+          "quantity": 6
+        }
+      ]
+    },
+    {
+      "guid": "a585f79a32c1c9945ad14fa79ce7bc7d",
+      "name": "Studded Armor",
+      "category": "Gear",
+      "resultGuid": "a1b16cfc39cdb0240b44a511ee5c0916",
+      "resultType": "ItemAssetArmor",
+      "ingredients": [
+        {
+          "itemGuid": "02dce72135c64fe489e2c0ea6c30f2b3",
+          "name": "Iron Ingot",
+          "quantity": 6
+        },
+        {
+          "itemGuid": "2c8aed916de8ed848b74ac97e9f5c3ce",
+          "name": "Leather Strip",
+          "quantity": 5
+        }
+      ]
+    },
+    {
+      "guid": "09414f64e76988d4fb18fec501d37ba3",
+      "name": "Cloth Shoes",
+      "category": "Gear",
+      "resultGuid": "4a3dcf29d811a0747a20783cedd5f7b0",
+      "resultType": "ItemAssetArmor",
+      "ingredients": [
+        {
+          "itemGuid": "2c8aed916de8ed848b74ac97e9f5c3ce",
+          "name": "Leather Strip",
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "guid": "6339043d294396d4faacee670cd92301",
+      "name": "Iron Boots",
+      "category": "Gear",
+      "resultGuid": "fe3c6eab2de23354f9128a37e7ff4c5f",
+      "resultType": "ItemAssetArmor",
+      "ingredients": [
+        {
+          "itemGuid": "02dce72135c64fe489e2c0ea6c30f2b3",
+          "name": "Iron Ingot",
+          "quantity": 10
+        }
+      ]
+    },
+    {
+      "guid": "3a1f63145f5500b47b2fabf61bf981cd",
+      "name": "Leather Boots",
+      "category": "Gear",
+      "resultGuid": "deb09a165316205419bd55a6a4bde674",
+      "resultType": "ItemAssetArmor",
+      "ingredients": [
+        {
+          "itemGuid": "2c8aed916de8ed848b74ac97e9f5c3ce",
+          "name": "Leather Strip",
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "guid": "d130b60f66d3e7646a74146d4ff68fa1",
+      "name": "Reinforced Boots",
+      "category": "Gear",
+      "resultGuid": "a7e59094d97aa344caf97f6014b1c472",
+      "resultType": "ItemAssetArmor",
+      "ingredients": [
+        {
+          "itemGuid": "2c8aed916de8ed848b74ac97e9f5c3ce",
+          "name": "Leather Strip",
+          "quantity": 12
+        }
+      ]
+    },
+    {
+      "guid": "6edbc4962a6050b42a627358d8b51860",
+      "name": "Steel Sabatons",
+      "category": "Gear",
+      "resultGuid": "c5837751255cb5e4a955248f31b89fff",
+      "resultType": "ItemAssetArmor",
+      "ingredients": [
+        {
+          "itemGuid": "2c8aed916de8ed848b74ac97e9f5c3ce",
+          "name": "Leather Strip",
+          "quantity": 8
+        },
+        {
+          "itemGuid": "02dce72135c64fe489e2c0ea6c30f2b3",
+          "name": "Iron Ingot",
+          "quantity": 8
+        }
+      ]
+    },
+    {
+      "guid": "0e0f7c041390ca94ba4088cfd8a26a25",
+      "name": "Sturdy Boots",
+      "category": "Gear",
+      "resultGuid": "3e59ce5be82ac9540924ef0eef0de0bb",
+      "resultType": "ItemAssetArmor",
+      "ingredients": [
+        {
+          "itemGuid": "2c8aed916de8ed848b74ac97e9f5c3ce",
+          "name": "Leather Strip",
+          "quantity": 6
+        }
+      ]
+    },
+    {
+      "guid": "12403235ab6fdd6448a3c9b50598624c",
+      "name": "Cloth Hood",
+      "category": "Gear",
+      "resultGuid": "92bd5cd985d211c41b463b4d25f16ada",
+      "resultType": "ItemAssetArmor",
+      "ingredients": [
+        {
+          "itemGuid": "743df4af4bf30a349b09beb31c8364ed",
+          "name": "Linen Strip",
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "guid": "99d0ef4115a228e41b4c8d7e05b65d8d",
+      "name": "Hardened Helm",
+      "category": "Gear",
+      "resultGuid": "29f6018783d3ffe4eab02aa0f7c52cbd",
+      "resultType": "ItemAssetArmor",
+      "ingredients": [
+        {
+          "itemGuid": "743df4af4bf30a349b09beb31c8364ed",
+          "name": "Linen Strip",
+          "quantity": 12
+        },
+        {
+          "itemGuid": "02dce72135c64fe489e2c0ea6c30f2b3",
+          "name": "Iron Ingot",
+          "quantity": 6
+        }
+      ]
+    },
+    {
+      "guid": "146ec85baaf5b464b92b0d157de1d000",
+      "name": "Iron Helmet",
+      "category": "Gear",
+      "resultGuid": "fce718608c2af5c408374b5b6df94103",
+      "resultType": "ItemAssetArmor",
+      "ingredients": [
+        {
+          "itemGuid": "02dce72135c64fe489e2c0ea6c30f2b3",
+          "name": "Iron Ingot",
+          "quantity": 10
+        }
+      ]
+    },
+    {
+      "guid": "0a7be2a9aa921c245948ea33a83d3c20",
+      "name": "Padded Coif",
+      "category": "Gear",
+      "resultGuid": "db0be2d6a8df1744bb4d6c638999b658",
+      "resultType": "ItemAssetArmor",
+      "ingredients": [
+        {
+          "itemGuid": "2c8aed916de8ed848b74ac97e9f5c3ce",
+          "name": "Leather Strip",
+          "quantity": 6
+        },
+        {
+          "itemGuid": "02dce72135c64fe489e2c0ea6c30f2b3",
+          "name": "Iron Ingot",
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "guid": "29272bde98a48da49ad77ae6a910c1f2",
+      "name": "Steel Helm",
+      "category": "Gear",
+      "resultGuid": "588dd0a1f5fc70e41843bbb41a1ce6ce",
+      "resultType": "ItemAssetArmor",
+      "ingredients": [
+        {
+          "itemGuid": "02dce72135c64fe489e2c0ea6c30f2b3",
+          "name": "Iron Ingot",
+          "quantity": 9
+        }
+      ]
+    },
+    {
+      "guid": "94e9b8e4e882c0b4aaca2594ad67396f",
+      "name": "Javelin",
+      "category": "Weapons",
+      "resultGuid": "1b7d9836fec73b64fa564eb55a4a7048",
+      "resultType": "ItemAssetWeapon",
+      "ingredients": [
+        {
+          "itemGuid": "4bd40717d4bb69e499bb21c13118ace9",
+          "name": "Wooden Slat",
+          "quantity": 15
+        },
+        {
+          "itemGuid": "02dce72135c64fe489e2c0ea6c30f2b3",
+          "name": "Iron Ingot",
+          "quantity": 12
+        }
+      ]
+    },
+    {
+      "guid": "8a195baf72c8a3c4fa168ef6cd9043ff",
+      "name": "Knife",
+      "category": "Weapons",
+      "resultGuid": "e6b58ff47484f524eb29216198357cd8",
+      "resultType": "ItemAssetWeapon",
+      "ingredients": [
+        {
+          "itemGuid": "4bd40717d4bb69e499bb21c13118ace9",
+          "name": "Wooden Slat",
+          "quantity": 5
+        }
+      ]
+    },
+    {
+      "guid": "0a98f51c74b4ce543a6c34aed0e6eb32",
+      "name": "Plain Oak Wand",
+      "category": "Weapons",
+      "resultGuid": "08b2258334f6a6c41bf49d215d38bd97",
+      "resultType": "ItemAssetWeapon",
+      "ingredients": [
+        {
+          "itemGuid": "4bd40717d4bb69e499bb21c13118ace9",
+          "name": "Wooden Slat",
+          "quantity": 5
+        }
+      ]
+    },
+    {
+      "guid": "ef78cab668993e24b87830ba3fdb3172",
+      "name": "Reinforced Board Shield",
+      "category": "Weapons",
+      "resultGuid": "2088a8474858c8149885acd8566503b5",
+      "resultType": "ItemAssetWeapon",
+      "ingredients": [
+        {
+          "itemGuid": "4bd40717d4bb69e499bb21c13118ace9",
+          "name": "Wooden Slat",
+          "quantity": 10
+        },
+        {
+          "itemGuid": "02dce72135c64fe489e2c0ea6c30f2b3",
+          "name": "Iron Ingot",
+          "quantity": 6
+        }
+      ]
+    },
+    {
+      "guid": "82d8db60f6907694fa03d6b5216e0003",
+      "name": "Riveted War Maul",
+      "category": "Weapons",
+      "resultGuid": "15798b5155fe94445af0c8ae3754e1de",
+      "resultType": "ItemAssetWeapon",
+      "ingredients": [
+        {
+          "itemGuid": "4bd40717d4bb69e499bb21c13118ace9",
+          "name": "Wooden Slat",
+          "quantity": 30
+        },
+        {
+          "itemGuid": "25b0b957015ddce41a247eb668f1f86c",
+          "name": "Stone Chunk",
+          "quantity": 30
+        }
+      ]
+    },
+    {
+      "guid": "72c84a46eba53ef4f8fdc1734b305c64",
+      "name": "Robust Bow",
+      "category": "Weapons",
+      "resultGuid": "8a6335da2c1f46148bf5c445ff8801b5",
+      "resultType": "ItemAssetWeapon",
+      "ingredients": [
+        {
+          "itemGuid": "4bd40717d4bb69e499bb21c13118ace9",
+          "name": "Wooden Slat",
+          "quantity": 10
+        },
+        {
+          "itemGuid": "743df4af4bf30a349b09beb31c8364ed",
+          "name": "Linen Strip",
+          "quantity": 6
+        }
+      ]
+    },
+    {
+      "guid": "2f9db1b2ca4bf014e8f7d1264bdd36dc",
+      "name": "Runed Birch Stick",
+      "category": "Weapons",
+      "resultGuid": "c1a7c4684bc656746903c104feb871ad",
+      "resultType": "ItemAssetWeapon",
+      "ingredients": [
+        {
+          "itemGuid": "4bd40717d4bb69e499bb21c13118ace9",
+          "name": "Wooden Slat",
+          "quantity": 15
+        },
+        {
+          "itemGuid": "2c8aed916de8ed848b74ac97e9f5c3ce",
+          "name": "Leather Strip",
+          "quantity": 12
+        }
+      ]
+    },
+    {
+      "guid": "a7a40928b4b16884abfada75d40dc3ac",
+      "name": "Rusting Shiv",
+      "category": "Weapons",
+      "resultGuid": "31761354633bd1942b1863704f2aaf4d",
+      "resultType": "ItemAssetWeapon",
+      "ingredients": [
+        {
+          "itemGuid": "4bd40717d4bb69e499bb21c13118ace9",
+          "name": "Wooden Slat",
+          "quantity": 15
+        },
+        {
+          "itemGuid": "02dce72135c64fe489e2c0ea6c30f2b3",
+          "name": "Iron Ingot",
+          "quantity": 9
+        }
+      ]
+    },
+    {
+      "guid": "ebfb77ac848c0d847971ee20a05d5f88",
+      "name": "Short Sword",
+      "category": "Weapons",
+      "resultGuid": "b43604ee0fc6c214f8a74b48dd3c575c",
+      "resultType": "ItemAssetWeapon",
+      "ingredients": [
+        {
+          "itemGuid": "4bd40717d4bb69e499bb21c13118ace9",
+          "name": "Wooden Slat",
+          "quantity": 10
+        },
+        {
+          "itemGuid": "02dce72135c64fe489e2c0ea6c30f2b3",
+          "name": "Iron Ingot",
+          "quantity": 10
+        }
+      ]
+    },
+    {
+      "guid": "b70b1fdd6bc287b498d08f975d7917c7",
+      "name": "Staff",
+      "category": "Weapons",
+      "resultGuid": "00c45e0741dfea74ba075d93e448c36b",
+      "resultType": "ItemAssetWeapon",
+      "ingredients": [
+        {
+          "itemGuid": "4bd40717d4bb69e499bb21c13118ace9",
+          "name": "Wooden Slat",
+          "quantity": 10
+        }
+      ]
+    },
+    {
+      "guid": "ebe658f00320b094c9e3cb9c2bdd9385",
+      "name": "Steel Chopper",
+      "category": "Weapons",
+      "resultGuid": "a01b807ed6af801418b221990a8e8241",
+      "resultType": "ItemAssetWeapon",
+      "ingredients": [
+        {
+          "itemGuid": "4bd40717d4bb69e499bb21c13118ace9",
+          "name": "Wooden Slat",
+          "quantity": 15
+        },
+        {
+          "itemGuid": "25b0b957015ddce41a247eb668f1f86c",
+          "name": "Stone Chunk",
+          "quantity": 15
+        },
+        {
+          "itemGuid": "2c8aed916de8ed848b74ac97e9f5c3ce",
+          "name": "Leather Strip",
+          "quantity": 9
+        }
+      ]
+    },
+    {
+      "guid": "515d8d3e06e3b5d449bdc973c5086f90",
+      "name": "Steel Great Sword",
+      "category": "Weapons",
+      "resultGuid": "ff36ca3f2180daf40a86a4309a61abd9",
+      "resultType": "ItemAssetWeapon",
+      "ingredients": [
+        {
+          "itemGuid": "4bd40717d4bb69e499bb21c13118ace9",
+          "name": "Wooden Slat",
+          "quantity": 30
+        },
+        {
+          "itemGuid": "02dce72135c64fe489e2c0ea6c30f2b3",
+          "name": "Iron Ingot",
+          "quantity": 18
+        }
+      ]
+    },
+    {
+      "guid": "8449866460b19ff4fb56a5baeffbdf27",
+      "name": "Steel Sword",
+      "category": "Weapons",
+      "resultGuid": "c4c8c977c8df1494f8d463c3656405f0",
+      "resultType": "ItemAssetWeapon",
+      "ingredients": [
+        {
+          "itemGuid": "4bd40717d4bb69e499bb21c13118ace9",
+          "name": "Wooden Slat",
+          "quantity": 15
+        },
+        {
+          "itemGuid": "02dce72135c64fe489e2c0ea6c30f2b3",
+          "name": "Iron Ingot",
+          "quantity": 9
+        }
+      ]
+    },
+    {
+      "guid": "62ebf040adb2430469c20d9c9d24b3b1",
+      "name": "Stone Hammer",
+      "category": "Weapons",
+      "resultGuid": "88c10994e8aec334aa649349f64c1271",
+      "resultType": "ItemAssetWeapon",
+      "ingredients": [
+        {
+          "itemGuid": "4bd40717d4bb69e499bb21c13118ace9",
+          "name": "Wooden Slat",
+          "quantity": 20
+        },
+        {
+          "itemGuid": "02dce72135c64fe489e2c0ea6c30f2b3",
+          "name": "Iron Ingot",
+          "quantity": 12
+        }
+      ]
+    },
+    {
+      "guid": "f42f7a5598b418544bd1c4d4290be063",
+      "name": "Stone Hatchet",
+      "category": "Weapons",
+      "resultGuid": "ff79f1cf3ad065640b43158afab8b4bb",
+      "resultType": "ItemAssetWeapon",
+      "ingredients": [
+        {
+          "itemGuid": "4bd40717d4bb69e499bb21c13118ace9",
+          "name": "Wooden Slat",
+          "quantity": 10
+        },
+        {
+          "itemGuid": "25b0b957015ddce41a247eb668f1f86c",
+          "name": "Stone Chunk",
+          "quantity": 10
+        },
+        {
+          "itemGuid": "2c8aed916de8ed848b74ac97e9f5c3ce",
+          "name": "Leather Strip",
+          "quantity": 6
+        }
+      ]
+    },
+    {
+      "guid": "7de60a0609c3e5445b024bce50f28456",
+      "name": "Studded Iron Mace",
+      "category": "Weapons",
+      "resultGuid": "9ca0e12e66ae3d94aab58a1314a5bb76",
+      "resultType": "ItemAssetWeapon",
+      "ingredients": [
+        {
+          "itemGuid": "4bd40717d4bb69e499bb21c13118ace9",
+          "name": "Wooden Slat",
+          "quantity": 15
+        },
+        {
+          "itemGuid": "02dce72135c64fe489e2c0ea6c30f2b3",
+          "name": "Iron Ingot",
+          "quantity": 9
+        }
+      ]
+    },
+    {
+      "guid": "d4a9c67b8818144488ab89b4233f38c7",
+      "name": "Sturdy Oak Staff",
+      "category": "Weapons",
+      "resultGuid": "ead796c02b032c349a7528a1036ccd62",
+      "resultType": "ItemAssetWeapon",
+      "ingredients": [
+        {
+          "itemGuid": "4bd40717d4bb69e499bb21c13118ace9",
+          "name": "Wooden Slat",
+          "quantity": 10
+        }
+      ]
+    },
+    {
+      "guid": "329153bfd005d274d8317e13ac13ff33",
+      "name": "Training Mace",
+      "category": "Weapons",
+      "resultGuid": "7ecaa19b118942f438ca5b08765847ef",
+      "resultType": "ItemAssetWeapon",
+      "ingredients": [
+        {
+          "itemGuid": "4bd40717d4bb69e499bb21c13118ace9",
+          "name": "Wooden Slat",
+          "quantity": 5
+        }
+      ]
+    },
+    {
+      "guid": "abdf169230f19c64f8e27248698fd61e",
+      "name": "Training Sword",
+      "category": "Weapons",
+      "resultGuid": "70d22ed45bbcf79409bc9b2025c7d4a0",
+      "resultType": "ItemAssetWeapon",
+      "ingredients": [
+        {
+          "itemGuid": "4bd40717d4bb69e499bb21c13118ace9",
+          "name": "Wooden Slat",
+          "quantity": 5
+        }
+      ]
+    },
+    {
+      "guid": "78ca028f309582145b76c1df20f6e85d",
+      "name": "Wood Great Sword",
+      "category": "Weapons",
+      "resultGuid": "a841e573c0c52834f85988a28781f7e7",
+      "resultType": "ItemAssetWeapon",
+      "ingredients": [
+        {
+          "itemGuid": "4bd40717d4bb69e499bb21c13118ace9",
+          "name": "Wooden Slat",
+          "quantity": 10
+        }
+      ]
+    },
+    {
+      "guid": "871a7de24d385e24cb4cdf8b92191f06",
+      "name": "Woodcutter's Axe",
+      "category": "Weapons",
+      "resultGuid": "a5253322d02ef2c42a5882f5259bae1a",
+      "resultType": "ItemAssetWeapon",
+      "ingredients": [
+        {
+          "itemGuid": "4bd40717d4bb69e499bb21c13118ace9",
+          "name": "Wooden Slat",
+          "quantity": 5
+        }
+      ]
+    },
+    {
+      "guid": "84663224c9730de448804573ad6a0a05",
+      "name": "Woodcutter's Hew",
+      "category": "Weapons",
+      "resultGuid": "1e192041da8d6384ca345ba551d023ae",
+      "resultType": "ItemAssetWeapon",
+      "ingredients": [
+        {
+          "itemGuid": "4bd40717d4bb69e499bb21c13118ace9",
+          "name": "Wooden Slat",
+          "quantity": 5
+        },
+        {
+          "itemGuid": "02dce72135c64fe489e2c0ea6c30f2b3",
+          "name": "Iron Ingot",
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "guid": "9933d2bcce7f2024b965f7e557a33a36",
+      "name": "Wooden Core",
+      "category": "Weapons",
+      "resultGuid": "3eb8bd51cc5a91f4f8caab1d2ecd8012",
+      "resultType": "ItemAssetWeapon",
+      "ingredients": [
+        {
+          "itemGuid": "4bd40717d4bb69e499bb21c13118ace9",
+          "name": "Wooden Slat",
+          "quantity": 10
+        }
+      ]
+    },
+    {
+      "guid": "02de791834b74884e9a926ebec643ece",
+      "name": "Wooden Round Shield",
+      "category": "Weapons",
+      "resultGuid": "fef4196a7efbb4e4da2122fc2144107c",
+      "resultType": "ItemAssetWeapon",
+      "ingredients": [
+        {
+          "itemGuid": "4bd40717d4bb69e499bb21c13118ace9",
+          "name": "Wooden Slat",
+          "quantity": 5
+        }
+      ]
+    },
+    {
+      "guid": "21e0f43209bf4c943a24c255fec37478",
+      "name": "Wrapped Ash Staff",
+      "category": "Weapons",
+      "resultGuid": "706d180b9c10e744c9ad3763dfe70215",
+      "resultType": "ItemAssetWeapon",
+      "ingredients": [
+        {
+          "itemGuid": "4bd40717d4bb69e499bb21c13118ace9",
+          "name": "Wooden Slat",
+          "quantity": 30
+        },
+        {
+          "itemGuid": "743df4af4bf30a349b09beb31c8364ed",
+          "name": "Linen Strip",
+          "quantity": 18
+        }
+      ]
+    }
+  ],
+  "anvils": [
+    {
+      "guid": "0f17967b458a7274a8f016ff70680a3b",
+      "name": "Anvil",
+      "successBonus": 0.0
+    },
+    {
+      "guid": "0e2758cee898fc74b96c0a0f15ff3f9d",
+      "name": "Golden Anvil",
+      "successBonus": 10.0
+    }
+  ],
+  "exportDate": "2026-04-10 04:00:51"
+}
