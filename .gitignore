@@ -11,3 +11,6 @@ desktop.ini
 
 # Claude Code project instructions
 CLAUDE.md
+
+# Git worktrees
+.worktrees/

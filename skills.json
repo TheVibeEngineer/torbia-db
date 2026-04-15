@@ -76,7 +76,7 @@
       ],
       "iconFile": "skills/e943f753d8d9b0a428ae92f75e9369ba.png",
       "targetMask": "Ally",
-      "range": 15.0,
+      "range": 15,
       "afterCastDelay": 0.5,
       "castTimeMs": 0,
       "useCastTimePerLevel": false,
@@ -139,9 +139,9 @@
       ],
       "iconFile": "skills/730d8059ec34a174da01bd7175333dc2.png",
       "targetMask": "Ground",
-      "range": 15.0,
-      "afterCastDelay": 5.0,
-      "castTimeMs": 600.0,
+      "range": 15,
+      "afterCastDelay": 5,
+      "castTimeMs": 600,
       "useCastTimePerLevel": true,
       "canBeCancelled": true,
       "tooltips": [
@@ -160,8 +160,8 @@
       "isPassive": false,
       "archetype": "Berserk",
       "requiredSpentPoints": 40,
-      "x": 1000.0,
-      "y": 0.0,
+      "x": 1000,
+      "y": 0,
       "levels": [
         {
           "level": 1,
@@ -202,8 +202,8 @@
       ],
       "iconFile": "skills/ea6fa25c8674f934d81bbd66f1656135.png",
       "targetMask": "Self",
-      "range": 5.0,
-      "afterCastDelay": 1.0,
+      "range": 5,
+      "afterCastDelay": 1,
       "castTimeMs": 0,
       "useCastTimePerLevel": false,
       "canBeCancelled": false,
@@ -463,9 +463,9 @@
       ],
       "iconFile": "skills/21aeef5db8f65ff4aa79cce34fcc9961.png",
       "targetMask": "Enemy",
-      "range": 15.0,
-      "afterCastDelay": 1.0,
-      "castTimeMs": 500.0,
+      "range": 15,
+      "afterCastDelay": 1,
+      "castTimeMs": 500,
       "useCastTimePerLevel": true,
       "canBeCancelled": true,
       "tooltips": [
@@ -599,8 +599,8 @@
         "Bow"
       ],
       "targetMask": "Enemy",
-      "range": 0.0,
-      "afterCastDelay": 0.0,
+      "range": 0,
+      "afterCastDelay": 0,
       "castTimeMs": 0,
       "useCastTimePerLevel": false,
       "canBeCancelled": false,
@@ -656,8 +656,8 @@
       ],
       "iconFile": "skills/2cf9e57881542024f87d669fc8066d38.png",
       "targetMask": "Enemy",
-      "range": 0.0,
-      "afterCastDelay": 1.0,
+      "range": 0,
+      "afterCastDelay": 1,
       "castTimeMs": 0,
       "useCastTimePerLevel": false,
       "canBeCancelled": false,
@@ -765,8 +765,8 @@
       "isPassive": true,
       "archetype": "Berserk",
       "requiredSpentPoints": 10,
-      "x": 550.0,
-      "y": 0.0,
+      "x": 550,
+      "y": 0,
       "levels": [
         {
           "level": 1,
@@ -833,8 +833,8 @@
       ],
       "iconFile": "skills/3cb808111a6037948b4a6b17002101c3.png",
       "targetMask": "Self",
-      "range": 5.0,
-      "afterCastDelay": 0.0,
+      "range": 5,
+      "afterCastDelay": 0,
       "castTimeMs": 0,
       "useCastTimePerLevel": false,
       "canBeCancelled": false,
@@ -900,8 +900,8 @@
         "OneHandedAxe"
       ],
       "targetMask": "Enemy",
-      "range": 0.0,
-      "afterCastDelay": 0.0,
+      "range": 0,
+      "afterCastDelay": 0,
       "castTimeMs": 0,
       "useCastTimePerLevel": false,
       "canBeCancelled": false,
@@ -966,8 +966,8 @@
         "TwoHandedSword"
       ],
       "targetMask": "Self",
-      "range": 5.0,
-      "afterCastDelay": 1.0,
+      "range": 5,
+      "afterCastDelay": 1,
       "castTimeMs": 0,
       "useCastTimePerLevel": false,
       "canBeCancelled": false,
@@ -1067,8 +1067,8 @@
       ],
       "iconFile": "skills/13de1fa8931fabd46af88dee4be2354c.png",
       "targetMask": "Ally",
-      "range": 15.0,
-      "afterCastDelay": 1.0,
+      "range": 15,
+      "afterCastDelay": 1,
       "castTimeMs": 0,
       "useCastTimePerLevel": false,
       "canBeCancelled": false,
@@ -1124,8 +1124,8 @@
       ],
       "iconFile": "skills/109e1b0881777844eab2ded027352739.png",
       "targetMask": "Self",
-      "range": 5.0,
-      "afterCastDelay": 1.0,
+      "range": 5,
+      "afterCastDelay": 1,
       "castTimeMs": 0,
       "useCastTimePerLevel": false,
       "canBeCancelled": false,
@@ -1187,8 +1187,8 @@
         "TwoHandedMace"
       ],
       "targetMask": "Enemy",
-      "range": 0.0,
-      "afterCastDelay": 0.0,
+      "range": 0,
+      "afterCastDelay": 0,
       "castTimeMs": 0,
       "useCastTimePerLevel": false,
       "canBeCancelled": false,
@@ -1454,9 +1454,9 @@
       ],
       "iconFile": "skills/052abacb92b0f16479ae13054ce6d5af.png",
       "targetMask": "Enemy",
-      "range": 15.0,
-      "afterCastDelay": 1.0,
-      "castTimeMs": 500.0,
+      "range": 15,
+      "afterCastDelay": 1,
+      "castTimeMs": 500,
       "useCastTimePerLevel": true,
       "canBeCancelled": true,
       "tooltips": [
@@ -1515,9 +1515,9 @@
         "TwoHandedStaff"
       ],
       "targetMask": "Ally, Enemy",
-      "range": 15.0,
-      "afterCastDelay": 5.0,
-      "castTimeMs": 300.0,
+      "range": 15,
+      "afterCastDelay": 5,
+      "castTimeMs": 300,
       "useCastTimePerLevel": true,
       "canBeCancelled": true,
       "tooltips": [
@@ -1536,8 +1536,8 @@
       "isPassive": false,
       "archetype": "Priest",
       "requiredSpentPoints": 0,
-      "x": -850.0,
-      "y": -7.430936E-05,
+      "x": -850,
+      "y": -0.00007430936,
       "levels": [
         {
           "level": 1,
@@ -1582,7 +1582,7 @@
         "TwoHandedStaff"
       ],
       "targetMask": "Ally",
-      "range": 15.0,
+      "range": 15,
       "afterCastDelay": 0.5,
       "castTimeMs": 0,
       "useCastTimePerLevel": false,
@@ -1671,9 +1671,9 @@
       ],
       "iconFile": "skills/8950fd804cdfa00439037161da907d64.png",
       "targetMask": "Enemy",
-      "range": 15.0,
-      "afterCastDelay": 1.0,
-      "castTimeMs": 500.0,
+      "range": 15,
+      "afterCastDelay": 1,
+      "castTimeMs": 500,
       "useCastTimePerLevel": true,
       "canBeCancelled": true,
       "tooltips": [
@@ -1763,8 +1763,8 @@
       ],
       "iconFile": "skills/ae76adb40f942fc43b9f02403999fccd.png",
       "targetMask": "Enemy",
-      "range": 15.0,
-      "afterCastDelay": 3.0,
+      "range": 15,
+      "afterCastDelay": 3,
       "castTimeMs": 0,
       "useCastTimePerLevel": false,
       "canBeCancelled": false,
@@ -1877,9 +1877,9 @@
         "Bow"
       ],
       "targetMask": "Enemy",
-      "range": 0.0,
-      "afterCastDelay": 5.0,
-      "castTimeMs": 500.0,
+      "range": 0,
+      "afterCastDelay": 5,
+      "castTimeMs": 500,
       "useCastTimePerLevel": true,
       "canBeCancelled": true,
       "tooltips": [
@@ -1943,8 +1943,8 @@
         "OneHandedSword"
       ],
       "targetMask": "Self",
-      "range": 5.0,
-      "afterCastDelay": 1.0,
+      "range": 5,
+      "afterCastDelay": 1,
       "castTimeMs": 0,
       "useCastTimePerLevel": false,
       "canBeCancelled": false,
@@ -2105,8 +2105,8 @@
         "TwoHandedMace"
       ],
       "targetMask": "Self",
-      "range": 5.0,
-      "afterCastDelay": 1.0,
+      "range": 5,
+      "afterCastDelay": 1,
       "castTimeMs": 0,
       "useCastTimePerLevel": false,
       "canBeCancelled": false,
@@ -2206,9 +2206,9 @@
       ],
       "iconFile": "skills/d9eb43a34c40bbe4291f41dd01e29714.png",
       "targetMask": "Enemy",
-      "range": 15.0,
-      "afterCastDelay": 5.0,
-      "castTimeMs": 500.0,
+      "range": 15,
+      "afterCastDelay": 5,
+      "castTimeMs": 500,
       "useCastTimePerLevel": true,
       "canBeCancelled": false,
       "tooltips": [
@@ -2312,9 +2312,9 @@
       ],
       "iconFile": "skills/707d0569342ed42408d203fe57d78cdd.png",
       "targetMask": "Enemy",
-      "range": 15.0,
-      "afterCastDelay": 1.0,
-      "castTimeMs": 300.0,
+      "range": 15,
+      "afterCastDelay": 1,
+      "castTimeMs": 300,
       "useCastTimePerLevel": true,
       "canBeCancelled": true,
       "tooltips": [
@@ -2411,8 +2411,8 @@
         "TwoHandedMace"
       ],
       "targetMask": "Enemy",
-      "range": 0.0,
-      "afterCastDelay": 3.0,
+      "range": 0,
+      "afterCastDelay": 3,
       "castTimeMs": 0,
       "useCastTimePerLevel": false,
       "canBeCancelled": false,
@@ -2541,9 +2541,9 @@
       ],
       "iconFile": "skills/76d6c458550a4c34295f528fd47bb347.png",
       "targetMask": "Self",
-      "range": 5.0,
-      "afterCastDelay": 2.0,
-      "castTimeMs": 1000.0,
+      "range": 5,
+      "afterCastDelay": 2,
+      "castTimeMs": 1000,
       "useCastTimePerLevel": false,
       "canBeCancelled": true,
       "tooltips": [
@@ -2596,8 +2596,8 @@
       ],
       "iconFile": "skills/27b110c51f5d812409092d1fb78902b3.png",
       "targetMask": "Self",
-      "range": 5.0,
-      "afterCastDelay": 1.0,
+      "range": 5,
+      "afterCastDelay": 1,
       "castTimeMs": 0,
       "useCastTimePerLevel": false,
       "canBeCancelled": false,
@@ -2657,7 +2657,8 @@
           "requiredLevel": 5
         }
       ],
-      "iconFile": "skills/19334f29dd3ada148b3b97066b2b0af1.png"
+      "iconFile": "skills/19334f29dd3ada148b3b97066b2b0af1.png",
+      "condition": "Active when HP ≤ 35%"
     },
     {
       "guid": "66d78b67d8515c942b3f247dcecbc4bd",
@@ -2739,7 +2740,8 @@
           ]
         }
       ],
-      "iconFile": "skills/219707843974d044d9331409385774a3.png"
+      "iconFile": "skills/219707843974d044d9331409385774a3.png",
+      "condition": "Active when HP ≤ 35%"
     },
     {
       "guid": "38c93a8d858282e428ac720cb70b0082",
@@ -2788,9 +2790,9 @@
         "Bow"
       ],
       "targetMask": "Ground",
-      "range": 10.0,
-      "afterCastDelay": 5.0,
-      "castTimeMs": 700.0,
+      "range": 10,
+      "afterCastDelay": 5,
+      "castTimeMs": 700,
       "useCastTimePerLevel": true,
       "canBeCancelled": true,
       "tooltips": [
@@ -2854,8 +2856,8 @@
         "Dagger"
       ],
       "targetMask": "Enemy",
-      "range": 0.0,
-      "afterCastDelay": 5.0,
+      "range": 0,
+      "afterCastDelay": 5,
       "castTimeMs": 0,
       "useCastTimePerLevel": false,
       "canBeCancelled": false,
@@ -2875,8 +2877,8 @@
       "isPassive": true,
       "archetype": "Berserk",
       "requiredSpentPoints": 20,
-      "x": 850.0,
-      "y": -7.0740216E-06,
+      "x": 850,
+      "y": -0.0000070740216,
       "levels": [
         {
           "level": 1,
@@ -2909,7 +2911,8 @@
           ]
         }
       ],
-      "iconFile": "skills/4c45c108936652649af8a7358601ebbb.png"
+      "iconFile": "skills/4c45c108936652649af8a7358601ebbb.png",
+      "condition": "Active when HP ≤ 35%"
     },
     {
       "guid": "5f0604074ba5b554a8286d450edec2ea",
@@ -3009,7 +3012,8 @@
           "requiredLevel": 3
         }
       ],
-      "iconFile": "skills/2c20de59539ac5343adb6dea56a3614b.png"
+      "iconFile": "skills/2c20de59539ac5343adb6dea56a3614b.png",
+      "condition": "Active when HP ≤ 40%"
     },
     {
       "guid": "9d03338495050a5499b816cb9f5b5ba6",
@@ -3082,9 +3086,9 @@
       ],
       "iconFile": "skills/dcacbf87118d84c43853505838384e6f.png",
       "targetMask": "Enemy",
-      "range": 0.0,
-      "afterCastDelay": 3.0,
-      "castTimeMs": 1000.0,
+      "range": 0,
+      "afterCastDelay": 3,
+      "castTimeMs": 1000,
       "useCastTimePerLevel": false,
       "canBeCancelled": false,
       "tooltips": [
@@ -3099,8 +3103,8 @@
       "isPassive": true,
       "archetype": "Berserk",
       "requiredSpentPoints": 0,
-      "x": 250.0,
-      "y": 0.0,
+      "x": 250,
+      "y": 0,
       "levels": [
         {
           "level": 1,
@@ -3180,8 +3184,8 @@
       "isPassive": true,
       "archetype": "Priest",
       "requiredSpentPoints": 0,
-      "x": -700.0,
-      "y": -6.119594E-05,
+      "x": -700,
+      "y": -0.00006119594,
       "levels": [
         {
           "level": 1,
@@ -3264,7 +3268,8 @@
           ]
         }
       ],
-      "iconFile": "skills/203009fc4e0456f40ba6c55272070123.png"
+      "iconFile": "skills/203009fc4e0456f40ba6c55272070123.png",
+      "condition": "Active when HP ≤ 35%"
     },
     {
       "guid": "356f0723fb905b049b54f0ff7bde2180",
@@ -3328,9 +3333,9 @@
         "TwoHandedStaff"
       ],
       "targetMask": "Self",
-      "range": 15.0,
+      "range": 15,
       "afterCastDelay": 0.5,
-      "castTimeMs": 500.0,
+      "castTimeMs": 500,
       "useCastTimePerLevel": true,
       "canBeCancelled": true,
       "tooltips": [
@@ -3384,8 +3389,8 @@
         "Dagger"
       ],
       "targetMask": "Enemy",
-      "range": 0.0,
-      "afterCastDelay": 2.0,
+      "range": 0,
+      "afterCastDelay": 2,
       "castTimeMs": 0,
       "useCastTimePerLevel": false,
       "canBeCancelled": false,
@@ -3485,8 +3490,8 @@
       ],
       "iconFile": "skills/c7541ae0372eb9c4c930361da9aaabc7.png",
       "targetMask": "Self",
-      "range": 0.0,
-      "afterCastDelay": 1.0,
+      "range": 0,
+      "afterCastDelay": 1,
       "castTimeMs": 0,
       "useCastTimePerLevel": false,
       "canBeCancelled": false,
@@ -3548,9 +3553,9 @@
       ],
       "iconFile": "skills/d87d92c245dd0d443a296b99975e3048.png",
       "targetMask": "Ground",
-      "range": 15.0,
-      "afterCastDelay": 5.0,
-      "castTimeMs": 1000.0,
+      "range": 15,
+      "afterCastDelay": 5,
+      "castTimeMs": 1000,
       "useCastTimePerLevel": true,
       "canBeCancelled": true,
       "tooltips": [
@@ -3706,8 +3711,8 @@
         "TwoHandedMace"
       ],
       "targetMask": "Enemy",
-      "range": 0.0,
-      "afterCastDelay": 5.0,
+      "range": 0,
+      "afterCastDelay": 5,
       "castTimeMs": 0,
       "useCastTimePerLevel": false,
       "canBeCancelled": false,
@@ -3767,9 +3772,9 @@
         "TwoHandedStaff"
       ],
       "targetMask": "Self",
-      "range": 15.0,
-      "afterCastDelay": 5.0,
-      "castTimeMs": 400.0,
+      "range": 15,
+      "afterCastDelay": 5,
+      "castTimeMs": 400,
       "useCastTimePerLevel": true,
       "canBeCancelled": true,
       "tooltips": [
@@ -4012,8 +4017,8 @@
       "isPassive": false,
       "archetype": "Priest",
       "requiredSpentPoints": 0,
-      "x": -250.0,
-      "y": -2.18556943E-05,
+      "x": -250,
+      "y": -0.0000218556943,
       "levels": [
         {
           "level": 1,
@@ -4048,9 +4053,9 @@
       ],
       "iconFile": "skills/afa472b64c8c6a84cbcdb0ac54a34efa.png",
       "targetMask": "Ally",
-      "range": 15.0,
-      "afterCastDelay": 1.0,
-      "castTimeMs": 200.0,
+      "range": 15,
+      "afterCastDelay": 1,
+      "castTimeMs": 200,
       "useCastTimePerLevel": false,
       "canBeCancelled": true,
       "tooltips": [
@@ -4215,9 +4220,9 @@
         "TwoHandedStaff"
       ],
       "targetMask": "Ground",
-      "range": 15.0,
-      "afterCastDelay": 5.0,
-      "castTimeMs": 1000.0,
+      "range": 15,
+      "afterCastDelay": 5,
+      "castTimeMs": 1000,
       "useCastTimePerLevel": false,
       "canBeCancelled": true,
       "tooltips": [
@@ -4280,9 +4285,9 @@
         "TwoHandedMace"
       ],
       "targetMask": "Self",
-      "range": 10.0,
-      "afterCastDelay": 2.0,
-      "castTimeMs": 1000.0,
+      "range": 10,
+      "afterCastDelay": 2,
+      "castTimeMs": 1000,
       "useCastTimePerLevel": false,
       "canBeCancelled": false,
       "tooltips": [
@@ -4381,8 +4386,8 @@
       ],
       "iconFile": "skills/e8f9a166ac882ce4e84674dd5a041260.png",
       "targetMask": "Self",
-      "range": 0.0,
-      "afterCastDelay": 1.0,
+      "range": 0,
+      "afterCastDelay": 1,
       "castTimeMs": 0,
       "useCastTimePerLevel": false,
       "canBeCancelled": false,
@@ -4424,9 +4429,9 @@
         "TwoHandedStaff"
       ],
       "targetMask": "Self",
-      "range": 15.0,
+      "range": 15,
       "afterCastDelay": 0.5,
-      "castTimeMs": 500.0,
+      "castTimeMs": 500,
       "useCastTimePerLevel": true,
       "canBeCancelled": true,
       "tooltips": [
@@ -4477,8 +4482,8 @@
       ],
       "iconFile": "skills/61a39b3667a49414c9a8e3ff2082e6df.png",
       "targetMask": "Ground",
-      "range": 3.0,
-      "afterCastDelay": 1.0,
+      "range": 3,
+      "afterCastDelay": 1,
       "castTimeMs": 0,
       "useCastTimePerLevel": false,
       "canBeCancelled": false,
@@ -4588,8 +4593,8 @@
         "Dagger"
       ],
       "targetMask": "Enemy",
-      "range": 0.0,
-      "afterCastDelay": 0.0,
+      "range": 0,
+      "afterCastDelay": 0,
       "castTimeMs": 0,
       "useCastTimePerLevel": false,
       "canBeCancelled": false,
@@ -4683,8 +4688,8 @@
       ],
       "iconFile": "skills/52f4d18a622b52c4a866d7a6f2906fa7.png",
       "targetMask": "Ground",
-      "range": 3.0,
-      "afterCastDelay": 1.0,
+      "range": 3,
+      "afterCastDelay": 1,
       "castTimeMs": 0,
       "useCastTimePerLevel": false,
       "canBeCancelled": false,
@@ -4784,8 +4789,8 @@
         "TwoHandedMace"
       ],
       "targetMask": "Enemy",
-      "range": 0.0,
-      "afterCastDelay": 1.0,
+      "range": 0,
+      "afterCastDelay": 1,
       "castTimeMs": 0,
       "useCastTimePerLevel": false,
       "canBeCancelled": false,
@@ -4850,8 +4855,8 @@
         "Bow"
       ],
       "targetMask": "Enemy",
-      "range": 0.0,
-      "afterCastDelay": 0.0,
+      "range": 0,
+      "afterCastDelay": 0,
       "castTimeMs": 0,
       "useCastTimePerLevel": false,
       "canBeCancelled": false,

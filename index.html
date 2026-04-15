@@ -2952,12 +2952,12 @@ function bpCanLevelSkill(guid) {
       if ((bpBuild.skillLevels[p.skillGuid] || 0) < p.requiredLevel) return false;
     }
   }
-  // Check requiredSpentPoints (per-archetype, not global)
+  // Check requiredSpentPoints (per-archetype, excluding this skill's own points)
   if (s.requiredSpentPoints) {
     let archSpent = 0;
     for (const [g, lv] of Object.entries(bpBuild.skillLevels)) {
       const other = skillMap[g];
-      if (other && other.archetype === s.archetype) archSpent += lv;
+      if (other && other.archetype === s.archetype && g !== guid) archSpent += lv;
     }
     if (archSpent < s.requiredSpentPoints) return false;
   }
@@ -2976,8 +2976,9 @@ function bpSetSkillLevel(guid, level) {
   if (level === 0) delete bpBuild.skillLevels[guid];
   else bpBuild.skillLevels[guid] = level;
 
-  // If reducing, check if any dependent skills need to be reduced too
+  // If reducing, cascade to any skills that can no longer be leveled
   if (level < curLevel) {
+    // Explicit prerequisite cascade
     skillData.skills.forEach(other => {
       if (other.prerequisites) {
         for (const p of other.prerequisites) {
@@ -2985,6 +2986,15 @@ function bpSetSkillLevel(guid, level) {
             bpSetSkillLevel(other.guid, 0);
           }
         }
+      }
+    });
+    // requiredSpentPoints cascade: reducing this skill may drop archetype points
+    // below the threshold that other same-archetype skills need
+    skillData.skills.forEach(other => {
+      if (other.guid !== guid && other.archetype === s.archetype &&
+          other.requiredSpentPoints && (bpBuild.skillLevels[other.guid] || 0) > 0 &&
+          !bpCanLevelSkill(other.guid)) {
+        bpSetSkillLevel(other.guid, 0);
       }
     });
   }
@@ -3061,6 +3071,7 @@ function bpShowSkillDetail(guid) {
     </div>
   </div>`;
   html += `<div style="color:#bbb;font-size:11px;margin-bottom:6px">${s.description || ''}</div>`;
+  if (s.condition) html += `<div style="color:#f4a32a;font-size:10px;margin-bottom:6px">Condition: ${s.condition}</div>`;
 
   // Prerequisites & unlock status
   if (s.prerequisites && s.prerequisites.length > 0) {
