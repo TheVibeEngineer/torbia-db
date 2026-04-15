@@ -31,6 +31,7 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <title>Torebia Game Database</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%231a1a2e'/><line x1='16' y1='4' x2='16' y2='28' stroke='%238fbc8f' stroke-width='2.5' stroke-linecap='round'/><line x1='8' y1='13' x2='24' y2='13' stroke='%238fbc8f' stroke-width='2.5' stroke-linecap='round'/><circle cx='16' cy='13' r='2' fill='%238fbc8f'/></svg>">
 <script>
 const _dev = location.hostname === 'localhost' || location.hostname === '127.0.0.1';
 const _nocache = _dev ? {cache: 'no-store'} : {};
@@ -97,8 +98,9 @@ if (_dev) window.addEventListener('DOMContentLoaded', () => {
   .ingredient-qty { color: #8f8; font-weight: bold; font-size: 13px; }
 
   /* Monster Grid */
-  .monster-grid { width: auto; overflow-y: auto; padding: 10px; border-right: 2px solid #333;
+  .monster-grid { width: auto; overflow-y: auto; padding: 10px;
                   display: grid; grid-template-columns: repeat(5, 100px); gap: 6px; align-content: start; flex-shrink: 0; }
+  .monster-grid-col { display: flex; flex-direction: column; flex-shrink: 0; border-right: 2px solid #333; }
   .monster-card { width: 100px; height: 130px; background: #2a2a3e; border: 2px solid #444; border-radius: 6px;
                   cursor: pointer; overflow: hidden; transition: border-color 0.2s; }
   .monster-card:hover { border-color: #88f; }
@@ -334,9 +336,8 @@ if (_dev) window.addEventListener('DOMContentLoaded', () => {
   .bp-slot-full { grid-column: span 3; }
 
   /* Item picker modal */
-  .bp-picker-overlay { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.7); z-index: 1000;
-                        display: flex; align-items: center; justify-content: center; }
-  .bp-picker { background: #2a2a3e; border: 1px solid #555; border-radius: 8px; width: 420px; max-height: 70vh;
+  .bp-picker-overlay { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.7); z-index: 1000; }
+  .bp-picker { position: fixed; z-index: 1001; background: #2a2a3e; border: 1px solid #555; border-radius: 8px; width: 420px; max-height: 70vh;
                display: flex; flex-direction: column; }
   .bp-picker-header { padding: 10px 12px; border-bottom: 1px solid #444; display: flex; gap: 8px; align-items: center; }
   .bp-picker-header input { flex: 1; background: #1a1a2e; color: #e0d8c8; border: 1px solid #444; padding: 6px 10px;
@@ -474,18 +475,19 @@ if (_dev) window.addEventListener('DOMContentLoaded', () => {
       <a class="dl-btn" href="game-db.zip" download>Download DB</a>
       <span class="dl-note">Open source — MIT License</span>
     </div>
-    Torebia Game Database <span style="font-size:12px;color:#666;letter-spacing:1px">v4.4</span> <a href="#" onclick="showChangelog();return false" style="font-size:11px;color:#888;letter-spacing:0;text-transform:none;text-decoration:none;border-bottom:1px dashed #555;cursor:pointer">(changelog)</a>
+    Torebia Game Database <span style="font-size:12px;color:#666;letter-spacing:1px">v4.4</span>
+    <a href="#" onclick="showChangelog();return false" style="position:absolute;right:15px;font-size:11px;color:#888;letter-spacing:0;text-transform:none;text-decoration:none;border-bottom:1px dashed #555;cursor:pointer">What's New</a>
   </h1>
   <div id="changelogOverlay" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.7);z-index:9999;justify-content:center;align-items:center" onclick="if(event.target===this)this.style.display='none'">
     <div style="background:#1e1e30;border:1px solid #555;border-radius:8px;max-width:700px;width:90%;max-height:80vh;overflow-y:auto;padding:24px 32px;position:relative;color:#e0d8c8;font-size:13px;line-height:1.6">
       <button onclick="document.getElementById('changelogOverlay').style.display='none'" style="position:absolute;top:8px;right:12px;background:none;border:none;color:#888;font-size:20px;cursor:pointer">&times;</button>
+      <h2 style="margin:0 0 16px;font-size:16px;color:#e0d8c8;letter-spacing:1px">What's New</h2>
       <div id="changelogContent" style="white-space:pre-wrap">Loading...</div>
     </div>
   </div>
   <div class="tab-bar">
     <button class="tab-btn active" onclick="switchTab('bestiary')">Bestiary</button>
     <button class="tab-btn" onclick="switchTab('forge')">Forge</button>
-    <button class="tab-btn" onclick="switchTab('skills')">Skills</button>
     <button class="tab-btn" onclick="switchTab('elements')">Elements</button>
     <button class="tab-btn" onclick="switchTab('dps')">DPS Calc</button>
     <button class="tab-btn" onclick="switchTab('build')">Build Planner</button>
@@ -493,18 +495,20 @@ if (_dev) window.addEventListener('DOMContentLoaded', () => {
   </div>
 
   <div class="tab-content active" id="tab-bestiary">
-    <div style="display:flex;justify-content:center;align-items:center;gap:16px;padding:6px">
-      <span id="headerStats" style="color:#8f8;font-size:14px"></span>
-      <select id="bestiarySort" onchange="sortBestiary(this.value)" style="background:#2a2a3e;color:#e0d8c8;border:1px solid #444;padding:4px 8px;border-radius:4px;font-size:12px">
-        <option value="name">Name A-Z</option>
-        <option value="exp-desc">EXP High→Low</option>
-        <option value="exp-asc">EXP Low→High</option>
-        <option value="level-desc">Level High→Low</option>
-        <option value="level-asc">Level Low→High</option>
-      </select>
-    </div>
     <div class="container">
-      <div class="monster-grid" id="monsterGrid"></div>
+      <div class="monster-grid-col">
+        <div style="display:flex;justify-content:center;align-items:center;gap:16px;padding:6px">
+          <span id="headerStats" style="color:#8f8;font-size:14px"></span>
+          <select id="bestiarySort" onchange="sortBestiary(this.value)" style="background:#2a2a3e;color:#e0d8c8;border:1px solid #444;padding:4px 8px;border-radius:4px;font-size:12px">
+            <option value="name">Name A-Z</option>
+            <option value="exp-desc">EXP High→Low</option>
+            <option value="exp-asc">EXP Low→High</option>
+            <option value="level-desc">Level High→Low</option>
+            <option value="level-asc">Level Low→High</option>
+          </select>
+        </div>
+        <div class="monster-grid" id="monsterGrid"></div>
+      </div>
       <div class="detail-panel" id="detailPanel">
         <div class="detail-empty">Select a monster to view details</div>
       </div>
@@ -523,25 +527,6 @@ if (_dev) window.addEventListener('DOMContentLoaded', () => {
     </div>
   </div>
 
-  <div class="tab-content" id="tab-skills">
-    <div class="skill-container">
-      <div style="flex:1;display:flex;flex-direction:column;overflow:hidden">
-        <div class="skill-zoom-controls">
-          <button class="skill-zoom-btn" onclick="zoomSkillTree(-0.1)">−</button>
-          <span class="skill-zoom-label" id="zoomLabel">100%</span>
-          <button class="skill-zoom-btn" onclick="zoomSkillTree(0.1)">+</button>
-          <button class="skill-zoom-btn" onclick="resetSkillZoom()" style="font-size:12px;width:auto;padding:0 10px">Reset</button>
-          <input type="text" id="skillSearch" placeholder="Search skills..." oninput="searchSkills(this.value)" style="margin-left:16px;padding:4px 10px;border-radius:4px;border:1px solid #555;background:#1a1a2e;color:#e0e0e0;font-size:13px;width:180px">
-        </div>
-        <div class="skill-tree-wrap" id="skillTreeWrap" style="flex:1;min-height:0">
-          <div class="skill-tree" id="skillTree"></div>
-        </div>
-      </div>
-      <div class="skill-detail" id="skillDetail">
-        <div class="detail-empty">Select a skill to view details</div>
-      </div>
-    </div>
-  </div>
 
   <div class="tab-content" id="tab-elements">
     <div style="padding:20px;max-width:900px;margin:0 auto;overflow-y:auto;height:calc(100vh - 100px)">
@@ -636,34 +621,34 @@ if (_dev) window.addEventListener('DOMContentLoaded', () => {
         <div class="bp-section">
           <h3>Equipment</h3>
           <div class="bp-equip-grid" style="grid-template-columns:1fr 1fr">
-            <div class="bp-slot" data-slot="Head" onclick="bpOpenPicker('Head')">
+            <div class="bp-slot" data-slot="Head" onclick="bpOpenPicker('Head',this)">
               <span class="bp-slot-label">Head</span>
             </div>
-            <div class="bp-slot" data-slot="HeadMid" onclick="bpOpenPicker('HeadMid')">
+            <div class="bp-slot" data-slot="HeadMid" onclick="bpOpenPicker('HeadMid',this)">
               <span class="bp-slot-label">Head Mid</span>
             </div>
-            <div class="bp-slot" data-slot="HeadLower" onclick="bpOpenPicker('HeadLower')">
+            <div class="bp-slot" data-slot="HeadLower" onclick="bpOpenPicker('HeadLower',this)">
               <span class="bp-slot-label">Head Lower</span>
             </div>
-            <div class="bp-slot" data-slot="Back" onclick="bpOpenPicker('Back')">
+            <div class="bp-slot" data-slot="Back" onclick="bpOpenPicker('Back',this)">
               <span class="bp-slot-label">Back</span>
             </div>
-            <div class="bp-slot" data-slot="WeaponMain" onclick="bpOpenPicker('WeaponMain')">
+            <div class="bp-slot" data-slot="WeaponMain" onclick="bpOpenPicker('WeaponMain',this)">
               <span class="bp-slot-label">Main Weapon</span>
             </div>
-            <div class="bp-slot" data-slot="WeaponSecondary" onclick="bpOpenPicker('WeaponSecondary')">
+            <div class="bp-slot" data-slot="WeaponSecondary" onclick="bpOpenPicker('WeaponSecondary',this)">
               <span class="bp-slot-label">Secondary Weapon</span>
             </div>
-            <div class="bp-slot" data-slot="Feet" onclick="bpOpenPicker('Feet')">
+            <div class="bp-slot" data-slot="Feet" onclick="bpOpenPicker('Feet',this)">
               <span class="bp-slot-label">Feet</span>
             </div>
-            <div class="bp-slot" data-slot="Chest" onclick="bpOpenPicker('Chest')">
+            <div class="bp-slot" data-slot="Chest" onclick="bpOpenPicker('Chest',this)">
               <span class="bp-slot-label">Chest</span>
             </div>
-            <div class="bp-slot" data-slot="Accessory1" onclick="bpOpenPicker('Accessory1')">
+            <div class="bp-slot" data-slot="Accessory1" onclick="bpOpenPicker('Accessory1',this)">
               <span class="bp-slot-label">Accessory</span>
             </div>
-            <div class="bp-slot" data-slot="Accessory2" onclick="bpOpenPicker('Accessory2')">
+            <div class="bp-slot" data-slot="Accessory2" onclick="bpOpenPicker('Accessory2',this)">
               <span class="bp-slot-label">Accessory</span>
             </div>
           </div>
@@ -767,15 +752,16 @@ if (_dev) window.addEventListener('DOMContentLoaded', () => {
     <div class="npc-grid" id="npcGrid"></div>
   </div>
 
-  <div id="bpPickerOverlay" class="bp-picker-overlay" style="display:none" onclick="if(event.target===this)bpClosePicker()">
-    <div class="bp-picker">
-      <div class="bp-picker-header">
-        <input type="text" id="bpPickerSearch" placeholder="Search items..." oninput="bpFilterPicker(this.value)">
-        <button data-testid="bp-picker-clear" onclick="bpClearSlot()">Clear</button>
-        <button data-testid="bp-picker-close" onclick="bpClosePicker()">X</button>
-      </div>
-      <div class="bp-picker-list" id="bpPickerList"></div>
+  <!-- Overlay: backdrop only -->
+  <div id="bpPickerOverlay" class="bp-picker-overlay" style="display:none" onclick="bpClosePicker()"></div>
+  <!-- Picker: direct child of body so position:fixed is always relative to viewport -->
+  <div id="bpPickerPanel" class="bp-picker" style="display:none">
+    <div class="bp-picker-header">
+      <input type="text" id="bpPickerSearch" placeholder="Search items..." oninput="bpFilterPicker(this.value)">
+      <button data-testid="bp-picker-clear" onclick="bpClearSlot()">Clear</button>
+      <button data-testid="bp-picker-close" onclick="bpClosePicker()">X</button>
     </div>
+    <div class="bp-picker-list" id="bpPickerList"></div>
   </div>
 
   <div class="bp-equip-tip" id="bpEquipTip" style="display:none"></div>
@@ -1286,7 +1272,7 @@ function showChangelog() {
       .replace(/^- (.+)$/gm, '<div style="padding-left:12px;margin:1px 0">&bull; $1</div>');
     el.style.whiteSpace = 'normal';
     el.dataset.loaded = '1';
-  }).catch(() => { el.textContent = 'Failed to load changelog.'; });
+  }).catch(() => { el.textContent = 'Failed to load What\'s New content.'; });
 }
 
 function switchTab(tabName) {
@@ -1296,7 +1282,6 @@ function switchTab(tabName) {
   // Update URL hash without scrolling
   history.replaceState(null, '', '#' + tabName);
   if (tabName === 'forge' && !forgeInitialized) initForge();
-  if (tabName === 'skills') initSkills();
   if (tabName === 'elements') renderElementTable();
   if (tabName === 'dps') initDPS();
   if (tabName === 'build') initBuildPlanner();
@@ -2454,12 +2439,40 @@ function bpGetItemsForSlot(slot) {
   return [];
 }
 
-function bpOpenPicker(slot) {
+function bpOpenPicker(slot, trigger) {
   bpPickerSlot = slot;
   const items = bpGetItemsForSlot(slot);
   const overlay = document.getElementById('bpPickerOverlay');
+  const picker = document.getElementById('bpPickerPanel');
   const search = document.getElementById('bpPickerSearch');
-  overlay.style.display = 'flex';
+
+  // Position with left edge at slot's right edge, top aligned to slot's top
+  const pickerW = 420;
+  const pickerH = Math.min(window.innerHeight * 0.7, 500);
+  const pad = 8;
+  if (trigger) {
+    const rect = trigger.getBoundingClientRect();
+
+    // Left edge = right of slot; fall back to left of slot if off-screen
+    let left = rect.right;
+    if (left + pickerW > window.innerWidth - pad) left = rect.left - pickerW;
+    if (left < pad) left = pad;
+
+    // Top aligned to slot; clamp so picker doesn't go below viewport
+    let top = rect.top;
+    if (top + pickerH > window.innerHeight - pad) top = window.innerHeight - pickerH - pad;
+    if (top < pad) top = pad;
+
+    picker.style.left = left + 'px';
+    picker.style.top  = top  + 'px';
+  } else {
+    // Fallback: center of screen
+    picker.style.left = Math.max(pad, (window.innerWidth  - pickerW) / 2) + 'px';
+    picker.style.top  = Math.max(pad, (window.innerHeight - pickerH) / 2) + 'px';
+  }
+
+  overlay.style.display = 'block';
+  picker.style.display = 'flex';
   search.value = '';
   search.focus();
   bpRenderPickerItems(items);
@@ -2467,6 +2480,10 @@ function bpOpenPicker(slot) {
 
 function bpClosePicker() {
   document.getElementById('bpPickerOverlay').style.display = 'none';
+  document.getElementById('bpPickerPanel').style.display = 'none';
+  // Always restore the equipment search handler so a closed soul picker
+  // doesn't corrupt the next equipment picker search
+  document.getElementById('bpPickerSearch').oninput = function() { bpFilterPicker(this.value); };
   bpPickerSlot = null;
 }
 
@@ -2555,7 +2572,7 @@ function bpRenderSlots() {
       return;
     }
     el.style.opacity = '';
-    el.onclick = () => bpOpenPicker(slot);
+    el.onclick = function() { bpOpenPicker(slot, this); };
 
     if (eq) {
       el.className = 'bp-slot filled';
@@ -2574,7 +2591,7 @@ function bpRenderSlots() {
       }
       for (let i = 0; i < (eq.item.soulSlots || 0); i++) {
         const filled = eq.souls[i] ? ' filled' : '';
-        controls += `<span class="bp-soul-dot${filled}" onclick="event.stopPropagation();bpOpenSoulPicker('${slot}',${i})" title="${eq.souls[i] ? eq.souls[i].name : 'Empty soul slot'}"></span>`;
+        controls += `<span class="bp-soul-dot${filled}" onclick="event.stopPropagation();bpOpenSoulPicker('${slot}',${i},this)" title="${eq.souls[i] ? eq.souls[i].name : 'Empty soul slot'}"></span>`;
       }
       if (controls) html += `<div class="bp-slot-controls">${controls}</div>`;
       el.innerHTML = html;
@@ -2694,7 +2711,7 @@ function bpHideEquipTip() {
 // ── Soul Picker ──────────────────────────────────────────────────
 let bpSoulSlot = null, bpSoulIndex = 0;
 
-function bpOpenSoulPicker(slot, index) {
+function bpOpenSoulPicker(slot, index, trigger) {
   bpSoulSlot = slot;
   bpSoulIndex = index;
   const eq = bpBuild.equipment[slot];
@@ -2719,11 +2736,28 @@ function bpOpenSoulPicker(slot, index) {
     return false;
   });
 
-  // Reuse the picker overlay
+  // Reuse the picker overlay + panel
   bpPickerSlot = null; // not an equipment pick
   const overlay = document.getElementById('bpPickerOverlay');
+  const picker = document.getElementById('bpPickerPanel');
   const search = document.getElementById('bpPickerSearch');
-  overlay.style.display = 'flex';
+  const pickerW = 420, pickerH = Math.min(window.innerHeight * 0.7, 500), pad = 8;
+  if (trigger) {
+    const rect = trigger.getBoundingClientRect();
+    let left = rect.right;
+    if (left + pickerW > window.innerWidth - pad) left = rect.left - pickerW;
+    if (left < pad) left = pad;
+    let top = rect.top;
+    if (top + pickerH > window.innerHeight - pad) top = window.innerHeight - pickerH - pad;
+    if (top < pad) top = pad;
+    picker.style.left = left + 'px';
+    picker.style.top  = top  + 'px';
+  } else {
+    picker.style.left = Math.max(pad, (window.innerWidth  - pickerW) / 2) + 'px';
+    picker.style.top  = Math.max(pad, (window.innerHeight - pickerH) / 2) + 'px';
+  }
+  overlay.style.display = 'block';
+  picker.style.display = 'flex';
   search.value = '';
   search.focus();
 
@@ -2743,7 +2777,6 @@ function bpOpenSoulPicker(slot, index) {
   };
   renderSouls(compatible);
 
-  // Hijack search for souls
   document.getElementById('bpPickerSearch').oninput = function() {
     const q = this.value.toLowerCase();
     renderSouls(q ? compatible.filter(s => s.name.toLowerCase().includes(q)) : compatible);
@@ -2756,8 +2789,6 @@ function bpSelectSoul(guid) {
   const eq = bpBuild.equipment[bpSoulSlot];
   if (eq) eq.souls[bpSoulIndex] = soul;
   bpClosePicker();
-  // Restore normal picker search handler
-  document.getElementById('bpPickerSearch').oninput = function() { bpFilterPicker(this.value); };
   bpRenderSlots();
   bpRecalc();
 }
