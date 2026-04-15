@@ -2,20 +2,19 @@
 
 A browser-based game database and build planner. Browse monsters, weapons, armour, skills, and plan your character build — all client-side, no server required beyond a simple static file host.
 
-![Game Database](https://img.shields.io/badge/version-4.4-green) ![License](https://img.shields.io/badge/license-MIT-blue)
+![Game Database](https://img.shields.io/badge/version-4.5-green) ![License](https://img.shields.io/badge/license-MIT-blue)
 
 ---
 
 ## Features
 
 - **Bestiary** — searchable monster list with stats, elements, drops, and HIT/FLEE breakdowns
-- **Forge** — crafting recipes with ingredient cross-references
+- **Armory** — browse all weapons, armour, and soul gems by slot; see craft recipes, drop sources (mob + rate), and shop prices (NPC + cost) in one place; filter by source type (Crafted / Shop / Drop)
 - **Skill Tree** — interactive visual skill tree with tooltips and archetype filtering
 - **Element Table** — full 12×12 element damage reference
-- **DPS Calculator** — stat-based damage calculator with mob targeting and hit chance
 - **Build Planner** — full character planner with:
   - Stat allocation with accurate tiered point costs
-  - Equipment slots with refinement and soul gem sockets
+  - Equipment slots with refinement and soul gem sockets; picker grouped and sorted by type
   - Skill tree integration — passive and buff skills automatically apply to stats and DPS
   - Critical hit DPS modelling
   - Per-skill DPS table with element, DEF, and hit chance applied
@@ -81,7 +80,7 @@ If you spot incorrect stats, missing items, wrong skill values, or anything that
 Game mechanics like damage formulas, stat scaling, and level curves were reverse-engineered from in-game observation. If you have better data points or can confirm/correct a formula, open an issue with your evidence and we'll update the code.
 
 ### Known gaps
-- **Auto-attack DPS not modelled** — ASPD is calculated but never used to compute damage output; the DPS table only covers active skills. The ASPD → attacks/second formula needs in-game verification before this can be built.
+- **Auto-attack DPS not modelled** — ASPD is calculated but never used to compute damage output; the DPS table only covers active skills. Will also require `attackDelayMultiplier` added to weapon data.
   - Frenzy Slash: on-use buff, max 5 stacks, +N ATK per stack (N = skill level) for 10s — would add to auto-attack baseline once that exists
   - Conqueror: on-hit buff, max 3 stacks, +2/4/6 flat damage per stack for 10s — same
   - Lethal Tempo: on-hit buff, max 5 stacks, +1 ASPD per stack, duration scales with skill level (3s–15s) — same
