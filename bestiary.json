@@ -43,16 +43,16 @@
           "dropRate": 90
         },
         {
-          "itemGuid": "e7f7fbb0d33f9fa408573c6968c9699e",
-          "dropRate": 0.1
+          "itemGuid": "b18ea4ad3c4b036449bca40f37dda2c6",
+          "dropRate": 5
         },
         {
           "itemGuid": "2c340a40f7fa0784283f075fad58edb1",
           "dropRate": 0.3
         },
         {
-          "itemGuid": "b18ea4ad3c4b036449bca40f37dda2c6",
-          "dropRate": 5
+          "itemGuid": "e7f7fbb0d33f9fa408573c6968c9699e",
+          "dropRate": 0.1
         }
       ],
       "activeSkills": [],
@@ -109,24 +109,24 @@
           "dropRate": 90
         },
         {
-          "itemGuid": "0121d789d9ce10244af1f7ee4e2d9da3",
-          "dropRate": 5
-        },
-        {
           "itemGuid": "04083afd8ecb8234e8590e053912e870",
           "dropRate": 25
+        },
+        {
+          "itemGuid": "0121d789d9ce10244af1f7ee4e2d9da3",
+          "dropRate": 5
         },
         {
           "itemGuid": "03f1cce23f44e4542863dd9e821f8af1",
           "dropRate": 1
         },
         {
-          "itemGuid": "e5891e4e477040d4bb21bc51966b74fd",
-          "dropRate": 0.1
-        },
-        {
           "itemGuid": "fd766e1d099f9154a8807fb3977631ea",
           "dropRate": 0.5
+        },
+        {
+          "itemGuid": "e5891e4e477040d4bb21bc51966b74fd",
+          "dropRate": 0.1
         }
       ],
       "activeSkills": [
@@ -188,10 +188,6 @@
       "skillCheckInterval": 1,
       "drops": [
         {
-          "itemGuid": "f64ac4fccab45034bb04de1d5d4e3200",
-          "dropRate": 0.1
-        },
-        {
           "itemGuid": "772f2df26a6c60043a91859a5f0edce7",
           "dropRate": 90
         },
@@ -210,6 +206,10 @@
         {
           "itemGuid": "e7658e2bac45acd4d8dffc5fd028fac3",
           "dropRate": 1
+        },
+        {
+          "itemGuid": "f64ac4fccab45034bb04de1d5d4e3200",
+          "dropRate": 0.1
         }
       ],
       "activeSkills": [
@@ -271,20 +271,20 @@
       "skillCheckInterval": 1,
       "drops": [
         {
-          "itemGuid": "4bd40717d4bb69e499bb21c13118ace9",
-          "dropRate": 20
-        },
-        {
-          "itemGuid": "e8718be806cedb64cadec166b9a9d5cb",
-          "dropRate": 0.1
-        },
-        {
           "itemGuid": "25b0b957015ddce41a247eb668f1f86c",
           "dropRate": 80
         },
         {
+          "itemGuid": "4bd40717d4bb69e499bb21c13118ace9",
+          "dropRate": 20
+        },
+        {
           "itemGuid": "c01f0ba11fdf4dd44b390678d64d89ff",
           "dropRate": 0.2
+        },
+        {
+          "itemGuid": "e8718be806cedb64cadec166b9a9d5cb",
+          "dropRate": 0.1
         }
       ],
       "activeSkills": [
@@ -349,8 +349,8 @@
       "skillCheckInterval": 1,
       "drops": [
         {
-          "itemGuid": "238b6b86ca5993d459480bcc67f1c572",
-          "dropRate": 5
+          "itemGuid": "245d60189d5f57b4e8abc8512eea537c",
+          "dropRate": 80
         },
         {
           "itemGuid": "83788f7379e122e4da2f8eeec9ace900",
@@ -361,16 +361,16 @@
           "dropRate": 10
         },
         {
-          "itemGuid": "245d60189d5f57b4e8abc8512eea537c",
-          "dropRate": 80
+          "itemGuid": "b0859f93522691848a85a46cf8dba510",
+          "dropRate": 10
+        },
+        {
+          "itemGuid": "238b6b86ca5993d459480bcc67f1c572",
+          "dropRate": 5
         },
         {
           "itemGuid": "a9dbbaca6b0aa7b4ebf97a0fbf353503",
           "dropRate": 0.1
-        },
-        {
-          "itemGuid": "b0859f93522691848a85a46cf8dba510",
-          "dropRate": 10
         }
       ],
       "activeSkills": [],
@@ -431,12 +431,12 @@
           "dropRate": 60
         },
         {
-          "itemGuid": "3f9e8808135c16d45b6eff061ccecd54",
-          "dropRate": 0.1
-        },
-        {
           "itemGuid": "580819b1b136b4648a7181d7506d3289",
           "dropRate": 0.5
+        },
+        {
+          "itemGuid": "3f9e8808135c16d45b6eff061ccecd54",
+          "dropRate": 0.1
         }
       ],
       "activeSkills": [],
@@ -489,20 +489,20 @@
       "skillCheckInterval": 1,
       "drops": [
         {
-          "itemGuid": "a4ddef20a84f23e4e8a05a21fb5f2f71",
-          "dropRate": 0.1
+          "itemGuid": "25b0b957015ddce41a247eb668f1f86c",
+          "dropRate": 90
         },
         {
           "itemGuid": "475179da82526d64d8dee5beb3408d08",
           "dropRate": 0.3
         },
         {
-          "itemGuid": "25b0b957015ddce41a247eb668f1f86c",
-          "dropRate": 90
-        },
-        {
           "itemGuid": "42e30408c83b23347a7f23ec7a8a5f58",
           "dropRate": 0.3
+        },
+        {
+          "itemGuid": "a4ddef20a84f23e4e8a05a21fb5f2f71",
+          "dropRate": 0.1
         }
       ],
       "activeSkills": [],
@@ -555,8 +555,8 @@
       "skillCheckInterval": 1,
       "drops": [
         {
-          "itemGuid": "778009e7e26a8dc48ba244c64845ed6a",
-          "dropRate": 0.1
+          "itemGuid": "c4eb1113cf902e642bfaaf0a855c8285",
+          "dropRate": 70
         },
         {
           "itemGuid": "2b8f7e0062aa476409aa3e8abc104477",
@@ -567,16 +567,16 @@
           "dropRate": 10
         },
         {
-          "itemGuid": "e722fc1fee7d27b4784c761359aa98d9",
-          "dropRate": 0.3
-        },
-        {
           "itemGuid": "0d465f6040a31104090d967287c75a8b",
           "dropRate": 0.4
         },
         {
-          "itemGuid": "c4eb1113cf902e642bfaaf0a855c8285",
-          "dropRate": 70
+          "itemGuid": "e722fc1fee7d27b4784c761359aa98d9",
+          "dropRate": 0.3
+        },
+        {
+          "itemGuid": "778009e7e26a8dc48ba244c64845ed6a",
+          "dropRate": 0.1
         }
       ],
       "activeSkills": [],
@@ -645,24 +645,24 @@
           "dropRate": 50
         },
         {
-          "itemGuid": "83788f7379e122e4da2f8eeec9ace900",
-          "dropRate": 25
-        },
-        {
           "itemGuid": "72473e874ce86c640aaec7b519373fb3",
           "dropRate": 50
         },
         {
-          "itemGuid": "76b5dd7ec1e01464e82357d054586846",
-          "dropRate": 0.1
+          "itemGuid": "83788f7379e122e4da2f8eeec9ace900",
+          "dropRate": 25
+        },
+        {
+          "itemGuid": "02dce72135c64fe489e2c0ea6c30f2b3",
+          "dropRate": 10
         },
         {
           "itemGuid": "928445db101994941bb2f03c1fa0a205",
           "dropRate": 0.5
         },
         {
-          "itemGuid": "02dce72135c64fe489e2c0ea6c30f2b3",
-          "dropRate": 10
+          "itemGuid": "76b5dd7ec1e01464e82357d054586846",
+          "dropRate": 0.1
         }
       ],
       "activeSkills": [],
@@ -729,16 +729,16 @@
       "skillCheckInterval": 1,
       "drops": [
         {
-          "itemGuid": "1b722b9f653af0e47841fca153f47d53",
-          "dropRate": 1
+          "itemGuid": "97ece8736dc9c9f4d98482721a71c366",
+          "dropRate": 50
         },
         {
           "itemGuid": "25b0b957015ddce41a247eb668f1f86c",
           "dropRate": 25
         },
         {
-          "itemGuid": "97ece8736dc9c9f4d98482721a71c366",
-          "dropRate": 50
+          "itemGuid": "1b722b9f653af0e47841fca153f47d53",
+          "dropRate": 1
         },
         {
           "itemGuid": "c08b02ba13a0dc84a9a057b479b736eb",
@@ -807,16 +807,16 @@
           "dropRate": 15
         },
         {
+          "itemGuid": "02dce72135c64fe489e2c0ea6c30f2b3",
+          "dropRate": 5
+        },
+        {
           "itemGuid": "52d116ce1653f8144af2c956233aaa5a",
           "dropRate": 0.1
         },
         {
           "itemGuid": "0c1cb4560687b974497bf0e0cd9d1f02",
           "dropRate": 0.1
-        },
-        {
-          "itemGuid": "02dce72135c64fe489e2c0ea6c30f2b3",
-          "dropRate": 5
         }
       ],
       "activeSkills": [],
@@ -883,15 +883,19 @@
       "skillCheckInterval": 1,
       "drops": [
         {
-          "itemGuid": "19a2958557c12034097824eb364d82b5",
-          "dropRate": 15
-        },
-        {
           "itemGuid": "77ce119fa44128e46af0feeab2aab5ad",
           "dropRate": 50
         },
         {
+          "itemGuid": "19a2958557c12034097824eb364d82b5",
+          "dropRate": 15
+        },
+        {
           "itemGuid": "97ece8736dc9c9f4d98482721a71c366",
+          "dropRate": 15
+        },
+        {
+          "itemGuid": "2c8aed916de8ed848b74ac97e9f5c3ce",
           "dropRate": 15
         },
         {
@@ -901,10 +905,6 @@
         {
           "itemGuid": "42bccdc0771e1d64eb4eae2f2361e525",
           "dropRate": 0.1
-        },
-        {
-          "itemGuid": "2c8aed916de8ed848b74ac97e9f5c3ce",
-          "dropRate": 15
         }
       ],
       "activeSkills": [],
@@ -957,14 +957,6 @@
       "skillCheckInterval": 1,
       "drops": [
         {
-          "itemGuid": "914bd74ecc4e0c245b98449f369ce42e",
-          "dropRate": 0.1
-        },
-        {
-          "itemGuid": "8fceee6469b2b534e9a1879e199f24fa",
-          "dropRate": 0.1
-        },
-        {
           "itemGuid": "83788f7379e122e4da2f8eeec9ace900",
           "dropRate": 90
         },
@@ -975,6 +967,14 @@
         {
           "itemGuid": "d58f2e3664254b74288e01dac08e4fa9",
           "dropRate": 1
+        },
+        {
+          "itemGuid": "914bd74ecc4e0c245b98449f369ce42e",
+          "dropRate": 0.1
+        },
+        {
+          "itemGuid": "8fceee6469b2b534e9a1879e199f24fa",
+          "dropRate": 0.1
         }
       ],
       "activeSkills": [],
@@ -1031,24 +1031,24 @@
       "skillCheckInterval": 1,
       "drops": [
         {
-          "itemGuid": "009fda97112109b4cb8a09ad236e6fac",
-          "dropRate": 0.1
-        },
-        {
-          "itemGuid": "f43fabcc154e56c458743d6b780f0f99",
-          "dropRate": 0.15
-        },
-        {
-          "itemGuid": "7cc2246adc231174397caa259fe856c2",
-          "dropRate": 0.3
-        },
-        {
           "itemGuid": "83788f7379e122e4da2f8eeec9ace900",
           "dropRate": 90
         },
         {
           "itemGuid": "02dce72135c64fe489e2c0ea6c30f2b3",
           "dropRate": 5
+        },
+        {
+          "itemGuid": "7cc2246adc231174397caa259fe856c2",
+          "dropRate": 0.3
+        },
+        {
+          "itemGuid": "f43fabcc154e56c458743d6b780f0f99",
+          "dropRate": 0.15
+        },
+        {
+          "itemGuid": "009fda97112109b4cb8a09ad236e6fac",
+          "dropRate": 0.1
         }
       ],
       "activeSkills": [],
@@ -1105,20 +1105,20 @@
       "skillCheckInterval": 1,
       "drops": [
         {
-          "itemGuid": "bc62fbd44fe991e4598ffbd70d899c0e",
-          "dropRate": 0.1
-        },
-        {
-          "itemGuid": "7cc2246adc231174397caa259fe856c2",
-          "dropRate": 0.1
-        },
-        {
           "itemGuid": "83788f7379e122e4da2f8eeec9ace900",
           "dropRate": 90
         },
         {
           "itemGuid": "02dce72135c64fe489e2c0ea6c30f2b3",
           "dropRate": 2
+        },
+        {
+          "itemGuid": "bc62fbd44fe991e4598ffbd70d899c0e",
+          "dropRate": 0.1
+        },
+        {
+          "itemGuid": "7cc2246adc231174397caa259fe856c2",
+          "dropRate": 0.1
         }
       ],
       "activeSkills": [],
@@ -1187,12 +1187,12 @@
           "dropRate": 5
         },
         {
-          "itemGuid": "cd0e782edf48801489232940062900da",
-          "dropRate": 0.1
-        },
-        {
           "itemGuid": "ef61aa6ca04db0c46b9639922c6655d5",
           "dropRate": 5
+        },
+        {
+          "itemGuid": "cd0e782edf48801489232940062900da",
+          "dropRate": 0.1
         }
       ],
       "activeSkills": [],
@@ -1265,12 +1265,12 @@
           "dropRate": 5
         },
         {
-          "itemGuid": "014fa28e6916dbb4dbb3f114b3de129f",
-          "dropRate": 0.1
-        },
-        {
           "itemGuid": "0ff578f8927bdc14fb6397af84901fe1",
           "dropRate": 0.4
+        },
+        {
+          "itemGuid": "014fa28e6916dbb4dbb3f114b3de129f",
+          "dropRate": 0.1
         }
       ],
       "activeSkills": [],
@@ -1445,24 +1445,24 @@
       "skillCheckInterval": 1,
       "drops": [
         {
-          "itemGuid": "7ddc6ba2a4bcb8f46b27cba49d4a8405",
-          "dropRate": 0.1
+          "itemGuid": "772f2df26a6c60043a91859a5f0edce7",
+          "dropRate": 50
         },
         {
           "itemGuid": "25b0b957015ddce41a247eb668f1f86c",
           "dropRate": 25
         },
         {
-          "itemGuid": "772f2df26a6c60043a91859a5f0edce7",
-          "dropRate": 50
+          "itemGuid": "9cea487f3b5e598439f11a287ad2b9d7",
+          "dropRate": 1
+        },
+        {
+          "itemGuid": "7ddc6ba2a4bcb8f46b27cba49d4a8405",
+          "dropRate": 0.1
         },
         {
           "itemGuid": "0e2758cee898fc74b96c0a0f15ff3f9d",
           "dropRate": 0.1
-        },
-        {
-          "itemGuid": "9cea487f3b5e598439f11a287ad2b9d7",
-          "dropRate": 1
         }
       ],
       "activeSkills": [],
@@ -1515,20 +1515,20 @@
       "skillCheckInterval": 1,
       "drops": [
         {
-          "itemGuid": "4d7f3cb09c9e69a4b847d8473db75965",
-          "dropRate": 0.1
-        },
-        {
           "itemGuid": "25b0b957015ddce41a247eb668f1f86c",
           "dropRate": 50
+        },
+        {
+          "itemGuid": "743df4af4bf30a349b09beb31c8364ed",
+          "dropRate": 20
         },
         {
           "itemGuid": "f274162e0b17c7445b30a709b7768783",
           "dropRate": 0.2
         },
         {
-          "itemGuid": "743df4af4bf30a349b09beb31c8364ed",
-          "dropRate": 20
+          "itemGuid": "4d7f3cb09c9e69a4b847d8473db75965",
+          "dropRate": 0.1
         }
       ],
       "activeSkills": [],
@@ -1581,16 +1581,16 @@
       "skillCheckInterval": 1,
       "drops": [
         {
+          "itemGuid": "25b0b957015ddce41a247eb668f1f86c",
+          "dropRate": 80
+        },
+        {
           "itemGuid": "4bd40717d4bb69e499bb21c13118ace9",
           "dropRate": 10
         },
         {
           "itemGuid": "88b321b08feeacb48bfa8fa3de2ccf3e",
           "dropRate": 0.1
-        },
-        {
-          "itemGuid": "25b0b957015ddce41a247eb668f1f86c",
-          "dropRate": 80
         }
       ],
       "activeSkills": [
@@ -1651,16 +1651,16 @@
       "skillCheckInterval": 1,
       "drops": [
         {
-          "itemGuid": "984ea6c77439c05468bfc2881bbd0283",
-          "dropRate": 0.1
-        },
-        {
           "itemGuid": "41301bc50c4b171459e76c323a6ae60e",
           "dropRate": 10
         },
         {
           "itemGuid": "f0d0d450c34c674428a290986d1c51be",
           "dropRate": 0.5
+        },
+        {
+          "itemGuid": "984ea6c77439c05468bfc2881bbd0283",
+          "dropRate": 0.1
         },
         {
           "itemGuid": "60727443d8ac8714c8d273dbe505159f",
