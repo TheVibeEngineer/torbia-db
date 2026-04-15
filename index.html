@@ -337,7 +337,7 @@ if (_dev) window.addEventListener('DOMContentLoaded', () => {
 
   /* Item picker modal */
   .bp-picker-overlay { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.7); z-index: 1000; }
-  .bp-picker { position: fixed; z-index: 1001; background: #2a2a3e; border: 1px solid #555; border-radius: 8px; width: 420px; max-height: 70vh;
+  .bp-picker { position: fixed; z-index: 1001; background: #2a2a3e; border: 1px solid #555; border-radius: 8px; width: 420px;
                display: flex; flex-direction: column; }
   .bp-picker-header { padding: 10px 12px; border-bottom: 1px solid #444; display: flex; gap: 8px; align-items: center; }
   .bp-picker-header input { flex: 1; background: #1a1a2e; color: #e0d8c8; border: 1px solid #444; padding: 6px 10px;
@@ -488,8 +488,8 @@ if (_dev) window.addEventListener('DOMContentLoaded', () => {
   <div class="tab-bar">
     <button class="tab-btn active" onclick="switchTab('bestiary')">Bestiary</button>
     <button class="tab-btn" onclick="switchTab('forge')">Armory</button>
-    <button class="tab-btn" onclick="switchTab('elements')">Elements</button>
     <button class="tab-btn" onclick="switchTab('build')">Build Planner</button>
+    <button class="tab-btn" onclick="switchTab('elements')">Elements</button>
     <button class="tab-btn" onclick="switchTab('npcs')">NPCs</button>
   </div>
 
@@ -517,8 +517,7 @@ if (_dev) window.addEventListener('DOMContentLoaded', () => {
   <div class="tab-content" id="tab-forge">
     <div class="forge-container">
       <div style="display:flex;flex-direction:column;height:100%;overflow:hidden;">
-        <div id="armoryTabs" style="flex-shrink:0;display:flex;gap:2px;padding:6px 8px;border-bottom:1px solid #333;background:#1a1a2e;"></div>
-        <div class="forge-tabs" id="forgeTabs" style="flex-shrink:0;display:none;"></div>
+        <div id="armoryTabs" style="flex-shrink:0;display:flex;gap:2px;padding:6px 8px;border-bottom:1px solid #333;background:#1a1a2e;flex-wrap:wrap;"></div>
         <div class="recipe-list" id="recipeList" style="flex:1;overflow-y:auto;"></div>
       </div>
       <div class="forge-detail" id="forgeDetail" style="overflow-y:auto;">
@@ -1213,13 +1212,31 @@ function switchTab(tabName) {
 }
 
 let forgeInitialized = false;
-let selectedForgeCategory = 'Weapons';
-let selectedRecipeIndex = -1;
 let selectedArmoryTab = 'Weapons';
 let armoryEquipData = null;
 let selectedArmoryItemGuid = null;
+let armoryDupeNames = new Set(); // item names shared by >1 item (different soul slots)
 
-const ARMORY_TABS = ['Weapons', 'Armor', 'Souls', 'Recipes'];
+const ARMORY_TABS = ['Weapons', 'Head', 'Head Lower', 'Back', 'Chest', 'Feet', 'Accessory', 'Souls'];
+const ARMORY_TAB_TO_SLOT = {
+  'Head': 'Head', 'Head Lower': 'HeadLower', 'Back': 'Back',
+  'Chest': 'Chest', 'Feet': 'Feet', 'Accessory': 'Accessory'
+};
+
+function buildDupeNameIndex(equipData) {
+  const counts = {};
+  [...(equipData.weapons || []), ...(equipData.armor || [])].forEach(i => {
+    counts[i.name] = (counts[i.name] || 0) + 1;
+  });
+  armoryDupeNames = new Set(Object.entries(counts).filter(([, c]) => c > 1).map(([n]) => n));
+}
+
+function armoryDisplayName(item) {
+  if (armoryDupeNames.has(item.name) && item.soulSlots > 0) {
+    return `${item.name} [${item.soulSlots}]`;
+  }
+  return item.name;
+}
 
 async function initForge() {
   forgeInitialized = true;
@@ -1227,14 +1244,15 @@ async function initForge() {
   // Render top-level armory tabs
   const armoryTabsEl = document.getElementById('armoryTabs');
   armoryTabsEl.innerHTML = ARMORY_TABS.map(t =>
-    `<button class="forge-tab ${t === selectedArmoryTab ? 'active' : ''}" onclick="selectArmoryTab('${t}')" style="font-size:13px">${t}</button>`
+    `<button class="forge-tab ${t === selectedArmoryTab ? 'active' : ''}" onclick="selectArmoryTab('${t}')">${t}</button>`
   ).join('');
 
-  // Load equipment data for Weapons/Armor/Souls tabs
+  // Load equipment data
   if (!armoryEquipData) {
     try {
       const resp = await fetch('equipment.json', _nocache);
       armoryEquipData = await resp.json();
+      buildDupeNameIndex(armoryEquipData);
     } catch(e) { console.error('Failed to load equipment.json for Armory', e); }
   }
 
@@ -1246,31 +1264,8 @@ function selectArmoryTab(tab) {
   document.querySelectorAll('#armoryTabs .forge-tab').forEach(b =>
     b.classList.toggle('active', b.textContent === tab)
   );
-
-  const forgeTabs = document.getElementById('forgeTabs');
-  if (tab === 'Recipes') {
-    forgeTabs.style.display = '';
-    // Init recipe sub-tabs if not done yet
-    if (data?.recipes && data.recipes.length > 0) {
-      const categories = [...new Set(data.recipes.map(r => r.category))].filter(c => c !== 'Gear');
-      forgeTabs.innerHTML = categories.map(c =>
-        `<button class="forge-tab ${c === selectedForgeCategory ? 'active' : ''}" onclick="selectForgeCategory('${c}')">${c}</button>`
-      ).join('');
-    }
-    selectedRecipeIndex = -1;
-    renderRecipeList();
-  } else {
-    forgeTabs.style.display = 'none';
-    selectedArmoryItemGuid = null;
-    renderArmoryEquipList();
-  }
-}
-
-function selectForgeCategory(cat) {
-  selectedForgeCategory = cat;
-  document.querySelectorAll('#forgeTabs .forge-tab').forEach(t => t.classList.toggle('active', t.textContent === cat));
-  selectedRecipeIndex = -1;
-  renderRecipeList();
+  selectedArmoryItemGuid = null;
+  renderArmoryEquipList();
 }
 
 function renderArmoryEquipList() {
@@ -1281,27 +1276,20 @@ function renderArmoryEquipList() {
   let items = [];
   if (selectedArmoryTab === 'Weapons') {
     items = [...armoryEquipData.weapons].sort((a, b) => {
-      const ao = WEAPON_TYPE_ORDER[a.weaponType?.replace(/\s/g,'') ] ?? 99;
-      const bo = WEAPON_TYPE_ORDER[b.weaponType?.replace(/\s/g,'') ] ?? 99;
+      const ao = WEAPON_TYPE_ORDER[a.weaponType?.replace(/\s/g, '')] ?? 99;
+      const bo = WEAPON_TYPE_ORDER[b.weaponType?.replace(/\s/g, '')] ?? 99;
       if (ao !== bo) return ao - bo;
-      const al = a.damage || a.magicDamage || 0;
-      const bl = b.damage || b.magicDamage || 0;
-      return al - bl;
-    });
-  } else if (selectedArmoryTab === 'Armor') {
-    const ARMOR_ORDER = ['Head','HeadMid','HeadLower','Back','Chest','Feet','Accessory'];
-    items = [...armoryEquipData.armor].sort((a, b) => {
-      const ao = ARMOR_ORDER.indexOf(a.armorType) ?? 99;
-      const bo = ARMOR_ORDER.indexOf(b.armorType) ?? 99;
-      if (ao !== bo) return ao - bo;
-      return (a.defense || 0) - (b.defense || 0);
+      return (a.damage || a.magicDamage || 0) - (b.damage || b.magicDamage || 0);
     });
   } else if (selectedArmoryTab === 'Souls') {
     items = [...armoryEquipData.souls].sort((a, b) => a.name.localeCompare(b.name));
+  } else {
+    const slotType = ARMORY_TAB_TO_SLOT[selectedArmoryTab];
+    items = armoryEquipData.armor.filter(a => a.armorType === slotType)
+      .sort((a, b) => (a.defense || 0) - (b.defense || 0));
   }
 
   list.innerHTML = items.map(item => {
-    const isSoul = item.damage === undefined && item.defense === undefined && item.armorType === undefined;
     let typeLabel = '';
     if (item.weaponType) typeLabel = item.weaponType.replace(/([A-Z])/g, ' $1').trim();
     else if (item.armorType) typeLabel = item.armorType.replace(/([A-Z])/g, ' $1').trim();
@@ -1311,12 +1299,11 @@ function renderArmoryEquipList() {
     if (item.damage != null && item.weaponType !== 'Shield') statLabel = item.magicDamage > 0 ? `MAtK ${item.magicDamage}` : `ATK ${item.damage}`;
     else if (item.defense != null) statLabel = `DEF ${item.defense}`;
 
-    const icon = item.iconFile || '';
     const selected = item.guid === selectedArmoryItemGuid;
-    return `<div class="recipe-row ${selected ? 'selected' : ''}" onclick="selectArmoryItem('${item.guid}')">
-      <div class="recipe-icon"><img src="${icon}" onerror="this.style.display='none'"></div>
+    return `<div class="recipe-row ${selected ? 'selected' : ''}" data-guid="${item.guid}" onclick="selectArmoryItem('${item.guid}')">
+      <div class="recipe-icon"><img src="${item.iconFile || ''}" onerror="this.style.display='none'"></div>
       <div>
-        <div class="recipe-name">${item.name}</div>
+        <div class="recipe-name">${armoryDisplayName(item)}</div>
         <div class="recipe-type">${typeLabel}</div>
       </div>
       ${statLabel ? `<div style="font-size:11px;color:#6cf;margin-left:auto;white-space:nowrap">${statLabel}</div>` : ''}
@@ -1329,21 +1316,14 @@ function renderArmoryEquipList() {
 
 function selectArmoryItem(guid) {
   selectedArmoryItemGuid = guid;
-  document.querySelectorAll('#recipeList .recipe-row').forEach(el => {
-    el.classList.toggle('selected', el.querySelector('.recipe-name')?.textContent === (
-      armoryEquipData?.weapons.find(w => w.guid === guid)?.name ||
-      armoryEquipData?.armor.find(a => a.guid === guid)?.name ||
-      armoryEquipData?.souls.find(s => s.guid === guid)?.name || ''
-    ));
-  });
+  document.querySelectorAll('#recipeList .recipe-row').forEach(el =>
+    el.classList.toggle('selected', el.dataset.guid === guid)
+  );
 
   const item = armoryEquipData?.weapons.find(w => w.guid === guid)
             || armoryEquipData?.armor.find(a => a.guid === guid)
             || armoryEquipData?.souls.find(s => s.guid === guid);
   if (!item) return;
-
-  const detail = document.getElementById('forgeDetail');
-  const icon = item.iconFile || '';
 
   let statsHtml = '';
   if (item.damage != null) statsHtml += `<div>Attack: <b style="color:#6cf">${item.damage}</b></div>`;
@@ -1356,19 +1336,53 @@ function selectArmoryItem(guid) {
   if (item.soulSlots) statsHtml += `<div>Soul Slots: ${item.soulSlots}</div>`;
   if (item.weight) statsHtml += `<div>Weight: ${item.weight}</div>`;
   if (item.bonuses && item.bonuses.length > 0) {
-    const bonusLines = item.bonuses.map(b => b.text || (b.stat ? `+${b.amount || b.percent+'%'} ${b.stat}` : '')).filter(Boolean);
-    if (bonusLines.length > 0) statsHtml += `<div style="color:#8f8;margin-top:6px">${bonusLines.join('<br>')}</div>`;
+    const bonusLines = item.bonuses.map(b => b.text || (b.stat ? `+${b.amount || b.percent + '%'} ${b.stat}` : '')).filter(Boolean);
+    if (bonusLines.length) statsHtml += `<div style="color:#8f8;margin-top:6px">${bonusLines.join('<br>')}</div>`;
   }
 
-  detail.innerHTML = `
+  // Craft recipe (if any)
+  let recipeHtml = '';
+  const recipe = data?.recipes?.find(r => r.resultGuid === guid);
+  if (recipe) {
+    let base = 50;
+    if (item.weaponLevel) base -= item.weaponLevel * 10;
+    const anvilData = data.anvils || [];
+    const rates = anvilData.length
+      ? anvilData.map(a => `<span style="margin:0 10px"><b>${a.name}:</b> <b style="color:${(base + a.successBonus) >= 50 ? '#8f8' : '#f88'}">${Math.max(0, Math.min(100, base + a.successBonus)).toFixed(1)}%</b></span>`).join('')
+      : `<b style="color:${base >= 50 ? '#8f8' : '#f88'}">${Math.max(0, base)}%</b>`;
+
+    const ingredients = recipe.ingredients.map(ing => {
+      const ingItem = itemMap[ing.itemGuid];
+      return `<div class="ingredient-row"
+                   onmouseenter="showTooltip(event,'${ing.itemGuid}')"
+                   onmousemove="moveTooltip(event)"
+                   onmouseleave="hideTooltip()"
+                   onclick="pinTooltipAt(event,'${ing.itemGuid}')">
+        <div class="ingredient-icon"><img src="${ingItem?.iconFile || ''}" onerror="this.style.display='none'"></div>
+        <div class="ingredient-name">${ing.name}</div>
+        <div class="ingredient-qty">x${ing.quantity}</div>
+      </div>`;
+    }).join('');
+
+    recipeHtml = `
+      <div style="margin-top:14px;border-top:1px solid #444;padding-top:10px">
+        <div style="font-size:13px;font-weight:bold;margin-bottom:6px;color:#fc0">Craft Recipe</div>
+        ${ingredients}
+        <div style="margin-top:10px;text-align:center;font-size:12px">${rates}</div>
+        <div style="color:#888;font-size:11px;text-align:center;margin-top:2px">+2%/Skill Lv, +1%/DEX, +1%/LUCK</div>
+      </div>`;
+  }
+
+  document.getElementById('forgeDetail').innerHTML = `
     <div style="text-align:center;margin-bottom:16px">
       <div style="width:80px;height:80px;margin:0 auto 8px;background:#111122;border:2px solid #555;border-radius:8px;display:flex;align-items:center;justify-content:center">
-        <img src="${icon}" style="max-width:90%;max-height:90%;object-fit:contain" onerror="this.style.display='none'">
+        <img src="${item.iconFile || ''}" style="max-width:90%;max-height:90%;object-fit:contain" onerror="this.style.display='none'">
       </div>
-      <h2 style="font-size:18px">${item.name}</h2>
+      <h2 style="font-size:18px">${armoryDisplayName(item)}</h2>
       ${item.description ? `<div style="color:#aaa;font-size:12px;font-style:italic;margin:4px 0">${item.description}</div>` : ''}
     </div>
-    <div style="font-size:13px;line-height:1.8">${statsHtml}</div>`;
+    <div style="font-size:13px;line-height:1.8">${statsHtml}</div>
+    ${recipeHtml}`;
 }
 
 const WEAPON_TYPE_ORDER = {
@@ -1376,104 +1390,6 @@ const WEAPON_TYPE_ORDER = {
   'OneHandedMace':4,'TwoHandedMace':5,'OneHandedStaff':6,'TwoHandedStaff':7,
   'Bow':8,'Dagger':9,'Barehands':10,'Shield':11,'OneHandedSpear':12,'TwoHandedSpear':13
 };
-
-function renderRecipeList() {
-  const filtered = data.recipes.filter(r => r.category === selectedForgeCategory);
-  filtered.sort((a, b) => {
-    const ai = itemMap[a.resultGuid], bi = itemMap[b.resultGuid];
-    const ao = WEAPON_TYPE_ORDER[ai?.weaponType] ?? 99, bo = WEAPON_TYPE_ORDER[bi?.weaponType] ?? 99;
-    if (ao !== bo) return ao - bo;
-    const al = ai?.weaponLevel ?? 0, bl = bi?.weaponLevel ?? 0;
-    if (al !== bl) return al - bl;
-    return a.name.localeCompare(b.name);
-  });
-  const list = document.getElementById('recipeList');
-
-  window._filteredRecipes = filtered;
-  list.innerHTML = filtered.map((r, i) => {
-    const resultItem = itemMap[r.resultGuid];
-    const icon = resultItem?.iconFile || '';
-    const weaponType = resultItem?.weaponType?.replace(/([A-Z])/g, ' $1').trim() ||
-                       resultItem?.armorType?.replace(/([A-Z])/g, ' $1').trim() || '';
-    return `<div class="recipe-row ${i === selectedRecipeIndex ? 'selected' : ''}" onclick="selectRecipe(${i})">
-      <div class="recipe-icon"><img src="${icon}" onerror="this.style.display='none'"></div>
-      <div>
-        <div class="recipe-name">${r.name}</div>
-        <div class="recipe-type">${weaponType}</div>
-      </div>
-    </div>`;
-  }).join('');
-
-  if (filtered.length > 0 && selectedRecipeIndex < 0) selectRecipe(0, selectedForgeCategory);
-}
-
-function selectRecipe(index) {
-  selectedRecipeIndex = index;
-  const r = window._filteredRecipes[index];
-  if (!r) return;
-
-  document.querySelectorAll('.recipe-row').forEach((el, i) => el.classList.toggle('selected', i === index));
-
-  const resultItem = itemMap[r.resultGuid];
-  const icon = resultItem?.iconFile || '';
-  const panel = document.getElementById('forgeDetail');
-
-  let statsHtml = '';
-  if (resultItem) {
-    if (resultItem.damage != null) statsHtml += `<div>Attack: <b style="color:#6cf">${resultItem.damage}</b></div>`;
-    if (resultItem.magicDamage) statsHtml += `<div>Magic Attack: <b style="color:#6cf">${resultItem.magicDamage}</b></div>`;
-    if (resultItem.defense) statsHtml += `<div>Defense: <b style="color:#6cf">${resultItem.defense}</b></div>`;
-    if (resultItem.element != null) statsHtml += `<div>Element: <span class="element-badge elem-${resultItem.element}">${resultItem.element}</span></div>`;
-    if (resultItem.attackRange != null) statsHtml += `<div>Attack Range: ${resultItem.attackRange}</div>`;
-    if (resultItem.weaponLevel) statsHtml += `<div>Weapon Level: ${resultItem.weaponLevel}</div>`;
-    if (resultItem.requiredLevel != null) statsHtml += `<div>Required Level: ${resultItem.requiredLevel}</div>`;
-    if (resultItem.weight) statsHtml += `<div>Weight: ${resultItem.weight}</div>`;
-    if (resultItem.soulSlots) statsHtml += `<div>Soul Slots: ${resultItem.soulSlots}</div>`;
-    if (resultItem.bonuses && resultItem.bonuses.length > 0)
-      statsHtml += `<div style="color:#8f8;margin-top:4px">${resultItem.bonuses.join('<br>')}</div>`;
-  }
-
-  const ingredientsHtml = r.ingredients.map(ing => {
-    const ingItem = itemMap[ing.itemGuid];
-    const ingIcon = ingItem?.iconFile || '';
-    return `<div class="ingredient-row"
-                 onmouseenter="showTooltip(event, '${ing.itemGuid}')"
-                 onmousemove="moveTooltip(event)"
-                 onmouseleave="hideTooltip()"
-                 onclick="pinTooltipAt(event, '${ing.itemGuid}')">
-      <div class="ingredient-icon"><img src="${ingIcon}" onerror="this.style.display='none'"></div>
-      <div class="ingredient-name">${ing.name}</div>
-      <div class="ingredient-qty">x${ing.quantity}</div>
-    </div>`;
-  }).join('');
-
-  // Success rates for both anvil types
-  let base = 50;
-  if (resultItem?.weaponLevel) base -= resultItem.weaponLevel * 10;
-  const anvilData = data.anvils || [];
-  const rates = anvilData.map(a => ({
-    name: a.name,
-    rate: Math.max(0, Math.min(100, base + a.successBonus))
-  }));
-  // Fallback if no anvil data
-  if (rates.length === 0) rates.push({name: 'Base', rate: Math.max(0, Math.min(100, base))});
-
-  panel.innerHTML = `
-    <div style="text-align:center;margin-bottom:16px">
-      <div style="width:80px;height:80px;margin:0 auto 8px;background:#111122;border:2px solid #555;border-radius:8px;display:flex;align-items:center;justify-content:center">
-        <img src="${icon}" style="max-width:90%;max-height:90%;object-fit:contain" onerror="this.style.display='none'">
-      </div>
-      <h2 style="font-size:18px">${r.name}</h2>
-      ${resultItem?.description ? `<div style="color:#aaa;font-size:12px;font-style:italic;margin:4px 0">${resultItem.description}</div>` : ''}
-    </div>
-    <div style="font-size:13px;margin-bottom:16px;line-height:1.6">${statsHtml}</div>
-    <div style="font-size:14px;margin-bottom:8px;border-bottom:1px solid #444;padding-bottom:4px">Ingredients</div>
-    ${ingredientsHtml}
-    <div style="margin-top:16px;text-align:center;font-size:13px;line-height:2">
-      ${rates.map(r => `<span style="margin:0 12px"><b>${r.name}:</b> <b style="color:${r.rate >= 50 ? '#8f8' : '#f88'}">${r.rate.toFixed(1)}%</b></span>`).join('')}
-      <div style="color:#888;font-size:11px;margin-top:2px">+2%/Skill Lv, +1%/DEX, +1%/LUCK</div>
-    </div>`;
-}
 
 let skillZoom = 1.0;
 
@@ -1786,6 +1702,7 @@ async function initBuildPlanner() {
   try {
     const resp = await fetch('equipment.json', _nocache);
     bpEquipData = await resp.json();
+    if (!armoryDupeNames.size) buildDupeNameIndex(bpEquipData);
   } catch(e) { console.error('Failed to load equipment.json', e); return; }
 
   // Load skills if not already
@@ -1915,8 +1832,7 @@ function bpOpenPicker(slot, trigger) {
 
   // Position with left edge at slot's right edge, top aligned to slot's top
   const pickerW = 420;
-  const pickerH = Math.min(window.innerHeight * 0.7, 500);
-  const pad = 8;
+  const pad = 20; // clearance from viewport edges
   if (trigger) {
     const rect = trigger.getBoundingClientRect();
 
@@ -1925,17 +1841,21 @@ function bpOpenPicker(slot, trigger) {
     if (left + pickerW > window.innerWidth - pad) left = rect.left - pickerW;
     if (left < pad) left = pad;
 
-    // Top aligned to slot; clamp so picker doesn't go below viewport
-    let top = rect.top;
-    if (top + pickerH > window.innerHeight - pad) top = window.innerHeight - pickerH - pad;
-    if (top < pad) top = pad;
+    // Top = slot's top, clamped to stay inside viewport
+    let top = Math.max(pad, rect.top);
+
+    // Height = space from top to near bottom of viewport (so nothing gets clipped)
+    const maxH = Math.min(Math.max(window.innerHeight - top - pad, 180), 540);
 
     picker.style.left = left + 'px';
     picker.style.top  = top  + 'px';
+    picker.style.maxHeight = maxH + 'px';
   } else {
     // Fallback: center of screen
+    const fallbackH = Math.min(window.innerHeight * 0.7, 540);
     picker.style.left = Math.max(pad, (window.innerWidth  - pickerW) / 2) + 'px';
-    picker.style.top  = Math.max(pad, (window.innerHeight - pickerH) / 2) + 'px';
+    picker.style.top  = Math.max(pad, (window.innerHeight - fallbackH) / 2) + 'px';
+    picker.style.maxHeight = fallbackH + 'px';
   }
 
   overlay.style.display = 'block';
@@ -2012,7 +1932,7 @@ function bpRenderPickerItems(items) {
       html += `<div class="bp-picker-item" onclick="bpSelectItem('${item.guid}')">
         <img src="${item.iconFile || ''}" onerror="this.style.display='none'">
         <div>
-          <div style="color:#e0d8c8">${item.name}</div>
+          <div style="color:#e0d8c8">${armoryDisplayName(item)}</div>
           ${bonusText ? `<div style="color:#8f8;font-size:10px">${bonusText}</div>` : ''}
         </div>
         <span class="item-stats">${stats}</span>
@@ -2081,7 +2001,7 @@ function bpRenderSlots() {
       el.className = 'bp-slot filled';
       let html = `<img class="bp-slot-icon" src="${eq.item.iconFile || ''}" onerror="this.style.display='none'">`;
       const nameColor = eq.refine > 0 ? 'color:#FFDD63' : '';
-      html += `<div class="bp-slot-item" style="${nameColor}">${eq.refine > 0 ? '+'+eq.refine+' ' : ''}${eq.item.name}</div>`;
+      html += `<div class="bp-slot-item" style="${nameColor}">${eq.refine > 0 ? '+'+eq.refine+' ' : ''}${armoryDisplayName(eq.item)}</div>`;
       // Refine inline control
       let controls = '';
       if (eq.item.isRefinable) {
@@ -2244,20 +2164,22 @@ function bpOpenSoulPicker(slot, index, trigger) {
   const overlay = document.getElementById('bpPickerOverlay');
   const picker = document.getElementById('bpPickerPanel');
   const search = document.getElementById('bpPickerSearch');
-  const pickerW = 420, pickerH = Math.min(window.innerHeight * 0.7, 500), pad = 8;
+  const pickerW = 420, pad = 20;
   if (trigger) {
     const rect = trigger.getBoundingClientRect();
     let left = rect.right;
     if (left + pickerW > window.innerWidth - pad) left = rect.left - pickerW;
     if (left < pad) left = pad;
-    let top = rect.top;
-    if (top + pickerH > window.innerHeight - pad) top = window.innerHeight - pickerH - pad;
-    if (top < pad) top = pad;
+    let top = Math.max(pad, rect.top);
+    const maxH = Math.min(Math.max(window.innerHeight - top - pad, 180), 540);
+    picker.style.maxHeight = maxH + 'px';
     picker.style.left = left + 'px';
     picker.style.top  = top  + 'px';
   } else {
+    const fallbackH = Math.min(window.innerHeight * 0.7, 540);
     picker.style.left = Math.max(pad, (window.innerWidth  - pickerW) / 2) + 'px';
-    picker.style.top  = Math.max(pad, (window.innerHeight - pickerH) / 2) + 'px';
+    picker.style.top  = Math.max(pad, (window.innerHeight - fallbackH) / 2) + 'px';
+    picker.style.maxHeight = fallbackH + 'px';
   }
   overlay.style.display = 'block';
   picker.style.display = 'flex';
