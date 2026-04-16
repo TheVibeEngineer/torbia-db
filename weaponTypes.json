@@ -1,0 +1,121 @@
+{
+  "_note": "Keyed by the Type int on each weapon item in equipment.json. windUpTime is the animation cast delay (seconds) before the hit lands, extracted from the game's autoattack config assets. aspdMultiplier is TBD — requires BepInEx runtime data (backlog item #18).",
+  "types": [
+    {
+      "id": 0,
+      "label": "One-Handed Axe",
+      "autoAttackConfig": "player_axe_autoattack",
+      "windUpTime": 0.443,
+      "aspdMultiplier": null
+    },
+    {
+      "id": 1,
+      "label": "Two-Handed Axe",
+      "autoAttackConfig": "player_twoHandedAxe_autoattack",
+      "windUpTime": 0.37,
+      "aspdMultiplier": null
+    },
+    {
+      "id": 2,
+      "label": "One-Handed Sword",
+      "autoAttackConfig": "player_sword_autoattack",
+      "windUpTime": 0.4,
+      "aspdMultiplier": null
+    },
+    {
+      "id": 3,
+      "label": "Two-Handed Sword",
+      "autoAttackConfig": "player_twoHandedSword_autoattack",
+      "windUpTime": 0.506,
+      "aspdMultiplier": null
+    },
+    {
+      "id": 4,
+      "label": "One-Handed Mace",
+      "autoAttackConfig": "player_mace_autoattack",
+      "windUpTime": 0.443,
+      "aspdMultiplier": null
+    },
+    {
+      "id": 5,
+      "label": "Two-Handed Mace",
+      "autoAttackConfig": "player_twoHandedMace_autoattack",
+      "windUpTime": 0.353,
+      "aspdMultiplier": null
+    },
+    {
+      "id": 6,
+      "label": "Wand",
+      "autoAttackConfig": "player_staff_autoAttack",
+      "windUpTime": 0.3,
+      "aspdMultiplier": null
+    },
+    {
+      "id": 7,
+      "label": "Two-Handed Staff",
+      "autoAttackConfig": "player_twoHandedStaff_autoAttack",
+      "windUpTime": 0.3,
+      "aspdMultiplier": null
+    },
+    {
+      "id": 8,
+      "label": "Bow",
+      "autoAttackConfig": "player_bow_autoattack",
+      "windUpTime": 0.3,
+      "aspdMultiplier": null
+    },
+    {
+      "id": 9,
+      "label": "Dagger",
+      "autoAttackConfig": "player_dagger_autoattack",
+      "windUpTime": 0.4,
+      "aspdMultiplier": null
+    },
+    {
+      "id": 10,
+      "label": "Unarmed",
+      "autoAttackConfig": "player_unarmed_autoattack",
+      "windUpTime": 0.4,
+      "aspdMultiplier": null,
+      "_note": "Type 10 inferred — no weapons carry this type int, unarmed is the fallback."
+    },
+    {
+      "id": 11,
+      "label": "Shield",
+      "autoAttackConfig": null,
+      "windUpTime": null,
+      "aspdMultiplier": null,
+      "_note": "Off-hand only. No autoattack config."
+    },
+    {
+      "id": 12,
+      "label": "Spear",
+      "autoAttackConfig": "player_spear_autoattack",
+      "windUpTime": 0.3,
+      "aspdMultiplier": null,
+      "_note": "player_twoHandedSpear_autoattack also exists (windUpTime 0.506s). The WeaponCombinationMatrix selects between them based on offhand slot — likely spear+shield vs spear alone. Verify when more spear weapon data is available."
+    },
+    {
+      "id": "dualWield",
+      "label": "Dual Wield",
+      "autoAttackConfig": "player_dualWield_autoattack",
+      "windUpTime": 0.3,
+      "aspdMultiplier": null,
+      "_note": "Not a weapon type int — activated by WeaponCombinationMatrix when two one-handed weapons are equipped simultaneously."
+    }
+  ],
+  "baseStats": {
+    "ASPD": 150,
+    "ATK": 1,
+    "MATK": 1,
+    "DEF": 0,
+    "MDEF": 0,
+    "HIT": 2,
+    "CRIT": 1,
+    "FLEE": 2,
+    "HP": 40,
+    "SP": 11,
+    "WalkSpeed": 8.0,
+    "_source": "Player.json / SecondaryBaseStats"
+  }
+}
